@@ -14,6 +14,6 @@ def get_host(args: list):
 if __name__ == "__main__":
     host = get_host(sys.argv)
     log.info("获取的host:" + host)
-    run_setting.setdefault("host", host)
+    run_setting["host"] = host
     Run(run_setting).run()
 
