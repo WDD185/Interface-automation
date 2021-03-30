@@ -1,0 +1,79 @@
+
+from common.run_method import RunMethod
+from script.common_config import host
+from script.common_config import public_assert
+import pytest
+import allure
+
+
+@allure.step("极师通/花名册/可调出班级")
+def transfer_records_suitableclasses_scheduleId_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+    url = host + "/service_profile/transfer-records/suitableclasses/{scheduleId}"
+    res = RunMethod.run_request("GET", url, params=params, header=header, return_json=return_json, **kwargs)
+    if return_json and default_assert:
+        public_assert(res)    
+    return res
+
+
+@allure.step("极师通/花名册/查询是否有重复的记录")
+def transfer_records_check_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+    url = host + "/service_profile/transfer-records/check"
+    res = RunMethod.run_request("GET", url, params=params, header=header, return_json=return_json, **kwargs)
+    if return_json and default_assert:
+        public_assert(res)    
+    return res
+
+
+@allure.step("极师通/花名册/调课操作")
+def transfer_records_post(params=None, body=None, header=None,return_json=True, default_assert=True, **kwargs):
+    url = host + "/service_profile/transfer-records"
+    res = RunMethod.run_request("POST", url, params=params, body=body, header=header, return_json=return_json, **kwargs)
+    if return_json and default_assert:
+        public_assert(res)    
+    return res
+
+
+@allure.step("极师通/花名册/撤销调课")
+def transfer_records_recordId_delete(params=None, body=None, header=None,return_json=True, default_assert=True, **kwargs):
+    url = host + "/service_profile/transfer-records/{recordId}"
+    res = RunMethod.run_request("DELETE", url, params=params, body=body, header=header, return_json=return_json, **kwargs)
+    if return_json and default_assert:
+        public_assert(res)    
+    return res
+
+
+@allure.step("极师通/花名册/查询班级调出记录")
+def transfer_records_classes_classId_out_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+    url = host + "/service_profile/transfer-records/classes/{classId}/out"
+    res = RunMethod.run_request("GET", url, params=params, header=header, return_json=return_json, **kwargs)
+    if return_json and default_assert:
+        public_assert(res)    
+    return res
+
+
+@allure.step("极师通/花名册/查询学生调课记录")
+def transfer_records_students_studentId_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+    url = host + "/service_profile/transfer-records/students/{studentId}"
+    res = RunMethod.run_request("GET", url, params=params, header=header, return_json=return_json, **kwargs)
+    if return_json and default_assert:
+        public_assert(res)    
+    return res
+
+
+@allure.step("极师通/花名册/删除调课记录")
+def transfer_records_logic_recordId_delete(params=None, body=None, header=None,return_json=True, default_assert=True, **kwargs):
+    url = host + "/service_profile/transfer-records/logic/{recordId}"
+    res = RunMethod.run_request("DELETE", url, params=params, body=body, header=header, return_json=return_json, **kwargs)
+    if return_json and default_assert:
+        public_assert(res)    
+    return res
+
+
+@allure.step("极师通/花名册/可调入校区")
+def transfer_records_suitable_schools_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+    url = host + "/service_profile/transfer-records/suitable-schools"
+    res = RunMethod.run_request("GET", url, params=params, header=header, return_json=return_json, **kwargs)
+    if return_json and default_assert:
+        public_assert(res)    
+    return res
+

@@ -19,14 +19,54 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54f4d37d-1724-4813-a1e2-24e200088c5f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    <list default="true" id="54f4d37d-1724-4813-a1e2-24e200088c5f" name="Default Changelist" comment="增加allure安装包">
+      <change afterPath="$PROJECT_DIR$/create_case.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/init_base_api.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/script/db_config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/script/export_file/commm_config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/script/export_file/conftest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/script/export_file/test_cai_wu_report.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/script/export_file/test_class_report.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/script/export_file/test_ji_xiao_tong_ji.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/script/export_file/test_ping_kong_report.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/script/export_file/test_shou_ru_report.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/script/export_file/test_ye_wu_report.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/script/export_file/test_yu_jin_report.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/script/export_file/test_yu_shou_report.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/script/export_file/test_yun_ying_fen_xi_report.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/script/ji_yun_ying_pc/common_config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/script/ji_yun_ying_pc/data_config/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/script/ji_yun_ying_pc/test_login.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/connect_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/connect_db.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/run_method.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/run_method.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/xml/090bf1ad-e131-4dc9-94e4-84011dea6348-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/xml/2c209232-c29a-4593-87ee-e2fadaa6683b-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/xml/42c9ac46-3e2b-47ec-86cc-84cad5f7eb58-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/xml/67704bf3-5b99-41e1-8c5b-d8bb638de8ea-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/xml/723d43e0-76fa-4af7-9fe0-cba75752e49b-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/xml/9a417fe5-030d-4e6e-a545-b8471f8b611c-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/xml/dbe9249d-db75-4014-99ba-9b5cc1b0b2bb-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/xml/efa7ae50-bb34-4705-82fb-a06b14f9c4ea-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/xml/f578c6ce-27d5-4f69-97b1-e3b73b668e10-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/common_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/common_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/ji_yun_ying_app/test_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/ji_yun_ying_app/test_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/ji_yun_ying_pc/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/ji_yun_ying_pc/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/ji_yun_ying_pc/data_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/ji_yun_ying_pc/data_config/data_config.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -42,7 +82,75 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/script/ji_yun_ying_pc/data_config" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.run">
+    <configuration name="connect_db" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="jk_interface_test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/common" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/common/connect_db.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="create_case" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="jk_interface_test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/create_case.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="init_base_api" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="jk_interface_test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/init_base_api.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="jk_interface_test" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -67,6 +175,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.run" />
+        <item itemvalue="Python.create_case" />
+        <item itemvalue="Python.init_base_api" />
+        <item itemvalue="Python.connect_db" />
       </list>
     </recent_temporary>
   </component>
@@ -79,6 +190,21 @@
       <option name="presentableId" value="Default" />
       <updated>1611302255574</updated>
     </task>
+    <task id="LOCAL-00001" summary="增加依赖文件">
+      <created>1611309477574</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1611309477574</updated>
+    </task>
+    <task id="LOCAL-00002" summary="增加allure安装包">
+      <created>1611382504496</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1611382504496</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -93,6 +219,11 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="增加依赖文件" />
+    <MESSAGE value="增加allure安装包" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加allure安装包" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="360" y="197" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611302358176">
       <screen x="0" y="23" width="1792" height="1017" />
@@ -102,26 +233,46 @@
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
     <state x="683" y="296" key="FileChooserDialogImpl/0.23.1792.1017@0.23.1792.1017" timestamp="1611303152470" />
-    <state width="1771" height="276" key="GridCell.Tab.0.bottom" timestamp="1611303542826">
-      <screen x="0" y="23" width="1792" height="1015" />
+    <state width="1771" height="322" key="GridCell.Tab.0.bottom" timestamp="1617090434843">
+      <screen x="0" y="23" width="1792" height="1026" />
     </state>
-    <state width="1771" height="276" key="GridCell.Tab.0.bottom/0.23.1792.1015@0.23.1792.1015" timestamp="1611303542826" />
-    <state width="1771" height="276" key="GridCell.Tab.0.center" timestamp="1611303542825">
-      <screen x="0" y="23" width="1792" height="1015" />
+    <state width="1771" height="274" key="GridCell.Tab.0.bottom/0.23.1792.1009@0.23.1792.1009" timestamp="1611887584506" />
+    <state width="1771" height="274" key="GridCell.Tab.0.bottom/0.23.1792.1012@0.23.1792.1012" timestamp="1611813339480" />
+    <state width="1771" height="322" key="GridCell.Tab.0.bottom/0.23.1792.1015@0.23.1792.1015" timestamp="1617085033388" />
+    <state width="1771" height="274" key="GridCell.Tab.0.bottom/0.23.1792.1024@0.23.1792.1024" timestamp="1614924517453" />
+    <state width="1771" height="322" key="GridCell.Tab.0.bottom/0.23.1792.1026@0.23.1792.1026" timestamp="1617090434843" />
+    <state width="1771" height="322" key="GridCell.Tab.0.center" timestamp="1617090434842">
+      <screen x="0" y="23" width="1792" height="1026" />
     </state>
-    <state width="1771" height="276" key="GridCell.Tab.0.center/0.23.1792.1015@0.23.1792.1015" timestamp="1611303542825" />
-    <state width="1771" height="276" key="GridCell.Tab.0.left" timestamp="1611303542824">
-      <screen x="0" y="23" width="1792" height="1015" />
+    <state width="1771" height="274" key="GridCell.Tab.0.center/0.23.1792.1009@0.23.1792.1009" timestamp="1611887584505" />
+    <state width="1771" height="274" key="GridCell.Tab.0.center/0.23.1792.1012@0.23.1792.1012" timestamp="1611813339480" />
+    <state width="1771" height="322" key="GridCell.Tab.0.center/0.23.1792.1015@0.23.1792.1015" timestamp="1617085033387" />
+    <state width="1771" height="274" key="GridCell.Tab.0.center/0.23.1792.1024@0.23.1792.1024" timestamp="1614924517453" />
+    <state width="1771" height="322" key="GridCell.Tab.0.center/0.23.1792.1026@0.23.1792.1026" timestamp="1617090434842" />
+    <state width="1771" height="322" key="GridCell.Tab.0.left" timestamp="1617090434842">
+      <screen x="0" y="23" width="1792" height="1026" />
     </state>
-    <state width="1771" height="276" key="GridCell.Tab.0.left/0.23.1792.1015@0.23.1792.1015" timestamp="1611303542824" />
-    <state width="1771" height="276" key="GridCell.Tab.0.right" timestamp="1611303542826">
-      <screen x="0" y="23" width="1792" height="1015" />
+    <state width="1771" height="274" key="GridCell.Tab.0.left/0.23.1792.1009@0.23.1792.1009" timestamp="1611887584491" />
+    <state width="1771" height="274" key="GridCell.Tab.0.left/0.23.1792.1012@0.23.1792.1012" timestamp="1611813339480" />
+    <state width="1771" height="322" key="GridCell.Tab.0.left/0.23.1792.1015@0.23.1792.1015" timestamp="1617085033387" />
+    <state width="1771" height="274" key="GridCell.Tab.0.left/0.23.1792.1024@0.23.1792.1024" timestamp="1614924517453" />
+    <state width="1771" height="322" key="GridCell.Tab.0.left/0.23.1792.1026@0.23.1792.1026" timestamp="1617090434842" />
+    <state width="1771" height="322" key="GridCell.Tab.0.right" timestamp="1617090434842">
+      <screen x="0" y="23" width="1792" height="1026" />
     </state>
-    <state width="1771" height="276" key="GridCell.Tab.0.right/0.23.1792.1015@0.23.1792.1015" timestamp="1611303542826" />
+    <state width="1771" height="274" key="GridCell.Tab.0.right/0.23.1792.1009@0.23.1792.1009" timestamp="1611887584506" />
+    <state width="1771" height="274" key="GridCell.Tab.0.right/0.23.1792.1012@0.23.1792.1012" timestamp="1611813339480" />
+    <state width="1771" height="322" key="GridCell.Tab.0.right/0.23.1792.1015@0.23.1792.1015" timestamp="1617085033388" />
+    <state width="1771" height="274" key="GridCell.Tab.0.right/0.23.1792.1024@0.23.1792.1024" timestamp="1614924517453" />
+    <state width="1771" height="322" key="GridCell.Tab.0.right/0.23.1792.1026@0.23.1792.1026" timestamp="1617090434842" />
     <state x="397" y="173" key="SettingsEditor" timestamp="1611303202671">
       <screen x="0" y="23" width="1792" height="1015" />
     </state>
     <state x="397" y="173" key="SettingsEditor/0.23.1792.1015@0.23.1792.1015" timestamp="1611303202671" />
     <state x="397" y="173" key="SettingsEditor/0.23.1792.1017@0.23.1792.1017" timestamp="1611302888504" />
+    <state x="496" y="267" key="Vcs.Push.Dialog.v2" timestamp="1611382527150">
+      <screen x="0" y="23" width="1792" height="1015" />
+    </state>
+    <state x="496" y="267" key="Vcs.Push.Dialog.v2/0.23.1792.1015@0.23.1792.1015" timestamp="1611382527150" />
   </component>
 </project>

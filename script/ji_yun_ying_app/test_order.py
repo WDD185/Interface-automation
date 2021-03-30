@@ -2,7 +2,7 @@ from common.run_method import RunMethod
 from script.ji_yun_ying_pc import data_config
 import allure
 from script import common_config
-
+from script.base_api import service_order
 
 @allure.feature("极运营app订单业务")
 class TestOrder:
