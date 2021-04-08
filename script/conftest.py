@@ -1,6 +1,9 @@
 import pytest
 from script import common_config
 from script import db_config
+import jsonpath
+from script import default_header
+from script.base_api.service_user.auth import auth_employee_post
 
 
 def pytest_addoption(parser):
@@ -22,3 +25,21 @@ def get_host(pytestconfig):
         test_db_config = db_config.db_configs.get(test_db)
         if test_db_config:
             common_config.db_config = test_db_config
+
+
+@pytest.fixture(scope="session", autouse=True)
+def ji_yun_ying_login():
+    body_data = {
+        "type": "employee",
+        "identityType": 1,
+        "ip": "0.0.0.0",
+        "account": "15360956010",
+        "password": "88888888",
+        "assistant": False
+    }
+    res_json = auth_employee_post(body=body_data, header=default_header.jyy_header, default_assert=False)
+    tokens = jsonpath.jsonpath(res_json, "$.data.token")
+    if tokens:
+        default_header.jyy_header.setdefault("Authorization", f"Bearer {tokens[0]}")
+    else:
+        default_header.jyy_header.setdefault("Authorization", "token  not found")

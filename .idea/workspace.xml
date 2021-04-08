@@ -20,41 +20,352 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54f4d37d-1724-4813-a1e2-24e200088c5f" name="Default Changelist" comment="增加allure安装包">
-      <change afterPath="$PROJECT_DIR$/create_case.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/init_base_api.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/db_config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/export_file/commm_config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/export_file/conftest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/export_file/test_cai_wu_report.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/export_file/test_class_report.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/export_file/test_ji_xiao_tong_ji.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/export_file/test_ping_kong_report.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/export_file/test_shou_ru_report.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/export_file/test_ye_wu_report.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/export_file/test_yu_jin_report.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/export_file/test_yu_shou_report.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/export_file/test_yun_ying_fen_xi_report.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/ji_yun_ying_pc/common_config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/ji_yun_ying_pc/data_config/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/ji_yun_ying_pc/test_login.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/connect_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/connect_db.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/run_method.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/run_method.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/xml/090bf1ad-e131-4dc9-94e4-84011dea6348-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/xml/2c209232-c29a-4593-87ee-e2fadaa6683b-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/xml/42c9ac46-3e2b-47ec-86cc-84cad5f7eb58-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/xml/67704bf3-5b99-41e1-8c5b-d8bb638de8ea-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/xml/723d43e0-76fa-4af7-9fe0-cba75752e49b-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/xml/9a417fe5-030d-4e6e-a545-b8471f8b611c-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/xml/dbe9249d-db75-4014-99ba-9b5cc1b0b2bb-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/xml/efa7ae50-bb34-4705-82fb-a06b14f9c4ea-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/xml/f578c6ce-27d5-4f69-97b1-e3b73b668e10-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/create_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/create_case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init_base_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/init_base_api.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/base_api/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_admin/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/base_api/api_admin/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_admin/department_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_admin/employee_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_admin/permission_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_admin/role_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_admin/versionInfo_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_jksxb_app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/base_api/api_jksxb_app/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_jksxb_app/app_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_jksxb_app/banner_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_jksxb_app/coupon_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_jksxb_app/coursePreview_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_jksxb_app/homework_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_jksxb_app/orderFlow_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_jksxb_app/order_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_jksxb_app/pay_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_jksxb_app/playVideo_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_jksxb_mini/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/base_api/api_jksxb_mini/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_jksxb_mini/banner_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_jksxb_mini/buryData_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_jksxb_mini/coupon_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_jksxb_mini/goods_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_jksxb_mini/idea_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_jksxb_mini/orderFlow_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_jksxb_mini/order_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_jksxb_mini/pay_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_jksxb_mini/productExamination_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_jksxb_mini/share_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_jksxb_mini/user_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_jksxb_mini/versionInfo_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_jksxb_mini/zan_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_operation_app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/base_api/api_operation_app/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_operation_app/back_clue_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_operation_app/classes_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_operation_app/classroom_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_operation_app/clue_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_operation_app/employee_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_operation_app/finance_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_operation_app/lost_communicate_record_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_operation_app/memberships_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_operation_app/order_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_operation_app/pay_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_operation_app/public_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_operation_app/staging_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_operation_app/statistics_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_operation_app/students_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_operation_app/versionInfo_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_operation_web/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/base_api/api_operation_web/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_operation_web/banner_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_operation_web/big_screen_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_operation_web/charge_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_operation_web/coupon_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_operation_web/discount_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_operation_web/expense_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_operation_web/export_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_operation_web/introduce_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_operation_web/orderFlow_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_operation_web/order_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_operation_web/pay_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_operation_web/renewal_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_operation_web/report_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_operation_web/ruleSetting_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_operation_web/share_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_operation_web/versionInfo_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_periodical/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/base_api/api_periodical/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_periodical/periodicalManage_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_periodical/periodical_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_periodical/regimeManage_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_periodical/regime_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_periodical/versionInfo_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_research_web/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/base_api/api_research_web/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_research_web/coursePreview_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_research_web/homework_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_research_web/versionInfo_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_teach_web/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/base_api/api_teach_web/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_teach_web/homework_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_teach_web/message_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/api_teach_web/versionInfo_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_crm/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/base_api/service_crm/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_crm/agency_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_crm/back_clue_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_crm/clue_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_crm/communicate_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_crm/crm_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_crm/customMessageItem_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_crm/customMessage_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_crm/dict_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_crm/direct_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_crm/documentDirectory_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_crm/documentRecord_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_crm/documentTag_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_crm/document_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_crm/enum_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_crm/lostStudent_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_crm/lostWarning_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_crm/lost_communicate_record_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_crm/school_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_crm/staging_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_crm/systemMessageItem_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_crm/systemMessage_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_descartes/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/base_api/service_descartes/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_descartes/examine_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_descartes/lessons_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_education/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/base_api/service_education/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_education/app_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_education/batchClass_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_education/batch_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_education/classCapacity_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_education/classDirector_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_education/classes_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_education/education_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_education/jst_app_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_education/jst_home_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_education/system_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_finance/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/base_api/service_finance/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_finance/app_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_finance/applet_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_finance/finance_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_finance/handCash_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_finance/v2_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_finance/web_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_gos/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/base_api/service_gos/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_gos/api_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_gos/applet_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_gos/banner_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_gos/carousel_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_gos/diagnosis_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_gos/goods_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_gos/gos_api_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_gos/gos_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_gos/group_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_gos/package_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_gos/shareEvent_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_idea/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/base_api/service_idea/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_idea/pay_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_identity/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/base_api/service_identity/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_identity/versionInfo_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_order/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/base_api/service_order/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_order/app_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_order/applet_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_order/coupon_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_order/discount_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_order/orderRuleSetting_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_order/order_api_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_order/order_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_order/orders_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_order/payments_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_order/schedule_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_pay/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/base_api/service_pay/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_pay/bill_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_pay/callback_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_pay/pay_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_pay/refund_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_pay/versionInfo_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_pay/weChat_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_pigeon/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/base_api/service_pigeon/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_pigeon/versionInfo_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_profile/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/base_api/service_profile/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_profile/api_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_profile/app_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_profile/applet_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_profile/attendances_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_profile/classChange_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_profile/classHourChange_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_profile/class_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_profile/classes_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_profile/classfeedback_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_profile/coupon_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_profile/courseNote_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_profile/course_notes_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_profile/external_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_profile/feedbackType_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_profile/feedback_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_profile/finance_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_profile/geekPreviewReport_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_profile/homework_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_profile/jst_app_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_profile/login_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_profile/manualSchedule_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_profile/memberships_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_profile/parent_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_profile/performances_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_profile/plaso_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_profile/public_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_profile/purchaseOrder_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_profile/pushRelationship_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_profile/schedules_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_profile/student_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_profile/students_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_profile/studtent_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_profile/teachers_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_profile/transfer_records_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_profile/transferred_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_profile/userCheckpoint_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_profile/user_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_profile/videoPlayAddress_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_public/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/base_api/service_public/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_public/api_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_public/app_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_public/backup_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_public/baseParam_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_public/check_recommit_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_public/cos_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_public/customHeader_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_public/entranceExam_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_public/export_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_public/finance_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_public/jst_app_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_public/notice_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_public/notices_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_public/preview_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_public/qrcode_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_public/resource_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_public/schools_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_public/src_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_public/systemSetting_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_public/targets_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_public/upload_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_public/version_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_public/vod_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_question/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/base_api/service_question/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_question/admission_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_question/basic_training_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_question/chapter_tree_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_question/exam_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_question/examination_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_question/jst_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_question/materialContribution_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_question/monthExamination_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_question/online_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_question/questionMaterial_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_question/question_bank_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_question/question_jst_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_question/question_source_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_question/question_video_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_report/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/base_api/service_report/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_report/export_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_report/getContinueReportByArea_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_report/getContinueReportDayly_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_report/getContinueReportOfAll_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_report/getContinueReportTeacherByArea_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_report/getContinueReport_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_report/getExpensesByArea_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_report/loginInternal_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_report/login_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_report/report_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_report/src_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_research/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/base_api/service_research/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_research/api_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_research/attendClass_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_research/cloudDiskController_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_research/courseWareEvaluateController_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_research/courseWareScoreController_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_research/dowLogController_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_research/examination_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_research/jst_app_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_research/periodical_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_research/prepar_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_research/prepareLessons_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_research/preview_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_research/question_bank_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_research/research_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_research/teaching_exercise_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_research/teaching_exercises_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_research/teaching_plan_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_research/teaching_plans_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_research/video_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_science/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/base_api/service_science/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_science/versionInfo_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_src/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/base_api/service_src/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_src/app_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_src/upload_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_src/versionInfo_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_statistics/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/base_api/service_statistics/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_statistics/geekData_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_statistics/sa_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_statistics/statistics_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_statistics_metrics/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/base_api/service_statistics_metrics/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_statistics_metrics/classFeeRating_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_statistics_metrics/teacherValueController_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_statistics_metrics/teacherValueRank_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_user/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/base_api/service_user/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_user/app_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_user/auth_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_user/batchEmp_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_user/company_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_user/departments_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_user/dingAuth_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_user/ding_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_user/employees_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_user/jst_app_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_user/masterKey_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_user/menuTree_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_user/metrics_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_user/permissionGroup_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_user/permissionGroups_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_user/permission_groups_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_user/permission_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_user/permissions_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_user/plaso_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_user/roles_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_user/teachers_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_user/token_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_user/user_api_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_user/user_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_user/users_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_user/verificationCode_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_user/workbench_temp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/base_api/service_user/wxMini_temp.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/script/common_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/common_config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/script/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/ji_yun_ying_app/test_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/ji_yun_ying_app/test_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/db_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/db_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/export_file/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/export_file/commm_config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/export_file/conftest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/export_file/test_cai_wu_report.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/export_file/test_class_report.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/export_file/test_ji_xiao_tong_ji.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/export_file/test_ping_kong_report.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/export_file/test_shou_ru_report.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/export_file/test_ye_wu_report.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/export_file/test_yu_jin_report.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/export_file/test_yu_shou_report.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/export_file/test_yun_ying_fen_xi_report.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/ji_ke_gos/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/ji_yun_ying_app/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/ji_yun_ying_app/conftest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/ji_yun_ying_app/test_crm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/ji_yun_ying_app/test_order.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/ji_yun_ying_pc/common_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/ji_yun_ying_pc/common_config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/script/ji_yun_ying_pc/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/ji_yun_ying_pc/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/ji_yun_ying_pc/data_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/ji_yun_ying_pc/data_config/data_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/ji_yun_ying_pc/data_config/data_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/ji_yun_ying_pc/data_config/data_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/ji_yun_ying_pc/test_class.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/ji_yun_ying_pc/test_coures.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/ji_yun_ying_pc/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/ji_yun_ying_pc/test_login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/ji_yun_ying_pc/test_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/ji_yun_ying_pc/test_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/jia_zhang_app/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/jia_zhang_app/conftest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/jia_zhang_app/test_buy_course_single.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/jia_zhang_app/test_class_list.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/upload_file/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/default_header.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,15 +391,19 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="run.code.analysis.last.selected.profile" value="aDefault" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/script/ji_yun_ying_pc/data_config" />
     </key>
   </component>
   <component name="RunManager" selected="Python.run">
-    <configuration name="connect_db" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="common_config" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="jk_interface_test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -96,11 +411,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/common" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/script" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/common/connect_db.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/script/common_config.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -172,12 +487,29 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest in test_order.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="jk_interface_test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/script/ji_yun_ying_pc" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/script/ji_yun_ying_pc/test_order.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.run" />
-        <item itemvalue="Python.create_case" />
+        <item itemvalue="Python tests.pytest in test_order.py" />
         <item itemvalue="Python.init_base_api" />
-        <item itemvalue="Python.connect_db" />
+        <item itemvalue="Python.create_case" />
+        <item itemvalue="Python.common_config" />
       </list>
     </recent_temporary>
   </component>
@@ -229,41 +561,49 @@
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
     <state x="360" y="197" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1792.1017@0.23.1792.1017" timestamp="1611302358176" />
+    <state x="642" y="389" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1617160990990">
+      <screen x="0" y="23" width="1792" height="1020" />
+    </state>
+    <state x="642" y="389" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1792.1020@0.23.1792.1020" timestamp="1617160990990" />
     <state x="683" y="296" key="FileChooserDialogImpl" timestamp="1611303152470">
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
     <state x="683" y="296" key="FileChooserDialogImpl/0.23.1792.1017@0.23.1792.1017" timestamp="1611303152470" />
-    <state width="1771" height="322" key="GridCell.Tab.0.bottom" timestamp="1617090434843">
-      <screen x="0" y="23" width="1792" height="1026" />
+    <state width="1771" height="319" key="GridCell.Tab.0.bottom" timestamp="1617867440347">
+      <screen x="0" y="23" width="1792" height="1009" />
     </state>
-    <state width="1771" height="274" key="GridCell.Tab.0.bottom/0.23.1792.1009@0.23.1792.1009" timestamp="1611887584506" />
-    <state width="1771" height="274" key="GridCell.Tab.0.bottom/0.23.1792.1012@0.23.1792.1012" timestamp="1611813339480" />
-    <state width="1771" height="322" key="GridCell.Tab.0.bottom/0.23.1792.1015@0.23.1792.1015" timestamp="1617085033388" />
-    <state width="1771" height="274" key="GridCell.Tab.0.bottom/0.23.1792.1024@0.23.1792.1024" timestamp="1614924517453" />
+    <state width="1771" height="319" key="GridCell.Tab.0.bottom/0.23.1792.1009@0.23.1792.1009" timestamp="1617867440347" />
+    <state width="1771" height="319" key="GridCell.Tab.0.bottom/0.23.1792.1012@0.23.1792.1012" timestamp="1617326035999" />
+    <state width="1771" height="319" key="GridCell.Tab.0.bottom/0.23.1792.1015@0.23.1792.1015" timestamp="1617278419626" />
+    <state width="1771" height="319" key="GridCell.Tab.0.bottom/0.23.1792.1020@0.23.1792.1020" timestamp="1617161360303" />
+    <state width="1771" height="322" key="GridCell.Tab.0.bottom/0.23.1792.1024@0.23.1792.1024" timestamp="1617095706598" />
     <state width="1771" height="322" key="GridCell.Tab.0.bottom/0.23.1792.1026@0.23.1792.1026" timestamp="1617090434843" />
-    <state width="1771" height="322" key="GridCell.Tab.0.center" timestamp="1617090434842">
-      <screen x="0" y="23" width="1792" height="1026" />
+    <state width="1771" height="319" key="GridCell.Tab.0.center" timestamp="1617867440346">
+      <screen x="0" y="23" width="1792" height="1009" />
     </state>
-    <state width="1771" height="274" key="GridCell.Tab.0.center/0.23.1792.1009@0.23.1792.1009" timestamp="1611887584505" />
-    <state width="1771" height="274" key="GridCell.Tab.0.center/0.23.1792.1012@0.23.1792.1012" timestamp="1611813339480" />
-    <state width="1771" height="322" key="GridCell.Tab.0.center/0.23.1792.1015@0.23.1792.1015" timestamp="1617085033387" />
-    <state width="1771" height="274" key="GridCell.Tab.0.center/0.23.1792.1024@0.23.1792.1024" timestamp="1614924517453" />
+    <state width="1771" height="319" key="GridCell.Tab.0.center/0.23.1792.1009@0.23.1792.1009" timestamp="1617867440346" />
+    <state width="1771" height="319" key="GridCell.Tab.0.center/0.23.1792.1012@0.23.1792.1012" timestamp="1617326035998" />
+    <state width="1771" height="319" key="GridCell.Tab.0.center/0.23.1792.1015@0.23.1792.1015" timestamp="1617278419625" />
+    <state width="1771" height="319" key="GridCell.Tab.0.center/0.23.1792.1020@0.23.1792.1020" timestamp="1617161360303" />
+    <state width="1771" height="322" key="GridCell.Tab.0.center/0.23.1792.1024@0.23.1792.1024" timestamp="1617095706597" />
     <state width="1771" height="322" key="GridCell.Tab.0.center/0.23.1792.1026@0.23.1792.1026" timestamp="1617090434842" />
-    <state width="1771" height="322" key="GridCell.Tab.0.left" timestamp="1617090434842">
-      <screen x="0" y="23" width="1792" height="1026" />
+    <state width="1771" height="319" key="GridCell.Tab.0.left" timestamp="1617867440345">
+      <screen x="0" y="23" width="1792" height="1009" />
     </state>
-    <state width="1771" height="274" key="GridCell.Tab.0.left/0.23.1792.1009@0.23.1792.1009" timestamp="1611887584491" />
-    <state width="1771" height="274" key="GridCell.Tab.0.left/0.23.1792.1012@0.23.1792.1012" timestamp="1611813339480" />
-    <state width="1771" height="322" key="GridCell.Tab.0.left/0.23.1792.1015@0.23.1792.1015" timestamp="1617085033387" />
-    <state width="1771" height="274" key="GridCell.Tab.0.left/0.23.1792.1024@0.23.1792.1024" timestamp="1614924517453" />
+    <state width="1771" height="319" key="GridCell.Tab.0.left/0.23.1792.1009@0.23.1792.1009" timestamp="1617867440345" />
+    <state width="1771" height="319" key="GridCell.Tab.0.left/0.23.1792.1012@0.23.1792.1012" timestamp="1617326035998" />
+    <state width="1771" height="319" key="GridCell.Tab.0.left/0.23.1792.1015@0.23.1792.1015" timestamp="1617278419624" />
+    <state width="1771" height="319" key="GridCell.Tab.0.left/0.23.1792.1020@0.23.1792.1020" timestamp="1617161360302" />
+    <state width="1771" height="322" key="GridCell.Tab.0.left/0.23.1792.1024@0.23.1792.1024" timestamp="1617095706585" />
     <state width="1771" height="322" key="GridCell.Tab.0.left/0.23.1792.1026@0.23.1792.1026" timestamp="1617090434842" />
-    <state width="1771" height="322" key="GridCell.Tab.0.right" timestamp="1617090434842">
-      <screen x="0" y="23" width="1792" height="1026" />
+    <state width="1771" height="319" key="GridCell.Tab.0.right" timestamp="1617867440346">
+      <screen x="0" y="23" width="1792" height="1009" />
     </state>
-    <state width="1771" height="274" key="GridCell.Tab.0.right/0.23.1792.1009@0.23.1792.1009" timestamp="1611887584506" />
-    <state width="1771" height="274" key="GridCell.Tab.0.right/0.23.1792.1012@0.23.1792.1012" timestamp="1611813339480" />
-    <state width="1771" height="322" key="GridCell.Tab.0.right/0.23.1792.1015@0.23.1792.1015" timestamp="1617085033388" />
-    <state width="1771" height="274" key="GridCell.Tab.0.right/0.23.1792.1024@0.23.1792.1024" timestamp="1614924517453" />
+    <state width="1771" height="319" key="GridCell.Tab.0.right/0.23.1792.1009@0.23.1792.1009" timestamp="1617867440346" />
+    <state width="1771" height="319" key="GridCell.Tab.0.right/0.23.1792.1012@0.23.1792.1012" timestamp="1617326035998" />
+    <state width="1771" height="319" key="GridCell.Tab.0.right/0.23.1792.1015@0.23.1792.1015" timestamp="1617278419625" />
+    <state width="1771" height="319" key="GridCell.Tab.0.right/0.23.1792.1020@0.23.1792.1020" timestamp="1617161360303" />
+    <state width="1771" height="322" key="GridCell.Tab.0.right/0.23.1792.1024@0.23.1792.1024" timestamp="1617095706598" />
     <state width="1771" height="322" key="GridCell.Tab.0.right/0.23.1792.1026@0.23.1792.1026" timestamp="1617090434842" />
     <state x="397" y="173" key="SettingsEditor" timestamp="1611303202671">
       <screen x="0" y="23" width="1792" height="1015" />
@@ -274,5 +614,16 @@
       <screen x="0" y="23" width="1792" height="1015" />
     </state>
     <state x="496" y="267" key="Vcs.Push.Dialog.v2/0.23.1792.1015@0.23.1792.1015" timestamp="1611382527150" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/script/base_api/service_user/token.py</url>
+          <line>1</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

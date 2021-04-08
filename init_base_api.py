@@ -1,6 +1,7 @@
 from common.connect_db import OperationDb
 from common.common_util import replace_string
 import os
+import re
 
 
 def get_base_apis():
@@ -16,12 +17,21 @@ def get_base_apis():
     base_apis = [{
         "name": x[0],
         "server_name": x[1].replace("-", "_"),
-        "url": x[2],
+        "url": x[1] + x[2],
+        "path_params": get_path_params(x[2]),
         "http_method": x[3],
         "method_name": x[2].replace("{", "").replace("}", "").replace("-", "_").replace("/", "_")[1:] + "_" + x[3].lower(),
-        "file_name": x[2].replace("-", "_")[1:].split("/")[0] + "_temp.py"
+        "file_name": x[2].replace("-", "_")[1:].split("/")[0] + ".py"
     } for x in query_result]
     return base_apis
+
+
+def get_path_params(url: str):
+    path_params = re.findall(r"{(.*?)}", url)
+    path_params_str = ""
+    for path_param in path_params:
+        path_params_str = path_params_str + f"{path_param}, "
+    return path_params_str
 
 
 def create_all(base_apis: list):
@@ -37,7 +47,7 @@ def create_all(base_apis: list):
         init_file_path = os.path.join(folder_path, "__init__.py")
         import_datas = []
         for file_name in file_names:
-            file_apis = [x for x in base_apis if x.get("file_name") == file_name]
+            file_apis = [x for x in folder_apis if x.get("file_name") == file_name]
             file_path = os.path.join(folder_path, file_name)
             create_file(file_path, file_apis)
             import_datas.append(f"from script.base_api.{server_name}.{file_name.replace('.py', '')} import *")
@@ -46,11 +56,12 @@ def create_all(base_apis: list):
     create_init_file("script/base_api/__init__.py", import_data_out)
 
 
-def get_current_method(**kwargs):
+def get_current_method():
     from script import base_api
     current_methods = dir(base_api)
-    print(dir(base_api))
-    print(len(dir(base_api)))
+    methods = ["get", "post", "patch", "head", "delete", "put"]
+    current_methods = [x for x in current_methods if x.split("_")[-1] in methods]
+    return current_methods
 
 
 def create_file(path, base_apis):
@@ -84,8 +95,8 @@ def create_init_file(path, import_datas):
 
 get_template = """
 @allure.step("${name}")
-def ${method_name}(params=None, header=None, return_json=True, default_assert=True, **kwargs):
-    url = host + "/${server_name}${url}"
+def ${method_name}(${path_params}params=None, header=None, return_json=True, default_assert=True, **kwargs):
+    url = host + f"/${url}"
     res = RunMethod.run_request("GET", url, params=params, header=header, return_json=return_json, **kwargs)
     if return_json and default_assert:
         public_assert(res)    
@@ -95,8 +106,8 @@ def ${method_name}(params=None, header=None, return_json=True, default_assert=Tr
 
 post_template = """
 @allure.step("${name}")
-def ${method_name}(params=None, body=None, header=None,return_json=True, default_assert=True, **kwargs):
-    url = host + "/${server_name}${url}"
+def ${method_name}(${path_params}params=None, body=None, header=None, return_json=True, default_assert=True, **kwargs):
+    url = host + f"/${url}"
     res = RunMethod.run_request("POST", url, params=params, body=body, header=header, return_json=return_json, **kwargs)
     if return_json and default_assert:
         public_assert(res)    
@@ -106,8 +117,8 @@ def ${method_name}(params=None, body=None, header=None,return_json=True, default
 
 put_template = """
 @allure.step("${name}")
-def ${method_name}(params=None, body=None, header=None,return_json=True, default_assert=True, **kwargs):    
-    url = host + "/${server_name}${url}"
+def ${method_name}(${path_params}params=None, body=None, header=None, return_json=True, default_assert=True, **kwargs):    
+    url = host + f"/${url}"
     res = RunMethod.run_request("PUT", url, params=params, body=body, header=header, return_json=return_json, **kwargs)
     if return_json and default_assert:
         public_assert(res)    
@@ -117,8 +128,8 @@ def ${method_name}(params=None, body=None, header=None,return_json=True, default
 
 delete_template = """
 @allure.step("${name}")
-def ${method_name}(params=None, body=None, header=None,return_json=True, default_assert=True, **kwargs):
-    url = host + "/${server_name}${url}"
+def ${method_name}(${path_params}params=None, body=None, header=None, return_json=True, default_assert=True, **kwargs):
+    url = host + f"/${url}"
     res = RunMethod.run_request("DELETE", url, params=params, body=body, header=header, return_json=return_json, **kwargs)
     if return_json and default_assert:
         public_assert(res)    
@@ -128,8 +139,8 @@ def ${method_name}(params=None, body=None, header=None,return_json=True, default
 
 patch_template = """
 @allure.step("${name}")
-def ${method_name}(params=None, body=None, header=None,return_json=True, default_assert=True, **kwargs):
-    url = host + "/${server_name}${url}"
+def ${method_name}(${path_params}params=None, body=None, header=None, return_json=True, default_assert=True, **kwargs):
+    url = host + f"/${url}"
     res = RunMethod.run_request("PATCH", url, params=params, body=body, header=header, return_json=return_json, **kwargs)
     if return_json and default_assert:
         public_assert(res)    
@@ -139,8 +150,8 @@ def ${method_name}(params=None, body=None, header=None,return_json=True, default
 
 head_template = """
 @allure.step("${name}")
-def ${method_name}(params=None, header=None,return_json=True, default_assert=True, **kwargs):
-    url = host + "/${server_name}${url}"
+def ${method_name}(${path_params}params=None, header=None, return_json=True, default_assert=True, **kwargs):
+    url = host + f"/${url}"
     res = RunMethod.run_request("HEAD", url, params=params, header=header, return_json=return_json, **kwargs)
     if return_json and default_assert:
         public_assert(res)    
@@ -158,5 +169,5 @@ import allure
 """
 
 if __name__ == '__main__':
-    # create_all(get_base_apis())
-    get_current_method()
+    create_all(get_base_apis())
+    # get_current_method()

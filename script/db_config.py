@@ -12,5 +12,5 @@ db_configs = {
         "password": 'c5JJUqmtTeaSaOTN2gs7',
         "host": '132.232.15.12',
         "port": 5432
-    },
+    }
 }

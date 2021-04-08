@@ -1,6 +1,6 @@
 import pytest
 
-host = "https://yf1.jkwljy.com/"
+host = "https://yf1.jkwljy.com"
 db_config = {
         'database': 'edu',
         "user": 'read_user',

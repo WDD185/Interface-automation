@@ -1,5 +1,7 @@
 import json
 import os
+import re
+import base64
 from urllib import parse
 from common.common_util import replace_string
 
@@ -13,7 +15,7 @@ def get_cases(path):
             request_data = entry.get("request")
             # print(request_data)
             try:
-                response_data = json.loads(entry.get("response", {}).get("content", {}).get("text", "{}"))
+                response_data = json.loads(base64.b64decode(entry.get("response", {}).get("content", {}).get("text", "{}")).decode())
             except Exception:
                 response_data = {}
             url_obj = parse.urlsplit(request_data.get("url"))
@@ -24,14 +26,45 @@ def get_cases(path):
             step_dict = {
                 "method": request_method,
                 "uri": uri,
+                "path_params": get_path_params(uri),
                 "params": url_obj.query,
-                "body": post_data.get("text") if post_data else None,
+                "body": get_body(post_data),
                 "server_name": server_name,
-                "method_name": method_name.replace("/", "_") + "_" + request_method.lower(),
+                "method_name": get_method_name(method_name.replace("/", "_") + "_" + request_method.lower()),
                 "assert_data": parse_res(response_data, "$")
             }
             step_lists.append(step_dict)
         return step_lists
+
+
+def get_body(body):
+    if body:
+        try:
+            body = json.loads(body.get("text"))
+        except Exception:
+            body = body.get("text")
+    return body
+
+
+def get_method_name(url: str):
+    if re.match(r".*\d+", url):
+        method_re = re.sub(r"_\d+", "_.+?", url)
+        method_names = [x for x in current_method if re.match(method_re, x)]
+        if method_names:
+            return method_names[0]
+        else:
+            return url
+    else:
+        return url
+
+
+def get_path_params(url: str):
+    path_params = re.findall(r"/(\d+)?", url)
+    path_params_str = ""
+    for path_param in path_params:
+        if path_param:
+            path_params_str = path_params_str + f"{path_param}, "
+    return path_params_str
 
 
 def parse_res(res, path):
@@ -44,11 +77,19 @@ def parse_res(res, path):
                     "variable_value": v,
                     "variable_path": path + "." + str(k)
                 })
-            if isinstance(v, dict):
+            if isinstance(v, dict) and v:
                 assert_list.extend(parse_res(v, path + "." + str(k)))
-            if isinstance(v, list):
+            if isinstance(v, list) and v:
                 assert_list.extend(parse_res(v[0], path + "." + str(k) + "[0]"))
     return assert_list
+
+
+def get_current_method():
+    from script import base_api
+    current_methods = dir(base_api)
+    methods = ["get", "post", "patch", "head", "delete", "put"]
+    current_methods = [x for x in current_methods if x.split("_")[-1] in methods]
+    return current_methods
 
 
 def create_file(step_list, is_assert=False):
@@ -86,7 +127,7 @@ class AutoCreate:
 step_template = """
         params = "${params}"
         body = ${body}
-        res = ${method_name}(params, body=body)
+        res = ${method_name}(${path_params}params, body=body)
         ${assert_data}
 """
 
@@ -104,5 +145,7 @@ ${import_datas}
 """
 
 if __name__ == '__main__':
-    file_path = "/Users/huangqiang/Downloads/yf1.jkwljy.com.har"
-    create_file(get_cases(file_path))
+    file_path = "/Users/huangqiang/Desktop/order.har"
+    current_method = get_current_method()
+    create_file(get_cases(file_path), is_assert=False)
+

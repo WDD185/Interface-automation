@@ -43,23 +43,38 @@ class RunMethod:
 		return res_j, res_headers
 
 	@staticmethod
-	def run_request(run_method, url, params=None, data=None, header=None, run_json=True, **kwargs):
+	def run_request(run_method, url, params=None, body=None, header=None, run_json=True, **kwargs):
 		try:
 			time_out = kwargs.get("time_out") if kwargs.get("time_out") else 60
 			if run_method == 'POST':
-				res = requests.post(url, json=data, params=params, headers=header, timeout=time_out, verify=False)
+				if isinstance(body, dict) or isinstance(body, list):
+					res = requests.post(url, json=body, params=params, headers=header, timeout=time_out, verify=False)
+				else:
+					res = requests.post(url, data=body, params=params, headers=header, timeout=time_out, verify=False)
 			elif run_method == 'GET':
 				res = requests.get(url, params=params, headers=header, timeout=time_out, verify=False)
 			elif run_method == 'PUT':
-				res = requests.put(url, json=data, params=params, headers=header, timeout=time_out, verify=False)
+				if isinstance(body, dict) or isinstance(body, list):
+					res = requests.put(url, json=body, params=params, headers=header, timeout=time_out, verify=False)
+				else:
+					res = requests.put(url, data=body, params=params, headers=header, timeout=time_out, verify=False)
 			elif run_method == 'DELETE':
-				res = requests.delete(url, json=data, params=params, headers=header, timeout=time_out, verify=False)
+				if isinstance(body, dict) or isinstance(body, list):
+					res = requests.delete(url, data=body, params=params, headers=header, timeout=time_out, verify=False)
+				else:
+					res = requests.delete(url, json=body, params=params, headers=header, timeout=time_out, verify=False)
 			elif run_method == 'HEAD':
 				res = requests.head(url, params=params, headers=header, timeout=time_out, verify=False)
 			elif run_method == 'PATCH':
-				res = requests.patch(url, json=data, params=params, headers=header, timeout=time_out, verify=False)
+				if isinstance(body, dict) or isinstance(body, list):
+					res = requests.patch(url, json=body, params=params, headers=header, timeout=time_out, verify=False)
+				else:
+					res = requests.patch(url, data=body, params=params, headers=header, timeout=time_out, verify=False)
 			else:
-				res = requests.request(method=run_method, url=url, json=data, params=params, headers=header, timeout=time_out, verify=False)
+				if isinstance(body, dict) or isinstance(body, list):
+					res = requests.request(method=run_method, url=url, json=body, params=params, headers=header, timeout=time_out, verify=False)
+				else:
+					res = requests.request(method=run_method, url=url, data=body, params=params, headers=header, timeout=time_out, verify=False)
 			if run_json:
 				try:
 					res = res.json()
@@ -67,6 +82,7 @@ class RunMethod:
 					res = {"err_msg": str(e), "res": res}
 		except Exception as e:
 			res = {"err_msg": str(e)}
+		# print(res)
 		return res
 
 
