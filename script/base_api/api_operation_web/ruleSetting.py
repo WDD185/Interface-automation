@@ -1,0 +1,26 @@
+
+from common.run_method import RunMethod
+from script.public_asserts import public_assert
+import pytest
+import allure
+
+
+@allure.step("系统设置-订单设置-查询设置列表")
+def ruleSetting_queryAll_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+    name = "系统设置-订单设置-查询设置列表"
+    url = f"/api-operation-web/ruleSetting/queryAll"
+    res = RunMethod.run_request("GET", url, params=params, header=header, return_json=return_json, name=name, **kwargs)
+    if return_json and default_assert:
+        public_assert(res)    
+    return res
+
+
+@allure.step("系统设置-订单设置-编辑设置列表")
+def ruleSetting_edit_post(params=None, body=None, header=None, return_json=True, default_assert=True, **kwargs):
+    name = "系统设置-订单设置-编辑设置列表"
+    url = f"/api-operation-web/ruleSetting/edit"
+    res = RunMethod.run_request("POST", url, params=params, body=body, header=header, return_json=return_json, name=name, **kwargs)
+    if return_json and default_assert:
+        public_assert(res)    
+    return res
+

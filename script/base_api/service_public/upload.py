@@ -1,0 +1,116 @@
+
+from common.run_method import RunMethod
+from script.public_asserts import public_assert
+import pytest
+import allure
+
+
+@allure.step("通用/文件上传/用户文件上传")
+def upload_ppt_user_post(params=None, body=None, header=None, return_json=True, default_assert=True, **kwargs):
+    name = "通用/文件上传/用户文件上传"
+    url = f"/service-public/upload/ppt/user"
+    res = RunMethod.run_request("POST", url, params=params, body=body, header=header, return_json=return_json, name=name, **kwargs)
+    if return_json and default_assert:
+        public_assert(res)    
+    return res
+
+
+@allure.step("通用/文件上传/富文本图片文件上传")
+def upload_richEditor_file_post(params=None, body=None, header=None, return_json=True, default_assert=True, **kwargs):
+    name = "通用/文件上传/富文本图片文件上传"
+    url = f"/service-public/upload/richEditor/file"
+    res = RunMethod.run_request("POST", url, params=params, body=body, header=header, return_json=return_json, name=name, **kwargs)
+    if return_json and default_assert:
+        public_assert(res)    
+    return res
+
+
+@allure.step("通用/文件上传/头像上传")
+def upload_file_avatar_post(params=None, body=None, header=None, return_json=True, default_assert=True, **kwargs):
+    name = "通用/文件上传/头像上传"
+    url = f"/service-public/upload/file/avatar"
+    res = RunMethod.run_request("POST", url, params=params, body=body, header=header, return_json=return_json, name=name, **kwargs)
+    if return_json and default_assert:
+        public_assert(res)    
+    return res
+
+
+@allure.step("通用/文件上传/一般文件上传")
+def upload_file_post(params=None, body=None, header=None, return_json=True, default_assert=True, **kwargs):
+    name = "通用/文件上传/一般文件上传"
+    url = f"/service-public/upload/file"
+    res = RunMethod.run_request("POST", url, params=params, body=body, header=header, return_json=return_json, name=name, **kwargs)
+    if return_json and default_assert:
+        public_assert(res)    
+    return res
+
+
+@allure.step("通用/文件上传/课件库文件上传")
+def upload_courseware_file_post(params=None, body=None, header=None, return_json=True, default_assert=True, **kwargs):
+    name = "通用/文件上传/课件库文件上传"
+    url = f"/service-public/upload/courseware/file"
+    res = RunMethod.run_request("POST", url, params=params, body=body, header=header, return_json=return_json, name=name, **kwargs)
+    if return_json and default_assert:
+        public_assert(res)    
+    return res
+
+
+@allure.step("通用/文件上传/Base64上传")
+def upload_file_base64_post(params=None, body=None, header=None, return_json=True, default_assert=True, **kwargs):
+    name = "通用/文件上传/Base64上传"
+    url = f"/service-public/upload/file/base64"
+    res = RunMethod.run_request("POST", url, params=params, body=body, header=header, return_json=return_json, name=name, **kwargs)
+    if return_json and default_assert:
+        public_assert(res)    
+    return res
+
+
+@allure.step("极师通/作业/图片文件上传")
+def upload_homework_img_post(params=None, body=None, header=None, return_json=True, default_assert=True, **kwargs):
+    name = "极师通/作业/图片文件上传"
+    url = f"/service-public/upload/homework/img"
+    res = RunMethod.run_request("POST", url, params=params, body=body, header=header, return_json=return_json, name=name, **kwargs)
+    if return_json and default_assert:
+        public_assert(res)    
+    return res
+
+
+@allure.step("极师通/作业/其他文件上传")
+def upload_homework_file_post(params=None, body=None, header=None, return_json=True, default_assert=True, **kwargs):
+    name = "极师通/作业/其他文件上传"
+    url = f"/service-public/upload/homework/file"
+    res = RunMethod.run_request("POST", url, params=params, body=body, header=header, return_json=return_json, name=name, **kwargs)
+    if return_json and default_assert:
+        public_assert(res)    
+    return res
+
+
+@allure.step("通用/文件上传/备课文件上传")
+def upload_prepare_lesson_file_post(params=None, body=None, header=None, return_json=True, default_assert=True, **kwargs):
+    name = "通用/文件上传/备课文件上传"
+    url = f"/service-public/upload/prepare_lesson/file"
+    res = RunMethod.run_request("POST", url, params=params, body=body, header=header, return_json=return_json, name=name, **kwargs)
+    if return_json and default_assert:
+        public_assert(res)    
+    return res
+
+
+@allure.step("通用/文件上传/多个Base64上传")
+def upload_file_base64Multiple_post(params=None, body=None, header=None, return_json=True, default_assert=True, **kwargs):
+    name = "通用/文件上传/多个Base64上传"
+    url = f"/service-public/upload/file/base64Multiple"
+    res = RunMethod.run_request("POST", url, params=params, body=body, header=header, return_json=return_json, name=name, **kwargs)
+    if return_json and default_assert:
+        public_assert(res)    
+    return res
+
+
+@allure.step("极教研/题库/上传")
+def upload_question_file_post(params=None, body=None, header=None, return_json=True, default_assert=True, **kwargs):
+    name = "极教研/题库/上传"
+    url = f"/service-public/upload/question/file"
+    res = RunMethod.run_request("POST", url, params=params, body=body, header=header, return_json=return_json, name=name, **kwargs)
+    if return_json and default_assert:
+        public_assert(res)    
+    return res
+
