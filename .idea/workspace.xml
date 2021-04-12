@@ -20,20 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54f4d37d-1724-4813-a1e2-24e200088c5f" name="Default Changelist" comment="增加allure安装包">
-      <change afterPath="$PROJECT_DIR$/script/ji_yun_ying_pc/statistical_report/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/ji_yun_ying_pc/statistical_report/conftest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/ji_yun_ying_pc/statistical_report/data_config/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/ji_yun_ying_pc/statistical_report/data_config/receipt_detail_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/ji_yun_ying_pc/statistical_report/test_receipt_detail.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/public_asserts_api.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/run_method.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/run_method.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/verify_method.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/verify_method.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/db_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/db_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/ji_yun_ying_pc/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/ji_yun_ying_pc/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/public_asserts.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/public_asserts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init_base_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/init_base_api.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +64,7 @@
       <recent name="$PROJECT_DIR$/script/ji_yun_ying_pc/data_config" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.run">
+  <component name="RunManager" selected="Python.init_base_api">
     <configuration name="create_case" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="jk_interface_test" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -184,9 +172,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.init_base_api" />
         <item itemvalue="Python.run" />
         <item itemvalue="Python.create_case" />
-        <item itemvalue="Python.init_base_api" />
         <item itemvalue="Python.run_method" />
         <item itemvalue="Python.data_config" />
       </list>
@@ -248,37 +236,37 @@
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
     <state x="683" y="296" key="FileChooserDialogImpl/0.23.1792.1017@0.23.1792.1017" timestamp="1611303152470" />
-    <state width="1771" height="319" key="GridCell.Tab.0.bottom" timestamp="1618221857420">
+    <state width="1771" height="319" key="GridCell.Tab.0.bottom" timestamp="1618223069056">
       <screen x="0" y="23" width="1792" height="1009" />
     </state>
-    <state width="1771" height="319" key="GridCell.Tab.0.bottom/0.23.1792.1009@0.23.1792.1009" timestamp="1618221857420" />
+    <state width="1771" height="319" key="GridCell.Tab.0.bottom/0.23.1792.1009@0.23.1792.1009" timestamp="1618223069056" />
     <state width="1771" height="319" key="GridCell.Tab.0.bottom/0.23.1792.1012@0.23.1792.1012" timestamp="1617964714625" />
     <state width="1771" height="319" key="GridCell.Tab.0.bottom/0.23.1792.1015@0.23.1792.1015" timestamp="1617278419626" />
     <state width="1771" height="319" key="GridCell.Tab.0.bottom/0.23.1792.1020@0.23.1792.1020" timestamp="1617161360303" />
     <state width="1771" height="322" key="GridCell.Tab.0.bottom/0.23.1792.1024@0.23.1792.1024" timestamp="1617095706598" />
     <state width="1771" height="322" key="GridCell.Tab.0.bottom/0.23.1792.1026@0.23.1792.1026" timestamp="1617090434843" />
-    <state width="1771" height="319" key="GridCell.Tab.0.center" timestamp="1618221857420">
+    <state width="1771" height="319" key="GridCell.Tab.0.center" timestamp="1618223069055">
       <screen x="0" y="23" width="1792" height="1009" />
     </state>
-    <state width="1771" height="319" key="GridCell.Tab.0.center/0.23.1792.1009@0.23.1792.1009" timestamp="1618221857420" />
+    <state width="1771" height="319" key="GridCell.Tab.0.center/0.23.1792.1009@0.23.1792.1009" timestamp="1618223069055" />
     <state width="1771" height="319" key="GridCell.Tab.0.center/0.23.1792.1012@0.23.1792.1012" timestamp="1617964714624" />
     <state width="1771" height="319" key="GridCell.Tab.0.center/0.23.1792.1015@0.23.1792.1015" timestamp="1617278419625" />
     <state width="1771" height="319" key="GridCell.Tab.0.center/0.23.1792.1020@0.23.1792.1020" timestamp="1617161360303" />
     <state width="1771" height="322" key="GridCell.Tab.0.center/0.23.1792.1024@0.23.1792.1024" timestamp="1617095706597" />
     <state width="1771" height="322" key="GridCell.Tab.0.center/0.23.1792.1026@0.23.1792.1026" timestamp="1617090434842" />
-    <state width="1771" height="319" key="GridCell.Tab.0.left" timestamp="1618221857419">
+    <state width="1771" height="319" key="GridCell.Tab.0.left" timestamp="1618223069055">
       <screen x="0" y="23" width="1792" height="1009" />
     </state>
-    <state width="1771" height="319" key="GridCell.Tab.0.left/0.23.1792.1009@0.23.1792.1009" timestamp="1618221857419" />
+    <state width="1771" height="319" key="GridCell.Tab.0.left/0.23.1792.1009@0.23.1792.1009" timestamp="1618223069055" />
     <state width="1771" height="319" key="GridCell.Tab.0.left/0.23.1792.1012@0.23.1792.1012" timestamp="1617964714624" />
     <state width="1771" height="319" key="GridCell.Tab.0.left/0.23.1792.1015@0.23.1792.1015" timestamp="1617278419624" />
     <state width="1771" height="319" key="GridCell.Tab.0.left/0.23.1792.1020@0.23.1792.1020" timestamp="1617161360302" />
     <state width="1771" height="322" key="GridCell.Tab.0.left/0.23.1792.1024@0.23.1792.1024" timestamp="1617095706585" />
     <state width="1771" height="322" key="GridCell.Tab.0.left/0.23.1792.1026@0.23.1792.1026" timestamp="1617090434842" />
-    <state width="1771" height="319" key="GridCell.Tab.0.right" timestamp="1618221857420">
+    <state width="1771" height="319" key="GridCell.Tab.0.right" timestamp="1618223069056">
       <screen x="0" y="23" width="1792" height="1009" />
     </state>
-    <state width="1771" height="319" key="GridCell.Tab.0.right/0.23.1792.1009@0.23.1792.1009" timestamp="1618221857420" />
+    <state width="1771" height="319" key="GridCell.Tab.0.right/0.23.1792.1009@0.23.1792.1009" timestamp="1618223069056" />
     <state width="1771" height="319" key="GridCell.Tab.0.right/0.23.1792.1012@0.23.1792.1012" timestamp="1617964714625" />
     <state width="1771" height="319" key="GridCell.Tab.0.right/0.23.1792.1015@0.23.1792.1015" timestamp="1617278419625" />
     <state width="1771" height="319" key="GridCell.Tab.0.right/0.23.1792.1020@0.23.1792.1020" timestamp="1617161360303" />

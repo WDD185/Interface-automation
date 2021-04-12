@@ -15,7 +15,7 @@ def query_sql(database_config, sql_str):
     return results
 
 
-def get_base_apis():
+def get_base_apis(is_filter=True):
     config = {
         'database': 'edu-admin',
         "user": 'read_user',
@@ -32,8 +32,10 @@ def get_base_apis():
         "path_params": get_path_params(x[2]),
         "http_method": x[3],
         "method_name": x[2].replace("{", "").replace("}", "").replace("-", "_").replace("/", "_")[1:] + "_" + x[3].lower(),
-        "file_name": x[2].replace("-", "_")[1:].split("/")[0] + ".py"
+        "file_name": x[2].replace("-", "_")[1:].split("/")[0] + "temp.py"
     } for x in query_result]
+    if is_filter:
+        base_apis = [x for x in base_apis if x.get("method_name") not in get_current_method()]
     return base_apis
 
 
@@ -187,5 +189,10 @@ import allure
 """
 
 if __name__ == '__main__':
-    create_all(get_base_apis())
-    # get_current_method()
+    base_apis = get_base_apis()
+    print("新接口", base_apis)
+    x = input("是否创建：")
+    if x == "是" and base_apis:
+        create_all(base_apis)
+    else:
+        print("取消创建")
