@@ -5,6 +5,7 @@ from common.common_config import common_config
 from script.db_config import db_configs
 from script.base_api.service_user.auth import auth_employee_post
 from script.defalut_account import accounts
+from script.base_api.service_user.departments import departments_schools_get
 
 
 def pytest_addoption(parser):
@@ -45,6 +46,69 @@ def ji_yun_ying_login(pytestconfig):
         default_header.jyy_header.setdefault("Authorization", "token  not found")
 
 
+@pytest.fixture(scope="session")
+def get_big_area_schools():
+    res = departments_schools_get(headers=default_header.jyy_header)
+    schools = res.get("data")
+    if schools:
+        big_area_list = []
+        for big_area in schools:
+            school_area_id_list = []
+            big_area_name = big_area.get("name", None)
+            big_area_id = big_area.get("id", None)
+            areas = big_area.get("children", None)
+            if areas:
+                for area in areas:
+                    school_areas = area.get("children", None)
+                    if school_areas:
+                        for school_area in school_areas:
+                            school_area_id = school_area.get("id", None)
+                            school_area_type = school_area.get("type", 10)
+                            if school_area_id and school_area_type == 30:
+                                school_area_id_list.append(school_area_id)
+            if big_area_name and big_area_id and school_area_id_list:
+                big_area_new = {
+                    "big_area_name": big_area_name,
+                    "big_area_id": big_area_id,
+                    "school_area_id_list": school_area_id_list
+                }
+                big_area_list.append(big_area_new)
+            return big_area_list
+        else:
+            return []
+
+
+@pytest.fixture(scope="session")
+def get_area_schools():
+    res = departments_schools_get(headers=default_header.jyy_header)
+    schools = res.get("data")
+    if schools:
+        area_list = []
+        for big_area in schools:
+            areas = big_area.get("children", None)
+            if areas:
+                for area in areas:
+                    school_area_id_list = []
+                    area_name = area.get("name", None)
+                    area_id = area.get("id", None)
+                    school_areas = area.get("children", None)
+                    if school_areas:
+                        for school_area in school_areas:
+                            school_area_id = school_area.get("id", None)
+                            school_area_type = school_area.get("type", 10)
+                            if school_area_id and school_area_type == 30:
+                                school_area_id_list.append(school_area_id)
+                    if area_name and area_id and school_area_id_list:
+                        area_new = {
+                            "area_name": area_name,
+                            "big_area_id": area_id,
+                            "school_area_id_list": school_area_id_list
+                        }
+                        area_list.append(area_new)
+        return area_list
+    else:
+        return []
+
 # def pytest_collection_modifyitems(session, config, items):
 #     print(dir(config))
 #     print(dir(items[0]))
@@ -54,4 +118,3 @@ def ji_yun_ying_login(pytestconfig):
 # 2.conftest中fixture的scope参数为module，那么每一个测试文件执行前都会执行一次conftest文件中的fixture
 # 3.conftest中fixture的scope参数为class，那么每一个测试文件中的测试类执行前都会执行一次conftest文件中的fixture
 # 4.conftest中fixture的scope参数为function，那么所有文件的测试用例执行前都会执行一次conftest文件中的fixture
-

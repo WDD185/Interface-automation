@@ -2,8 +2,6 @@
 import json
 import operator
 import re
-from Common.operation_log import Log
-log = Log.get_logger(__name__)
 
 
 def is_contain(str_one, str_two):
@@ -27,7 +25,6 @@ def is_equal_dict(dict_one, dict_two):
 
 
 def test_result_verify(except_value, real_value, assert_type=None):
-    log.info("校验期望结果的参数：except_value：%s, real_value:%s, assert_type: %s" % (except_value, real_value, assert_type))
     print("校验期望结果的参数：except_value：%s, real_value:%s, assert_type: %s" % (except_value, real_value, assert_type))
     flag = False
     try:

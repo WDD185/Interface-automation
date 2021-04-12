@@ -7,7 +7,7 @@ db_configs = {
         "port": 5432
     },
     "yf1": {
-        'database': 'edu',
+        'database': 'edu-admin',
         "user": 'read_user',
         "password": 'c5JJUqmtTeaSaOTN2gs7',
         "host": '132.232.15.12',

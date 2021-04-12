@@ -21,7 +21,7 @@ class RunMethod:
 				url = host + url
 			time_out = kwargs.get("time_out") if kwargs.get("time_out") else 60
 			if isinstance(body, dict) or isinstance(body, list):
-				body = json.dumps(body, ensure_ascii=False)
+				body = json.dumps(body, ensure_ascii=False).encode()
 			if run_method == 'POST':
 				res = requests.post(url, data=body, params=params, headers=header, timeout=time_out, verify=False)
 			elif run_method == 'GET':
