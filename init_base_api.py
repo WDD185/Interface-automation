@@ -1,19 +1,30 @@
 from common.connect_db import OperationDb
 from common.common_util import replace_string
+import psycopg2
 import os
 import re
 
 
+def query_sql(database_config, sql_str):
+    # 创建连接对象
+    with psycopg2.connect(**database_config) as conn:
+        with conn.cursor() as cur:
+            cur.execute(sql_str)
+            results = cur.fetchall()
+        print('查询结束')
+    return results
+
+
 def get_base_apis():
     config = {
-        'database': 'edu',
+        'database': 'edu-admin',
         "user": 'read_user',
         "password": 'c5JJUqmtTeaSaOTN2gs7',
         "host": '132.232.15.12',
         "port": 5432
     }
     sql = """SELECT name, server_name, url, http_method FROM service_user.permission WHERE type = 'URL'"""
-    query_result = OperationDb(config).query_sql(sql)
+    query_result = query_sql(config, sql)
     base_apis = [{
         "name": x[0],
         "server_name": x[1].replace("-", "_"),
@@ -48,6 +59,8 @@ def create_all(base_apis: list):
         import_datas = []
         for file_name in file_names:
             file_apis = [x for x in folder_apis if x.get("file_name") == file_name]
+            if file_name == "class.py":
+                file_name = "class_.py"
             file_path = os.path.join(folder_path, file_name)
             create_file(file_path, file_apis)
             import_datas.append(f"from script.base_api.{server_name}.{file_name.replace('.py', '')} import *")
@@ -96,8 +109,9 @@ def create_init_file(path, import_datas):
 get_template = """
 @allure.step("${name}")
 def ${method_name}(${path_params}params=None, header=None, return_json=True, default_assert=True, **kwargs):
-    url = host + f"/${url}"
-    res = RunMethod.run_request("GET", url, params=params, header=header, return_json=return_json, **kwargs)
+    name = "${name}"
+    url = f"/${url}"
+    res = RunMethod.run_request("GET", url, params=params, header=header, return_json=return_json, name=name, **kwargs)
     if return_json and default_assert:
         public_assert(res)    
     return res
@@ -107,8 +121,9 @@ def ${method_name}(${path_params}params=None, header=None, return_json=True, def
 post_template = """
 @allure.step("${name}")
 def ${method_name}(${path_params}params=None, body=None, header=None, return_json=True, default_assert=True, **kwargs):
-    url = host + f"/${url}"
-    res = RunMethod.run_request("POST", url, params=params, body=body, header=header, return_json=return_json, **kwargs)
+    name = "${name}"
+    url = f"/${url}"
+    res = RunMethod.run_request("POST", url, params=params, body=body, header=header, return_json=return_json, name=name, **kwargs)
     if return_json and default_assert:
         public_assert(res)    
     return res
@@ -117,9 +132,10 @@ def ${method_name}(${path_params}params=None, body=None, header=None, return_jso
 
 put_template = """
 @allure.step("${name}")
-def ${method_name}(${path_params}params=None, body=None, header=None, return_json=True, default_assert=True, **kwargs):    
-    url = host + f"/${url}"
-    res = RunMethod.run_request("PUT", url, params=params, body=body, header=header, return_json=return_json, **kwargs)
+def ${method_name}(${path_params}params=None, body=None, header=None, return_json=True, default_assert=True, **kwargs):
+    name = "${name}"    
+    url = f"/${url}"
+    res = RunMethod.run_request("PUT", url, params=params, body=body, header=header, return_json=return_json, name=name, **kwargs)
     if return_json and default_assert:
         public_assert(res)    
     return res
@@ -129,8 +145,9 @@ def ${method_name}(${path_params}params=None, body=None, header=None, return_jso
 delete_template = """
 @allure.step("${name}")
 def ${method_name}(${path_params}params=None, body=None, header=None, return_json=True, default_assert=True, **kwargs):
-    url = host + f"/${url}"
-    res = RunMethod.run_request("DELETE", url, params=params, body=body, header=header, return_json=return_json, **kwargs)
+    name = "${name}"    
+    url = f"/${url}"
+    res = RunMethod.run_request("DELETE", url, params=params, body=body, header=header, return_json=return_json, name=name, **kwargs)
     if return_json and default_assert:
         public_assert(res)    
     return res
@@ -140,8 +157,9 @@ def ${method_name}(${path_params}params=None, body=None, header=None, return_jso
 patch_template = """
 @allure.step("${name}")
 def ${method_name}(${path_params}params=None, body=None, header=None, return_json=True, default_assert=True, **kwargs):
-    url = host + f"/${url}"
-    res = RunMethod.run_request("PATCH", url, params=params, body=body, header=header, return_json=return_json, **kwargs)
+    name = "${name}"
+    url = f"/${url}"
+    res = RunMethod.run_request("PATCH", url, params=params, body=body, header=header, return_json=return_json, name=name, **kwargs)
     if return_json and default_assert:
         public_assert(res)    
     return res
@@ -151,8 +169,9 @@ def ${method_name}(${path_params}params=None, body=None, header=None, return_jso
 head_template = """
 @allure.step("${name}")
 def ${method_name}(${path_params}params=None, header=None, return_json=True, default_assert=True, **kwargs):
-    url = host + f"/${url}"
-    res = RunMethod.run_request("HEAD", url, params=params, header=header, return_json=return_json, **kwargs)
+    name = "${name}"
+    url = f"/${url}"
+    res = RunMethod.run_request("HEAD", url, params=params, header=header, return_json=return_json, name=name, **kwargs)
     if return_json and default_assert:
         public_assert(res)    
     return res
@@ -161,8 +180,7 @@ def ${method_name}(${path_params}params=None, header=None, return_json=True, def
 
 file_template = """
 from common.run_method import RunMethod
-from script.common_config import host
-from script.common_config import public_assert
+from script.public_asserts import public_assert
 import pytest
 import allure
 

@@ -1,15 +1,15 @@
 
 from common.run_method import RunMethod
-from script.common_config import host
-from script.common_config import public_assert
+from script.public_asserts import public_assert
 import pytest
 import allure
 
 
 @allure.step("极权限/组织员工列表")
 def employee_getEmployeeShowList_post(params=None, body=None, header=None, return_json=True, default_assert=True, **kwargs):
-    url = host + f"/api-admin/employee/getEmployeeShowList"
-    res = RunMethod.run_request("POST", url, params=params, body=body, header=header, return_json=return_json, **kwargs)
+    name = "极权限/组织员工列表"
+    url = f"/api-admin/employee/getEmployeeShowList"
+    res = RunMethod.run_request("POST", url, params=params, body=body, header=header, return_json=return_json, name=name, **kwargs)
     if return_json and default_assert:
         public_assert(res)    
     return res
@@ -17,8 +17,9 @@ def employee_getEmployeeShowList_post(params=None, body=None, header=None, retur
 
 @allure.step("极权限/异动员工列表")
 def employee_getChangeEmployeeShowList_post(params=None, body=None, header=None, return_json=True, default_assert=True, **kwargs):
-    url = host + f"/api-admin/employee/getChangeEmployeeShowList"
-    res = RunMethod.run_request("POST", url, params=params, body=body, header=header, return_json=return_json, **kwargs)
+    name = "极权限/异动员工列表"
+    url = f"/api-admin/employee/getChangeEmployeeShowList"
+    res = RunMethod.run_request("POST", url, params=params, body=body, header=header, return_json=return_json, name=name, **kwargs)
     if return_json and default_assert:
         public_assert(res)    
     return res
@@ -26,8 +27,9 @@ def employee_getChangeEmployeeShowList_post(params=None, body=None, header=None,
 
 @allure.step("极权限/新增员工")
 def employee_insertEmployee_post(params=None, body=None, header=None, return_json=True, default_assert=True, **kwargs):
-    url = host + f"/api-admin/employee/insertEmployee"
-    res = RunMethod.run_request("POST", url, params=params, body=body, header=header, return_json=return_json, **kwargs)
+    name = "极权限/新增员工"
+    url = f"/api-admin/employee/insertEmployee"
+    res = RunMethod.run_request("POST", url, params=params, body=body, header=header, return_json=return_json, name=name, **kwargs)
     if return_json and default_assert:
         public_assert(res)    
     return res
@@ -35,8 +37,9 @@ def employee_insertEmployee_post(params=None, body=None, header=None, return_jso
 
 @allure.step("极权限/停用员工帐号")
 def employee_disableEmployee_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
-    url = host + f"/api-admin/employee/disableEmployee"
-    res = RunMethod.run_request("GET", url, params=params, header=header, return_json=return_json, **kwargs)
+    name = "极权限/停用员工帐号"
+    url = f"/api-admin/employee/disableEmployee"
+    res = RunMethod.run_request("GET", url, params=params, header=header, return_json=return_json, name=name, **kwargs)
     if return_json and default_assert:
         public_assert(res)    
     return res
@@ -44,8 +47,9 @@ def employee_disableEmployee_get(params=None, header=None, return_json=True, def
 
 @allure.step("极权限/删除员工")
 def employee_deleteEmployee_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
-    url = host + f"/api-admin/employee/deleteEmployee"
-    res = RunMethod.run_request("GET", url, params=params, header=header, return_json=return_json, **kwargs)
+    name = "极权限/删除员工"
+    url = f"/api-admin/employee/deleteEmployee"
+    res = RunMethod.run_request("GET", url, params=params, header=header, return_json=return_json, name=name, **kwargs)
     if return_json and default_assert:
         public_assert(res)    
     return res
@@ -53,8 +57,9 @@ def employee_deleteEmployee_get(params=None, header=None, return_json=True, defa
 
 @allure.step("极权限/标记为已处理")
 def employee_markHandledChangeEmployee_post(params=None, body=None, header=None, return_json=True, default_assert=True, **kwargs):
-    url = host + f"/api-admin/employee/markHandledChangeEmployee"
-    res = RunMethod.run_request("POST", url, params=params, body=body, header=header, return_json=return_json, **kwargs)
+    name = "极权限/标记为已处理"
+    url = f"/api-admin/employee/markHandledChangeEmployee"
+    res = RunMethod.run_request("POST", url, params=params, body=body, header=header, return_json=return_json, name=name, **kwargs)
     if return_json and default_assert:
         public_assert(res)    
     return res
@@ -62,8 +67,9 @@ def employee_markHandledChangeEmployee_post(params=None, body=None, header=None,
 
 @allure.step("极权限/设置可操作校区")
 def employee_setOperableSchool_post(params=None, body=None, header=None, return_json=True, default_assert=True, **kwargs):
-    url = host + f"/api-admin/employee/setOperableSchool"
-    res = RunMethod.run_request("POST", url, params=params, body=body, header=header, return_json=return_json, **kwargs)
+    name = "极权限/设置可操作校区"
+    url = f"/api-admin/employee/setOperableSchool"
+    res = RunMethod.run_request("POST", url, params=params, body=body, header=header, return_json=return_json, name=name, **kwargs)
     if return_json and default_assert:
         public_assert(res)    
     return res
@@ -71,8 +77,9 @@ def employee_setOperableSchool_post(params=None, body=None, header=None, return_
 
 @allure.step("极权限/设置授课校区")
 def employee_setTeachableSchool_post(params=None, body=None, header=None, return_json=True, default_assert=True, **kwargs):
-    url = host + f"/api-admin/employee/setTeachableSchool"
-    res = RunMethod.run_request("POST", url, params=params, body=body, header=header, return_json=return_json, **kwargs)
+    name = "极权限/设置授课校区"
+    url = f"/api-admin/employee/setTeachableSchool"
+    res = RunMethod.run_request("POST", url, params=params, body=body, header=header, return_json=return_json, name=name, **kwargs)
     if return_json and default_assert:
         public_assert(res)    
     return res
@@ -80,8 +87,9 @@ def employee_setTeachableSchool_post(params=None, body=None, header=None, return
 
 @allure.step("极权限/设置授课学段")
 def employee_setTeachDegree_post(params=None, body=None, header=None, return_json=True, default_assert=True, **kwargs):
-    url = host + f"/api-admin/employee/setTeachDegree"
-    res = RunMethod.run_request("POST", url, params=params, body=body, header=header, return_json=return_json, **kwargs)
+    name = "极权限/设置授课学段"
+    url = f"/api-admin/employee/setTeachDegree"
+    res = RunMethod.run_request("POST", url, params=params, body=body, header=header, return_json=return_json, name=name, **kwargs)
     if return_json and default_assert:
         public_assert(res)    
     return res
@@ -89,8 +97,9 @@ def employee_setTeachDegree_post(params=None, body=None, header=None, return_jso
 
 @allure.step("极权限/设置授课科目")
 def employee_setTeachSubject_post(params=None, body=None, header=None, return_json=True, default_assert=True, **kwargs):
-    url = host + f"/api-admin/employee/setTeachSubject"
-    res = RunMethod.run_request("POST", url, params=params, body=body, header=header, return_json=return_json, **kwargs)
+    name = "极权限/设置授课科目"
+    url = f"/api-admin/employee/setTeachSubject"
+    res = RunMethod.run_request("POST", url, params=params, body=body, header=header, return_json=return_json, name=name, **kwargs)
     if return_json and default_assert:
         public_assert(res)    
     return res
@@ -98,8 +107,9 @@ def employee_setTeachSubject_post(params=None, body=None, header=None, return_js
 
 @allure.step("极权限/获取员工概览信息")
 def employee_getEmployeeDetailOutDto_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
-    url = host + f"/api-admin/employee/getEmployeeDetailOutDto"
-    res = RunMethod.run_request("GET", url, params=params, header=header, return_json=return_json, **kwargs)
+    name = "极权限/获取员工概览信息"
+    url = f"/api-admin/employee/getEmployeeDetailOutDto"
+    res = RunMethod.run_request("GET", url, params=params, header=header, return_json=return_json, name=name, **kwargs)
     if return_json and default_assert:
         public_assert(res)    
     return res
@@ -107,8 +117,9 @@ def employee_getEmployeeDetailOutDto_get(params=None, header=None, return_json=T
 
 @allure.step("极权限/获取授课学段下拉框")
 def employee_getTeachDegree_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
-    url = host + f"/api-admin/employee/getTeachDegree"
-    res = RunMethod.run_request("GET", url, params=params, header=header, return_json=return_json, **kwargs)
+    name = "极权限/获取授课学段下拉框"
+    url = f"/api-admin/employee/getTeachDegree"
+    res = RunMethod.run_request("GET", url, params=params, header=header, return_json=return_json, name=name, **kwargs)
     if return_json and default_assert:
         public_assert(res)    
     return res
@@ -116,8 +127,9 @@ def employee_getTeachDegree_get(params=None, header=None, return_json=True, defa
 
 @allure.step("极权限/获取授课科目下拉框")
 def employee_getTeachSubject_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
-    url = host + f"/api-admin/employee/getTeachSubject"
-    res = RunMethod.run_request("GET", url, params=params, header=header, return_json=return_json, **kwargs)
+    name = "极权限/获取授课科目下拉框"
+    url = f"/api-admin/employee/getTeachSubject"
+    res = RunMethod.run_request("GET", url, params=params, header=header, return_json=return_json, name=name, **kwargs)
     if return_json and default_assert:
         public_assert(res)    
     return res

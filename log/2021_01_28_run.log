@@ -1,6 +1,0 @@
-[2021-01-28 17:48:03,173] run_method.py->run_main line:39 [INFO] 请求返回的接口格式错误：JSONDecodeError('Expecting property name enclosed in double quotes: line 1 column 2 (char 1)')
-[2021-01-28 17:48:03,334] run_method.py->run_main line:39 [INFO] 请求返回的接口格式错误：JSONDecodeError('Expecting property name enclosed in double quotes: line 1 column 2 (char 1)')
-[2021-01-28 18:00:31,268] run_method.py->run_main line:39 [INFO] 请求返回的接口格式错误：JSONDecodeError('Expecting property name enclosed in double quotes: line 1 column 2 (char 1)')
-[2021-01-28 18:00:31,947] run_method.py->run_main line:39 [INFO] 请求返回的接口格式错误：JSONDecodeError('Expecting property name enclosed in double quotes: line 1 column 2 (char 1)')
-[2021-01-28 18:15:45,189] run_method.py->run_main line:40 [INFO] 请求返回的接口格式错误：JSONDecodeError('Expecting property name enclosed in double quotes: line 1 column 2 (char 1)')
-[2021-01-28 18:15:45,402] run_method.py->run_main line:40 [INFO] 请求返回的接口格式错误：JSONDecodeError('Expecting property name enclosed in double quotes: line 1 column 2 (char 1)')
