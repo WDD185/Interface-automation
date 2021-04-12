@@ -1,0 +1,16 @@
+Index: run.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import pytest\nimport os\n\n\nif __name__ == '__main__':\n    run_config = [\n        \"-s\", \"./script/ji_yun_ying_app\", \"--alluredir\", \"./report/xml\", \"--host=http://172.10.62.94:3000\",\n    ]\n    pytest.main(run_config)\n    # os模块运行allure命令，来生成html格式的报告（根据刚刚生成的配置信息）\n    # os.system(\"/Users/huangqiang/WorkPlace/allure-2.13.8/bin/allure generate ./report/xml -o ./report/html --clean\")\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- run.py	(revision afc678929e714343bc935d0e182aeb8e4de75fff)
++++ run.py	(date 1618196902142)
+@@ -8,4 +8,4 @@
+     ]
+     pytest.main(run_config)
+     # os模块运行allure命令，来生成html格式的报告（根据刚刚生成的配置信息）
+-    # os.system("/Users/huangqiang/WorkPlace/allure-2.13.8/bin/allure generate ./report/xml -o ./report/html --clean")
++    os.system("/Users/huangqiang/WorkPlace/allure-2.13.8/bin/allure generate ./report/xml -o ./report/html --clean")
+\ No newline at end of file
