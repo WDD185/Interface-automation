@@ -1,6 +1,5 @@
 import pytest
 import os
-#了授课地方进口量
 
 if __name__ == '__main__':
     run_config = [
