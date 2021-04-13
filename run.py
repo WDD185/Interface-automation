@@ -1,7 +1,6 @@
 import pytest
 import os
 
-
 if __name__ == '__main__':
     run_config = [
         "-s", "./script/ji_yun_ying_pc/statistical_report/test_receipt_detail.py",
