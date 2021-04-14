@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("极运营/系统设置/优惠设置/新增优惠(旧)")
 def classes_discounts_add_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,6 +19,7 @@ def classes_discounts_add_post(params=None, body=None, header=None, return_json=
     return res
 
 
+@allure.step("极运营/系统设置/优惠设置/删除优惠(旧)")
 def classes_discounts_delete_delete(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -32,6 +35,7 @@ def classes_discounts_delete_delete(params=None, body=None, header=None, return_
     return res
 
 
+@allure.step("极运营/系统设置/优惠设置/查询优惠(旧)")
 def classes_discounts_query_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -47,6 +51,7 @@ def classes_discounts_query_post(params=None, body=None, header=None, return_jso
     return res
 
 
+@allure.step("极运营/系统设置/优惠设置/修改优惠(旧)")
 def classes_discounts_update_put(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -62,6 +67,7 @@ def classes_discounts_update_put(params=None, body=None, header=None, return_jso
     return res
 
 
+@allure.step("通用/报名/订单班级验证")
 def classes_discounts_discount_valideClass_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -77,6 +83,7 @@ def classes_discounts_discount_valideClass_post(params=None, body=None, header=N
     return res
 
 
+@allure.step("通用/报名/优惠匹配")
 def classes_discounts_discount_calculate_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -92,7 +99,8 @@ def classes_discounts_discount_calculate_post(params=None, body=None, header=Non
     return res
 
 
-def classes_discounts_material_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("通用/报名/查询材料费")
+def classes_discounts_material_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

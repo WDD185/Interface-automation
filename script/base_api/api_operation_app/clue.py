@@ -1,8 +1,10 @@
 
 from common.run_method import RunMethod
+import allure
 
 
-def clue_dict_studentSource_queryNoAuth_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("JkyAPP/查询已启用的学生来源")
+def clue_dict_studentSource_queryNoAuth_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -17,6 +19,7 @@ def clue_dict_studentSource_queryNoAuth_get(params=None, header=None, return_jso
     return res
 
 
+@allure.step("JkyAPP/查询跟进记录")
 def clue_record_query_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -32,6 +35,7 @@ def clue_record_query_post(params=None, body=None, header=None, return_json=True
     return res
 
 
+@allure.step("JkyAPP/添加跟进记录")
 def clue_record_add_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -47,6 +51,7 @@ def clue_record_add_post(params=None, body=None, header=None, return_json=True, 
     return res
 
 
+@allure.step("JkyAPP/上传沟通记录图片")
 def clue_record_upload_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -62,6 +67,7 @@ def clue_record_upload_post(params=None, body=None, header=None, return_json=Tru
     return res
 
 
+@allure.step("JkyAPP/查询线索")
 def clue_queryAll_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -77,6 +83,7 @@ def clue_queryAll_post(params=None, body=None, header=None, return_json=True, **
     return res
 
 
+@allure.step("JkyAPP/批量移除我的线索")
 def clue_batch_person_remove_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -92,6 +99,7 @@ def clue_batch_person_remove_post(params=None, body=None, header=None, return_js
     return res
 
 
+@allure.step("JkyAPP/新增线索")
 def clue_addClue_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -107,6 +115,7 @@ def clue_addClue_post(params=None, body=None, header=None, return_json=True, **k
     return res
 
 
+@allure.step("JkyAPP/修改线索")
 def clue_updateClue_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -122,6 +131,7 @@ def clue_updateClue_post(params=None, body=None, header=None, return_json=True, 
     return res
 
 
+@allure.step("JkyAPP/领取线索")
 def clue_receive_put(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -137,7 +147,8 @@ def clue_receive_put(params=None, body=None, header=None, return_json=True, **kw
     return res
 
 
-def clue_repeat_check_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("JkyAPP/查询线索是否重复")
+def clue_repeat_check_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -152,7 +163,8 @@ def clue_repeat_check_get(params=None, header=None, return_json=True, **kwargs):
     return res
 
 
-def clue_query_id_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("JkyAPP/查询线索-单个")
+def clue_query_id_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -167,7 +179,8 @@ def clue_query_id_get(params=None, header=None, return_json=True, **kwargs):
     return res
 
 
-def clue_school_follow_frequency_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("JkyAPP/查询线索-单个")
+def clue_school_follow_frequency_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -182,6 +195,7 @@ def clue_school_follow_frequency_get(params=None, header=None, return_json=True,
     return res
 
 
+@allure.step("JkyAPP/校区线索分配")
 def clue_distribute_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -197,6 +211,7 @@ def clue_distribute_post(params=None, body=None, header=None, return_json=True, 
     return res
 
 
+@allure.step("JkyAPP/校区线索-创建人")
 def clue_creator_queryAll_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -212,6 +227,7 @@ def clue_creator_queryAll_post(params=None, body=None, header=None, return_json=
     return res
 
 
+@allure.step("JkyAPP/校区线索-跟进人")
 def clue_owner_queryAll_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -227,6 +243,7 @@ def clue_owner_queryAll_post(params=None, body=None, header=None, return_json=Tr
     return res
 
 
+@allure.step("JkyAPP/校区线索-移除人")
 def clue_remove_operator_queryAll_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -242,6 +259,7 @@ def clue_remove_operator_queryAll_post(params=None, body=None, header=None, retu
     return res
 
 
+@allure.step("JkyAPP/校区线索批量移除")
 def clue_public_batch_remove_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -257,6 +275,7 @@ def clue_public_batch_remove_post(params=None, body=None, header=None, return_js
     return res
 
 
+@allure.step("JkyAPP/校区线索批量删除")
 def clue_delete_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -272,6 +291,7 @@ def clue_delete_post(params=None, body=None, header=None, return_json=True, **kw
     return res
 
 
+@allure.step("极运营APP/数据/新线索-校区-统计")
 def clue_school_area_schoolAreaClues_statistics_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -287,6 +307,7 @@ def clue_school_area_schoolAreaClues_statistics_post(params=None, body=None, hea
     return res
 
 
+@allure.step("极运营APP/数据/新线索-校区-详情")
 def clue_school_area_schoolAreaClues_details_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -302,6 +323,7 @@ def clue_school_area_schoolAreaClues_details_post(params=None, body=None, header
     return res
 
 
+@allure.step("极运营APP/数据/新线索-校区")
 def clue_school_area_statisticsSchoolAreaClues_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -317,6 +339,7 @@ def clue_school_area_statisticsSchoolAreaClues_post(params=None, body=None, head
     return res
 
 
+@allure.step("极运营APP/数据/新线索-个人")
 def clue_personal_statisticsSchoolAreaClues_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

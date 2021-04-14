@@ -1,8 +1,10 @@
 
 from common.run_method import RunMethod
+import allure
 
 
-def school_perimeter_list_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/情报中心/中心校经营环境/列表查询")
+def school_perimeter_list_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -17,7 +19,8 @@ def school_perimeter_list_get(params=None, header=None, return_json=True, **kwar
     return res
 
 
-def school_perimeter_list_export_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/情报中心/中心校经营环境/列表导出")
+def school_perimeter_list_export_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -32,6 +35,7 @@ def school_perimeter_list_export_get(params=None, header=None, return_json=True,
     return res
 
 
+@allure.step("极运营/情报中心/中心校经营环境/周边小区/新增")
 def school_perimeter_estate_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -47,6 +51,7 @@ def school_perimeter_estate_post(params=None, body=None, header=None, return_jso
     return res
 
 
+@allure.step("极运营/情报中心/中心校经营环境/周边小区/修改")
 def school_perimeter_estate_put(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -62,7 +67,8 @@ def school_perimeter_estate_put(params=None, body=None, header=None, return_json
     return res
 
 
-def school_perimeter_estate_query_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/情报中心/中心校经营环境/周边小区/列表")
+def school_perimeter_estate_query_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -77,7 +83,8 @@ def school_perimeter_estate_query_get(params=None, header=None, return_json=True
     return res
 
 
-def school_perimeter_estate_query_export_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/情报中心/中心校经营环境/周边小区/列表导出")
+def school_perimeter_estate_query_export_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -92,6 +99,7 @@ def school_perimeter_estate_query_export_get(params=None, header=None, return_js
     return res
 
 
+@allure.step("极运营/情报中心/中心校经营环境/周边商圈/新增")
 def school_perimeter_businessDistrict_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -107,6 +115,7 @@ def school_perimeter_businessDistrict_post(params=None, body=None, header=None, 
     return res
 
 
+@allure.step("极运营/情报中心/中心校经营环境/周边商圈/修改")
 def school_perimeter_businessDistrict_put(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -122,7 +131,8 @@ def school_perimeter_businessDistrict_put(params=None, body=None, header=None, r
     return res
 
 
-def school_perimeter_businessDistrict_query_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/情报中心/中心校经营环境/周边商圈/列表")
+def school_perimeter_businessDistrict_query_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -137,7 +147,8 @@ def school_perimeter_businessDistrict_query_get(params=None, header=None, return
     return res
 
 
-def school_perimeter_businessDistrict_query_export_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/情报中心/中心校经营环境/周边商圈/列表导出")
+def school_perimeter_businessDistrict_query_export_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -152,7 +163,8 @@ def school_perimeter_businessDistrict_query_export_get(params=None, header=None,
     return res
 
 
-def school_perimeter_statistics_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/情报中心/中心校经营环境/录入统计列表")
+def school_perimeter_statistics_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -167,7 +179,8 @@ def school_perimeter_statistics_get(params=None, header=None, return_json=True, 
     return res
 
 
-def school_perimeter_statistics_export_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/情报中心/中心校经营环境/录入统计导出")
+def school_perimeter_statistics_export_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -182,7 +195,8 @@ def school_perimeter_statistics_export_get(params=None, header=None, return_json
     return res
 
 
-def school_perimeter_statistics_count_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/情报中心/中心校经营环境/录入统计信息")
+def school_perimeter_statistics_count_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -197,6 +211,7 @@ def school_perimeter_statistics_count_get(params=None, header=None, return_json=
     return res
 
 
+@allure.step("极运营/情报中心/中心校经营环境/周边小区/修改状态")
 def school_perimeter_estate_updateStatus_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -212,6 +227,7 @@ def school_perimeter_estate_updateStatus_post(params=None, body=None, header=Non
     return res
 
 
+@allure.step("极运营/情报中心/中心校经营环境/周边商圈/修改状态")
 def school_perimeter_businessDistrict_updateStatus_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

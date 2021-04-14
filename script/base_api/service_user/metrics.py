@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("通用/app数据上报")
 def metrics_appMetrics_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

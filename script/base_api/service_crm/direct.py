@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("极运营/报表/运营分析列表查询")
 def direct_report_query_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,6 +19,7 @@ def direct_report_query_post(params=None, body=None, header=None, return_json=Tr
     return res
 
 
+@allure.step("极运营/报表/运营分析列表导出")
 def direct_report_export_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -32,6 +35,7 @@ def direct_report_export_post(params=None, body=None, header=None, return_json=T
     return res
 
 
+@allure.step("极运营/报表/课程顾问明细导出")
 def direct_report_exportDetail_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -47,6 +51,7 @@ def direct_report_exportDetail_post(params=None, body=None, header=None, return_
     return res
 
 
+@allure.step("极运营/报表/运营分析/教师沟通分析列表查询")
 def direct_report_queryByTeacher_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -62,6 +67,7 @@ def direct_report_queryByTeacher_post(params=None, body=None, header=None, retur
     return res
 
 
+@allure.step("极运营/报表/运营分析/导出教师沟通分析")
 def direct_report_exportByTeacher_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -77,6 +83,7 @@ def direct_report_exportByTeacher_post(params=None, body=None, header=None, retu
     return res
 
 
+@allure.step("极运营/报表/运营分析/导出教师沟通分析详情")
 def direct_report_exportDetailByTeacher_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

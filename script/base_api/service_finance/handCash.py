@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("极运营/财务管理/库存现金/查询库存现金记录")
 def handCash_queryRecord_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

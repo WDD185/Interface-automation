@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("伯索账密鉴权")
 def plaso_auth_employee_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,6 +19,7 @@ def plaso_auth_employee_post(params=None, body=None, header=None, return_json=Tr
     return res
 
 
+@allure.step("伯索钉钉扫码鉴权")
 def plaso_auth_dingQR_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("极运营/系统设置/财务目标设置/财务目标设置新增")
 def finance_targets_add_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,6 +19,7 @@ def finance_targets_add_post(params=None, body=None, header=None, return_json=Tr
     return res
 
 
+@allure.step("极运营/系统设置/财务目标设置/财务目标设置修改")
 def finance_targets_update_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -32,7 +35,8 @@ def finance_targets_update_post(params=None, body=None, header=None, return_json
     return res
 
 
-def finance_targets_del_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/系统设置/财务目标设置/财务目标设置删除")
+def finance_targets_del_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -47,7 +51,8 @@ def finance_targets_del_get(params=None, header=None, return_json=True, **kwargs
     return res
 
 
-def finance_targets_queryAll_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/系统设置/财务目标设置/财务目标设置查询全部")
+def finance_targets_queryAll_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -62,7 +67,8 @@ def finance_targets_queryAll_get(params=None, header=None, return_json=True, **k
     return res
 
 
-def finance_targets_setDefault_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/系统设置/财务目标设置/财务目标设置设置默认")
+def finance_targets_setDefault_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -77,6 +83,7 @@ def finance_targets_setDefault_get(params=None, header=None, return_json=True, *
     return res
 
 
+@allure.step("极运营/系统设置/财务目标设置/财务目标设置设置排序")
 def finance_targets_updateOrderNums_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -92,6 +99,7 @@ def finance_targets_updateOrderNums_post(params=None, body=None, header=None, re
     return res
 
 
+@allure.step("极运营/系统设置/财务目标设置/财务目标设置明细新增")
 def finance_targets_add_detail_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -107,6 +115,7 @@ def finance_targets_add_detail_post(params=None, body=None, header=None, return_
     return res
 
 
+@allure.step("极运营/系统设置/财务目标设置/财务目标设置明细修改")
 def finance_targets_update_detail_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -122,7 +131,8 @@ def finance_targets_update_detail_post(params=None, body=None, header=None, retu
     return res
 
 
-def finance_targets_del_detail_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/系统设置/财务目标设置/财务目标设置明细删除")
+def finance_targets_del_detail_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -137,6 +147,7 @@ def finance_targets_del_detail_get(params=None, header=None, return_json=True, *
     return res
 
 
+@allure.step("极运营/系统设置/财务目标设置/财务目标设置明细查询全部")
 def finance_targets_query_detail_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -152,6 +163,7 @@ def finance_targets_query_detail_post(params=None, body=None, header=None, retur
     return res
 
 
+@allure.step("极运营/系统设置/财务目标设置/财务目标设置明细导出")
 def finance_targets_export_detail_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -167,6 +179,7 @@ def finance_targets_export_detail_post(params=None, body=None, header=None, retu
     return res
 
 
+@allure.step("极运营/系统设置/财务目标设置/财务目标设置明细下载模板")
 def finance_targets_import_downModel_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -182,6 +195,7 @@ def finance_targets_import_downModel_post(params=None, body=None, header=None, r
     return res
 
 
+@allure.step("极运营/系统设置/财务目标设置/财务目标设置明细导入模板")
 def finance_targets_import_uploadModel_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

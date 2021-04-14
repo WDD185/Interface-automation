@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("小程序/订单/下单前的预验证")
 def orderFlow_preValidOrderCondition_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,6 +19,7 @@ def orderFlow_preValidOrderCondition_post(params=None, body=None, header=None, r
     return res
 
 
+@allure.step("小程序/订单/订单优惠计算")
 def orderFlow_calculatePromotion_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -32,6 +35,7 @@ def orderFlow_calculatePromotion_post(params=None, body=None, header=None, retur
     return res
 
 
+@allure.step("小程序/订单/订单匹配的优惠券")
 def orderFlow_queryMatchDiscountAndCoupon_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -47,6 +51,7 @@ def orderFlow_queryMatchDiscountAndCoupon_post(params=None, body=None, header=No
     return res
 
 
+@allure.step("小程序/订单/计算订单总价")
 def orderFlow_calculateOrderPrice_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

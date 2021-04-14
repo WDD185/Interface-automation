@@ -101,6 +101,7 @@ def create_init_file(path, import_datas):
 
 
 get_template = """
+@allure.step("${name}")
 def ${method_name}(${path_params}params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -118,6 +119,7 @@ def ${method_name}(${path_params}params=None, header=None, return_json=True, **k
 """
 
 post_template = """
+@allure.step("${name}")
 def ${method_name}(${path_params}params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -135,6 +137,7 @@ def ${method_name}(${path_params}params=None, body=None, header=None, return_jso
 """
 
 put_template = """
+@allure.step("${name}")
 def ${method_name}(${path_params}params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -152,6 +155,7 @@ def ${method_name}(${path_params}params=None, body=None, header=None, return_jso
 """
 
 delete_template = """
+@allure.step("${name}")
 def ${method_name}(${path_params}params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -169,6 +173,7 @@ def ${method_name}(${path_params}params=None, body=None, header=None, return_jso
 """
 
 patch_template = """
+@allure.step("${name}")
 def ${method_name}(${path_params}params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -186,6 +191,7 @@ def ${method_name}(${path_params}params=None, body=None, header=None, return_jso
 """
 
 head_template = """
+@allure.step("${name}")
 def ${method_name}(${path_params}params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -204,6 +210,7 @@ def ${method_name}(${path_params}params=None, header=None, return_json=True, **k
 
 file_template = """
 from common.run_method import RunMethod
+import allure
 
 """
 

@@ -1,8 +1,10 @@
 
 from common.run_method import RunMethod
+import allure
 
 
-def gos_api_package_check_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("小程序/商品/套餐检查服务")
+def gos_api_package_check_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -17,6 +19,7 @@ def gos_api_package_check_get(params=None, header=None, return_json=True, **kwar
     return res
 
 
+@allure.step("小程序/商品/商品检查服务")
 def gos_api_goods_check_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

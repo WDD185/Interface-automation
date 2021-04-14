@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("极题库")
 def questionMaterial_uploadImages_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,6 +19,7 @@ def questionMaterial_uploadImages_post(params=None, body=None, header=None, retu
     return res
 
 
+@allure.step("极题库")
 def questionMaterial_updateLibraryStatus_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -32,6 +35,7 @@ def questionMaterial_updateLibraryStatus_post(params=None, body=None, header=Non
     return res
 
 
+@allure.step("极题库")
 def questionMaterial_putToLibrary_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -47,6 +51,7 @@ def questionMaterial_putToLibrary_post(params=None, body=None, header=None, retu
     return res
 
 
+@allure.step("极师通")
 def questionMaterial_uploadMaterial_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -62,6 +67,7 @@ def questionMaterial_uploadMaterial_post(params=None, body=None, header=None, re
     return res
 
 
+@allure.step("极师通")
 def questionMaterial_deleteMaterial_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -77,6 +83,7 @@ def questionMaterial_deleteMaterial_post(params=None, body=None, header=None, re
     return res
 
 
+@allure.step("极师通")
 def questionMaterial_getMaterialsByGstPage_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -92,6 +99,7 @@ def questionMaterial_getMaterialsByGstPage_post(params=None, body=None, header=N
     return res
 
 
+@allure.step("极师通")
 def questionMaterial_updateMaterial_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -107,6 +115,7 @@ def questionMaterial_updateMaterial_post(params=None, body=None, header=None, re
     return res
 
 
+@allure.step("极题库")
 def questionMaterial_getMaterialsByGtkPage_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -122,6 +131,7 @@ def questionMaterial_getMaterialsByGtkPage_post(params=None, body=None, header=N
     return res
 
 
+@allure.step("极题库/添加老师区域归属")
 def questionMaterial_addOrModTeacherMaterialDepartment_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -137,7 +147,8 @@ def questionMaterial_addOrModTeacherMaterialDepartment_post(params=None, body=No
     return res
 
 
-def questionMaterial_getTeacherMaterialDepartment_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极题库/查询老师区域归属")
+def questionMaterial_getTeacherMaterialDepartment_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -152,7 +163,8 @@ def questionMaterial_getTeacherMaterialDepartment_get(params=None, header=None, 
     return res
 
 
-def questionMaterial_getHistoryAddress_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极题库/上传人历史地址")
+def questionMaterial_getHistoryAddress_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

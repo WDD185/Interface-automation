@@ -1,8 +1,10 @@
 
 from common.run_method import RunMethod
+import allure
 
 
-def verificationCode_receiveVerificationCode_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("小程序/基础/发送短信验证码")
+def verificationCode_receiveVerificationCode_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -17,7 +19,8 @@ def verificationCode_receiveVerificationCode_get(params=None, header=None, retur
     return res
 
 
-def verificationCode_receiveVerificationCode_customer_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极客数学帮(家长APP)/首页/用户发送验证码")
+def verificationCode_receiveVerificationCode_customer_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

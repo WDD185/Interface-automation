@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("极师通/报表/学员考勤/批量补课、补点名")
 def attendances_batch_update_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,7 +19,8 @@ def attendances_batch_update_post(params=None, body=None, header=None, return_js
     return res
 
 
-def attendances_queries_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/教务管理/课消/查询某次课课消详情")
+def attendances_queries_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -32,7 +35,8 @@ def attendances_queries_get(params=None, header=None, return_json=True, **kwargs
     return res
 
 
-def attendances_reports_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极师通/报表/学员考勤/查询考勤数据")
+def attendances_reports_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -47,7 +51,8 @@ def attendances_reports_get(params=None, header=None, return_json=True, **kwargs
     return res
 
 
-def attendances_overviews_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/教务管理/课消/查询课消数据")
+def attendances_overviews_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -62,6 +67,7 @@ def attendances_overviews_get(params=None, header=None, return_json=True, **kwar
     return res
 
 
+@allure.step("极师通/点名/老师操作点名")
 def attendances_schedules_scheduleId_post(scheduleId, params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -77,7 +83,8 @@ def attendances_schedules_scheduleId_post(scheduleId, params=None, body=None, he
     return res
 
 
-def attendances_indexs_max_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极师通/点名/获取最大课次")
+def attendances_indexs_max_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -92,7 +99,8 @@ def attendances_indexs_max_get(params=None, header=None, return_json=True, **kwa
     return res
 
 
-def attendances_overviews_excel_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/教务管理/课消/Excel导出")
+def attendances_overviews_excel_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -107,6 +115,7 @@ def attendances_overviews_excel_get(params=None, header=None, return_json=True, 
     return res
 
 
+@allure.step("极运营/教务管理/课消/计费")
 def attendances_charge_scheduleId_patch(scheduleId, params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -122,7 +131,8 @@ def attendances_charge_scheduleId_patch(scheduleId, params=None, body=None, head
     return res
 
 
-def attendances_type_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极师通/点名/班级类型查询点名类型")
+def attendances_type_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -137,7 +147,8 @@ def attendances_type_get(params=None, header=None, return_json=True, **kwargs):
     return res
 
 
-def attendances_attendances_records_queries_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/教务管理/课消/查看出勤")
+def attendances_attendances_records_queries_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

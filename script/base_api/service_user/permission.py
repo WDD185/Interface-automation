@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("新增或者修改权限")
 def permission_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,6 +19,7 @@ def permission_post(params=None, body=None, header=None, return_json=True, **kwa
     return res
 
 
+@allure.step("删除权限")
 def permission_delete(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

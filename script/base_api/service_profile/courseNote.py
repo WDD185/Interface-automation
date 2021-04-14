@@ -1,8 +1,10 @@
 
 from common.run_method import RunMethod
+import allure
 
 
-def courseNote_field_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极客数学帮(家长APP)/用户行课/获取学生用户的班帖列表所包含的属性")
+def courseNote_field_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

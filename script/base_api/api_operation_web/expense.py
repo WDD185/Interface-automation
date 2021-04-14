@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("极运营/财务报表/课消报表/学员费用预警-查询")
 def expense_warning_queryStudentExpenseWarning_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,6 +19,7 @@ def expense_warning_queryStudentExpenseWarning_post(params=None, body=None, head
     return res
 
 
+@allure.step("极运营/财务报表/课消报表/校区费用预警-查询")
 def expense_warning_querySchoolExpenseWarning_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

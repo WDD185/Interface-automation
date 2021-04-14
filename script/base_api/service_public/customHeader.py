@@ -1,8 +1,10 @@
 
 from common.run_method import RunMethod
+import allure
 
 
-def customHeader_query_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/通用/用户自定义列查询")
+def customHeader_query_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -17,6 +19,7 @@ def customHeader_query_get(params=None, header=None, return_json=True, **kwargs)
     return res
 
 
+@allure.step("极运营/通用/用户自定义列新增")
 def customHeader_save_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

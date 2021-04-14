@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("极运营/前台业务/结转/新增结转")
 def finance_return_carryover_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,7 +19,8 @@ def finance_return_carryover_post(params=None, body=None, header=None, return_js
     return res
 
 
-def finance_refund_query_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/财务管理/退费/查询可退费")
+def finance_refund_query_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -32,6 +35,7 @@ def finance_refund_query_get(params=None, header=None, return_json=True, **kwarg
     return res
 
 
+@allure.step("极运营/财务管理/退费/新增退费")
 def finance_return_refund_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -47,7 +51,8 @@ def finance_return_refund_post(params=None, body=None, header=None, return_json=
     return res
 
 
-def finance_carryover_query_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/前台业务/结转/查询可结转")
+def finance_carryover_query_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -62,6 +67,7 @@ def finance_carryover_query_get(params=None, header=None, return_json=True, **kw
     return res
 
 
+@allure.step("极运营/前台业务/退费操作")
 def finance_apply_refund_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -77,6 +83,7 @@ def finance_apply_refund_post(params=None, body=None, header=None, return_json=T
     return res
 
 
+@allure.step("极运营/前台业务/退费审批操作")
 def finance_approve_refund_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -92,6 +99,7 @@ def finance_approve_refund_post(params=None, body=None, header=None, return_json
     return res
 
 
+@allure.step("极运营/前台业务/重新提交退费操作")
 def finance_resubmit_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -107,6 +115,7 @@ def finance_resubmit_post(params=None, body=None, header=None, return_json=True,
     return res
 
 
+@allure.step("极运营/前台业务/结转申请操作")
 def finance_apply_carryover_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -122,6 +131,7 @@ def finance_apply_carryover_post(params=None, body=None, header=None, return_jso
     return res
 
 
+@allure.step("金蝶退费回调接口")
 def finance_callbackPayStatusToKingdee_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

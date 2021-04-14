@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("通用/基础/用户登录")
 def auth_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,6 +19,7 @@ def auth_post(params=None, body=None, header=None, return_json=True, **kwargs):
     return res
 
 
+@allure.step("通用/基础/用户登录")
 def auth_employee_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -32,6 +35,7 @@ def auth_employee_post(params=None, body=None, header=None, return_json=True, **
     return res
 
 
+@allure.step("通用/基础/用户登录")
 def auth_dingQR_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

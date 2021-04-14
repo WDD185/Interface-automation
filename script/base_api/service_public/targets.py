@@ -1,8 +1,10 @@
 
 from common.run_method import RunMethod
+import allure
 
 
-def targets_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/招生目标设置/查询目标方案")
+def targets_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -17,6 +19,7 @@ def targets_get(params=None, header=None, return_json=True, **kwargs):
     return res
 
 
+@allure.step("极运营/系统设置/招生目标设置/设置默认目标方案")
 def targets_setDef_targetId_patch(targetId, params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -32,6 +35,7 @@ def targets_setDef_targetId_patch(targetId, params=None, body=None, header=None,
     return res
 
 
+@allure.step("极运营/招生目标设置/删除目标方案")
 def targets_targetId_delete(targetId, params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -47,7 +51,8 @@ def targets_targetId_delete(targetId, params=None, body=None, header=None, retur
     return res
 
 
-def targets_targetId_get(targetId, params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/招生目标设置/查询目标方案详情")
+def targets_targetId_get(targetId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -62,6 +67,7 @@ def targets_targetId_get(targetId, params=None, header=None, return_json=True, *
     return res
 
 
+@allure.step("极运营/招生目标设置/新增目标方案")
 def targets_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -77,6 +83,7 @@ def targets_post(params=None, body=None, header=None, return_json=True, **kwargs
     return res
 
 
+@allure.step("极运营/招生目标设置/修改目标方案")
 def targets_targetId_patch(targetId, params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -92,7 +99,8 @@ def targets_targetId_patch(targetId, params=None, body=None, header=None, return
     return res
 
 
-def targets_getTerm_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极师通/常规班班级年份期段")
+def targets_getTerm_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -107,6 +115,7 @@ def targets_getTerm_get(params=None, header=None, return_json=True, **kwargs):
     return res
 
 
+@allure.step("极运营/招生目标设置/编辑目标方案序列")
 def targets_updateOrderNums_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

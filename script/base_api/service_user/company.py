@@ -1,8 +1,10 @@
 
 from common.run_method import RunMethod
+import allure
 
 
-def company_column_list_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/系统设置/关于极客/栏目列表")
+def company_column_list_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -17,6 +19,7 @@ def company_column_list_get(params=None, header=None, return_json=True, **kwargs
     return res
 
 
+@allure.step("极运营/系统设置/关于极客/修改栏目")
 def company_column_update_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -32,7 +35,8 @@ def company_column_update_post(params=None, body=None, header=None, return_json=
     return res
 
 
-def company_column_switch_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/系统设置/关于极客/启停栏目")
+def company_column_switch_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

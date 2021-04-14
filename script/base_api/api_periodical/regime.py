@@ -1,8 +1,10 @@
 
 from common.run_method import RunMethod
+import allure
 
 
-def regime_listRegimes_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("员工手册/列表查询")
+def regime_listRegimes_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -17,7 +19,8 @@ def regime_listRegimes_get(params=None, header=None, return_json=True, **kwargs)
     return res
 
 
-def regime_listRegimeContents_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("员工手册/内容查询")
+def regime_listRegimeContents_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -32,7 +35,8 @@ def regime_listRegimeContents_get(params=None, header=None, return_json=True, **
     return res
 
 
-def regime_listRegimeOnReadNum_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("员工手册/书架")
+def regime_listRegimeOnReadNum_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -47,6 +51,7 @@ def regime_listRegimeOnReadNum_get(params=None, header=None, return_json=True, *
     return res
 
 
+@allure.step("员工手册/埋点记录/每页时长")
 def regime_log_content_duration_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -62,6 +67,7 @@ def regime_log_content_duration_post(params=None, body=None, header=None, return
     return res
 
 
+@allure.step("员工手册/埋点记录/缩略图跳转")
 def regime_log_thumbnail_from_to_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -77,6 +83,7 @@ def regime_log_thumbnail_from_to_post(params=None, body=None, header=None, retur
     return res
 
 
+@allure.step("员工手册/埋点记录/发送通知")
 def regime_log_send_notice_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -92,6 +99,7 @@ def regime_log_send_notice_post(params=None, body=None, header=None, return_json
     return res
 
 
+@allure.step("员工手册/埋点记录/通知进入")
 def regime_log_visit_from_notice_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -107,6 +115,7 @@ def regime_log_visit_from_notice_post(params=None, body=None, header=None, retur
     return res
 
 
+@allure.step("员工手册/埋点记录/访问页面")
 def regime_log_visit_content_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -122,6 +131,7 @@ def regime_log_visit_content_post(params=None, body=None, header=None, return_js
     return res
 
 
+@allure.step("员工手册/埋点记录/关闭页面")
 def regime_log_leave_content_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

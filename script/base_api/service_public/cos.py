@@ -1,8 +1,10 @@
 
 from common.run_method import RunMethod
+import allure
 
 
-def cos_getCredential_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("公共/获取前端上传令牌")
+def cos_getCredential_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

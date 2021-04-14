@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("极师通/修改自己助教的密码")
 def teachers_setPwForAssistant_patch(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,6 +19,7 @@ def teachers_setPwForAssistant_patch(params=None, body=None, header=None, return
     return res
 
 
+@allure.step("极运营/人事管理/教师授权/修改老师信息")
 def teachers_teacherId_post(teacherId, params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -32,7 +35,8 @@ def teachers_teacherId_post(teacherId, params=None, body=None, header=None, retu
     return res
 
 
-def teachers_queries_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/人事管理/教师授权/查询老师")
+def teachers_queries_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

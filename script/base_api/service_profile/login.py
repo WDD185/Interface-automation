@@ -1,8 +1,10 @@
 
 from common.run_method import RunMethod
+import allure
 
 
-def login_verificationCode_receiveVerificationCode_studentPhoneNum_phoneNumber_get(verificationCode, studentPhoneNum, params=None, header=None, return_json=True, **kwargs):
+@allure.step("极客数学帮(家长APP)/用户管理/使用手机验证码登录")
+def login_verificationCode_receiveVerificationCode_studentPhoneNum_phoneNumber_get(verificationCode, studentPhoneNum, params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

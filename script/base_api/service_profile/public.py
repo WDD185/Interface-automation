@@ -1,8 +1,10 @@
 
 from common.run_method import RunMethod
+import allure
 
 
-def public_systemCurrentTime_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极客数学帮(家长APP)/用户管理/获取系统时间")
+def public_systemCurrentTime_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

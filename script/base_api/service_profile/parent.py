@@ -1,8 +1,10 @@
 
 from common.run_method import RunMethod
+import allure
 
 
-def parent_baseInfo_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("CRM/学员管理/学员档案/家长信息")
+def parent_baseInfo_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -17,6 +19,7 @@ def parent_baseInfo_get(params=None, header=None, return_json=True, **kwargs):
     return res
 
 
+@allure.step("CRM/学员管理/学员档案/编辑家长信息")
 def parent_update_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("JkyAPP/保存沟通记录")
 def lost_communicate_record_save_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,6 +19,7 @@ def lost_communicate_record_save_post(params=None, body=None, header=None, retur
     return res
 
 
+@allure.step("JkyAPP/按照学生获取-沟通记录")
 def lost_communicate_record_get_records_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

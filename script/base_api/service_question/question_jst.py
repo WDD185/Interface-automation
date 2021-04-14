@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("极师通/查询题目列表")
 def question_jst_questions_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,7 +19,8 @@ def question_jst_questions_post(params=None, body=None, header=None, return_json
     return res
 
 
-def question_jst_question_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极师通/题目详情查询")
+def question_jst_question_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -32,6 +35,7 @@ def question_jst_question_get(params=None, header=None, return_json=True, **kwar
     return res
 
 
+@allure.step("极师通/提交纠错")
 def question_jst_rectify_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -47,6 +51,7 @@ def question_jst_rectify_post(params=None, body=None, header=None, return_json=T
     return res
 
 
+@allure.step("极师通/个人提报纠错题目列表")
 def question_jst_question_rectify_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -62,6 +67,7 @@ def question_jst_question_rectify_post(params=None, body=None, header=None, retu
     return res
 
 
+@allure.step("极师通/个人收藏题目列表")
 def question_jst_personal_bookmark_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -77,6 +83,7 @@ def question_jst_personal_bookmark_post(params=None, body=None, header=None, ret
     return res
 
 
+@allure.step("极师通/收藏、移除收藏")
 def question_jst_question_bookmark_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -92,6 +99,7 @@ def question_jst_question_bookmark_post(params=None, body=None, header=None, ret
     return res
 
 
+@allure.step("极师通/新建收藏夹")
 def question_jst_bookmark_create_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -107,6 +115,7 @@ def question_jst_bookmark_create_post(params=None, body=None, header=None, retur
     return res
 
 
+@allure.step("极师通/删除收藏夹")
 def question_jst_bookmark_delete_delete(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -122,6 +131,7 @@ def question_jst_bookmark_delete_delete(params=None, body=None, header=None, ret
     return res
 
 
+@allure.step("极师通/修改收藏夹")
 def question_jst_bookmark_update_put(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -137,6 +147,7 @@ def question_jst_bookmark_update_put(params=None, body=None, header=None, return
     return res
 
 
+@allure.step("极师通/移动收藏夹")
 def question_jst_bookmark_move_put(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -152,7 +163,8 @@ def question_jst_bookmark_move_put(params=None, body=None, header=None, return_j
     return res
 
 
-def question_jst_bookmark_list_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极师通/个人收藏夹目录列表")
+def question_jst_bookmark_list_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -167,6 +179,7 @@ def question_jst_bookmark_list_get(params=None, header=None, return_json=True, *
     return res
 
 
+@allure.step("极师通/题目下载")
 def question_jst_download_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -182,6 +195,7 @@ def question_jst_download_post(params=None, body=None, header=None, return_json=
     return res
 
 
+@allure.step("极师通/删除纠错")
 def question_jst_rectify_delete_delete(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

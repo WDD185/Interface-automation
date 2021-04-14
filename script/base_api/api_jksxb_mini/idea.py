@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("线上商城/小程序/支付活动商品")
 def idea_pay_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,7 +19,8 @@ def idea_pay_post(params=None, body=None, header=None, return_json=True, **kwarg
     return res
 
 
-def idea_share_preCreateShareIds_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("线上商城/小程序/预生成shareId")
+def idea_share_preCreateShareIds_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -32,6 +35,7 @@ def idea_share_preCreateShareIds_get(params=None, header=None, return_json=True,
     return res
 
 
+@allure.step("线上商城/小程序/保存分享")
 def idea_share_saveShare_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -47,7 +51,8 @@ def idea_share_saveShare_post(params=None, body=None, header=None, return_json=T
     return res
 
 
-def idea_share_getShareDetailAndRecordBrowse_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("线上商城/小程序/获取分享明细并记录浏览日志")
+def idea_share_getShareDetailAndRecordBrowse_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -62,7 +67,8 @@ def idea_share_getShareDetailAndRecordBrowse_get(params=None, header=None, retur
     return res
 
 
-def idea_share_getShareConvertRank_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("线上商城/小程序/分享转化排行榜")
+def idea_share_getShareConvertRank_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -77,7 +83,8 @@ def idea_share_getShareConvertRank_get(params=None, header=None, return_json=Tru
     return res
 
 
-def idea_share_getShareConvertList_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("线上商城/小程序/分享转化查询")
+def idea_share_getShareConvertList_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

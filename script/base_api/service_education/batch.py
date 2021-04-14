@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("极运营/前台业务/批量转班/查询转入班级")
 def batch_changeClass_classIn_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,6 +19,7 @@ def batch_changeClass_classIn_post(params=None, body=None, header=None, return_j
     return res
 
 
+@allure.step("极运营/前台业务/批量转班/查询转出班级")
 def batch_changeClass_classOut_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

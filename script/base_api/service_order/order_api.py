@@ -1,8 +1,10 @@
 
 from common.run_method import RunMethod
+import allure
 
 
-def order_api_inner_order_order_countByStatuses_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("小程序/订单/根据订单状态查询订单数量")
+def order_api_inner_order_order_countByStatuses_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -17,7 +19,8 @@ def order_api_inner_order_order_countByStatuses_get(params=None, header=None, re
     return res
 
 
-def order_api_inner_order_queryCoupon_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/系统设置/优惠券/优惠券查询服务")
+def order_api_inner_order_queryCoupon_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

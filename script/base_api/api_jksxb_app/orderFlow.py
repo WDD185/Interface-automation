@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("极客数学帮(家长APP)/订单/计算订单总价")
 def orderFlow_calculateOrderPrice_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,6 +19,7 @@ def orderFlow_calculateOrderPrice_post(params=None, body=None, header=None, retu
     return res
 
 
+@allure.step("极客数学帮(家长APP)/订单/预占座位")
 def orderFlow_preTake_seat_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -32,6 +35,7 @@ def orderFlow_preTake_seat_post(params=None, body=None, header=None, return_json
     return res
 
 
+@allure.step("极客数学帮(家长APP)/订单/释放座位")
 def orderFlow_cancle_seat_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -47,6 +51,7 @@ def orderFlow_cancle_seat_post(params=None, body=None, header=None, return_json=
     return res
 
 
+@allure.step("极客数学帮(家长APP)/获取可使用优惠及优惠券")
 def orderFlow_queryMatchDiscountAndCoupon_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -62,6 +67,7 @@ def orderFlow_queryMatchDiscountAndCoupon_post(params=None, body=None, header=No
     return res
 
 
+@allure.step("极客数学帮(家长APP)/订单/下单前的预验证")
 def orderFlow_preValidOrderCondition_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -77,6 +83,7 @@ def orderFlow_preValidOrderCondition_post(params=None, body=None, header=None, r
     return res
 
 
+@allure.step("极客数学帮(家长APP)/用户购课单/计算促销活动价格")
 def orderFlow_calculatePromotion_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -92,6 +99,7 @@ def orderFlow_calculatePromotion_post(params=None, body=None, header=None, retur
     return res
 
 
+@allure.step("极客数学帮(家长APP)/获取分段下可使用优惠及优惠券")
 def orderFlow_queryDownMatchDiscountAndCoupon_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -107,6 +115,7 @@ def orderFlow_queryDownMatchDiscountAndCoupon_post(params=None, body=None, heade
     return res
 
 
+@allure.step("极客数学帮(家长APP)/订单/计算分段下订单总价")
 def orderFlow_calculateDownOrderPrice_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

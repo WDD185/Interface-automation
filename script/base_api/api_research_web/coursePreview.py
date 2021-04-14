@@ -1,8 +1,10 @@
 
 from common.run_method import RunMethod
+import allure
 
 
-def coursePreview_getCoursePreview_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极教研web/课程预习/查询课程预习")
+def coursePreview_getCoursePreview_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -17,6 +19,7 @@ def coursePreview_getCoursePreview_get(params=None, header=None, return_json=Tru
     return res
 
 
+@allure.step("极教研web/课程预习/保存课程预习")
 def coursePreview_saveCoursePreview_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -32,7 +35,8 @@ def coursePreview_saveCoursePreview_post(params=None, body=None, header=None, re
     return res
 
 
-def coursePreview_getCoursePreviewData_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极教研web/课程预习/获取课件的资料列表")
+def coursePreview_getCoursePreviewData_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

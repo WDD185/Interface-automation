@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("退款异常对账查询")
 def bill_get_refund_mistakes_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,6 +19,7 @@ def bill_get_refund_mistakes_post(params=None, body=None, header=None, return_js
     return res
 
 
+@allure.step("异常处理接口")
 def bill_deal_refund_mistakes_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -32,7 +35,8 @@ def bill_deal_refund_mistakes_post(params=None, body=None, header=None, return_j
     return res
 
 
-def bill_bill_error_export_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("退款异常导出接口")
+def bill_bill_error_export_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

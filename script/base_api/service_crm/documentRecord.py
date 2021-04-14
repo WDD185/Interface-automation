@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("知识/知识列表/下载明细")
 def documentRecord_export_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,7 +19,8 @@ def documentRecord_export_post(params=None, body=None, header=None, return_json=
     return res
 
 
-def documentRecord_operate_download_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/知识树/下载")
+def documentRecord_operate_download_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

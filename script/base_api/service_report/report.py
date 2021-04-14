@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("极运营/报表/课消报表/学生费用预警")
 def report_finance_student_expense_warning_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,6 +19,7 @@ def report_finance_student_expense_warning_post(params=None, body=None, header=N
     return res
 
 
+@allure.step("极运营/报表/收费报表/查询学生电子钱包汇总")
 def report_finance_student_summary_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -32,6 +35,7 @@ def report_finance_student_summary_post(params=None, body=None, header=None, ret
     return res
 
 
+@allure.step("极运营/统计报表/班级报表/班级人数")
 def report_class_classNum_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -47,6 +51,7 @@ def report_class_classNum_post(params=None, body=None, header=None, return_json=
     return res
 
 
+@allure.step("极运营/统计报表/班级报表/出勤明细")
 def report_class_classAttendance_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -62,6 +67,7 @@ def report_class_classAttendance_post(params=None, body=None, header=None, retur
     return res
 
 
+@allure.step("极运营/报表/课消报表/校区费用预警")
 def report_finance_school_expense_warning_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -77,6 +83,7 @@ def report_finance_school_expense_warning_post(params=None, body=None, header=No
     return res
 
 
+@allure.step("极运营/报表/收费报表/查询学生电子钱包明细")
 def report_finance_student_detail_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -92,6 +99,7 @@ def report_finance_student_detail_post(params=None, body=None, header=None, retu
     return res
 
 
+@allure.step("极运营/统计报表/课消报表/学员课消明细日志")
 def report_consumption_student_detail_log_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -107,7 +115,8 @@ def report_consumption_student_detail_log_post(params=None, body=None, header=No
     return res
 
 
-def report_dynamic_allTarget_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/统计报表/业务统计/获取全部方案")
+def report_dynamic_allTarget_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -122,7 +131,8 @@ def report_dynamic_allTarget_get(params=None, header=None, return_json=True, **k
     return res
 
 
-def report_dynamic_defTarget_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/统计报表/业务统计/获取默认方案")
+def report_dynamic_defTarget_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -137,6 +147,7 @@ def report_dynamic_defTarget_get(params=None, header=None, return_json=True, **k
     return res
 
 
+@allure.step("极运营/统计报表/课消报表/课消总汇")
 def report_consumption_all_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -152,6 +163,7 @@ def report_consumption_all_post(params=None, body=None, header=None, return_json
     return res
 
 
+@allure.step("极运营/统计报表/课消报表/学员课消明细")
 def report_consumption_student_detail_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -167,6 +179,7 @@ def report_consumption_student_detail_post(params=None, body=None, header=None, 
     return res
 
 
+@allure.step("极运营/统计报表/收费报表/材料收费")
 def report_charge_material_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -182,6 +195,7 @@ def report_charge_material_post(params=None, body=None, header=None, return_json
     return res
 
 
+@allure.step("极运营/统计报表/课消报表/学员课消总汇")
 def report_consumption_student_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -197,6 +211,7 @@ def report_consumption_student_post(params=None, body=None, header=None, return_
     return res
 
 
+@allure.step("极运营/统计报表/违规统计/违规班贴")
 def report_violation_classPost_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -212,6 +227,7 @@ def report_violation_classPost_post(params=None, body=None, header=None, return_
     return res
 
 
+@allure.step("极运营/统计报表/班级报表/班级花名册")
 def report_class_classRegister_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -227,6 +243,7 @@ def report_class_classRegister_post(params=None, body=None, header=None, return_
     return res
 
 
+@allure.step("极运营/统计报表/收费报表/课程收费")
 def report_charge_course_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -242,6 +259,7 @@ def report_charge_course_post(params=None, body=None, header=None, return_json=T
     return res
 
 
+@allure.step("极运营/统计报表/业务统计/续报率")
 def report_dynamic_continueRate_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -257,7 +275,8 @@ def report_dynamic_continueRate_post(params=None, body=None, header=None, return
     return res
 
 
-def report_condition_more_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/统计报表/筛选条件/更多筛选")
+def report_condition_more_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -272,6 +291,7 @@ def report_condition_more_get(params=None, header=None, return_json=True, **kwar
     return res
 
 
+@allure.step("极运营/统计报表/业务统计/退费率")
 def report_dynamic_refundRate_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -287,6 +307,7 @@ def report_dynamic_refundRate_post(params=None, body=None, header=None, return_j
     return res
 
 
+@allure.step("极运营/统计报表/业务统计/满班率")
 def report_dynamic_fullClassRate_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -302,7 +323,8 @@ def report_dynamic_fullClassRate_post(params=None, body=None, header=None, retur
     return res
 
 
-def report_class_daylyReportExcelExport_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/统计报表/续班率日报")
+def report_class_daylyReportExcelExport_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -317,6 +339,7 @@ def report_class_daylyReportExcelExport_get(params=None, header=None, return_jso
     return res
 
 
+@allure.step("极运营/统计报表/业务统计/营收动态")
 def report_dynamic_revenue_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -332,6 +355,7 @@ def report_dynamic_revenue_post(params=None, body=None, header=None, return_json
     return res
 
 
+@allure.step("极运营/统计报表/收费报表/退费汇总")
 def report_charge_refund_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -347,6 +371,7 @@ def report_charge_refund_post(params=None, body=None, header=None, return_json=T
     return res
 
 
+@allure.step("极运营/统计报表/筛选条件/选择班级")
 def report_condition_class_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -362,6 +387,7 @@ def report_condition_class_post(params=None, body=None, header=None, return_json
     return res
 
 
+@allure.step("极运营/统计报表/违规统计/违规点名")
 def report_violation_rollCall_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -377,6 +403,7 @@ def report_violation_rollCall_post(params=None, body=None, header=None, return_j
     return res
 
 
+@allure.step("极运营/统计报表/筛选条件/选择课程")
 def report_condition_course_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -392,6 +419,7 @@ def report_condition_course_post(params=None, body=None, header=None, return_jso
     return res
 
 
+@allure.step("极运营/统计报表/业务统计/人次动态")
 def report_dynamic_personTime_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -407,6 +435,7 @@ def report_dynamic_personTime_post(params=None, body=None, header=None, return_j
     return res
 
 
+@allure.step("收入报表-学员收入列表")
 def report_finance_student_income_list_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -422,6 +451,7 @@ def report_finance_student_income_list_post(params=None, body=None, header=None,
     return res
 
 
+@allure.step("收入报表-校区收入列表")
 def report_finance_school_income_list_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

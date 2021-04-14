@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("极运营/人事管理/权限设置/修改权限组")
 def permission_groups_groupId_patch(groupId, params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,6 +19,7 @@ def permission_groups_groupId_patch(groupId, params=None, body=None, header=None
     return res
 
 
+@allure.step("极运营/人事管理/权限设置/删除权限组")
 def permission_groups_id_delete(id, params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -32,6 +35,7 @@ def permission_groups_id_delete(id, params=None, body=None, header=None, return_
     return res
 
 
+@allure.step("极运营/人事管理/权限设置/新增权限组")
 def permission_groups_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -47,7 +51,8 @@ def permission_groups_post(params=None, body=None, header=None, return_json=True
     return res
 
 
-def permission_groups_groupId_get(groupId, params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/人事管理/权限设置/查看权限组下的详细权限")
+def permission_groups_groupId_get(groupId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -62,7 +67,8 @@ def permission_groups_groupId_get(groupId, params=None, header=None, return_json
     return res
 
 
-def permission_groups_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/人事管理/权限设置/权限组列表")
+def permission_groups_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

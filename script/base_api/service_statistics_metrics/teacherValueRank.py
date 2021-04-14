@@ -1,8 +1,10 @@
 
 from common.run_method import RunMethod
+import allure
 
 
-def teacherValueRank_term_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极数据/查询期段下拉列表")
+def teacherValueRank_term_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -17,7 +19,8 @@ def teacherValueRank_term_get(params=None, header=None, return_json=True, **kwar
     return res
 
 
-def teacherValueRank_cValueRank_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极数据/查询C值排名列表")
+def teacherValueRank_cValueRank_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -32,6 +35,7 @@ def teacherValueRank_cValueRank_get(params=None, header=None, return_json=True, 
     return res
 
 
+@allure.step("极数据/查询C值班级详情")
 def teacherValueRank_classDetail_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -47,6 +51,7 @@ def teacherValueRank_classDetail_post(params=None, body=None, header=None, retur
     return res
 
 
+@allure.step("极数据/查询C值含低价班班级详情")
 def teacherValueRank_lowPriceClassDetail_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

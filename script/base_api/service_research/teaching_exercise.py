@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("极教研/刷题/点评")
 def teaching_exercise_review_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,7 +19,8 @@ def teaching_exercise_review_post(params=None, body=None, header=None, return_js
     return res
 
 
-def teaching_exercise_recall_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极师通/我的刷题/刷题撤回")
+def teaching_exercise_recall_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -32,7 +35,8 @@ def teaching_exercise_recall_get(params=None, header=None, return_json=True, **k
     return res
 
 
-def teaching_exercise_query_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极师通/我的刷题/刷题详情查询")
+def teaching_exercise_query_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -47,6 +51,7 @@ def teaching_exercise_query_get(params=None, header=None, return_json=True, **kw
     return res
 
 
+@allure.step("极师通/我的刷题/提交刷题")
 def teaching_exercise_submit_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -62,7 +67,8 @@ def teaching_exercise_submit_post(params=None, body=None, header=None, return_js
     return res
 
 
-def teaching_exercise_current_query_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极师通/我的刷题/当前刷题")
+def teaching_exercise_current_query_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -77,6 +83,7 @@ def teaching_exercise_current_query_get(params=None, header=None, return_json=Tr
     return res
 
 
+@allure.step("极教研/备课统计(刷题)")
 def teaching_exercise_statistics_query_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

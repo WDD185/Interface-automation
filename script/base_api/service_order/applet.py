@@ -1,8 +1,10 @@
 
 from common.run_method import RunMethod
+import allure
 
 
-def applet_order_orderListForSingle_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("小程序/订单/单买订单列表")
+def applet_order_orderListForSingle_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -17,6 +19,7 @@ def applet_order_orderListForSingle_get(params=None, header=None, return_json=Tr
     return res
 
 
+@allure.step("小程序/订单/单买下单")
 def applet_order_saveOrder_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -32,6 +35,7 @@ def applet_order_saveOrder_post(params=None, body=None, header=None, return_json
     return res
 
 
+@allure.step("小程序/订单/创建订单（套餐、单品）")
 def applet_order_createOrder_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -47,6 +51,7 @@ def applet_order_createOrder_post(params=None, body=None, header=None, return_js
     return res
 
 
+@allure.step("小程序/订单/计算订单总价")
 def applet_order_calculateOrderPrice_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -62,6 +67,7 @@ def applet_order_calculateOrderPrice_post(params=None, body=None, header=None, r
     return res
 
 
+@allure.step("小程序/订单/下单前的预验证")
 def applet_order_preValidOrderCondition_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -77,6 +83,7 @@ def applet_order_preValidOrderCondition_post(params=None, body=None, header=None
     return res
 
 
+@allure.step("小程序/订单/订单匹配的优惠券")
 def applet_order_queryMatchDiscountAndCoupon_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -92,6 +99,7 @@ def applet_order_queryMatchDiscountAndCoupon_post(params=None, body=None, header
     return res
 
 
+@allure.step("小程序/订单/选择座位")
 def applet_order_take_seat_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -107,6 +115,7 @@ def applet_order_take_seat_post(params=None, body=None, header=None, return_json
     return res
 
 
+@allure.step("小程序/订单/释放座位")
 def applet_order_cancle_seat_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -122,7 +131,8 @@ def applet_order_cancle_seat_post(params=None, body=None, header=None, return_js
     return res
 
 
-def applet_coupon_count_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("小程序/我的主页/优惠券数量")
+def applet_coupon_count_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -137,7 +147,8 @@ def applet_coupon_count_get(params=None, header=None, return_json=True, **kwargs
     return res
 
 
-def applet_coupon_list_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("小程序/我的主页/优惠券列表")
+def applet_coupon_list_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -152,7 +163,8 @@ def applet_coupon_list_get(params=None, header=None, return_json=True, **kwargs)
     return res
 
 
-def applet_coupon_detail_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("小程序/我的主页/优惠券详情")
+def applet_coupon_detail_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -167,7 +179,8 @@ def applet_coupon_detail_get(params=None, header=None, return_json=True, **kwarg
     return res
 
 
-def applet_coupon_couponForClasses_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("小程序/我的主页/根据优惠券查询学生可报名班级")
+def applet_coupon_couponForClasses_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -182,6 +195,7 @@ def applet_coupon_couponForClasses_get(params=None, header=None, return_json=Tru
     return res
 
 
+@allure.step("小程序/订单/订单优惠计算")
 def applet_order_calculatePromotion_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

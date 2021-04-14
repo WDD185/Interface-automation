@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("极运营APP/数据/招生人次完成率")
 def statistics_person_time_school_achieve_rate_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,6 +19,7 @@ def statistics_person_time_school_achieve_rate_post(params=None, body=None, head
     return res
 
 
+@allure.step("极运营APP/数据/招生人次年级明细")
 def statistics_person_time_grade_achieve_detail_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -32,6 +35,7 @@ def statistics_person_time_grade_achieve_detail_post(params=None, body=None, hea
     return res
 
 
+@allure.step("极运营APP/数据/续报率汇总")
 def statistics_continue_rate_count_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -47,6 +51,7 @@ def statistics_continue_rate_count_post(params=None, body=None, header=None, ret
     return res
 
 
+@allure.step("极运营APP/数据/续报率年级明细")
 def statistics_continue_rate_grade_detail_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -62,6 +67,7 @@ def statistics_continue_rate_grade_detail_post(params=None, body=None, header=No
     return res
 
 
+@allure.step("极运营APP/数据/满班率汇总")
 def statistics_fullclass_rate_count_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -77,6 +83,7 @@ def statistics_fullclass_rate_count_post(params=None, body=None, header=None, re
     return res
 
 
+@allure.step("极运营APP/数据/满班率年级明细")
 def statistics_fullclass_rate_grade_detail_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -92,6 +99,7 @@ def statistics_fullclass_rate_grade_detail_post(params=None, body=None, header=N
     return res
 
 
+@allure.step("极运营APP/数据/退费率汇总")
 def statistics_refund_rate_count_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -107,6 +115,7 @@ def statistics_refund_rate_count_post(params=None, body=None, header=None, retur
     return res
 
 
+@allure.step("极运营APP/数据/退费率年级明细")
 def statistics_refund_rate_grade_detail_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

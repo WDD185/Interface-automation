@@ -1,8 +1,10 @@
 
 from common.run_method import RunMethod
+import allure
 
 
-def carousel_cms_getBannerCms_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("小程序/营销中心/cms管理/获取单个数据")
+def carousel_cms_getBannerCms_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -17,6 +19,7 @@ def carousel_cms_getBannerCms_get(params=None, header=None, return_json=True, **
     return res
 
 
+@allure.step("极运营/营销中心/cms管理/获取列表数据")
 def carousel_cms_getBannerCmsList_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -32,6 +35,7 @@ def carousel_cms_getBannerCmsList_post(params=None, body=None, header=None, retu
     return res
 
 
+@allure.step("极运营/营销中心/cms管理/增加数据")
 def carousel_cms_addBannerCms_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -47,6 +51,7 @@ def carousel_cms_addBannerCms_post(params=None, body=None, header=None, return_j
     return res
 
 
+@allure.step("极运营/营销中心/cms管理/更新数据")
 def carousel_cms_bannerCms_put(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -62,6 +67,7 @@ def carousel_cms_bannerCms_put(params=None, body=None, header=None, return_json=
     return res
 
 
+@allure.step("极运营/营销中心/cms管理/删除数据")
 def carousel_cms_bannerCms_delete(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

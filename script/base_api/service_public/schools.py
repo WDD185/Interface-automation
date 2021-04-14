@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("极运营/前台业务/报名/新增学生/就读学校名查询")
 def schools_queryCanUse_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,6 +19,7 @@ def schools_queryCanUse_post(params=None, body=None, header=None, return_json=Tr
     return res
 
 
+@allure.step("极运营/系统设置/基础参数设置/公立学校/新增")
 def schools_add_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -32,6 +35,7 @@ def schools_add_post(params=None, body=None, header=None, return_json=True, **kw
     return res
 
 
+@allure.step("极运营/系统设置/基础参数设置/公立学校/编辑")
 def schools_edit_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -47,6 +51,7 @@ def schools_edit_post(params=None, body=None, header=None, return_json=True, **k
     return res
 
 
+@allure.step("极运营/系统设置/基础参数设置/公立学校/查询列表")
 def schools_queryAll_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -62,6 +67,7 @@ def schools_queryAll_post(params=None, body=None, header=None, return_json=True,
     return res
 
 
+@allure.step("极运营/系统设置/基础参数设置/公立学校/编辑状态")
 def schools_updateStatus_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -77,6 +83,7 @@ def schools_updateStatus_post(params=None, body=None, header=None, return_json=T
     return res
 
 
+@allure.step("极运营/系统设置/基础设置/全日制学校导出")
 def schools_export_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -92,7 +99,8 @@ def schools_export_post(params=None, body=None, header=None, return_json=True, *
     return res
 
 
-def schools_detail_id_get(id, params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/系统设置/基础设置/全日制学校详情")
+def schools_detail_id_get(id, params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -107,7 +115,8 @@ def schools_detail_id_get(id, params=None, header=None, return_json=True, **kwar
     return res
 
 
-def schools_grades_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/系统设置/基础设置/全日制学校年级列表")
+def schools_grades_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -122,6 +131,7 @@ def schools_grades_get(params=None, header=None, return_json=True, **kwargs):
     return res
 
 
+@allure.step("极运营/系统设置/基础设置/全日制学校年级修改")
 def schools_grades_update_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -137,7 +147,8 @@ def schools_grades_update_post(params=None, body=None, header=None, return_json=
     return res
 
 
-def schools_grades_export_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/系统设置/基础设置/全日制学校年级导出")
+def schools_grades_export_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("教研/题库/保存视频")
 def question_video_uploadVideo_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,6 +19,7 @@ def question_video_uploadVideo_post(params=None, body=None, header=None, return_
     return res
 
 
+@allure.step("教研/题库/删除视频")
 def question_video_delete_delete(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -32,7 +35,8 @@ def question_video_delete_delete(params=None, body=None, header=None, return_jso
     return res
 
 
-def question_video_updateNameById_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("教研/题库/修改视频名称")
+def question_video_updateNameById_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -47,7 +51,8 @@ def question_video_updateNameById_get(params=None, header=None, return_json=True
     return res
 
 
-def question_video_queryVideoByQuestionId_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("教研/课件/根据questionId获取视频列表")
+def question_video_queryVideoByQuestionId_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -62,6 +67,7 @@ def question_video_queryVideoByQuestionId_get(params=None, header=None, return_j
     return res
 
 
+@allure.step("极题库/批量关联视频文件")
 def question_video_uploadVideos_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

@@ -1,8 +1,10 @@
 
 from common.run_method import RunMethod
+import allure
 
 
-def teachers_classes_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极师通/老师信息/老师班级（新）")
+def teachers_classes_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -17,7 +19,8 @@ def teachers_classes_get(params=None, header=None, return_json=True, **kwargs):
     return res
 
 
-def teachers_teacherId_teach_situation_get(teacherId, params=None, header=None, return_json=True, **kwargs):
+@allure.step("极师通/首页/查询上月老师教学情况")
+def teachers_teacherId_teach_situation_get(teacherId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -32,7 +35,8 @@ def teachers_teacherId_teach_situation_get(teacherId, params=None, header=None, 
     return res
 
 
-def teachers_teacherId_timetables_queries_get(teacherId, params=None, header=None, return_json=True, **kwargs):
+@allure.step("极师通/首页/查询老师某个时间段排课计划")
+def teachers_teacherId_timetables_queries_get(teacherId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -47,7 +51,8 @@ def teachers_teacherId_timetables_queries_get(teacherId, params=None, header=Non
     return res
 
 
-def teachers_teacherId_classes_get(teacherId, params=None, header=None, return_json=True, **kwargs):
+@allure.step("极师通/课表/查询老师在目前所教的班级")
+def teachers_teacherId_classes_get(teacherId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -62,6 +67,7 @@ def teachers_teacherId_classes_get(teacherId, params=None, header=None, return_j
     return res
 
 
+@allure.step("极师通/首页/班级列表")
 def teachers_classes_contidion_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

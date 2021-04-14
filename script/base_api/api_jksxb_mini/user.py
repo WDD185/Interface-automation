@@ -1,8 +1,10 @@
 
 from common.run_method import RunMethod
+import allure
 
 
-def user_visitor_generateId_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("线上商城/小程序/获取游客ID")
+def user_visitor_generateId_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -17,6 +19,7 @@ def user_visitor_generateId_get(params=None, header=None, return_json=True, **kw
     return res
 
 
+@allure.step("线上商城/小程序/绑定游客与学生")
 def user_visitor_bindUser_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -32,6 +35,7 @@ def user_visitor_bindUser_post(params=None, body=None, header=None, return_json=
     return res
 
 
+@allure.step("线上商城/小程序/活动商品下单")
 def user_goods_add_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -47,6 +51,7 @@ def user_goods_add_post(params=None, body=None, header=None, return_json=True, *
     return res
 
 
+@allure.step("线上商城/小程序/绑定活动商品码")
 def user_goods_bindCode_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -62,6 +67,7 @@ def user_goods_bindCode_post(params=None, body=None, header=None, return_json=Tr
     return res
 
 
+@allure.step("线上商城/小程序/学生购买商品查询")
 def user_goods_list_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -77,6 +83,7 @@ def user_goods_list_post(params=None, body=None, header=None, return_json=True, 
     return res
 
 
+@allure.step("线上商城/小程序/学生地理位置记录")
 def user_address_addOrUpdate_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

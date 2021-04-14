@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("极运营/班主任/知识库/知识标签/新增")
 def documentTag_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,6 +19,7 @@ def documentTag_post(params=None, body=None, header=None, return_json=True, **kw
     return res
 
 
+@allure.step("极运营/班主任/知识库/知识标签/修改")
 def documentTag_put(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -32,7 +35,8 @@ def documentTag_put(params=None, body=None, header=None, return_json=True, **kwa
     return res
 
 
-def documentTag_id_get(id, params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/班主任/知识库/知识标签/id查询")
+def documentTag_id_get(id, params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -47,7 +51,8 @@ def documentTag_id_get(id, params=None, header=None, return_json=True, **kwargs)
     return res
 
 
-def documentTag_list_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/班主任/知识库/知识标签/列表查询")
+def documentTag_list_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -62,7 +67,8 @@ def documentTag_list_get(params=None, header=None, return_json=True, **kwargs):
     return res
 
 
-def documentTag_all_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/班主任/知识库/知识标签/查询所有")
+def documentTag_all_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -77,6 +83,7 @@ def documentTag_all_get(params=None, header=None, return_json=True, **kwargs):
     return res
 
 
+@allure.step("极运营/班主任/知识库/知识标签/删除")
 def documentTag_ids_delete(ids, params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

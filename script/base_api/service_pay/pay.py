@@ -1,8 +1,10 @@
 
 from common.run_method import RunMethod
+import allure
 
 
-def pay_boc_pos_posInfo_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("中行POS支付-查询可用pos")
+def pay_boc_pos_posInfo_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -17,7 +19,8 @@ def pay_boc_pos_posInfo_get(params=None, header=None, return_json=True, **kwargs
     return res
 
 
-def pay_queryPayStatus_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("通用/主动查询指定支付状态")
+def pay_queryPayStatus_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -32,6 +35,7 @@ def pay_queryPayStatus_get(params=None, header=None, return_json=True, **kwargs)
     return res
 
 
+@allure.step("微信支付-预支付")
 def pay_weChat_app_prepay_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -47,7 +51,8 @@ def pay_weChat_app_prepay_post(params=None, body=None, header=None, return_json=
     return res
 
 
-def pay_weChat_app_conciliation_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("微信支付-对账单")
+def pay_weChat_app_conciliation_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -62,6 +67,7 @@ def pay_weChat_app_conciliation_get(params=None, header=None, return_json=True, 
     return res
 
 
+@allure.step("中行POS支付-预支付")
 def pay_boc_pos_prepay_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -77,6 +83,7 @@ def pay_boc_pos_prepay_post(params=None, body=None, header=None, return_json=Tru
     return res
 
 
+@allure.step("微信直连支付-预支付")
 def pay_weChat_jsapi_prepay_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -92,6 +99,7 @@ def pay_weChat_jsapi_prepay_post(params=None, body=None, header=None, return_jso
     return res
 
 
+@allure.step("支付宝支付-预支付")
 def pay_ali_app_prepay_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -107,6 +115,7 @@ def pay_ali_app_prepay_post(params=None, body=None, header=None, return_json=Tru
     return res
 
 
+@allure.step("对账/异常账单/更新状态")
 def pay_check_mistake_updateMistakeBill_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -122,6 +131,7 @@ def pay_check_mistake_updateMistakeBill_post(params=None, body=None, header=None
     return res
 
 
+@allure.step("对账/异常对账单/列表页")
 def pay_check_mistake_queryByBankType_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -137,7 +147,8 @@ def pay_check_mistake_queryByBankType_post(params=None, body=None, header=None, 
     return res
 
 
-def pay_schoolMerchant_getSchoolAreaByCompId_compId_get(compId, params=None, header=None, return_json=True, **kwargs):
+@allure.step("分账逻辑/配置商户号/根据公司ID查询校区")
+def pay_schoolMerchant_getSchoolAreaByCompId_compId_get(compId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -152,7 +163,8 @@ def pay_schoolMerchant_getSchoolAreaByCompId_compId_get(compId, params=None, hea
     return res
 
 
-def pay_schoolMerchant_queryAllCompany_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("分账逻辑/配置商户号/查询所有公司")
+def pay_schoolMerchant_queryAllCompany_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -167,6 +179,7 @@ def pay_schoolMerchant_queryAllCompany_get(params=None, header=None, return_json
     return res
 
 
+@allure.step("分账逻辑/配置商户号/修改账户信息")
 def pay_schoolMerchant_updateSchoolMerchant_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -182,6 +195,7 @@ def pay_schoolMerchant_updateSchoolMerchant_post(params=None, body=None, header=
     return res
 
 
+@allure.step("分账逻辑/配置商户号/查询可用账号")
 def pay_schoolMerchant_queryByMerchantTypeAndSchoolArea_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -197,6 +211,7 @@ def pay_schoolMerchant_queryByMerchantTypeAndSchoolArea_post(params=None, body=N
     return res
 
 
+@allure.step("支付宝H5支付-预支付")
 def pay_ali_js_prepay_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -212,6 +227,7 @@ def pay_ali_js_prepay_post(params=None, body=None, header=None, return_json=True
     return res
 
 
+@allure.step("支付宝扫码支付-预支付")
 def pay_ali_scan_prepay_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -227,6 +243,7 @@ def pay_ali_scan_prepay_post(params=None, body=None, header=None, return_json=Tr
     return res
 
 
+@allure.step("微信扫码支付-预支付")
 def pay_wechat_scan_prepay_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

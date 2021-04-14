@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("极权限/组织员工列表")
 def employee_getEmployeeShowList_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,6 +19,7 @@ def employee_getEmployeeShowList_post(params=None, body=None, header=None, retur
     return res
 
 
+@allure.step("极权限/异动员工列表")
 def employee_getChangeEmployeeShowList_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -32,6 +35,7 @@ def employee_getChangeEmployeeShowList_post(params=None, body=None, header=None,
     return res
 
 
+@allure.step("极权限/新增员工")
 def employee_insertEmployee_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -47,7 +51,8 @@ def employee_insertEmployee_post(params=None, body=None, header=None, return_jso
     return res
 
 
-def employee_disableEmployee_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极权限/停用员工帐号")
+def employee_disableEmployee_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -62,7 +67,8 @@ def employee_disableEmployee_get(params=None, header=None, return_json=True, **k
     return res
 
 
-def employee_deleteEmployee_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极权限/删除员工")
+def employee_deleteEmployee_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -77,6 +83,7 @@ def employee_deleteEmployee_get(params=None, header=None, return_json=True, **kw
     return res
 
 
+@allure.step("极权限/标记为已处理")
 def employee_markHandledChangeEmployee_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -92,6 +99,7 @@ def employee_markHandledChangeEmployee_post(params=None, body=None, header=None,
     return res
 
 
+@allure.step("极权限/设置可操作校区")
 def employee_setOperableSchool_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -107,6 +115,7 @@ def employee_setOperableSchool_post(params=None, body=None, header=None, return_
     return res
 
 
+@allure.step("极权限/设置授课校区")
 def employee_setTeachableSchool_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -122,6 +131,7 @@ def employee_setTeachableSchool_post(params=None, body=None, header=None, return
     return res
 
 
+@allure.step("极权限/设置授课学段")
 def employee_setTeachDegree_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -137,6 +147,7 @@ def employee_setTeachDegree_post(params=None, body=None, header=None, return_jso
     return res
 
 
+@allure.step("极权限/设置授课科目")
 def employee_setTeachSubject_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -152,7 +163,8 @@ def employee_setTeachSubject_post(params=None, body=None, header=None, return_js
     return res
 
 
-def employee_getEmployeeDetailOutDto_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极权限/获取员工概览信息")
+def employee_getEmployeeDetailOutDto_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -167,7 +179,8 @@ def employee_getEmployeeDetailOutDto_get(params=None, header=None, return_json=T
     return res
 
 
-def employee_getTeachDegree_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极权限/获取授课学段下拉框")
+def employee_getTeachDegree_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -182,7 +195,8 @@ def employee_getTeachDegree_get(params=None, header=None, return_json=True, **kw
     return res
 
 
-def employee_getTeachSubject_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极权限/获取授课科目下拉框")
+def employee_getTeachSubject_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

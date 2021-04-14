@@ -1,8 +1,10 @@
 
 from common.run_method import RunMethod
+import allure
 
 
-def versionInfo_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("代码版本接口")
+def versionInfo_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

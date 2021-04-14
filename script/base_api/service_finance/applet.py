@@ -1,8 +1,10 @@
 
 from common.run_method import RunMethod
+import allure
 
 
-def applet_finance_introduce_user_amount_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("小程序/转介绍/用户转介绍金额")
+def applet_finance_introduce_user_amount_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -17,6 +19,7 @@ def applet_finance_introduce_user_amount_get(params=None, header=None, return_js
     return res
 
 
+@allure.step("小程序/转介绍/领取至电子钱包")
 def applet_finance_introduce_receive_receiveToWallet_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -32,6 +35,7 @@ def applet_finance_introduce_receive_receiveToWallet_post(params=None, body=None
     return res
 
 
+@allure.step("小程序/电子钱包/流水")
 def applet_financial_wallet_detail_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -47,6 +51,7 @@ def applet_financial_wallet_detail_post(params=None, body=None, header=None, ret
     return res
 
 
+@allure.step("小程序/转介绍/明细列表")
 def applet_finance_introduce_receive_introduced_query_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -62,6 +67,7 @@ def applet_finance_introduce_receive_introduced_query_post(params=None, body=Non
     return res
 
 
+@allure.step("小程序/转介绍/发放明细")
 def applet_finance_introduce_receive_query_detail_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

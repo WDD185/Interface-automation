@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("云盘/创建一级文件夹")
 def cloudDiskController_createFolder_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,6 +19,7 @@ def cloudDiskController_createFolder_post(params=None, body=None, header=None, r
     return res
 
 
+@allure.step("云盘/上传")
 def cloudDiskController_upload_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -32,6 +35,7 @@ def cloudDiskController_upload_post(params=None, body=None, header=None, return_
     return res
 
 
+@allure.step("云盘/创建二级文件夹")
 def cloudDiskController_createSecondLevelFolder_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -47,6 +51,7 @@ def cloudDiskController_createSecondLevelFolder_post(params=None, body=None, hea
     return res
 
 
+@allure.step("云盘/查询列表")
 def cloudDiskController_queryList_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -62,6 +67,7 @@ def cloudDiskController_queryList_post(params=None, body=None, header=None, retu
     return res
 
 
+@allure.step("云盘/查询二级文件")
 def cloudDiskController_querySecondLevelList_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -77,6 +83,7 @@ def cloudDiskController_querySecondLevelList_post(params=None, body=None, header
     return res
 
 
+@allure.step("云盘/修改权限")
 def cloudDiskController_editFactor_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -92,7 +99,8 @@ def cloudDiskController_editFactor_post(params=None, body=None, header=None, ret
     return res
 
 
-def cloudDiskController_delete_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("云盘/删除")
+def cloudDiskController_delete_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -107,7 +115,8 @@ def cloudDiskController_delete_get(params=None, header=None, return_json=True, *
     return res
 
 
-def cloudDiskController_queryRegionByCloudDiskId_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("云盘/查询大区")
+def cloudDiskController_queryRegionByCloudDiskId_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -122,7 +131,8 @@ def cloudDiskController_queryRegionByCloudDiskId_get(params=None, header=None, r
     return res
 
 
-def cloudDiskController_queryCloudDiskDetail_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("云盘/查询详情")
+def cloudDiskController_queryCloudDiskDetail_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -137,7 +147,8 @@ def cloudDiskController_queryCloudDiskDetail_get(params=None, header=None, retur
     return res
 
 
-def cloudDiskController_queryOperation_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("云盘/查询log")
+def cloudDiskController_queryOperation_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -152,7 +163,8 @@ def cloudDiskController_queryOperation_get(params=None, header=None, return_json
     return res
 
 
-def cloudDiskController_updateFileName_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("云盘/修改名称")
+def cloudDiskController_updateFileName_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -167,7 +179,8 @@ def cloudDiskController_updateFileName_get(params=None, header=None, return_json
     return res
 
 
-def cloudDiskController_updateDownloadStatus_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("云盘/切换是否下载")
+def cloudDiskController_updateDownloadStatus_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

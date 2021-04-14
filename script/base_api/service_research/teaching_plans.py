@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("极师通/章节目录/教案分享")
 def teaching_plans_share_query_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,7 +19,8 @@ def teaching_plans_share_query_post(params=None, body=None, header=None, return_
     return res
 
 
-def teaching_plans_lecture_query_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极教研/教案详情/讲次教案列表")
+def teaching_plans_lecture_query_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -32,6 +35,7 @@ def teaching_plans_lecture_query_get(params=None, header=None, return_json=True,
     return res
 
 
+@allure.step("极教研/备课审阅/教案列表")
 def teaching_plans_query_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -47,7 +51,8 @@ def teaching_plans_query_post(params=None, body=None, header=None, return_json=T
     return res
 
 
-def teaching_plans_history_query_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极师通/我的教案/教案提交历史")
+def teaching_plans_history_query_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

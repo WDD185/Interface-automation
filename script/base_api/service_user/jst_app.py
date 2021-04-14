@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("通用/基础/极师通用户登录")
 def jst_app_auth_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,7 +19,8 @@ def jst_app_auth_post(params=None, body=None, header=None, return_json=True, **k
     return res
 
 
-def jst_app_employees_info_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极师通App/首页/获取用户信息")
+def jst_app_employees_info_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

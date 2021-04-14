@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("极运营/营销中心/banner管理/banner列表")
 def banner_pageList_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,7 +19,8 @@ def banner_pageList_post(params=None, body=None, header=None, return_json=True, 
     return res
 
 
-def banner_item_list_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/营销中心/banner管理/banner图列表")
+def banner_item_list_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -32,6 +35,7 @@ def banner_item_list_get(params=None, header=None, return_json=True, **kwargs):
     return res
 
 
+@allure.step("极运营/营销中心/banner管理/新增banner图")
 def banner_item_add_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -47,6 +51,7 @@ def banner_item_add_post(params=None, body=None, header=None, return_json=True, 
     return res
 
 
+@allure.step("极运营/营销中心/banner管理/修改banner图")
 def banner_item_update_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -62,7 +67,8 @@ def banner_item_update_post(params=None, body=None, header=None, return_json=Tru
     return res
 
 
-def banner_item_switch_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/营销中心/banner管理/启停banner图")
+def banner_item_switch_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -77,7 +83,8 @@ def banner_item_switch_get(params=None, header=None, return_json=True, **kwargs)
     return res
 
 
-def banner_item_delete_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/营销中心/banner管理/删除banner图")
+def banner_item_delete_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

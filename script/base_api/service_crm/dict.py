@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("极运营/系统设置/基础参数设置/线索来源/查询")
 def dict_studentSource_query_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,6 +19,7 @@ def dict_studentSource_query_post(params=None, body=None, header=None, return_js
     return res
 
 
+@allure.step("极运营/系统设置/基础参数设置/线索来源/新增")
 def dict_studentSource_add_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -32,6 +35,7 @@ def dict_studentSource_add_post(params=None, body=None, header=None, return_json
     return res
 
 
+@allure.step("极运营/系统设置/基础参数设置/线索来源/修改")
 def dict_studentSource_edit_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -47,6 +51,7 @@ def dict_studentSource_edit_post(params=None, body=None, header=None, return_jso
     return res
 
 
+@allure.step("极运营/系统设置/基础参数设置/线索来源/编辑状态")
 def dict_studentSource_updateStatus_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -62,6 +67,7 @@ def dict_studentSource_updateStatus_post(params=None, body=None, header=None, re
     return res
 
 
+@allure.step("极运营/通用/查询线索来源")
 def dict_studentSource_queryNoAuth_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

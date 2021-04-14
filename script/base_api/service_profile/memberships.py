@@ -1,8 +1,10 @@
 
 from common.run_method import RunMethod
+import allure
 
 
-def memberships_students_continueStatus_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极师通/花名册/查询学生续报状态")
+def memberships_students_continueStatus_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -17,7 +19,8 @@ def memberships_students_continueStatus_get(params=None, header=None, return_jso
     return res
 
 
-def memberships_overview_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极师通/花名册/查询老师所有学生")
+def memberships_overview_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -32,7 +35,8 @@ def memberships_overview_get(params=None, header=None, return_json=True, **kwarg
     return res
 
 
-def memberships_classes_export_classId_get(classId, params=None, header=None, return_json=True, **kwargs):
+@allure.step("极师通/花名册/导出班级花名册")
+def memberships_classes_export_classId_get(classId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -47,7 +51,8 @@ def memberships_classes_export_classId_get(classId, params=None, header=None, re
     return res
 
 
-def memberships_classes_classId_get(classId, params=None, header=None, return_json=True, **kwargs):
+@allure.step("极师通/花名册/查询班级花名册")
+def memberships_classes_classId_get(classId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -62,7 +67,8 @@ def memberships_classes_classId_get(classId, params=None, header=None, return_js
     return res
 
 
-def memberships_schedules_classScheduleId_get(classScheduleId, params=None, header=None, return_json=True, **kwargs):
+@allure.step("极师通/点名/查询本堂课实际上课学生")
+def memberships_schedules_classScheduleId_get(classScheduleId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -77,7 +83,8 @@ def memberships_schedules_classScheduleId_get(classScheduleId, params=None, head
     return res
 
 
-def memberships_studentId_history_get(studentId, params=None, header=None, return_json=True, **kwargs):
+@allure.step("极师通/花名册/查询学生就读历史")
+def memberships_studentId_history_get(studentId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -92,7 +99,8 @@ def memberships_studentId_history_get(studentId, params=None, header=None, retur
     return res
 
 
-def memberships_student_currentClass_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极师通/花名册/查询学生的在读班级信息")
+def memberships_student_currentClass_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -107,6 +115,7 @@ def memberships_student_currentClass_get(params=None, header=None, return_json=T
     return res
 
 
+@allure.step("/导出/导出花名册")
 def memberships_classes_exportClassStudentInfo_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -122,6 +131,7 @@ def memberships_classes_exportClassStudentInfo_post(params=None, body=None, head
     return res
 
 
+@allure.step("极师通/花名册/查询班级花名册")
 def memberships_classes_queryClassStudentInfo_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

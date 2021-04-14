@@ -1,8 +1,10 @@
 
 from common.run_method import RunMethod
+import allure
 
 
-def goods_info_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("线上商城/小程序/活动商品信息")
+def goods_info_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("极运营/营销中心/商品中心/新建编辑商品")
 def goods_course_saveGoods_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,6 +19,7 @@ def goods_course_saveGoods_post(params=None, body=None, header=None, return_json
     return res
 
 
+@allure.step("极运营/营销中心/商品中心/面授课程商品列表")
 def goods_course_goodsList_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -32,7 +35,8 @@ def goods_course_goodsList_post(params=None, body=None, header=None, return_json
     return res
 
 
-def goods_course_goodsDetail_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/营销中心/商品中心/商品详情")
+def goods_course_goodsDetail_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -47,6 +51,7 @@ def goods_course_goodsDetail_get(params=None, header=None, return_json=True, **k
     return res
 
 
+@allure.step("极运营/营销中心/商品中心/停用启用商品")
 def goods_course_updateGoodsStatus_patch(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -62,6 +67,7 @@ def goods_course_updateGoodsStatus_patch(params=None, body=None, header=None, re
     return res
 
 
+@allure.step("极运营/营销中心/商品中心/删除商品")
 def goods_course_deleteGoods_delete(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

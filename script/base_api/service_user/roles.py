@@ -1,8 +1,10 @@
 
 from common.run_method import RunMethod
+import allure
 
 
-def roles_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/人事管理/权限设置/角色列表")
+def roles_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -17,7 +19,8 @@ def roles_get(params=None, header=None, return_json=True, **kwargs):
     return res
 
 
-def roles_roleId_users_get(roleId, params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/人事管理/用户授权/查看此角色下的用户列表")
+def roles_roleId_users_get(roleId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -32,7 +35,8 @@ def roles_roleId_users_get(roleId, params=None, header=None, return_json=True, *
     return res
 
 
-def roles_roleId_get(roleId, params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/人事管理/权限设置/查看角色下的权限组")
+def roles_roleId_get(roleId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -47,6 +51,7 @@ def roles_roleId_get(roleId, params=None, header=None, return_json=True, **kwarg
     return res
 
 
+@allure.step("极运营/人事管理/权限设置/删除角色")
 def roles_roleId_delete(roleId, params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -62,6 +67,7 @@ def roles_roleId_delete(roleId, params=None, body=None, header=None, return_json
     return res
 
 
+@allure.step("极运营/人事管理/用户授权/员工添加角色")
 def roles_roleId_employees_post(roleId, params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -77,6 +83,7 @@ def roles_roleId_employees_post(roleId, params=None, body=None, header=None, ret
     return res
 
 
+@allure.step("极运营/人事管理/权限设置/新增角色")
 def roles_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -92,6 +99,7 @@ def roles_post(params=None, body=None, header=None, return_json=True, **kwargs):
     return res
 
 
+@allure.step("极运营/人事管理/用户授权/从角色中删掉某人")
 def roles_roleId_users_userId_delete(roleId, userId, params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -107,6 +115,7 @@ def roles_roleId_users_userId_delete(roleId, userId, params=None, body=None, hea
     return res
 
 
+@allure.step("极运营/人事管理/权限设置/修改角色")
 def roles_roleId_patch(roleId, params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

@@ -1,8 +1,10 @@
 
 from common.run_method import RunMethod
+import allure
 
 
-def qrcode_download_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("通用/二维码/生成二维码")
+def qrcode_download_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

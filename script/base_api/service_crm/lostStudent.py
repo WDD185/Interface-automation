@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("极运营/CRM/流失管理/流失学员/流失学员列表查询")
 def lostStudent_query_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,6 +19,7 @@ def lostStudent_query_post(params=None, body=None, header=None, return_json=True
     return res
 
 
+@allure.step("极运营/CRM/流失管理/流失学员/流失学员导出")
 def lostStudent_export_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -32,6 +35,7 @@ def lostStudent_export_post(params=None, body=None, header=None, return_json=Tru
     return res
 
 
+@allure.step("极运营/CRM/流失管理/流失学员/编辑流失原因")
 def lostStudent_editReason_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -47,6 +51,7 @@ def lostStudent_editReason_post(params=None, body=None, header=None, return_json
     return res
 
 
+@allure.step("极运营/CRM/流失管理/流失学员/获取班主任和教师")
 def lostStudent_getTeachersAndDirectors_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

@@ -1,8 +1,10 @@
 
 from common.run_method import RunMethod
+import allure
 
 
-def group_order_listGroupPurchases_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("线上商店-团购&订单/团购列表")
+def group_order_listGroupPurchases_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -17,7 +19,8 @@ def group_order_listGroupPurchases_get(params=None, header=None, return_json=Tru
     return res
 
 
-def group_order_listMyGroupOrders_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("线上商店-团购&订单/拼团订单列表")
+def group_order_listMyGroupOrders_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -32,7 +35,8 @@ def group_order_listMyGroupOrders_get(params=None, header=None, return_json=True
     return res
 
 
-def group_order_getGroupPurchaseDetail_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("线上商店-团购&订单/团详详情")
+def group_order_getGroupPurchaseDetail_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -47,7 +51,8 @@ def group_order_getGroupPurchaseDetail_get(params=None, header=None, return_json
     return res
 
 
-def group_qr_getShareDetail_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("线上商店-小程序分享/获取小程序分享详情")
+def group_qr_getShareDetail_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -62,7 +67,8 @@ def group_qr_getShareDetail_get(params=None, header=None, return_json=True, **kw
     return res
 
 
-def group_qr_classQr_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("线上商店-小程序分享/获取活动班级二维码")
+def group_qr_classQr_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -77,7 +83,8 @@ def group_qr_classQr_get(params=None, header=None, return_json=True, **kwargs):
     return res
 
 
-def group_qr_groupQr_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("线上商店-小程序分享/获取组团二维码")
+def group_qr_groupQr_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -92,7 +99,8 @@ def group_qr_groupQr_get(params=None, header=None, return_json=True, **kwargs):
     return res
 
 
-def group_center_groupDetail_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/营销中心/团购中心/组团详情")
+def group_center_groupDetail_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -107,6 +115,7 @@ def group_center_groupDetail_get(params=None, header=None, return_json=True, **k
     return res
 
 
+@allure.step("极运营/营销中心/团购订单/团购订单列表")
 def group_order_orderList_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -122,6 +131,7 @@ def group_order_orderList_post(params=None, body=None, header=None, return_json=
     return res
 
 
+@allure.step("极运营/营销中心/团购中心/组团列表")
 def group_center_groupList_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -137,7 +147,8 @@ def group_center_groupList_post(params=None, body=None, header=None, return_json
     return res
 
 
-def group_center_activityDetail_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/营销中心/团购中心/活动详情")
+def group_center_activityDetail_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -152,6 +163,7 @@ def group_center_activityDetail_get(params=None, header=None, return_json=True, 
     return res
 
 
+@allure.step("极运营/营销中心/团购中心/删除活动")
 def group_center_deleteActivity_delete(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -167,6 +179,7 @@ def group_center_deleteActivity_delete(params=None, body=None, header=None, retu
     return res
 
 
+@allure.step("极运营/营销中心/团购中心/停用启用活动")
 def group_center_updateActivityStatus_patch(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -182,6 +195,7 @@ def group_center_updateActivityStatus_patch(params=None, body=None, header=None,
     return res
 
 
+@allure.step("极运营/营销中心/团购中心/活动列表")
 def group_center_activityList_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -197,6 +211,7 @@ def group_center_activityList_post(params=None, body=None, header=None, return_j
     return res
 
 
+@allure.step("极运营/营销中心/团购中心/新增编辑活动")
 def group_center_saveActivity_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -212,7 +227,8 @@ def group_center_saveActivity_post(params=None, body=None, header=None, return_j
     return res
 
 
-def group_operate_refund_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/营销中心/团购订单/退款")
+def group_operate_refund_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -227,6 +243,7 @@ def group_operate_refund_get(params=None, header=None, return_json=True, **kwarg
     return res
 
 
+@allure.step("极运营/营销中心/团购订单/团购订单总费用")
 def group_order_getTotalAmount_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -242,7 +259,8 @@ def group_order_getTotalAmount_post(params=None, body=None, header=None, return_
     return res
 
 
-def group_operate_refundDetail_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/营销中心/团购订单/详情")
+def group_operate_refundDetail_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -257,7 +275,8 @@ def group_operate_refundDetail_get(params=None, header=None, return_json=True, *
     return res
 
 
-def group_order_getOrderStatus_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("小程序/订单/订单状态查询")
+def group_order_getOrderStatus_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -272,7 +291,8 @@ def group_order_getOrderStatus_get(params=None, header=None, return_json=True, *
     return res
 
 
-def group_operate_prePay_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("小程序/订单/预支付")
+def group_operate_prePay_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -287,6 +307,7 @@ def group_operate_prePay_get(params=None, header=None, return_json=True, **kwarg
     return res
 
 
+@allure.step("小程序/在线商城/支付前验证")
 def group_micoApp_queryStudentActiveOrder_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -302,7 +323,8 @@ def group_micoApp_queryStudentActiveOrder_post(params=None, body=None, header=No
     return res
 
 
-def group_micoApp_groupOrderDetail_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("小程序/拼团中、拼团成功、拼团失败、分享打开")
+def group_micoApp_groupOrderDetail_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -317,7 +339,8 @@ def group_micoApp_groupOrderDetail_get(params=None, header=None, return_json=Tru
     return res
 
 
-def group_micoApp_activeClassDetail_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("小程序/首页详情")
+def group_micoApp_activeClassDetail_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -332,6 +355,7 @@ def group_micoApp_activeClassDetail_get(params=None, header=None, return_json=Tr
     return res
 
 
+@allure.step("小程序/首页")
 def group_micoApp_index_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -347,7 +371,8 @@ def group_micoApp_index_post(params=None, body=None, header=None, return_json=Tr
     return res
 
 
-def group_order_cancelGroupOrder_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("小程序/订单/取消订单")
+def group_order_cancelGroupOrder_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -362,6 +387,7 @@ def group_order_cancelGroupOrder_get(params=None, header=None, return_json=True,
     return res
 
 
+@allure.step("小程序/订单/团购下单")
 def group_order_order_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -377,7 +403,8 @@ def group_order_order_post(params=None, body=None, header=None, return_json=True
     return res
 
 
-def group_micoApp_getActiveJoinGroup_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("小程序/商品详情/参团信息")
+def group_micoApp_getActiveJoinGroup_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -392,6 +419,7 @@ def group_micoApp_getActiveJoinGroup_get(params=None, header=None, return_json=T
     return res
 
 
+@allure.step("极运营/营销中心/小程序码生成")
 def group_qr_getQr_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -407,7 +435,8 @@ def group_qr_getQr_post(params=None, body=None, header=None, return_json=True, *
     return res
 
 
-def group_qr_share_miniProgram_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/营销中心/团购中心/分享活动二维码")
+def group_qr_share_miniProgram_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -422,6 +451,7 @@ def group_qr_share_miniProgram_get(params=None, header=None, return_json=True, *
     return res
 
 
+@allure.step("极运营/营销中心/团购订单/导出订单")
 def group_order_orderList_export_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -437,6 +467,7 @@ def group_order_orderList_export_post(params=None, body=None, header=None, retur
     return res
 
 
+@allure.step("极运营/营销中心/团购订单/一键成团")
 def group_order_forceMergeGroup_activityId_post(activityId, params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -452,7 +483,8 @@ def group_order_forceMergeGroup_activityId_post(activityId, params=None, body=No
     return res
 
 
-def group_micoApp_activity_schoolAreas_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("小程序/商品/活动校区列表")
+def group_micoApp_activity_schoolAreas_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

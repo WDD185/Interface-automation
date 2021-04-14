@@ -1,8 +1,10 @@
 
 from common.run_method import RunMethod
+import allure
 
 
-def role_queryMasterRoleTreeByEmployeeId_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极权限/根据员工ID查询为角色组管理员的所有角色分组")
+def role_queryMasterRoleTreeByEmployeeId_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -17,7 +19,8 @@ def role_queryMasterRoleTreeByEmployeeId_get(params=None, header=None, return_js
     return res
 
 
-def role_queryRoleTreeByEmployeeId_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极权限/根据员工ID查询角色树")
+def role_queryRoleTreeByEmployeeId_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -32,6 +35,7 @@ def role_queryRoleTreeByEmployeeId_get(params=None, header=None, return_json=Tru
     return res
 
 
+@allure.step("极权限/添加角色")
 def role_addRole_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -47,6 +51,7 @@ def role_addRole_post(params=None, body=None, header=None, return_json=True, **k
     return res
 
 
+@allure.step("极权限/添加角色组")
 def role_addRoleGroup_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -62,6 +67,7 @@ def role_addRoleGroup_post(params=None, body=None, header=None, return_json=True
     return res
 
 
+@allure.step("极权限/删除角色组")
 def role_deleteRoleGroup_delete(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -77,6 +83,7 @@ def role_deleteRoleGroup_delete(params=None, body=None, header=None, return_json
     return res
 
 
+@allure.step("极权限/删除角色")
 def role_deleteRole_delete(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -92,7 +99,8 @@ def role_deleteRole_delete(params=None, body=None, header=None, return_json=True
     return res
 
 
-def role_queryRolesByEmployeeId_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极权限/查询员工对应的所有角色")
+def role_queryRolesByEmployeeId_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -107,6 +115,7 @@ def role_queryRolesByEmployeeId_get(params=None, header=None, return_json=True, 
     return res
 
 
+@allure.step("极权限/修改员工与角色绑定关系")
 def role_updateEmployeeRoles_put(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -122,6 +131,7 @@ def role_updateEmployeeRoles_put(params=None, body=None, header=None, return_jso
     return res
 
 
+@allure.step("极权限/修改角色组名称")
 def role_updateRoleGroupName_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -137,6 +147,7 @@ def role_updateRoleGroupName_post(params=None, body=None, header=None, return_js
     return res
 
 
+@allure.step("极权限/修改角色名称")
 def role_updateRoleName_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -152,6 +163,7 @@ def role_updateRoleName_post(params=None, body=None, header=None, return_json=Tr
     return res
 
 
+@allure.step("极权限/根据角色ID查询员工列表")
 def role_queryEmployeesByRoleId_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -167,6 +179,7 @@ def role_queryEmployeesByRoleId_post(params=None, body=None, header=None, return
     return res
 
 
+@allure.step("极权限/删除员工角色关系")
 def role_deleteEmployeeRole_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -182,6 +195,7 @@ def role_deleteEmployeeRole_post(params=None, body=None, header=None, return_jso
     return res
 
 
+@allure.step("极权限/角色添加员工信息")
 def role_addEmployeeByRoleId_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

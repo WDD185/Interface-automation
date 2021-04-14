@@ -1,8 +1,10 @@
 
 from common.run_method import RunMethod
+import allure
 
 
-def teacherValueController_queryTeacherValue_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极数据/查询C值")
+def teacherValueController_queryTeacherValue_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -17,7 +19,8 @@ def teacherValueController_queryTeacherValue_get(params=None, header=None, retur
     return res
 
 
-def teacherValueController_queryBonusPoints_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极数据/查询C值")
+def teacherValueController_queryBonusPoints_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

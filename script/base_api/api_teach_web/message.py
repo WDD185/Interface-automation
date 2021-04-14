@@ -1,8 +1,10 @@
 
 from common.run_method import RunMethod
+import allure
 
 
-def message_inner_setting_query_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极师通/查询消息类型和对应的条数")
+def message_inner_setting_query_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -17,6 +19,7 @@ def message_inner_setting_query_get(params=None, header=None, return_json=True, 
     return res
 
 
+@allure.step("极师通/查询消息类型和对应的条数")
 def message_inner_record_queryAll_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -32,6 +35,7 @@ def message_inner_record_queryAll_post(params=None, body=None, header=None, retu
     return res
 
 
+@allure.step("极师通/消息设置为已读")
 def message_inner_record_reading_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

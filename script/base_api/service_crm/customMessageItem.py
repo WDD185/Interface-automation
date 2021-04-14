@@ -1,8 +1,10 @@
 
 from common.run_method import RunMethod
+import allure
 
 
-def customMessageItem_get_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("设置/消息/消息列表/自定义消息/用户接收")
+def customMessageItem_get_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -17,6 +19,7 @@ def customMessageItem_get_get(params=None, header=None, return_json=True, **kwar
     return res
 
 
+@allure.step("设置/消息/消息列表/自定义消息/用户阅读")
 def customMessageItem_read_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

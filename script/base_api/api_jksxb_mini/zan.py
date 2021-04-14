@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("在线产品试验/点赞")
 def zan_zan_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,7 +19,8 @@ def zan_zan_post(params=None, body=None, header=None, return_json=True, **kwargs
     return res
 
 
-def zan_getLeaderboard_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("在线产品试验/点赞排行榜")
+def zan_getLeaderboard_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -32,7 +35,8 @@ def zan_getLeaderboard_get(params=None, header=None, return_json=True, **kwargs)
     return res
 
 
-def zan_isZan_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("在线产品试验/查询用户当天是否点赞")
+def zan_isZan_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -47,6 +51,7 @@ def zan_isZan_get(params=None, header=None, return_json=True, **kwargs):
     return res
 
 
+@allure.step("在线产品试验/上传拼魔方作品")
 def zan_upload_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -62,6 +67,7 @@ def zan_upload_post(params=None, body=None, header=None, return_json=True, **kwa
     return res
 
 
+@allure.step("在线产品试验/上传文件")
 def zan_upload_file_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -77,7 +83,8 @@ def zan_upload_file_post(params=None, body=None, header=None, return_json=True, 
     return res
 
 
-def zan_getSelfRank_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("在线产品试验/获取个人排行")
+def zan_getSelfRank_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -92,7 +99,8 @@ def zan_getSelfRank_get(params=None, header=None, return_json=True, **kwargs):
     return res
 
 
-def zan_getMagicCube_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("在线产品试验/获取拼魔方作品")
+def zan_getMagicCube_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

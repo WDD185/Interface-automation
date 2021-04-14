@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("极运营/前台业务/订单/释放座位")
 def schedule_cancle_seat_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,6 +19,7 @@ def schedule_cancle_seat_post(params=None, body=None, header=None, return_json=T
     return res
 
 
+@allure.step("极运营/前台业务/订单/预占座位")
 def schedule_take_seat_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

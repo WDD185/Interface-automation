@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("极运营/入学诊断/诊断列表查询")
 def diagnosis_queryDiagnosticDetailList_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,6 +19,7 @@ def diagnosis_queryDiagnosticDetailList_post(params=None, body=None, header=None
     return res
 
 
+@allure.step("极运营/入学诊断/查询诊断名单学生信息")
 def diagnosis_queryDiagnosticStudentsPageList_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -32,7 +35,8 @@ def diagnosis_queryDiagnosticStudentsPageList_post(params=None, body=None, heade
     return res
 
 
-def diagnosis_exam_paper_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/入学诊断/获取试卷")
+def diagnosis_exam_paper_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -47,7 +51,8 @@ def diagnosis_exam_paper_get(params=None, header=None, return_json=True, **kwarg
     return res
 
 
-def diagnosis_report_detail_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/入学诊断/查询诊断报告详情")
+def diagnosis_report_detail_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

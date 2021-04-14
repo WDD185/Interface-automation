@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("极师通App/教研/备课/查询老师及教材版本")
 def jst_app_classes_getVersionNameByTeacherId_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

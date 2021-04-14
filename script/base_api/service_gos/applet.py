@@ -1,8 +1,10 @@
 
 from common.run_method import RunMethod
+import allure
 
 
-def applet_package_course_detail_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("小程序/商品/课程套餐详情")
+def applet_package_course_detail_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -17,7 +19,8 @@ def applet_package_course_detail_get(params=None, header=None, return_json=True,
     return res
 
 
-def applet_goods_detail_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("小程序/商品/课程单品详情")
+def applet_goods_detail_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -32,7 +35,8 @@ def applet_goods_detail_get(params=None, header=None, return_json=True, **kwargs
     return res
 
 
-def applet_schoolArea_detail_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("小程序/首页/校区详情")
+def applet_schoolArea_detail_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -47,6 +51,7 @@ def applet_schoolArea_detail_get(params=None, header=None, return_json=True, **k
     return res
 
 
+@allure.step("小程序/首页/附近校区列表")
 def applet_schoolArea_nearList_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -62,6 +67,7 @@ def applet_schoolArea_nearList_post(params=None, body=None, header=None, return_
     return res
 
 
+@allure.step("小程序/首页/优惠券可购买商品列表")
 def applet_goods_forCoupon_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -77,7 +83,8 @@ def applet_goods_forCoupon_post(params=None, body=None, header=None, return_json
     return res
 
 
-def applet_banner_detail_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("小程序/首页/banner详情")
+def applet_banner_detail_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -92,7 +99,8 @@ def applet_banner_detail_get(params=None, header=None, return_json=True, **kwarg
     return res
 
 
-def applet_company_column_list_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("小程序/首页/关于极客")
+def applet_company_column_list_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -107,6 +115,7 @@ def applet_company_column_list_get(params=None, header=None, return_json=True, *
     return res
 
 
+@allure.step("小程序/小程序码生成")
 def applet_qr_getQr_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -122,7 +131,8 @@ def applet_qr_getQr_post(params=None, body=None, header=None, return_json=True, 
     return res
 
 
-def applet_diagnosis_usable_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("小程序/入学诊断/学生可参加诊断列表")
+def applet_diagnosis_usable_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -137,7 +147,8 @@ def applet_diagnosis_usable_get(params=None, header=None, return_json=True, **kw
     return res
 
 
-def applet_diagnosis_exam_paper_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("小程序/入学诊断/获取试卷")
+def applet_diagnosis_exam_paper_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -152,6 +163,7 @@ def applet_diagnosis_exam_paper_get(params=None, header=None, return_json=True, 
     return res
 
 
+@allure.step("小程序/入学诊断/提交答案")
 def applet_diagnosis_submit_exam_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -167,7 +179,8 @@ def applet_diagnosis_submit_exam_post(params=None, body=None, header=None, retur
     return res
 
 
-def applet_diagnosis_report_detail_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("小程序/入学诊断/诊断报告详情")
+def applet_diagnosis_report_detail_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -182,7 +195,8 @@ def applet_diagnosis_report_detail_get(params=None, header=None, return_json=Tru
     return res
 
 
-def applet_diagnosis_question_analysis_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("小程序/入学诊断/试题讲解")
+def applet_diagnosis_question_analysis_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -197,7 +211,8 @@ def applet_diagnosis_question_analysis_get(params=None, header=None, return_json
     return res
 
 
-def applet_diagnosis_report_list_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("小程序/入学诊断/查询学生的诊断报告")
+def applet_diagnosis_report_list_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -212,7 +227,8 @@ def applet_diagnosis_report_list_get(params=None, header=None, return_json=True,
     return res
 
 
-def applet_diagnosis_able_class_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("小程序/入学诊断/诊断的成绩能报的班级")
+def applet_diagnosis_able_class_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -227,7 +243,8 @@ def applet_diagnosis_able_class_get(params=None, header=None, return_json=True, 
     return res
 
 
-def applet_diagnosis_should_diagnosis_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("小程序/入学诊断/是否应该去诊断")
+def applet_diagnosis_should_diagnosis_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -242,7 +259,8 @@ def applet_diagnosis_should_diagnosis_get(params=None, header=None, return_json=
     return res
 
 
-def applet_diagnosis_can_join_diagnosis_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("小程序/入学诊断/学生是否可参加该诊断")
+def applet_diagnosis_can_join_diagnosis_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

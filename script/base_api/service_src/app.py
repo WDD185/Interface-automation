@@ -1,8 +1,10 @@
 
 from common.run_method import RunMethod
+import allure
 
 
-def app_getSignature_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("资源中心/获取签名")
+def app_getSignature_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -17,7 +19,8 @@ def app_getSignature_get(params=None, header=None, return_json=True, **kwargs):
     return res
 
 
-def app_getVodSignature_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("资源中心/获取视频签名")
+def app_getVodSignature_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -32,7 +35,8 @@ def app_getVodSignature_get(params=None, header=None, return_json=True, **kwargs
     return res
 
 
-def app_getPutSignature_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("资源中心/获取cos签名")
+def app_getPutSignature_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

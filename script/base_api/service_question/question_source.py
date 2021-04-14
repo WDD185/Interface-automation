@@ -1,8 +1,10 @@
 
 from common.run_method import RunMethod
+import allure
 
 
-def question_source_category_get(category, params=None, header=None, return_json=True, **kwargs):
+@allure.step("题库来源优化/根据标签获取筛选分类列表")
+def question_source_category_get(category, params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -17,7 +19,8 @@ def question_source_category_get(category, params=None, header=None, return_json
     return res
 
 
-def question_source_city_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("题库来源优化/省市区联动数据获取")
+def question_source_city_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -32,7 +35,8 @@ def question_source_city_get(params=None, header=None, return_json=True, **kwarg
     return res
 
 
-def question_source_region_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("题库来源优化/大区区域校区联动数据获取")
+def question_source_region_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -47,7 +51,8 @@ def question_source_region_get(params=None, header=None, return_json=True, **kwa
     return res
 
 
-def question_source_match_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("题库来源优化/杯赛筛选数据获取")
+def question_source_match_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -62,7 +67,8 @@ def question_source_match_get(params=None, header=None, return_json=True, **kwar
     return res
 
 
-def question_source_course_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("题库来源优化/课程班型筛选数据获取")
+def question_source_course_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -77,7 +83,8 @@ def question_source_course_get(params=None, header=None, return_json=True, **kwa
     return res
 
 
-def question_source_school_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("题库来源优化/学校筛选功能")
+def question_source_school_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -92,6 +99,7 @@ def question_source_school_get(params=None, header=None, return_json=True, **kwa
     return res
 
 
+@allure.step("题目排重/移入撤回标签")
 def question_source_duplicate_handle_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -107,7 +115,8 @@ def question_source_duplicate_handle_post(params=None, body=None, header=None, r
     return res
 
 
-def question_source_getAllArea_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极题库/返回所有区域结果集")
+def question_source_getAllArea_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

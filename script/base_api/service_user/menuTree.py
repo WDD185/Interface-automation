@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("极运营/人事管理/权限设置/权限列表")
 def menuTree_employeeId_post(employeeId, params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

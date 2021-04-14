@@ -1,8 +1,10 @@
 
 from common.run_method import RunMethod
+import allure
 
 
-def coursePreview_getCourseOutLine_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极客数学帮app/班级详情/查询课程大纲")
+def coursePreview_getCourseOutLine_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -17,7 +19,8 @@ def coursePreview_getCourseOutLine_get(params=None, header=None, return_json=Tru
     return res
 
 
-def coursePreview_getPackageData_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极客数学帮app/班级详情/查询预热知识包详情")
+def coursePreview_getPackageData_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

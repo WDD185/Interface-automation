@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("极教研/月考/创建考试")
 def monthExamination_pc_addMonthOnlineExam_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,6 +19,7 @@ def monthExamination_pc_addMonthOnlineExam_post(params=None, body=None, header=N
     return res
 
 
+@allure.step("极教研/月考/试卷列表")
 def monthExamination_pc_getMonthOnlineExamPaperList_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -32,6 +35,7 @@ def monthExamination_pc_getMonthOnlineExamPaperList_post(params=None, body=None,
     return res
 
 
+@allure.step("极教研/月考/月考列表")
 def monthExamination_pc_getMonthOnlineExamList_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -47,6 +51,7 @@ def monthExamination_pc_getMonthOnlineExamList_post(params=None, body=None, head
     return res
 
 
+@allure.step("极教研/月考/编辑考试")
 def monthExamination_pc_modMonthOnlineExam_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -62,6 +67,7 @@ def monthExamination_pc_modMonthOnlineExam_post(params=None, body=None, header=N
     return res
 
 
+@allure.step("极教研/月考/考试操作日志")
 def monthExamination_pc_getMonthOnlineExamOperationLogList_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -77,7 +83,8 @@ def monthExamination_pc_getMonthOnlineExamOperationLogList_post(params=None, bod
     return res
 
 
-def monthExamination_pc_delMonthOnlineExam_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极教研/月考/删除考试")
+def monthExamination_pc_delMonthOnlineExam_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -92,6 +99,7 @@ def monthExamination_pc_delMonthOnlineExam_get(params=None, header=None, return_
     return res
 
 
+@allure.step("极教研/月考/验证考试属性与试卷属性是否一致")
 def monthExamination_pc_checkMonthOnlineExamAndPaper_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -107,6 +115,7 @@ def monthExamination_pc_checkMonthOnlineExamAndPaper_post(params=None, body=None
     return res
 
 
+@allure.step("极教研/月考/成绩列表")
 def monthExamination_pc_getMonthOnlineExamGradeList_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -122,7 +131,8 @@ def monthExamination_pc_getMonthOnlineExamGradeList_post(params=None, body=None,
     return res
 
 
-def monthExamination_pc_getMonthOnlineExamGradeListExport_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极教研/月考/成绩列表导出")
+def monthExamination_pc_getMonthOnlineExamGradeListExport_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -137,7 +147,8 @@ def monthExamination_pc_getMonthOnlineExamGradeListExport_get(params=None, heade
     return res
 
 
-def monthExamination_pc_getMonthOnlineExamGradeTotal_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极教研/月考/考试成绩统计")
+def monthExamination_pc_getMonthOnlineExamGradeTotal_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -152,6 +163,7 @@ def monthExamination_pc_getMonthOnlineExamGradeTotal_get(params=None, header=Non
     return res
 
 
+@allure.step("家长APP/月考/获取学生的月考列表")
 def monthExamination_app_getMonthOnlineExamAppList_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -167,7 +179,8 @@ def monthExamination_app_getMonthOnlineExamAppList_post(params=None, body=None, 
     return res
 
 
-def monthExamination_app_getMonthOnlineExamPaperInfo_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("家长APP/月考/根据考试id获取试卷详情")
+def monthExamination_app_getMonthOnlineExamPaperInfo_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -182,7 +195,8 @@ def monthExamination_app_getMonthOnlineExamPaperInfo_get(params=None, header=Non
     return res
 
 
-def monthExamination_app_getMonthOnlineExamInfoApp_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("家长APP/月考/根据考试id获取考试信息")
+def monthExamination_app_getMonthOnlineExamInfoApp_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -197,6 +211,7 @@ def monthExamination_app_getMonthOnlineExamInfoApp_get(params=None, header=None,
     return res
 
 
+@allure.step("家长APP/月考/参加考试")
 def monthExamination_app_attendMonthExam_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -212,6 +227,7 @@ def monthExamination_app_attendMonthExam_post(params=None, body=None, header=Non
     return res
 
 
+@allure.step("家长APP/月考/提交答案")
 def monthExamination_app_commitMonthOnlineExamQuestion_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -227,7 +243,8 @@ def monthExamination_app_commitMonthOnlineExamQuestion_post(params=None, body=No
     return res
 
 
-def monthExamination_app_getQuestionResult_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("家长APP/月考/获取试卷答题情况")
+def monthExamination_app_getQuestionResult_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -242,6 +259,7 @@ def monthExamination_app_getQuestionResult_get(params=None, header=None, return_
     return res
 
 
+@allure.step("家长APP/月考/分享")
 def monthExamination_app_share_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -257,6 +275,7 @@ def monthExamination_app_share_post(params=None, body=None, header=None, return_
     return res
 
 
+@allure.step("家长APP/月考/分享日志")
 def monthExamination_app_share_log_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -272,7 +291,8 @@ def monthExamination_app_share_log_post(params=None, body=None, header=None, ret
     return res
 
 
-def monthExamination_app_report_getMonthOnlineExamReport_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("家长APP/月考/查询报告详情成绩tab页")
+def monthExamination_app_report_getMonthOnlineExamReport_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

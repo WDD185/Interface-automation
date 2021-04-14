@@ -1,8 +1,10 @@
 
 from common.run_method import RunMethod
+import allure
 
 
-def finance_query_student_school_account_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营APP查询学生电子钱包")
+def finance_query_student_school_account_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -17,7 +19,8 @@ def finance_query_student_school_account_get(params=None, header=None, return_js
     return res
 
 
-def finance_query_student_account_info_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营APP查询学生电子钱包详情")
+def finance_query_student_account_info_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -32,7 +35,8 @@ def finance_query_student_account_info_get(params=None, header=None, return_json
     return res
 
 
-def finance_query_student_account_sum_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营APP查询学生电子钱包汇总")
+def finance_query_student_account_sum_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

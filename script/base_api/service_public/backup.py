@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("运维配置/更新配置文件")
 def backup_uploadConfig_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,7 +19,8 @@ def backup_uploadConfig_post(params=None, body=None, header=None, return_json=Tr
     return res
 
 
-def backup_queryPreConfig_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("运维配置/配置信息查询")
+def backup_queryPreConfig_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -32,7 +35,8 @@ def backup_queryPreConfig_get(params=None, header=None, return_json=True, **kwar
     return res
 
 
-def backup_rollback_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("运维配置/配置版本回滚")
+def backup_rollback_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -47,7 +51,8 @@ def backup_rollback_get(params=None, header=None, return_json=True, **kwargs):
     return res
 
 
-def backup_getServerInfo_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("运维配置/获取停服信息")
+def backup_getServerInfo_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -62,6 +67,7 @@ def backup_getServerInfo_get(params=None, header=None, return_json=True, **kwarg
     return res
 
 
+@allure.step("运维配置/更新停服信息")
 def backup_updateServerInfo_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

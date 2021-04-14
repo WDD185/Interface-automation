@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("JkyAPP/双师播放地址")
 def videoPlayAddress_create_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,6 +19,7 @@ def videoPlayAddress_create_post(params=None, body=None, header=None, return_jso
     return res
 
 
+@allure.step("JkyAPP/双师播放地址")
 def videoPlayAddress_queryEntity_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

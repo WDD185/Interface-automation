@@ -1,8 +1,10 @@
 
 from common.run_method import RunMethod
+import allure
 
 
-def applet_getPurchaseOrderList_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("小程序/购课单/购课单列表")
+def applet_getPurchaseOrderList_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -17,7 +19,8 @@ def applet_getPurchaseOrderList_get(params=None, header=None, return_json=True, 
     return res
 
 
-def applet_purchaseOrder_studentId_student_count_get(studentId, params=None, header=None, return_json=True, **kwargs):
+@allure.step("小程序/购课单/购课单数量")
+def applet_purchaseOrder_studentId_student_count_get(studentId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -32,6 +35,7 @@ def applet_purchaseOrder_studentId_student_count_get(studentId, params=None, hea
     return res
 
 
+@allure.step("小程序/购课单/添加购课单")
 def applet_purchaseOrder_studentId_student_post(studentId, params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -47,6 +51,7 @@ def applet_purchaseOrder_studentId_student_post(studentId, params=None, body=Non
     return res
 
 
+@allure.step("小程序/购课单/删除购课单")
 def applet_purchaseOrder_studentId_student_delete(studentId, params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -62,7 +67,8 @@ def applet_purchaseOrder_studentId_student_delete(studentId, params=None, body=N
     return res
 
 
-def applet_classes_classId_seats_get(classId, params=None, header=None, return_json=True, **kwargs):
+@allure.step("小程序/购课单/班级座次")
+def applet_classes_classId_seats_get(classId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -77,7 +83,8 @@ def applet_classes_classId_seats_get(classId, params=None, header=None, return_j
     return res
 
 
-def applet_financial_wallet_remain_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("小程序/我的主页/电子钱包余额")
+def applet_financial_wallet_remain_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

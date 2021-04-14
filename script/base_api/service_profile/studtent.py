@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("极客数学帮(家长APP)/用户管理/修改当前学生用户的基础属性值")
 def studtent_studentId_attribute_patch(studentId, params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

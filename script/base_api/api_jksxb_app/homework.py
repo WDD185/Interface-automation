@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("极客数学帮App/错题本/错题搜索列表")
 def homework_searchWrongQuestions_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,6 +19,7 @@ def homework_searchWrongQuestions_post(params=None, body=None, header=None, retu
     return res
 
 
+@allure.step("极客数学帮App/错题本/错题详情")
 def homework_getWrongQuestion_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -32,6 +35,7 @@ def homework_getWrongQuestion_post(params=None, body=None, header=None, return_j
     return res
 
 
+@allure.step("极客数学帮App/错题本/删除错题本")
 def homework_delWrongQuestion_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -47,6 +51,7 @@ def homework_delWrongQuestion_post(params=None, body=None, header=None, return_j
     return res
 
 
+@allure.step("极客数学帮App/学习报告/错题列表")
 def homework_getWrongQuestionList_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -62,6 +67,7 @@ def homework_getWrongQuestionList_post(params=None, body=None, header=None, retu
     return res
 
 
+@allure.step("极客数学帮APP/错题本/错题列表默认帅选条件")
 def homework_getDefaultCondition_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

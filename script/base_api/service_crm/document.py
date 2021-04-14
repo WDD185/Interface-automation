@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("极运营/班主任/知识库/知识/新增")
 def document_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,6 +19,7 @@ def document_post(params=None, body=None, header=None, return_json=True, **kwarg
     return res
 
 
+@allure.step("极运营/班主任/知识库/知识/修改")
 def document_put(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -32,7 +35,8 @@ def document_put(params=None, body=None, header=None, return_json=True, **kwargs
     return res
 
 
-def document_id_get(id, params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/班主任/知识库/知识/id查询")
+def document_id_get(id, params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -47,7 +51,8 @@ def document_id_get(id, params=None, header=None, return_json=True, **kwargs):
     return res
 
 
-def document_list_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/班主任/知识库/知识/列表查询")
+def document_list_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -62,6 +67,7 @@ def document_list_get(params=None, header=None, return_json=True, **kwargs):
     return res
 
 
+@allure.step("极运营/班主任/知识库/知识/上传文件")
 def document_uploadFile_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -77,6 +83,7 @@ def document_uploadFile_post(params=None, body=None, header=None, return_json=Tr
     return res
 
 
+@allure.step("极运营/班主任/知识库/知识/浏览量")
 def document_addViewCount_id_post(id, params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -92,6 +99,7 @@ def document_addViewCount_id_post(id, params=None, body=None, header=None, retur
     return res
 
 
+@allure.step("极运营/班主任/知识库/知识/删除")
 def document_ids_delete(ids, params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -107,6 +115,7 @@ def document_ids_delete(ids, params=None, body=None, header=None, return_json=Tr
     return res
 
 
+@allure.step("极运营/班主任/知识库/知识/浏览量")
 def document_addViewCount_id_put(id, params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("极运营/CRM/流失管理/预流失学员/预流失学员列表查询")
 def lostWarning_query_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,6 +19,7 @@ def lostWarning_query_post(params=None, body=None, header=None, return_json=True
     return res
 
 
+@allure.step("极运营/CRM/流失管理/预流失学员/预流失学员导出")
 def lostWarning_export_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -32,6 +35,7 @@ def lostWarning_export_post(params=None, body=None, header=None, return_json=Tru
     return res
 
 
+@allure.step("极运营/CRM/流失管理/预流失学员/编辑预流失原因")
 def lostWarning_editReason_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -47,7 +51,8 @@ def lostWarning_editReason_post(params=None, body=None, header=None, return_json
     return res
 
 
-def lostWarning_getPreLostReason_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/CRM/流失管理/预流失学员/查询预流失原因")
+def lostWarning_getPreLostReason_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -62,6 +67,7 @@ def lostWarning_getPreLostReason_get(params=None, header=None, return_json=True,
     return res
 
 
+@allure.step("极运营/CRM/流失管理/预流失学员/获取班主任和教师")
 def lostWarning_getTeachersAndDirectors_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

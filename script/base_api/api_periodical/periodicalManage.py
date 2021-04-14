@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("管理内刊/管理端/发送钉钉通知")
 def periodicalManage_sendDingNotice_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,6 +19,7 @@ def periodicalManage_sendDingNotice_post(params=None, body=None, header=None, re
     return res
 
 
+@allure.step("管理内刊/管理端/添加内刊")
 def periodicalManage_addPeriodical_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -32,7 +35,8 @@ def periodicalManage_addPeriodical_post(params=None, body=None, header=None, ret
     return res
 
 
-def periodicalManage_listPeriodicalsOnPubStatus_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("管理内刊/管理端/内刊状态分栏")
+def periodicalManage_listPeriodicalsOnPubStatus_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -47,7 +51,8 @@ def periodicalManage_listPeriodicalsOnPubStatus_get(params=None, header=None, re
     return res
 
 
-def periodicalManage_showPeriodicalContent_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("管理内刊/管理端/回显内刊")
+def periodicalManage_showPeriodicalContent_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -62,6 +67,7 @@ def periodicalManage_showPeriodicalContent_get(params=None, header=None, return_
     return res
 
 
+@allure.step("管理内刊/管理端/修改内刊")
 def periodicalManage_updatePeriodical_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -77,7 +83,8 @@ def periodicalManage_updatePeriodical_post(params=None, body=None, header=None, 
     return res
 
 
-def periodicalManage_updatePeriodicalOnPubStatus_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("管理内刊/管理端/修改内刊状态")
+def periodicalManage_updatePeriodicalOnPubStatus_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("极运营PC保存分享")
 def share_saveShare_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,6 +19,7 @@ def share_saveShare_post(params=None, body=None, header=None, return_json=True, 
     return res
 
 
+@allure.step("极运营查询分享业绩统计")
 def share_selectShareStatistics_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -32,6 +35,7 @@ def share_selectShareStatistics_post(params=None, body=None, header=None, return
     return res
 
 
+@allure.step("极运营导出分享业绩统计")
 def share_shareStatisticsExport_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

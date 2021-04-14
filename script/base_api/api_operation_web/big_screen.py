@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("极数据/大屏/首页人次三率")
 def big_screen_queryBigScreenIndexBussinessRate_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,6 +19,7 @@ def big_screen_queryBigScreenIndexBussinessRate_post(params=None, body=None, hea
     return res
 
 
+@allure.step("极数据/大屏/首页目标完成雷达图")
 def big_screen_queryBigScreenIndexRadar_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -32,6 +35,7 @@ def big_screen_queryBigScreenIndexRadar_post(params=None, body=None, header=None
     return res
 
 
+@allure.step("极数据/大屏/首页目标完成排行")
 def big_screen_queryBigScreenIndexRank_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -47,6 +51,7 @@ def big_screen_queryBigScreenIndexRank_post(params=None, body=None, header=None,
     return res
 
 
+@allure.step("极数据/大屏/首页校区目标完成")
 def big_screen_queryBigScreenIndexSchoolAchieveRate_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -62,6 +67,7 @@ def big_screen_queryBigScreenIndexSchoolAchieveRate_post(params=None, body=None,
     return res
 
 
+@allure.step("极数据/大屏/首页招生动态")
 def big_screen_queryBigScreenIndexRange_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -77,6 +83,7 @@ def big_screen_queryBigScreenIndexRange_post(params=None, body=None, header=None
     return res
 
 
+@allure.step("极数据/大屏/校区增长率")
 def big_screen_querySchoolGrowingRate_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -92,6 +99,7 @@ def big_screen_querySchoolGrowingRate_post(params=None, body=None, header=None, 
     return res
 
 
+@allure.step("极数据/大屏/单校规模同比")
 def big_screen_querySchoolScaleYearOnYear_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -107,6 +115,7 @@ def big_screen_querySchoolScaleYearOnYear_post(params=None, body=None, header=No
     return res
 
 
+@allure.step("极数据/大屏/单校规模环比")
 def big_screen_querySchoolScaleQuarterOnQuarter_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -122,6 +131,7 @@ def big_screen_querySchoolScaleQuarterOnQuarter_post(params=None, body=None, hea
     return res
 
 
+@allure.step("极数据/大屏/年级人次同比")
 def big_screen_queryGradePersonTimeYearOnYear_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -137,6 +147,7 @@ def big_screen_queryGradePersonTimeYearOnYear_post(params=None, body=None, heade
     return res
 
 
+@allure.step("极数据/大屏/年级人次环比")
 def big_screen_queryGradePersonTimeQuarterOnQuarter_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -152,6 +163,7 @@ def big_screen_queryGradePersonTimeQuarterOnQuarter_post(params=None, body=None,
     return res
 
 
+@allure.step("极数据/大屏/科目人次同比")
 def big_screen_querySubjectPersonTimeYearOnYear_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -167,6 +179,7 @@ def big_screen_querySubjectPersonTimeYearOnYear_post(params=None, body=None, hea
     return res
 
 
+@allure.step("极数据/大屏/课型人次同比")
 def big_screen_queryCourseTypePersonTimeYearOnYear_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -182,6 +195,7 @@ def big_screen_queryCourseTypePersonTimeYearOnYear_post(params=None, body=None, 
     return res
 
 
+@allure.step("极数据/大屏/年级续报率·同比")
 def big_screen_queryGradeContinueYearOnYear_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -197,6 +211,7 @@ def big_screen_queryGradeContinueYearOnYear_post(params=None, body=None, header=
     return res
 
 
+@allure.step("极数据/大屏/科目续报率·同比")
 def big_screen_querySubjectContinueYearOnYear_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -212,6 +227,7 @@ def big_screen_querySubjectContinueYearOnYear_post(params=None, body=None, heade
     return res
 
 
+@allure.step("极数据/大屏/年级优生续报率·同比")
 def big_screen_queryGradeTopContinueYearOnYear_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -227,6 +243,7 @@ def big_screen_queryGradeTopContinueYearOnYear_post(params=None, body=None, head
     return res
 
 
+@allure.step("极数据/大屏/科目优生续报率·同比")
 def big_screen_querySubjectTopContinueYearOnYear_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -242,6 +259,7 @@ def big_screen_querySubjectTopContinueYearOnYear_post(params=None, body=None, he
     return res
 
 
+@allure.step("极数据/大屏/科目续报率&退费率")
 def big_screen_querySubjectContinueAndRefund_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -257,6 +275,7 @@ def big_screen_querySubjectContinueAndRefund_post(params=None, body=None, header
     return res
 
 
+@allure.step("极数据/大屏/年级续报率&退费率")
 def big_screen_queryGradeContinueAndRefund_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -272,6 +291,7 @@ def big_screen_queryGradeContinueAndRefund_post(params=None, body=None, header=N
     return res
 
 
+@allure.step("极数据/大屏/年级退费率·同比")
 def big_screen_queryGradeRefundYearOnYear_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -287,6 +307,7 @@ def big_screen_queryGradeRefundYearOnYear_post(params=None, body=None, header=No
     return res
 
 
+@allure.step("极数据/大屏/科目退费率·同比")
 def big_screen_querySubjectRefundYearOnYear_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -302,6 +323,7 @@ def big_screen_querySubjectRefundYearOnYear_post(params=None, body=None, header=
     return res
 
 
+@allure.step("极数据/大屏/退费率排名")
 def big_screen_queryRefundRank_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -317,6 +339,7 @@ def big_screen_queryRefundRank_post(params=None, body=None, header=None, return_
     return res
 
 
+@allure.step("极数据/大屏/退费率原因占比")
 def big_screen_queryRefundReasonProportion_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -332,6 +355,7 @@ def big_screen_queryRefundReasonProportion_post(params=None, body=None, header=N
     return res
 
 
+@allure.step("极数据/大屏/续报率折线图")
 def big_screen_queryContinueRange_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -347,6 +371,7 @@ def big_screen_queryContinueRange_post(params=None, body=None, header=None, retu
     return res
 
 
+@allure.step("极数据/大屏/年级优生占比同比")
 def big_screen_queryGradeTopStudentProportion_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -362,6 +387,7 @@ def big_screen_queryGradeTopStudentProportion_post(params=None, body=None, heade
     return res
 
 
+@allure.step("极数据/大屏/科目优生占比同比")
 def big_screen_querySubjectTopStudentProportion_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -377,6 +403,7 @@ def big_screen_querySubjectTopStudentProportion_post(params=None, body=None, hea
     return res
 
 
+@allure.step("极数据/大屏/优生占比排行榜")
 def big_screen_queryTopStudentRank_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -392,6 +419,7 @@ def big_screen_queryTopStudentRank_post(params=None, body=None, header=None, ret
     return res
 
 
+@allure.step("极数据/大屏/优生概览")
 def big_screen_queryTopStudentCount_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -407,6 +435,7 @@ def big_screen_queryTopStudentCount_post(params=None, body=None, header=None, re
     return res
 
 
+@allure.step("极数据/大屏/优生公立校分布")
 def big_screen_queryTopStudentSchoolDistribution_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -422,6 +451,7 @@ def big_screen_queryTopStudentSchoolDistribution_post(params=None, body=None, he
     return res
 
 
+@allure.step("极数据/大屏/续报率排名")
 def big_screen_queryContinueRank_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -437,6 +467,7 @@ def big_screen_queryContinueRank_post(params=None, body=None, header=None, retur
     return res
 
 
+@allure.step("极数据/大屏/满班率排名")
 def big_screen_queryFullClassRank_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -452,6 +483,7 @@ def big_screen_queryFullClassRank_post(params=None, body=None, header=None, retu
     return res
 
 
+@allure.step("极数据/大屏/年级满班率·同比")
 def big_screen_queryGradeFullClassYearOnYear_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -467,6 +499,7 @@ def big_screen_queryGradeFullClassYearOnYear_post(params=None, body=None, header
     return res
 
 
+@allure.step("极数据/大屏/科目满班率·同比")
 def big_screen_querySubjectFullClassYearOnYear_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -482,6 +515,7 @@ def big_screen_querySubjectFullClassYearOnYear_post(params=None, body=None, head
     return res
 
 
+@allure.step("极数据/大屏/带班量排名")
 def big_screen_queryTeacherClassCountRank_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -497,6 +531,7 @@ def big_screen_queryTeacherClassCountRank_post(params=None, body=None, header=No
     return res
 
 
+@allure.step("极数据/大屏/学段带班量·同比")
 def big_screen_queryPhaseTeacherClassCountYearOnYear_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -512,6 +547,7 @@ def big_screen_queryPhaseTeacherClassCountYearOnYear_post(params=None, body=None
     return res
 
 
+@allure.step("极数据/大屏/科目带班量·同比")
 def big_screen_querySubjectTeacherClassCountYearOnYear_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -527,6 +563,7 @@ def big_screen_querySubjectTeacherClassCountYearOnYear_post(params=None, body=No
     return res
 
 
+@allure.step("极数据/大屏/通用条件（班型，校区类型）")
 def big_screen_queryCommonInfo_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -542,6 +579,7 @@ def big_screen_queryCommonInfo_post(params=None, body=None, header=None, return_
     return res
 
 
+@allure.step("极数据/大屏/入口年级报率")
 def big_screen_queryEntryContinueRate_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -557,6 +595,7 @@ def big_screen_queryEntryContinueRate_post(params=None, body=None, header=None, 
     return res
 
 
+@allure.step("极数据/大屏/入口年级满班率")
 def big_screen_queryEntryFullClassRate_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -572,6 +611,7 @@ def big_screen_queryEntryFullClassRate_post(params=None, body=None, header=None,
     return res
 
 
+@allure.step("极数据/大屏/入口年级退费率")
 def big_screen_queryEntryRefundRate_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -587,6 +627,7 @@ def big_screen_queryEntryRefundRate_post(params=None, body=None, header=None, re
     return res
 
 
+@allure.step("极数据/大屏/入口年级单校规模排行榜")
 def big_screen_queryEntrySchoolScaleRank_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -602,6 +643,7 @@ def big_screen_queryEntrySchoolScaleRank_post(params=None, body=None, header=Non
     return res
 
 
+@allure.step("极数据/大屏/入口年级人次占比同比")
 def big_screen_queryEntryPersonTimeProportion_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -617,6 +659,7 @@ def big_screen_queryEntryPersonTimeProportion_post(params=None, body=None, heade
     return res
 
 
+@allure.step("极数据/大屏/最近更新时间")
 def big_screen_queryLastUpdateTime_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -632,6 +675,7 @@ def big_screen_queryLastUpdateTime_post(params=None, body=None, header=None, ret
     return res
 
 
+@allure.step("极数据/大屏/新开校汇总")
 def big_screen_queryNewSchoolAllCount_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -647,6 +691,7 @@ def big_screen_queryNewSchoolAllCount_post(params=None, body=None, header=None, 
     return res
 
 
+@allure.step("极数据/大屏/新开校人次排名")
 def big_screen_queryNewSchoolPersonTimeRank_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -662,6 +707,7 @@ def big_screen_queryNewSchoolPersonTimeRank_post(params=None, body=None, header=
     return res
 
 
+@allure.step("极数据/大屏/新开校人次同比")
 def big_screen_queryNewSchoolPersonTimeYearOnYear_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -677,6 +723,7 @@ def big_screen_queryNewSchoolPersonTimeYearOnYear_post(params=None, body=None, h
     return res
 
 
+@allure.step("极数据/大屏/新开校续报率排名")
 def big_screen_queryNewSchoolContinueRank_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -692,6 +739,7 @@ def big_screen_queryNewSchoolContinueRank_post(params=None, body=None, header=No
     return res
 
 
+@allure.step("极数据/大屏/新开校续报率同比")
 def big_screen_queryNewSchoolContinueYearOnYear_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -707,6 +755,7 @@ def big_screen_queryNewSchoolContinueYearOnYear_post(params=None, body=None, hea
     return res
 
 
+@allure.step("极数据/大屏/新开校满班率排名")
 def big_screen_queryNewSchoolFullClassRank_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -722,6 +771,7 @@ def big_screen_queryNewSchoolFullClassRank_post(params=None, body=None, header=N
     return res
 
 
+@allure.step("极数据/大屏/新开校满班率同比")
 def big_screen_queryNewSchoolFullClassYearOnYear_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -737,6 +787,7 @@ def big_screen_queryNewSchoolFullClassYearOnYear_post(params=None, body=None, he
     return res
 
 
+@allure.step("极数据/大屏/新开校退费率排名")
 def big_screen_queryNewSchoolRefundRank_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -752,6 +803,7 @@ def big_screen_queryNewSchoolRefundRank_post(params=None, body=None, header=None
     return res
 
 
+@allure.step("极数据/大屏/新开校退费率同比")
 def big_screen_queryNewSchoolRefundYearOnYear_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -767,6 +819,7 @@ def big_screen_queryNewSchoolRefundYearOnYear_post(params=None, body=None, heade
     return res
 
 
+@allure.step("极数据/大屏/课型人次占比")
 def big_screen_queryCourseTypePersonTimeProportion_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -782,6 +835,7 @@ def big_screen_queryCourseTypePersonTimeProportion_post(params=None, body=None, 
     return res
 
 
+@allure.step("极数据/大屏/数据概览人次")
 def big_screen_queryWindowPersonTime_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -797,6 +851,7 @@ def big_screen_queryWindowPersonTime_post(params=None, body=None, header=None, r
     return res
 
 
+@allure.step("极数据/大屏/数据概览续报")
 def big_screen_queryWindowContinue_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -812,6 +867,7 @@ def big_screen_queryWindowContinue_post(params=None, body=None, header=None, ret
     return res
 
 
+@allure.step("极数据/大屏/数据概览续报排行")
 def big_screen_queryWindowContinueRank_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -827,6 +883,7 @@ def big_screen_queryWindowContinueRank_post(params=None, body=None, header=None,
     return res
 
 
+@allure.step("极数据/大屏/数据概览续报教师排行")
 def big_screen_queryWindowContinueTeacherRank_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -842,6 +899,7 @@ def big_screen_queryWindowContinueTeacherRank_post(params=None, body=None, heade
     return res
 
 
+@allure.step("极数据/大屏/续报率折线图")
 def big_screen_queryWindowContinueRange_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

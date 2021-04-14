@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("通用/文件上传/用户文件上传")
 def upload_ppt_user_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,6 +19,7 @@ def upload_ppt_user_post(params=None, body=None, header=None, return_json=True, 
     return res
 
 
+@allure.step("通用/文件上传/富文本图片文件上传")
 def upload_richEditor_file_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -32,6 +35,7 @@ def upload_richEditor_file_post(params=None, body=None, header=None, return_json
     return res
 
 
+@allure.step("通用/文件上传/头像上传")
 def upload_file_avatar_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -47,6 +51,7 @@ def upload_file_avatar_post(params=None, body=None, header=None, return_json=Tru
     return res
 
 
+@allure.step("通用/文件上传/一般文件上传")
 def upload_file_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -62,6 +67,7 @@ def upload_file_post(params=None, body=None, header=None, return_json=True, **kw
     return res
 
 
+@allure.step("通用/文件上传/课件库文件上传")
 def upload_courseware_file_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -77,6 +83,7 @@ def upload_courseware_file_post(params=None, body=None, header=None, return_json
     return res
 
 
+@allure.step("通用/文件上传/Base64上传")
 def upload_file_base64_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -92,6 +99,7 @@ def upload_file_base64_post(params=None, body=None, header=None, return_json=Tru
     return res
 
 
+@allure.step("极师通/作业/图片文件上传")
 def upload_homework_img_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -107,6 +115,7 @@ def upload_homework_img_post(params=None, body=None, header=None, return_json=Tr
     return res
 
 
+@allure.step("极师通/作业/其他文件上传")
 def upload_homework_file_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -122,6 +131,7 @@ def upload_homework_file_post(params=None, body=None, header=None, return_json=T
     return res
 
 
+@allure.step("通用/文件上传/备课文件上传")
 def upload_prepare_lesson_file_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -137,6 +147,7 @@ def upload_prepare_lesson_file_post(params=None, body=None, header=None, return_
     return res
 
 
+@allure.step("通用/文件上传/多个Base64上传")
 def upload_file_base64Multiple_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -152,6 +163,7 @@ def upload_file_base64Multiple_post(params=None, body=None, header=None, return_
     return res
 
 
+@allure.step("极教研/题库/上传")
 def upload_question_file_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

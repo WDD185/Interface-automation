@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("极运营/客户管理/订单管理/订单/计算下段订单总价")
 def orderFlow_calculateDownOrderPrice_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,6 +19,7 @@ def orderFlow_calculateDownOrderPrice_post(params=None, body=None, header=None, 
     return res
 
 
+@allure.step("极运营/客户管理/订单管理/订单/获取分段下可使用优惠及优惠券")
 def orderFlow_queryDownMatchDiscountAndCoupon_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -32,6 +35,7 @@ def orderFlow_queryDownMatchDiscountAndCoupon_post(params=None, body=None, heade
     return res
 
 
+@allure.step("客户管理-报名-订单-占座位")
 def orderFlow_take_seat_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -47,6 +51,7 @@ def orderFlow_take_seat_post(params=None, body=None, header=None, return_json=Tr
     return res
 
 
+@allure.step("客户管理-报名-订单-取消占座")
 def orderFlow_cancle_seat_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -62,6 +67,7 @@ def orderFlow_cancle_seat_post(params=None, body=None, header=None, return_json=
     return res
 
 
+@allure.step("客户管理-报名-订单-计算订单总价")
 def orderFlow_calculateOrderPrice_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -77,6 +83,7 @@ def orderFlow_calculateOrderPrice_post(params=None, body=None, header=None, retu
     return res
 
 
+@allure.step("客户管理-报名-订单-下单前的预验证")
 def orderFlow_preValidOrderCondition_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -92,6 +99,7 @@ def orderFlow_preValidOrderCondition_post(params=None, body=None, header=None, r
     return res
 
 
+@allure.step("客户管理-报名-订单-获取可使用优惠及优惠券")
 def orderFlow_queryMatchDiscountAndCoupon_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

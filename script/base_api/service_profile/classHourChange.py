@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("极运营/财务管理/课消变动记录/取消点名")
 def classHourChange_rollCallCancel_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,6 +19,7 @@ def classHourChange_rollCallCancel_post(params=None, body=None, header=None, ret
     return res
 
 
+@allure.step("极运营/财务管理/课消变动记录/点名")
 def classHourChange_rollCall_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -32,6 +35,7 @@ def classHourChange_rollCall_post(params=None, body=None, header=None, return_js
     return res
 
 
+@allure.step("极运营/财务管理/课消变动记录/课消变动")
 def classHourChange_change_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

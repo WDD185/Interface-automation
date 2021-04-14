@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("通用/App资源/批量删除热更新资源")
 def resource_delete(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,6 +19,7 @@ def resource_delete(params=None, body=None, header=None, return_json=True, **kwa
     return res
 
 
+@allure.step("通用/App资源/批量修改热更新资源状态")
 def resource_patch(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -32,6 +35,7 @@ def resource_patch(params=None, body=None, header=None, return_json=True, **kwar
     return res
 
 
+@allure.step("通用/App资源/新增一个热更新资源")
 def resource_platform_platform_post(platform, params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -47,7 +51,8 @@ def resource_platform_platform_post(platform, params=None, body=None, header=Non
     return res
 
 
-def resource_platform_platform_available_get(platform, params=None, header=None, return_json=True, **kwargs):
+@allure.step("通用/App资源/获取热更新资源One")
+def resource_platform_platform_available_get(platform, params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

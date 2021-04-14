@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("在线考试/参加考试")
 def examination_app_join_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,6 +19,7 @@ def examination_app_join_post(params=None, body=None, header=None, return_json=T
     return res
 
 
+@allure.step("在线考试/查询报告列表")
 def examination_app_reports_query_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -32,7 +35,8 @@ def examination_app_reports_query_post(params=None, body=None, header=None, retu
     return res
 
 
-def examination_app_report_base_query_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("在线考试/查询报告基础信息")
+def examination_app_report_base_query_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -47,7 +51,8 @@ def examination_app_report_base_query_get(params=None, header=None, return_json=
     return res
 
 
-def examination_app_report_detail_query_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("在线考试/报告详情tab页查询")
+def examination_app_report_detail_query_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -62,7 +67,8 @@ def examination_app_report_detail_query_get(params=None, header=None, return_jso
     return res
 
 
-def examination_app_queryExaminationDetail_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("在线考试/学生获取单个考试详情")
+def examination_app_queryExaminationDetail_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -77,7 +83,8 @@ def examination_app_queryExaminationDetail_get(params=None, header=None, return_
     return res
 
 
-def examination_app_report_unread_count_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("在线考试/成绩报告小红点")
+def examination_app_report_unread_count_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -92,7 +99,8 @@ def examination_app_report_unread_count_get(params=None, header=None, return_jso
     return res
 
 
-def examination_app_generate_report_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("在线考试/生成成绩报告")
+def examination_app_generate_report_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -107,7 +115,8 @@ def examination_app_generate_report_get(params=None, header=None, return_json=Tr
     return res
 
 
-def examination_app_recordStatus_query_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("在线考试/查询学生考试记录状态")
+def examination_app_recordStatus_query_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -122,7 +131,8 @@ def examination_app_recordStatus_query_get(params=None, header=None, return_json
     return res
 
 
-def examination_pc_studyRes_examId_classId_get(examId, classId, params=None, header=None, return_json=True, **kwargs):
+@allure.step("极教研/在线考试/学情")
+def examination_pc_studyRes_examId_classId_get(examId, classId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -137,7 +147,8 @@ def examination_pc_studyRes_examId_classId_get(examId, classId, params=None, hea
     return res
 
 
-def examination_app_systemTime_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极教研/在线考试/获取系统时间")
+def examination_app_systemTime_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -152,7 +163,8 @@ def examination_app_systemTime_get(params=None, header=None, return_json=True, *
     return res
 
 
-def examination_app_queryExamination_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极教研/在线考试/app考试列表")
+def examination_app_queryExamination_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -167,7 +179,8 @@ def examination_app_queryExamination_get(params=None, header=None, return_json=T
     return res
 
 
-def examination_pc_queryExams_classId_get(classId, params=None, header=None, return_json=True, **kwargs):
+@allure.step("极教研/在线考试/pc查询班级考试列表")
+def examination_pc_queryExams_classId_get(classId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -182,6 +195,7 @@ def examination_pc_queryExams_classId_get(classId, params=None, header=None, ret
     return res
 
 
+@allure.step("极教研/在线考试/app交卷")
 def examination_app_answerQuestions_examPaperId_examId_studentId_post(examPaperId, examId, studentId, params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -197,7 +211,8 @@ def examination_app_answerQuestions_examPaperId_examId_studentId_post(examPaperI
     return res
 
 
-def examination_app_getQuestions_examPaperId_get(examPaperId, params=None, header=None, return_json=True, **kwargs):
+@allure.step("极教研/在线考试/答题")
+def examination_app_getQuestions_examPaperId_get(examPaperId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -212,7 +227,8 @@ def examination_app_getQuestions_examPaperId_get(examPaperId, params=None, heade
     return res
 
 
-def examination_app_getQuestionResult_examId_get(examId, params=None, header=None, return_json=True, **kwargs):
+@allure.step("极教研/在线考试/答题解析")
+def examination_app_getQuestionResult_examId_get(examId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -227,7 +243,8 @@ def examination_app_getQuestionResult_examId_get(examId, params=None, header=Non
     return res
 
 
-def examination_pc_ExportStudyRes_examId_classId_get(examId, classId, params=None, header=None, return_json=True, **kwargs):
+@allure.step("极教研/在线考试/学情导出")
+def examination_pc_ExportStudyRes_examId_classId_get(examId, classId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -242,6 +259,7 @@ def examination_pc_ExportStudyRes_examId_classId_get(examId, classId, params=Non
     return res
 
 
+@allure.step("极教研/在线考试/分享")
 def examination_app_share_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -257,6 +275,7 @@ def examination_app_share_post(params=None, body=None, header=None, return_json=
     return res
 
 
+@allure.step("极教研/在线考试/数据导入")
 def examination_app_importData_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -272,7 +291,8 @@ def examination_app_importData_post(params=None, body=None, header=None, return_
     return res
 
 
-def examination_pc_makeup_exam_url_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极师通/在线考试/补考分享链接")
+def examination_pc_makeup_exam_url_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -287,6 +307,7 @@ def examination_pc_makeup_exam_url_get(params=None, header=None, return_json=Tru
     return res
 
 
+@allure.step("极师通/在线考试/根据链接获取学生token")
 def examination_pc_makeup_url_msg_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -302,6 +323,7 @@ def examination_pc_makeup_url_msg_post(params=None, body=None, header=None, retu
     return res
 
 
+@allure.step("极教研/在线考试/导入考试数据")
 def examination_app_readFile_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -317,6 +339,7 @@ def examination_app_readFile_post(params=None, body=None, header=None, return_js
     return res
 
 
+@allure.step("极教研/在线考试/分享/日志")
 def examination_app_share_log_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -332,7 +355,8 @@ def examination_app_share_log_post(params=None, body=None, header=None, return_j
     return res
 
 
-def examination_app_report_base_noAttend_query_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("在线考试/查询报告基础信息（缺考）")
+def examination_app_report_base_noAttend_query_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -347,7 +371,8 @@ def examination_app_report_base_noAttend_query_get(params=None, header=None, ret
     return res
 
 
-def examination_app_report_detail_noAttend_query_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("在线考试/报告详情tab页查询（缺考）")
+def examination_app_report_detail_noAttend_query_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -362,7 +387,8 @@ def examination_app_report_detail_noAttend_query_get(params=None, header=None, r
     return res
 
 
-def examination_app_report_base_read_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("家长端app/在线考试/学生查阅报告日志")
+def examination_app_report_base_read_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

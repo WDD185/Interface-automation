@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("极客数学帮(家长APP)/极客资料/手动发送开课前极客资料")
 def manualSchedule_sendBeforeClassGeekMaterial_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,6 +19,7 @@ def manualSchedule_sendBeforeClassGeekMaterial_post(params=None, body=None, head
     return res
 
 
+@allure.step("极客数学帮(家长APP)/预习数据/手动处理预习数据")
 def manualSchedule_addPreviewData_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

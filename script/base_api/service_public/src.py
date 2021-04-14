@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("通用/资源/更新资源信息")
 def src_updateSrcInfo_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,7 +19,8 @@ def src_updateSrcInfo_post(params=None, body=None, header=None, return_json=True
     return res
 
 
-def src_getSrcInfo_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("通用/资源/获取资源信息")
+def src_getSrcInfo_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -32,6 +35,7 @@ def src_getSrcInfo_get(params=None, header=None, return_json=True, **kwargs):
     return res
 
 
+@allure.step("通用/资源/录入资源信息")
 def src_recordSrcInfo_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

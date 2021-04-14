@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("/班贴/班贴列表")
 def course_notes_getNoteList_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,6 +19,7 @@ def course_notes_getNoteList_post(params=None, body=None, header=None, return_js
     return res
 
 
+@allure.step("/班贴/班贴列表导出")
 def course_notes_real_exportExcel_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -32,6 +35,7 @@ def course_notes_real_exportExcel_post(params=None, body=None, header=None, retu
     return res
 
 
+@allure.step("极师通/班帖/组件查询")
 def course_notes_component_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -47,6 +51,7 @@ def course_notes_component_post(params=None, body=None, header=None, return_json
     return res
 
 
+@allure.step("极师通/班帖/组件启用修改")
 def course_notes_changeEnable_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -62,6 +67,7 @@ def course_notes_changeEnable_post(params=None, body=None, header=None, return_j
     return res
 
 
+@allure.step("极师通/班帖/模板筛选查询")
 def course_notes_queryNote_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -77,6 +83,7 @@ def course_notes_queryNote_post(params=None, body=None, header=None, return_json
     return res
 
 
+@allure.step("极师通/班帖/创建模板")
 def course_notes_createNote_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -92,7 +99,8 @@ def course_notes_createNote_post(params=None, body=None, header=None, return_jso
     return res
 
 
-def course_notes_queryNoteById_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极师通/班帖/模板筛选查询")
+def course_notes_queryNoteById_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -107,6 +115,7 @@ def course_notes_queryNoteById_get(params=None, header=None, return_json=True, *
     return res
 
 
+@allure.step("极师通/班帖/模板启用停用")
 def course_notes_rNoteEnable_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -122,6 +131,7 @@ def course_notes_rNoteEnable_post(params=None, body=None, header=None, return_js
     return res
 
 
+@allure.step("极师通/班帖/模板编辑")
 def course_notes_editNote_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -137,6 +147,7 @@ def course_notes_editNote_post(params=None, body=None, header=None, return_json=
     return res
 
 
+@allure.step("极师通/班帖/模板复制")
 def course_notes_copyNote_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -152,7 +163,8 @@ def course_notes_copyNote_post(params=None, body=None, header=None, return_json=
     return res
 
 
-def course_notes_queryNoteCampus_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极师通/班帖/模板校区查询")
+def course_notes_queryNoteCampus_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -167,6 +179,7 @@ def course_notes_queryNoteCampus_get(params=None, header=None, return_json=True,
     return res
 
 
+@allure.step("极师通/班帖/添加模板校区关联")
 def course_notes_addNoteCampus_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -182,6 +195,7 @@ def course_notes_addNoteCampus_post(params=None, body=None, header=None, return_
     return res
 
 
+@allure.step("极师通/班帖/发布新班帖（存草稿）")
 def course_notes_courseNoteId_newNote_post(courseNoteId, params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -197,6 +211,7 @@ def course_notes_courseNoteId_newNote_post(courseNoteId, params=None, body=None,
     return res
 
 
+@allure.step("极师通/班帖/查看新班帖详情")
 def course_notes_detail_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -212,6 +227,7 @@ def course_notes_detail_post(params=None, body=None, header=None, return_json=Tr
     return res
 
 
+@allure.step("极师通/班帖/提醒学生查看班帖(新)")
 def course_notes_classStickerId_remindNew_post(classStickerId, params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -227,6 +243,7 @@ def course_notes_classStickerId_remindNew_post(classStickerId, params=None, body
     return res
 
 
+@allure.step("极师通/班帖/班帖列表（已发布）")
 def course_notes_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -242,6 +259,7 @@ def course_notes_post(params=None, body=None, header=None, return_json=True, **k
     return res
 
 
+@allure.step("极师通/班帖/班帖列表(未发布)")
 def course_notes_findOrCreateNote_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -257,7 +275,8 @@ def course_notes_findOrCreateNote_post(params=None, body=None, header=None, retu
     return res
 
 
-def course_notes_stickerList_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("APP/班帖/班帖列表")
+def course_notes_stickerList_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -272,7 +291,8 @@ def course_notes_stickerList_get(params=None, header=None, return_json=True, **k
     return res
 
 
-def course_notes_queryClassList_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("APP/班帖/班级列表")
+def course_notes_queryClassList_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -287,6 +307,7 @@ def course_notes_queryClassList_get(params=None, header=None, return_json=True, 
     return res
 
 
+@allure.step("极师通/班帖/模板删除")
 def course_notes_deleteNote_delete(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -302,6 +323,7 @@ def course_notes_deleteNote_delete(params=None, body=None, header=None, return_j
     return res
 
 
+@allure.step("极师通/首页感叹号")
 def course_notes_status_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -317,7 +339,8 @@ def course_notes_status_post(params=None, body=None, header=None, return_json=Tr
     return res
 
 
-def course_notes_courseNoteId_detail_get(courseNoteId, params=None, header=None, return_json=True, **kwargs):
+@allure.step("极师通/班帖/查看班帖详情")
+def course_notes_courseNoteId_detail_get(courseNoteId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -332,6 +355,7 @@ def course_notes_courseNoteId_detail_get(courseNoteId, params=None, header=None,
     return res
 
 
+@allure.step("极师通/班帖/提醒学生查看班帖")
 def course_notes_courseNoteId_reminds_post(courseNoteId, params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -347,6 +371,7 @@ def course_notes_courseNoteId_reminds_post(courseNoteId, params=None, body=None,
     return res
 
 
+@allure.step("极师通/班帖/发布班帖（存草稿）")
 def course_notes_courseNoteId_post(courseNoteId, params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -362,7 +387,8 @@ def course_notes_courseNoteId_post(courseNoteId, params=None, body=None, header=
     return res
 
 
-def course_notes_queryJKDeatil_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极师通/上课/极客币")
+def course_notes_queryJKDeatil_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -377,6 +403,7 @@ def course_notes_queryJKDeatil_get(params=None, header=None, return_json=True, *
     return res
 
 
+@allure.step("极师通/学习报告/极客资料")
 def course_notes_getGeekMaterial_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -392,6 +419,7 @@ def course_notes_getGeekMaterial_post(params=None, body=None, header=None, retur
     return res
 
 
+@allure.step("极师通/学习报告/获取教材所有讲次")
 def course_notes_listLectureIndexes_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -407,6 +435,7 @@ def course_notes_listLectureIndexes_post(params=None, body=None, header=None, re
     return res
 
 
+@allure.step("极师通/学习报告/下讲预习")
 def course_notes_prepareLessonMaterials_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -422,6 +451,7 @@ def course_notes_prepareLessonMaterials_post(params=None, body=None, header=None
     return res
 
 
+@allure.step("极师通/学习报告/发布极客资料")
 def course_notes_publishGeekMaterial_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -437,6 +467,7 @@ def course_notes_publishGeekMaterial_post(params=None, body=None, header=None, r
     return res
 
 
+@allure.step("极师通/学习报告/保存极客资料")
 def course_notes_saveGeekMaterial_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -452,6 +483,7 @@ def course_notes_saveGeekMaterial_post(params=None, body=None, header=None, retu
     return res
 
 
+@allure.step("极师通/学习报告/本讲辅导")
 def course_notes_tutorialMaterials_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -467,7 +499,8 @@ def course_notes_tutorialMaterials_post(params=None, body=None, header=None, ret
     return res
 
 
-def course_notes_getTaughtClassSchedule_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("获取以上课的课次信息")
+def course_notes_getTaughtClassSchedule_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -482,7 +515,8 @@ def course_notes_getTaughtClassSchedule_get(params=None, header=None, return_jso
     return res
 
 
-def course_notes_preview_getTaughtClassSchedule_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极师通web/学习报告/预存课次信息")
+def course_notes_preview_getTaughtClassSchedule_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -497,6 +531,7 @@ def course_notes_preview_getTaughtClassSchedule_get(params=None, header=None, re
     return res
 
 
+@allure.step("极师通web/学习报告/预存学习报告详情")
 def course_notes_preview_detail_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -512,6 +547,7 @@ def course_notes_preview_detail_post(params=None, body=None, header=None, return
     return res
 
 
+@allure.step("极师通web/学习报告/发送预存学习报告")
 def course_notes_courseNoteId_preview_newNote_post(courseNoteId, params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

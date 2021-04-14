@@ -1,8 +1,10 @@
 
 from common.run_method import RunMethod
+import allure
 
 
-def app_financial_epayDeductionByStudentIdForApp_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极客数学帮(家长APP)/我的/电子钱包余额")
+def app_financial_epayDeductionByStudentIdForApp_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -17,7 +19,8 @@ def app_financial_epayDeductionByStudentIdForApp_get(params=None, header=None, r
     return res
 
 
-def app_finance_introduce_user_amount_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极客数学帮(家长APP)/转介绍/用户转介绍金额")
+def app_finance_introduce_user_amount_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -32,6 +35,7 @@ def app_finance_introduce_user_amount_get(params=None, header=None, return_json=
     return res
 
 
+@allure.step("极客数学帮(家长APP)/转介绍/领取至电子钱包")
 def app_finance_introduce_receive_receiveToWallet_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -47,6 +51,7 @@ def app_finance_introduce_receive_receiveToWallet_post(params=None, body=None, h
     return res
 
 
+@allure.step("极客数学帮(家长APP)/电子钱包/流水")
 def app_financial_wallet_detail_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -62,6 +67,7 @@ def app_financial_wallet_detail_post(params=None, body=None, header=None, return
     return res
 
 
+@allure.step("极客数学帮(家长APP)/转介绍/明细列表")
 def app_finance_introduce_receive_introduced_query_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -77,6 +83,7 @@ def app_finance_introduce_receive_introduced_query_post(params=None, body=None, 
     return res
 
 
+@allure.step("极客数学帮(家长APP)/转介绍/发放明细")
 def app_finance_introduce_receive_query_detail_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

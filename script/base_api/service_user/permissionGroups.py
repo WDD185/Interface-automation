@@ -1,8 +1,10 @@
 
 from common.run_method import RunMethod
+import allure
 
 
-def permissionGroups_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("查询权限组")
+def permissionGroups_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

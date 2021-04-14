@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("通用/消息通知/删除某则消息")
 def notices_noticeId_delete(noticeId, params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,7 +19,8 @@ def notices_noticeId_delete(noticeId, params=None, body=None, header=None, retur
     return res
 
 
-def notices_overviews_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("通用/消息通知/通知概况")
+def notices_overviews_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -32,6 +35,7 @@ def notices_overviews_get(params=None, header=None, return_json=True, **kwargs):
     return res
 
 
+@allure.step("通用/消息通知/更新通知作业、发布内容详情")
 def notices_noticeId_patch(noticeId, params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -47,7 +51,8 @@ def notices_noticeId_patch(noticeId, params=None, body=None, header=None, return
     return res
 
 
-def notices_noticeId_reading_get(noticeId, params=None, header=None, return_json=True, **kwargs):
+@allure.step("通用/消息通知/作业、发布内容的阅读详情")
+def notices_noticeId_reading_get(noticeId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -62,7 +67,8 @@ def notices_noticeId_reading_get(noticeId, params=None, header=None, return_json
     return res
 
 
-def notices_reject_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("通用/消息通知/获取拒收规则")
+def notices_reject_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -77,6 +83,7 @@ def notices_reject_get(params=None, header=None, return_json=True, **kwargs):
     return res
 
 
+@allure.step("通用/消息通知/拒收某类消息")
 def notices_reject_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -92,6 +99,7 @@ def notices_reject_post(params=None, body=None, header=None, return_json=True, *
     return res
 
 
+@allure.step("通用/消息通知/提醒学生阅读作业、发布内容")
 def notices_noticeId_reminds_post(noticeId, params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

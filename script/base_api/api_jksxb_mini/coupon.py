@@ -1,8 +1,10 @@
 
 from common.run_method import RunMethod
+import allure
 
 
-def coupon_count_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("小程序/我的主页/优惠券数量")
+def coupon_count_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -17,7 +19,8 @@ def coupon_count_get(params=None, header=None, return_json=True, **kwargs):
     return res
 
 
-def coupon_list_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("小程序/我的主页/优惠券列表")
+def coupon_list_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -32,7 +35,8 @@ def coupon_list_get(params=None, header=None, return_json=True, **kwargs):
     return res
 
 
-def coupon_detail_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("小程序/我的主页/优惠券详情")
+def coupon_detail_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

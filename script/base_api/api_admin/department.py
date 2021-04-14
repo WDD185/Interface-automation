@@ -1,8 +1,10 @@
 
 from common.run_method import RunMethod
+import allure
 
 
-def department_getDepartmentTree_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("部门/获取部门树")
+def department_getDepartmentTree_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -17,6 +19,7 @@ def department_getDepartmentTree_get(params=None, header=None, return_json=True,
     return res
 
 
+@allure.step("部门/查询部门树")
 def department_searchDepartmentTree_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -32,7 +35,8 @@ def department_searchDepartmentTree_post(params=None, body=None, header=None, re
     return res
 
 
-def department_updateDepartBusiType_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("部门/维护组织类型")
+def department_updateDepartBusiType_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -47,6 +51,7 @@ def department_updateDepartBusiType_get(params=None, header=None, return_json=Tr
     return res
 
 
+@allure.step("部门/获取校区下拉框")
 def department_getSchoolCode_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -62,7 +67,8 @@ def department_getSchoolCode_post(params=None, body=None, header=None, return_js
     return res
 
 
-def department_getSchoolTree_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("部门/获取校区树")
+def department_getSchoolTree_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

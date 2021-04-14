@@ -1,8 +1,10 @@
 
 from common.run_method import RunMethod
+import allure
 
 
-def vod_signature_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("视频上传/签名获取")
+def vod_signature_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

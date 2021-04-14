@@ -1,8 +1,10 @@
 
 from common.run_method import RunMethod
+import allure
 
 
-def regimeManage_listRegimesOnPubStatus_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("制度管理/根据状态查询列表")
+def regimeManage_listRegimesOnPubStatus_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -17,7 +19,8 @@ def regimeManage_listRegimesOnPubStatus_get(params=None, header=None, return_jso
     return res
 
 
-def regimeManage_updateRegimeOnPubStatus_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("制度管理/更新状态")
+def regimeManage_updateRegimeOnPubStatus_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -32,6 +35,7 @@ def regimeManage_updateRegimeOnPubStatus_get(params=None, header=None, return_js
     return res
 
 
+@allure.step("制度管理/新增制度")
 def regimeManage_addRegime_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -47,7 +51,8 @@ def regimeManage_addRegime_post(params=None, body=None, header=None, return_json
     return res
 
 
-def regimeManage_showRegimeContent_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("制度管理/制度查询")
+def regimeManage_showRegimeContent_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -62,6 +67,7 @@ def regimeManage_showRegimeContent_get(params=None, header=None, return_json=Tru
     return res
 
 
+@allure.step("制度管理/更新制度")
 def regimeManage_updateRegime_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -77,6 +83,7 @@ def regimeManage_updateRegime_post(params=None, body=None, header=None, return_j
     return res
 
 
+@allure.step("制度管理/发送通知")
 def regimeManage_sendDingNotice_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

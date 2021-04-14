@@ -1,8 +1,10 @@
 
 from common.run_method import RunMethod
+import allure
 
 
-def notice_studentId_student_noticeId_noticeId_get(studentId, noticeId, params=None, header=None, return_json=True, **kwargs):
+@allure.step("通用/消息通知/我也不知道是啥")
+def notice_studentId_student_noticeId_noticeId_get(studentId, noticeId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -17,6 +19,7 @@ def notice_studentId_student_noticeId_noticeId_get(studentId, noticeId, params=N
     return res
 
 
+@allure.step("通用/消息通知/发送通知")
 def notice_noticeTypeId_post(noticeTypeId, params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -32,7 +35,8 @@ def notice_noticeTypeId_post(noticeTypeId, params=None, body=None, header=None, 
     return res
 
 
-def notice_belong_studentId_student_get(studentId, params=None, header=None, return_json=True, **kwargs):
+@allure.step("通用/消息通知/查询接收者消息类别")
+def notice_belong_studentId_student_get(studentId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -47,7 +51,8 @@ def notice_belong_studentId_student_get(studentId, params=None, header=None, ret
     return res
 
 
-def notice_studentId_student_noticeTypeId_noticeType_get(studentId, noticeTypeId, params=None, header=None, return_json=True, **kwargs):
+@allure.step("通用/消息通知/通过类别获取消息")
+def notice_studentId_student_noticeTypeId_noticeType_get(studentId, noticeTypeId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -62,7 +67,8 @@ def notice_studentId_student_noticeTypeId_noticeType_get(studentId, noticeTypeId
     return res
 
 
-def notice_belongId_belong_studentId_student_get(belongId, studentId, params=None, header=None, return_json=True, **kwargs):
+@allure.step("通用/消息通知/查询接收者某类消息")
+def notice_belongId_belong_studentId_student_get(belongId, studentId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -77,6 +83,7 @@ def notice_belongId_belong_studentId_student_get(belongId, studentId, params=Non
     return res
 
 
+@allure.step("通用/消息通知/查询消息阅读状态")
 def notice_student_studentId_readingState_put(studentId, params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -92,7 +99,8 @@ def notice_student_studentId_readingState_put(studentId, params=None, body=None,
     return res
 
 
-def notice_detail_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("通用/消息通知/消息详情")
+def notice_detail_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -107,7 +115,8 @@ def notice_detail_get(params=None, header=None, return_json=True, **kwargs):
     return res
 
 
-def notice_studentId_student_noticeTypeId_noticeType_count_get(studentId, noticeTypeId, params=None, header=None, return_json=True, **kwargs):
+@allure.step("通用/消息通知/获取某人的某类消息")
+def notice_studentId_student_noticeTypeId_noticeType_count_get(studentId, noticeTypeId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -122,7 +131,8 @@ def notice_studentId_student_noticeTypeId_noticeType_count_get(studentId, notice
     return res
 
 
-def notice_whiteList_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("通用/消息通知/白名单")
+def notice_whiteList_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -137,6 +147,7 @@ def notice_whiteList_get(params=None, header=None, return_json=True, **kwargs):
     return res
 
 
+@allure.step("通用/消息通知/查询学生的未读消息数量")
 def notice_studentId_student_countOfNoticeType_post(studentId, params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -152,6 +163,7 @@ def notice_studentId_student_countOfNoticeType_post(studentId, params=None, body
     return res
 
 
+@allure.step("通用/消息通知/通过接收者ID获取消息")
 def notice_studentId_student_post(studentId, params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -167,6 +179,7 @@ def notice_studentId_student_post(studentId, params=None, body=None, header=None
     return res
 
 
+@allure.step("通用/消息通知/查询某人的消息数量")
 def notice_studentId_student_count_post(studentId, params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -182,7 +195,8 @@ def notice_studentId_student_count_post(studentId, params=None, body=None, heade
     return res
 
 
-def notice_change_status_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极师通/首页/消息该状态")
+def notice_change_status_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -197,7 +211,8 @@ def notice_change_status_get(params=None, header=None, return_json=True, **kwarg
     return res
 
 
-def notice_unReadNum_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极师通/首页/系统消息未读个数")
+def notice_unReadNum_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

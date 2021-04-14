@@ -1,8 +1,10 @@
 
 from common.run_method import RunMethod
+import allure
 
 
-def getContinueReportByArea_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/统计报表/钉钉查看续班率BY区域大区")
+def getContinueReportByArea_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

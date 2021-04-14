@@ -1,8 +1,10 @@
 
 from common.run_method import RunMethod
+import allure
 
 
-def ruleSetting_queryAll_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("系统设置-订单设置-查询设置列表")
+def ruleSetting_queryAll_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -17,6 +19,7 @@ def ruleSetting_queryAll_get(params=None, header=None, return_json=True, **kwarg
     return res
 
 
+@allure.step("系统设置-订单设置-编辑设置列表")
 def ruleSetting_edit_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

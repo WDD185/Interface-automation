@@ -1,8 +1,10 @@
 
 from common.run_method import RunMethod
+import allure
 
 
-def jst_home_teacher_msg_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极师通/首页/教师任职信息")
+def jst_home_teacher_msg_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -17,7 +19,8 @@ def jst_home_teacher_msg_get(params=None, header=None, return_json=True, **kwarg
     return res
 
 
-def jst_home_teachers_reading_msg_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极师通/首页/在读班级和学生")
+def jst_home_teachers_reading_msg_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

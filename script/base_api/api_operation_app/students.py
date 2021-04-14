@@ -1,8 +1,10 @@
 
 from common.run_method import RunMethod
+import allure
 
 
-def students_studentInfo_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("JkyAPP/查询学生")
+def students_studentInfo_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -17,7 +19,8 @@ def students_studentInfo_get(params=None, header=None, return_json=True, **kwarg
     return res
 
 
-def students_check_message_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("JkyApp/检查学生信息是否被完整")
+def students_check_message_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -32,7 +35,8 @@ def students_check_message_get(params=None, header=None, return_json=True, **kwa
     return res
 
 
-def students_queryById_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("JkyApp/根据学生ID查找学生信息")
+def students_queryById_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -47,6 +51,7 @@ def students_queryById_get(params=None, header=None, return_json=True, **kwargs)
     return res
 
 
+@allure.step("JkyApp/新增学生")
 def students_add_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -62,6 +67,7 @@ def students_add_post(params=None, body=None, header=None, return_json=True, **k
     return res
 
 
+@allure.step("JkyApp/修改学生")
 def students_update_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -77,6 +83,7 @@ def students_update_post(params=None, body=None, header=None, return_json=True, 
     return res
 
 
+@allure.step("JkyAPP/学生信息")
 def students_all_items_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -92,7 +99,8 @@ def students_all_items_post(params=None, body=None, header=None, return_json=Tru
     return res
 
 
-def students_class_detail_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("JkyAPP/报班明细")
+def students_class_detail_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -107,6 +115,7 @@ def students_class_detail_get(params=None, header=None, return_json=True, **kwar
     return res
 
 
+@allure.step("JkyAPP/编辑家长信息")
 def students_parent_update_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

@@ -1,8 +1,10 @@
 
 from common.run_method import RunMethod
+import allure
 
 
-def jst_app_attendances_report_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极师通APP/点名/查询待补点名的记录")
+def jst_app_attendances_report_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -17,7 +19,8 @@ def jst_app_attendances_report_get(params=None, header=None, return_json=True, *
     return res
 
 
-def jst_app_homework_readStatusOfStudentDetails_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极师通App/作业/学生作业查阅情况详情")
+def jst_app_homework_readStatusOfStudentDetails_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -32,7 +35,8 @@ def jst_app_homework_readStatusOfStudentDetails_get(params=None, header=None, re
     return res
 
 
-def jst_app_homework_studentHomework_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极师通App/作业/获取学生提交的作业")
+def jst_app_homework_studentHomework_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -47,6 +51,7 @@ def jst_app_homework_studentHomework_get(params=None, header=None, return_json=T
     return res
 
 
+@allure.step("极师通App/作业/批改作业")
 def jst_app_homework_correctHomework_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -62,7 +67,8 @@ def jst_app_homework_correctHomework_post(params=None, body=None, header=None, r
     return res
 
 
-def jst_app_external_phoneNumber_receiveVerificationCode_get(phoneNumber, params=None, header=None, return_json=True, **kwargs):
+@allure.step("家长APP/用户管理/接收短信验证码")
+def jst_app_external_phoneNumber_receiveVerificationCode_get(phoneNumber, params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -77,6 +83,7 @@ def jst_app_external_phoneNumber_receiveVerificationCode_get(phoneNumber, params
     return res
 
 
+@allure.step("家长APP/用户管理/修改密码")
 def jst_app_user_employee_signinPassword_patch(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -92,7 +99,8 @@ def jst_app_user_employee_signinPassword_patch(params=None, body=None, header=No
     return res
 
 
-def jst_app_schedules_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极师通APP/首页/获取老师课程表")
+def jst_app_schedules_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -107,7 +115,8 @@ def jst_app_schedules_get(params=None, header=None, return_json=True, **kwargs):
     return res
 
 
-def jst_app_attendances_members_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极师通APP/点名/获取点名名单")
+def jst_app_attendances_members_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -122,7 +131,8 @@ def jst_app_attendances_members_get(params=None, header=None, return_json=True, 
     return res
 
 
-def jst_app_teachers_teacherId_classes_get(teacherId, params=None, header=None, return_json=True, **kwargs):
+@allure.step("极师通App/首页/查询老师在目前所教的班级")
+def jst_app_teachers_teacherId_classes_get(teacherId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -137,7 +147,8 @@ def jst_app_teachers_teacherId_classes_get(teacherId, params=None, header=None, 
     return res
 
 
-def jst_app_teachers_teacherId_timetables_queries_get(teacherId, params=None, header=None, return_json=True, **kwargs):
+@allure.step("极师通App/首页/查询老师在某个时间段内的排课计划")
+def jst_app_teachers_teacherId_timetables_queries_get(teacherId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -152,6 +163,7 @@ def jst_app_teachers_teacherId_timetables_queries_get(teacherId, params=None, he
     return res
 
 
+@allure.step("极师通App/精品班帖/待发送班帖列表查询")
 def jst_app_excellent_notes_findUnpublishedNote_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -167,6 +179,7 @@ def jst_app_excellent_notes_findUnpublishedNote_post(params=None, body=None, hea
     return res
 
 
+@allure.step("极师通App/精品班帖/已发送班帖列表")
 def jst_app_excellent_notes_publishedNote_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -182,7 +195,8 @@ def jst_app_excellent_notes_publishedNote_post(params=None, body=None, header=No
     return res
 
 
-def jst_app_excellent_notes_readNum_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极师通App/精品班帖/已发送班帖查阅")
+def jst_app_excellent_notes_readNum_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -197,7 +211,8 @@ def jst_app_excellent_notes_readNum_get(params=None, header=None, return_json=Tr
     return res
 
 
-def jst_app_excellent_notes_detail_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极师通App/精品班帖/班帖详情")
+def jst_app_excellent_notes_detail_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -212,6 +227,7 @@ def jst_app_excellent_notes_detail_get(params=None, header=None, return_json=Tru
     return res
 
 
+@allure.step("极师通App/精品班帖/编辑班帖")
 def jst_app_excellent_notes_courseNoteId_publishNote_post(courseNoteId, params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -227,6 +243,7 @@ def jst_app_excellent_notes_courseNoteId_publishNote_post(courseNoteId, params=N
     return res
 
 
+@allure.step("极师通App/作业/发布作业")
 def jst_app_homework_publishHomework_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -242,6 +259,7 @@ def jst_app_homework_publishHomework_post(params=None, body=None, header=None, r
     return res
 
 
+@allure.step("极师通App/作业/作业列表")
 def jst_app_homework_homeworkList_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -257,7 +275,8 @@ def jst_app_homework_homeworkList_post(params=None, body=None, header=None, retu
     return res
 
 
-def jst_app_homework_myClasses_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极师通App/作业/班级列表")
+def jst_app_homework_myClasses_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -272,7 +291,8 @@ def jst_app_homework_myClasses_get(params=None, header=None, return_json=True, *
     return res
 
 
-def jst_app_homework_readStatusOfStudent_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极师通App/作业/学生作业查阅情况")
+def jst_app_homework_readStatusOfStudent_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -287,7 +307,8 @@ def jst_app_homework_readStatusOfStudent_get(params=None, header=None, return_js
     return res
 
 
-def jst_app_homework_homeworkDetails_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极师通App/作业/作业详情")
+def jst_app_homework_homeworkDetails_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -302,6 +323,7 @@ def jst_app_homework_homeworkDetails_get(params=None, header=None, return_json=T
     return res
 
 
+@allure.step("极师通App/作业/删除作业")
 def jst_app_homework_delHomework_delete(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -317,6 +339,7 @@ def jst_app_homework_delHomework_delete(params=None, body=None, header=None, ret
     return res
 
 
+@allure.step("极师通APP/点名/提交（或修改）点名数据")
 def jst_app_attendances_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -332,6 +355,7 @@ def jst_app_attendances_post(params=None, body=None, header=None, return_json=Tr
     return res
 
 
+@allure.step("极师通APP/点名/补点名")
 def jst_app_attendances_supply_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -347,6 +371,7 @@ def jst_app_attendances_supply_post(params=None, body=None, header=None, return_
     return res
 
 
+@allure.step("极师通App/首页感叹号")
 def jst_app_status_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -362,7 +387,8 @@ def jst_app_status_post(params=None, body=None, header=None, return_json=True, *
     return res
 
 
-def jst_app_homework_recall_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极师通App撤回作业")
+def jst_app_homework_recall_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -377,7 +403,8 @@ def jst_app_homework_recall_get(params=None, header=None, return_json=True, **kw
     return res
 
 
-def jst_app_homework_classIndex_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极师通App/作业/获取班级与课次")
+def jst_app_homework_classIndex_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

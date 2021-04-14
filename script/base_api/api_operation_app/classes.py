@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("JkyApp/查询班级列表")
 def classes_queryList_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,7 +19,8 @@ def classes_queryList_post(params=None, body=None, header=None, return_json=True
     return res
 
 
-def classes_seats_queryByClassId_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("JkyApp/查询班级座位列表")
+def classes_seats_queryByClassId_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -32,7 +35,8 @@ def classes_seats_queryByClassId_get(params=None, header=None, return_json=True,
     return res
 
 
-def classes_order_query_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("JkyApp/查询订单班级列表")
+def classes_order_query_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -47,6 +51,7 @@ def classes_order_query_get(params=None, header=None, return_json=True, **kwargs
     return res
 
 
+@allure.step("极运营APP订单查询班级")
 def classes_order_query_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

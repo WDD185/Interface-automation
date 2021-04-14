@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("极客数学帮(家长APP)/用户管理/删除用户设备绑定关系")
 def pushRelationship_delete(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,6 +19,7 @@ def pushRelationship_delete(params=None, body=None, header=None, return_json=Tru
     return res
 
 
+@allure.step("极客数学帮(家长APP)/用户管理/新增用户设备绑定关系")
 def pushRelationship_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("极客数学帮(家长APP)/用户行课/查询某班是否有效可报名")
 def app_classes_studentId_queryIsEffectiveClasses_post(studentId, params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,6 +19,7 @@ def app_classes_studentId_queryIsEffectiveClasses_post(studentId, params=None, b
     return res
 
 
+@allure.step("极客数学帮(家长APP)/用户行课/查询某班是否设置教室以及所在校区是否支持选座")
 def app_classes_isSupportChooseSeat_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -32,7 +35,8 @@ def app_classes_isSupportChooseSeat_post(params=None, body=None, header=None, re
     return res
 
 
-def app_setting_query_school_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极客数学帮(家长APP)/用户管理/就读学校名查询")
+def app_setting_query_school_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -47,7 +51,8 @@ def app_setting_query_school_get(params=None, header=None, return_json=True, **k
     return res
 
 
-def app_classInfo_query_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营/APP/查询可报班级/")
+def app_classInfo_query_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

@@ -1,8 +1,10 @@
 
 from common.run_method import RunMethod
+import allure
 
 
-def check_recommit_getTicket_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("通用/表单/防止重复提交")
+def check_recommit_getTicket_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

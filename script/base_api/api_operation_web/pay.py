@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("极运营/前台业务/订单管理/订单/h5页面支付")
 def pay_H5_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,6 +19,7 @@ def pay_H5_post(params=None, body=None, header=None, return_json=True, **kwargs)
     return res
 
 
+@allure.step("极运营/前台业务/订单管理/订单/发起支付")
 def pay_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

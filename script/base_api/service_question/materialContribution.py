@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("极题库")
 def materialContribution_updateContributionsTarget_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,7 +19,8 @@ def materialContribution_updateContributionsTarget_post(params=None, body=None, 
     return res
 
 
-def materialContribution_getContributionsByDate_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极题库")
+def materialContribution_getContributionsByDate_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -32,6 +35,7 @@ def materialContribution_getContributionsByDate_get(params=None, header=None, re
     return res
 
 
+@allure.step("极题库")
 def materialContribution_getContributions_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -47,6 +51,7 @@ def materialContribution_getContributions_post(params=None, body=None, header=No
     return res
 
 
+@allure.step("极题库/区域上传统计")
 def materialContribution_getMaterialUploads_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

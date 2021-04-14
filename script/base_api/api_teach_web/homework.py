@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("极师通web/在线作业/查询题目")
 def homework_query_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,6 +19,7 @@ def homework_query_post(params=None, body=None, header=None, return_json=True, *
     return res
 
 
+@allure.step("极师通web/在线作业/批改题目")
 def homework_correct_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

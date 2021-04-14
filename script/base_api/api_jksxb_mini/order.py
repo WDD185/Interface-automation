@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("小程序/订单/创建订单（套餐、单品）")
 def order_saveOrder_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,7 +19,8 @@ def order_saveOrder_post(params=None, body=None, header=None, return_json=True, 
     return res
 
 
-def order_myOrder_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("小程序/订单/订单列表")
+def order_myOrder_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -32,7 +35,8 @@ def order_myOrder_get(params=None, header=None, return_json=True, **kwargs):
     return res
 
 
-def order_myOrderDetail_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("小程序/订单/查询订单详情")
+def order_myOrderDetail_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -47,6 +51,7 @@ def order_myOrderDetail_get(params=None, header=None, return_json=True, **kwargs
     return res
 
 
+@allure.step("小程序/订单/删除订单")
 def order_deleteOrder_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -62,6 +67,7 @@ def order_deleteOrder_post(params=None, body=None, header=None, return_json=True
     return res
 
 
+@allure.step("小程序/订单/取消订单")
 def order_cancelOrder_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

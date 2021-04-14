@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("JkyApp/登录")
 def employee_login_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,7 +19,8 @@ def employee_login_post(params=None, body=None, header=None, return_json=True, *
     return res
 
 
-def employee_logout_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("JkyAPP/登出")
+def employee_logout_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -32,7 +35,8 @@ def employee_logout_get(params=None, header=None, return_json=True, **kwargs):
     return res
 
 
-def employee_info_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("JkyAPP/员工信息")
+def employee_info_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -47,7 +51,8 @@ def employee_info_get(params=None, header=None, return_json=True, **kwargs):
     return res
 
 
-def employee_external_receiveVerificationCode_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("JkyAPP/获取短信验证码")
+def employee_external_receiveVerificationCode_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -62,7 +67,8 @@ def employee_external_receiveVerificationCode_get(params=None, header=None, retu
     return res
 
 
-def employee_external_validity_verificationCode_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("JkyAPP/校验手机验证码")
+def employee_external_validity_verificationCode_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -77,6 +83,7 @@ def employee_external_validity_verificationCode_get(params=None, header=None, re
     return res
 
 
+@allure.step("JkyAPP/修改员工密码")
 def employee_signInPassword_patch(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -92,7 +99,8 @@ def employee_signInPassword_patch(params=None, body=None, header=None, return_js
     return res
 
 
-def employee_schools_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("JkyAPP/查询登录用户的授权校区")
+def employee_schools_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -107,7 +115,8 @@ def employee_schools_get(params=None, header=None, return_json=True, **kwargs):
     return res
 
 
-def employee_schools_all_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("JkyAPP/查询所有校区")
+def employee_schools_all_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -122,6 +131,7 @@ def employee_schools_all_get(params=None, header=None, return_json=True, **kwarg
     return res
 
 
+@allure.step("JkyApp/查询老师列表")
 def employee_teacher_queries_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -137,6 +147,7 @@ def employee_teacher_queries_post(params=None, body=None, header=None, return_js
     return res
 
 
+@allure.step("JkyApp/查询校区下的课程顾问")
 def employee_schoolArea_course_consultant_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -152,6 +163,7 @@ def employee_schoolArea_course_consultant_post(params=None, body=None, header=No
     return res
 
 
+@allure.step("JkyAPP/查询课程顾问并返回校区")
 def employee_schoolArea_course_consultant_and_school_area_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

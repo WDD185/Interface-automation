@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("极运营APP订单查询")
 def order_query_basic_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,7 +19,8 @@ def order_query_basic_post(params=None, body=None, header=None, return_json=True
     return res
 
 
-def order_query_detail_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营APP订单明细查询")
+def order_query_detail_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -32,6 +35,7 @@ def order_query_detail_get(params=None, header=None, return_json=True, **kwargs)
     return res
 
 
+@allure.step("极运营APP修改订单备注")
 def order_modifyRemark_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -47,6 +51,7 @@ def order_modifyRemark_post(params=None, body=None, header=None, return_json=Tru
     return res
 
 
+@allure.step("极运营APP修改订单状态")
 def order_update_status_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -62,6 +67,7 @@ def order_update_status_post(params=None, body=None, header=None, return_json=Tr
     return res
 
 
+@allure.step("极运营APP订单预校验")
 def order_preValidOrderCondition_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -77,6 +83,7 @@ def order_preValidOrderCondition_post(params=None, body=None, header=None, retur
     return res
 
 
+@allure.step("极运营APP订单获取优惠信息")
 def order_queryMatchDiscountAndCoupon_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -92,6 +99,7 @@ def order_queryMatchDiscountAndCoupon_post(params=None, body=None, header=None, 
     return res
 
 
+@allure.step("极运营APP订单计算订单价格")
 def order_calculateOrderPrice_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -107,6 +115,7 @@ def order_calculateOrderPrice_post(params=None, body=None, header=None, return_j
     return res
 
 
+@allure.step("极运营APP保存订单")
 def order_saveOrder_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -122,6 +131,7 @@ def order_saveOrder_post(params=None, body=None, header=None, return_json=True, 
     return res
 
 
+@allure.step("极运营APP占座")
 def order_getOccupiedSeatOrOccupy_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -137,7 +147,8 @@ def order_getOccupiedSeatOrOccupy_post(params=None, body=None, header=None, retu
     return res
 
 
-def order_scrapOrder_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极运营app作废订单")
+def order_scrapOrder_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -152,6 +163,7 @@ def order_scrapOrder_get(params=None, header=None, return_json=True, **kwargs):
     return res
 
 
+@allure.step("极运营app取消订单")
 def order_cancelOrder_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数

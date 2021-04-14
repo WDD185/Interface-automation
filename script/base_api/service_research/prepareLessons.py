@@ -1,8 +1,10 @@
 
 from common.run_method import RunMethod
+import allure
 
 
-def prepareLessons_prepareTextbook_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极师通/备课/备课教材查询")
+def prepareLessons_prepareTextbook_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -17,7 +19,8 @@ def prepareLessons_prepareTextbook_get(params=None, header=None, return_json=Tru
     return res
 
 
-def prepareLessons_textbook_classes_available_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极师通/备课/备课教材可关联班级")
+def prepareLessons_textbook_classes_available_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -32,6 +35,7 @@ def prepareLessons_textbook_classes_available_get(params=None, header=None, retu
     return res
 
 
+@allure.step("极师通/备课/新增备课教材")
 def prepareLessons_prepareTextbook_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -47,6 +51,7 @@ def prepareLessons_prepareTextbook_post(params=None, body=None, header=None, ret
     return res
 
 
+@allure.step("极师通/备课/删除备课教材")
 def prepareLessons_prepareTextbook_delete(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -62,6 +67,7 @@ def prepareLessons_prepareTextbook_delete(params=None, body=None, header=None, r
     return res
 
 
+@allure.step("极师通/备课/教材/查询班级是否关联了教材")
 def prepareLessons_related_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -77,7 +83,8 @@ def prepareLessons_related_post(params=None, body=None, header=None, return_json
     return res
 
 
-def prepareLessons_textbook_available_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("极师通/备课/教师可用教材查询")
+def prepareLessons_textbook_available_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

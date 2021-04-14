@@ -1,7 +1,9 @@
 
 from common.run_method import RunMethod
+import allure
 
 
+@allure.step("极运营/教务管理/入学诊断")
 def entranceExam_query_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -17,6 +19,7 @@ def entranceExam_query_post(params=None, body=None, header=None, return_json=Tru
     return res
 
 
+@allure.step("通用/入学诊断/验证考试连接")
 def entranceExam_valid_examUrl_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -32,6 +35,7 @@ def entranceExam_valid_examUrl_post(params=None, body=None, header=None, return_
     return res
 
 
+@allure.step("通用/入学诊断/开始考试")
 def entranceExam_exam_begin_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -47,6 +51,7 @@ def entranceExam_exam_begin_post(params=None, body=None, header=None, return_jso
     return res
 
 
+@allure.step("通用/入学诊断/提交试卷")
 def entranceExam_exam_end_post(params=None, body=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
@@ -62,7 +67,8 @@ def entranceExam_exam_end_post(params=None, body=None, header=None, return_json=
     return res
 
 
-def entranceExam_secrect_get(params=None, header=None, return_json=True, **kwargs):
+@allure.step("通用/入学诊断/获得密钥")
+def entranceExam_secrect_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
