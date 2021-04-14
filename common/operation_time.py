@@ -93,6 +93,12 @@ class GetTime:
                 **GetTime.get_today_before(30)
                 }
 
+    # 获取当前时间毫秒数
+    @staticmethod
+    def get_current_time_millis():
+        current_time = time.time()
+        return int(round(current_time * 1000))
+
 
 # now = datetime.datetime.now()
 # # 今天
