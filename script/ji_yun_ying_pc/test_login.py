@@ -3,6 +3,8 @@ import jsonpath
 from script.base_api.service_user.auth import auth_employee_post
 from script.base_api.service_user.employees import *
 from script.base_api.service_user.token import token_valid_get
+import allure
+import pytest
 
 
 @allure.feature("不同账号的登录测试")

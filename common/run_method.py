@@ -44,6 +44,11 @@ class RunMethod:
 		except Exception as e:
 			res = {"err_msg": str(e)}
 		# print(res)
+		import allure
+		if return_json:
+			allure.attach(body=json.dumps(res, ensure_ascii=False), name='响应信息', attachment_type=allure.attachment_type.JSON)
+		else:
+			allure.attach(body=res.text, name='响应信息', attachment_type=allure.attachment_type.TEXT)
 		return res
 
 

@@ -1,4 +1,3 @@
-from common.connect_db import OperationDb
 from common.common_util import replace_string
 import psycopg2
 import os
@@ -15,7 +14,7 @@ def query_sql(database_config, sql_str):
     return results
 
 
-def get_base_apis(is_filter=True):
+def get_base_apis():
     config = {
         'database': 'edu-admin',
         "user": 'read_user',
@@ -32,10 +31,8 @@ def get_base_apis(is_filter=True):
         "path_params": get_path_params(x[2]),
         "http_method": x[3],
         "method_name": x[2].replace("{", "").replace("}", "").replace("-", "_").replace("/", "_")[1:] + "_" + x[3].lower(),
-        "file_name": x[2].replace("-", "_")[1:].split("/")[0] + "temp.py"
+        "file_name": x[2].replace("-", "_")[1:].split("/")[0] + ".py"
     } for x in query_result]
-    if is_filter:
-        base_apis = [x for x in base_apis if x.get("method_name") not in get_current_method()]
     return base_apis
 
 
@@ -71,14 +68,6 @@ def create_all(base_apis: list):
     create_init_file("script/base_api/__init__.py", import_data_out)
 
 
-def get_current_method():
-    from script import base_api
-    current_methods = dir(base_api)
-    methods = ["get", "post", "patch", "head", "delete", "put"]
-    current_methods = [x for x in current_methods if x.split("_")[-1] in methods]
-    return current_methods
-
-
 def create_file(path, base_apis):
     with open(path, "w", encoding="utf-8") as file:
         file.write(file_template)
@@ -109,90 +98,113 @@ def create_init_file(path, import_datas):
 
 
 get_template = """
-@allure.step("${name}")
-def ${method_name}(${path_params}params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def ${method_name}(${path_params}params=None, header=None, return_json=True, **kwargs):
+    '''
+    :param: url地址后面的参数
+    :body: 请求体
+    :return_json: 是否返回json格式的响应（默认是）
+    :header: 请求的header
+    :host: 请求的环境
+    :return: 默认json格式的响应， return_json=False返回原始响应
+    '''
     name = "${name}"
     url = f"/${url}"
-    res = RunMethod.run_request("GET", url, params=params, header=header, return_json=return_json, name=name, **kwargs)
-    if return_json and default_assert:
-        public_assert(res)    
+    res = RunMethod.run_request("GET", url, params=params, header=header, return_json=return_json, name=name, **kwargs)  
     return res
 
 """
 
 post_template = """
-@allure.step("${name}")
-def ${method_name}(${path_params}params=None, body=None, header=None, return_json=True, default_assert=True, **kwargs):
+def ${method_name}(${path_params}params=None, body=None, header=None, return_json=True, **kwargs):
+    '''
+    :param: url地址后面的参数
+    :body: 请求体
+    :return_json: 是否返回json格式的响应（默认是）
+    :header: 请求的header
+    :host: 请求的环境
+    :return: 默认json格式的响应， return_json=False返回原始响应
+    '''
     name = "${name}"
     url = f"/${url}"
-    res = RunMethod.run_request("POST", url, params=params, body=body, header=header, return_json=return_json, name=name, **kwargs)
-    if return_json and default_assert:
-        public_assert(res)    
+    res = RunMethod.run_request("POST", url, params=params, body=body, header=header, return_json=return_json, name=name, **kwargs) 
     return res
 
 """
 
 put_template = """
-@allure.step("${name}")
-def ${method_name}(${path_params}params=None, body=None, header=None, return_json=True, default_assert=True, **kwargs):
+def ${method_name}(${path_params}params=None, body=None, header=None, return_json=True, **kwargs):
+    '''
+    :param: url地址后面的参数
+    :body: 请求体
+    :return_json: 是否返回json格式的响应（默认是）
+    :header: 请求的header
+    :host: 请求的环境
+    :return: 默认json格式的响应， return_json=False返回原始响应
+    '''
     name = "${name}"    
     url = f"/${url}"
-    res = RunMethod.run_request("PUT", url, params=params, body=body, header=header, return_json=return_json, name=name, **kwargs)
-    if return_json and default_assert:
-        public_assert(res)    
+    res = RunMethod.run_request("PUT", url, params=params, body=body, header=header, return_json=return_json, name=name, **kwargs)  
     return res
 
 """
 
 delete_template = """
-@allure.step("${name}")
-def ${method_name}(${path_params}params=None, body=None, header=None, return_json=True, default_assert=True, **kwargs):
+def ${method_name}(${path_params}params=None, body=None, header=None, return_json=True, **kwargs):
+    '''
+    :param: url地址后面的参数
+    :body: 请求体
+    :return_json: 是否返回json格式的响应（默认是）
+    :header: 请求的header
+    :host: 请求的环境
+    :return: 默认json格式的响应， return_json=False返回原始响应
+    '''
     name = "${name}"    
     url = f"/${url}"
-    res = RunMethod.run_request("DELETE", url, params=params, body=body, header=header, return_json=return_json, name=name, **kwargs)
-    if return_json and default_assert:
-        public_assert(res)    
+    res = RunMethod.run_request("DELETE", url, params=params, body=body, header=header, return_json=return_json, name=name, **kwargs)  
     return res
 
 """
 
 patch_template = """
-@allure.step("${name}")
-def ${method_name}(${path_params}params=None, body=None, header=None, return_json=True, default_assert=True, **kwargs):
+def ${method_name}(${path_params}params=None, body=None, header=None, return_json=True, **kwargs):
+    '''
+    :param: url地址后面的参数
+    :body: 请求体
+    :return_json: 是否返回json格式的响应（默认是）
+    :header: 请求的header
+    :host: 请求的环境
+    :return: 默认json格式的响应， return_json=False返回原始响应
+    '''
     name = "${name}"
     url = f"/${url}"
-    res = RunMethod.run_request("PATCH", url, params=params, body=body, header=header, return_json=return_json, name=name, **kwargs)
-    if return_json and default_assert:
-        public_assert(res)    
+    res = RunMethod.run_request("PATCH", url, params=params, body=body, header=header, return_json=return_json, name=name, **kwargs)  
     return res
 
 """
 
 head_template = """
-@allure.step("${name}")
-def ${method_name}(${path_params}params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def ${method_name}(${path_params}params=None, header=None, return_json=True, **kwargs):
+    '''
+    :param: url地址后面的参数
+    :body: 请求体
+    :return_json: 是否返回json格式的响应（默认是）
+    :header: 请求的header
+    :host: 请求的环境
+    :return: 默认json格式的响应， return_json=False返回原始响应
+    '''
     name = "${name}"
     url = f"/${url}"
-    res = RunMethod.run_request("HEAD", url, params=params, header=header, return_json=return_json, name=name, **kwargs)
-    if return_json and default_assert:
-        public_assert(res)    
+    res = RunMethod.run_request("HEAD", url, params=params, header=header, return_json=return_json, name=name, **kwargs) 
     return res
 
 """
 
 file_template = """
 from common.run_method import RunMethod
-from script.public_asserts import public_assert
-import pytest
-import allure
 
 """
 
 if __name__ == '__main__':
-    base_apis = get_base_apis()
-    print("新接口", base_apis)
-    x = input("是否创建：")
-    if x == "是" and base_apis:
-        create_all(base_apis)
-    else:
-        print("取消创建")
+    # base_apis = get_base_apis()
+    # create_all(base_apis)
+    pass
