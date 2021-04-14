@@ -781,3 +781,78 @@ def big_screen_queryCourseTypePersonTimeProportion_post(params=None, body=None, 
     res = RunMethod.run_request("POST", url, params=params, body=body, header=header, return_json=return_json, name=name, **kwargs) 
     return res
 
+
+def big_screen_queryWindowPersonTime_post(params=None, body=None, header=None, return_json=True, **kwargs):
+    '''
+    :param: url地址后面的参数
+    :body: 请求体
+    :return_json: 是否返回json格式的响应（默认是）
+    :header: 请求的header
+    :host: 请求的环境
+    :return: 默认json格式的响应， return_json=False返回原始响应
+    '''
+    name = "极数据/大屏/数据概览人次"
+    url = f"/api-operation-web/big-screen/queryWindowPersonTime"
+    res = RunMethod.run_request("POST", url, params=params, body=body, header=header, return_json=return_json, name=name, **kwargs) 
+    return res
+
+
+def big_screen_queryWindowContinue_post(params=None, body=None, header=None, return_json=True, **kwargs):
+    '''
+    :param: url地址后面的参数
+    :body: 请求体
+    :return_json: 是否返回json格式的响应（默认是）
+    :header: 请求的header
+    :host: 请求的环境
+    :return: 默认json格式的响应， return_json=False返回原始响应
+    '''
+    name = "极数据/大屏/数据概览续报"
+    url = f"/api-operation-web/big-screen/queryWindowContinue"
+    res = RunMethod.run_request("POST", url, params=params, body=body, header=header, return_json=return_json, name=name, **kwargs) 
+    return res
+
+
+def big_screen_queryWindowContinueRank_post(params=None, body=None, header=None, return_json=True, **kwargs):
+    '''
+    :param: url地址后面的参数
+    :body: 请求体
+    :return_json: 是否返回json格式的响应（默认是）
+    :header: 请求的header
+    :host: 请求的环境
+    :return: 默认json格式的响应， return_json=False返回原始响应
+    '''
+    name = "极数据/大屏/数据概览续报排行"
+    url = f"/api-operation-web/big-screen/queryWindowContinueRank"
+    res = RunMethod.run_request("POST", url, params=params, body=body, header=header, return_json=return_json, name=name, **kwargs) 
+    return res
+
+
+def big_screen_queryWindowContinueTeacherRank_post(params=None, body=None, header=None, return_json=True, **kwargs):
+    '''
+    :param: url地址后面的参数
+    :body: 请求体
+    :return_json: 是否返回json格式的响应（默认是）
+    :header: 请求的header
+    :host: 请求的环境
+    :return: 默认json格式的响应， return_json=False返回原始响应
+    '''
+    name = "极数据/大屏/数据概览续报教师排行"
+    url = f"/api-operation-web/big-screen/queryWindowContinueTeacherRank"
+    res = RunMethod.run_request("POST", url, params=params, body=body, header=header, return_json=return_json, name=name, **kwargs) 
+    return res
+
+
+def big_screen_queryWindowContinueRange_post(params=None, body=None, header=None, return_json=True, **kwargs):
+    '''
+    :param: url地址后面的参数
+    :body: 请求体
+    :return_json: 是否返回json格式的响应（默认是）
+    :header: 请求的header
+    :host: 请求的环境
+    :return: 默认json格式的响应， return_json=False返回原始响应
+    '''
+    name = "极数据/大屏/续报率折线图"
+    url = f"/api-operation-web/big-screen/queryWindowContinueRange"
+    res = RunMethod.run_request("POST", url, params=params, body=body, header=header, return_json=return_json, name=name, **kwargs) 
+    return res
+
