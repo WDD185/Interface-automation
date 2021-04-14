@@ -6,6 +6,7 @@ from script.db_config import db_configs
 from script.base_api.service_user.auth import auth_employee_post
 from script.defalut_account import accounts
 from script.base_api.service_user.departments import departments_schools_get
+from script.base_api.service_user.wxMini import wxMini_auth_post
 
 
 def pytest_addoption(parser):
@@ -44,6 +45,19 @@ def ji_yun_ying_login(pytestconfig):
         default_header.jyy_header.setdefault("Authorization", f"Bearer {tokens[0]}")
     else:
         default_header.jyy_header.setdefault("Authorization", "token  not found")
+
+
+@pytest.fixture(scope="session", autouse=True)
+def gos_login(pytestconfig):
+    account = accounts.get(pytestconfig.getoption('--account').upper())
+    gos_account = account.get("gos_account")
+    body_data = {"identifier": gos_account.get("account"), "credential": gos_account.get("password")}
+    res_json = wxMini_auth_post(body=body_data, header=default_header.gos_header)
+    tokens = jsonpath.jsonpath(res_json, "$.data.token")
+    if tokens:
+        default_header.gos_header.setdefault("Authorization", f"Bearer {tokens[0]}")
+    else:
+        default_header.gos_header.setdefault("Authorization", "token  not found")
 
 
 @pytest.fixture(scope="session")
