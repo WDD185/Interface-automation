@@ -11,7 +11,7 @@ urllib3.disable_warnings(InsecureRequestWarning)
 class RunMethod:
 
 	@staticmethod
-	def run_request(run_method, url, params=None, body=None, header=None, run_json=True, **kwargs):
+	def run_request(run_method, url, params=None, body=None, header=None, return_json=True, **kwargs):
 		try:
 			host = kwargs.get("host")
 			config_host = common_config.get("host")
@@ -36,7 +36,7 @@ class RunMethod:
 				res = requests.patch(url, data=body, params=params, headers=header, timeout=time_out, verify=False)
 			else:
 				res = requests.request(method=run_method, url=url, data=body, params=params, headers=header, timeout=time_out, verify=False)
-			if run_json:
+			if return_json:
 				try:
 					res = res.json()
 				except JSONDecodeError as e:
