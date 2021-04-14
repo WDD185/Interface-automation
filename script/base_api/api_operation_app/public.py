@@ -20,7 +20,7 @@ def public_queryAdministrativeArea_post(params=None, body=None, header=None, ret
 
 
 @allure.step("JkyAPP/查询行政区域--树状结构")
-def public_queryAreaTree_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def public_queryAreaTree_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -84,7 +84,7 @@ def public_file_multiple_post(params=None, body=None, header=None, return_json=T
 
 
 @allure.step("JkyAPP/查询所有设置")
-def public_setting_query_all_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def public_setting_query_all_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -100,7 +100,7 @@ def public_setting_query_all_get(params=None, header=None, return_json=True, def
 
 
 @allure.step("极运营APP/数据/目标方案/查询-过滤2019寒之前")
-def public_get_target_plans_split_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def public_get_target_plans_split_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -116,7 +116,7 @@ def public_get_target_plans_split_get(params=None, header=None, return_json=True
 
 
 @allure.step("极运营APP/数据/目标方案/查询")
-def public_get_target_plans_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def public_get_target_plans_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

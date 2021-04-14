@@ -1,0 +1,61 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "script.ji_yun_ying_pc.statistical_report.test_receipt_detail",
+    "children" : [ {
+      "name" : "test_list_search[keyword0]",
+      "uid" : "b524bd3ac1aa2519",
+      "parentUid" : "78b73e4a5317dd3e0cc56deb6ac52593",
+      "status" : "passed",
+      "time" : {
+        "start" : 1618398298361,
+        "stop" : 1618398299035,
+        "duration" : 674
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'keyword': '黄', 'keyword_type': 'student_name'}" ]
+    }, {
+      "name" : "test_list_search[keyword1]",
+      "uid" : "3a485567c76bbbe9",
+      "parentUid" : "78b73e4a5317dd3e0cc56deb6ac52593",
+      "status" : "passed",
+      "time" : {
+        "start" : 1618398299038,
+        "stop" : 1618398299273,
+        "duration" : 235
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'keyword': '周移山', 'keyword_type': 'student_name'}" ]
+    }, {
+      "name" : "test_list_search[keyword2]",
+      "uid" : "c5dacbdbb087f248",
+      "parentUid" : "78b73e4a5317dd3e0cc56deb6ac52593",
+      "status" : "passed",
+      "time" : {
+        "start" : 1618398299276,
+        "stop" : 1618398300006,
+        "duration" : 730
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'keyword': '19900658922', 'keyword_type': 'phone'}" ]
+    }, {
+      "name" : "test_list_search[keyword3]",
+      "uid" : "8bd1f80ae45a2a7d",
+      "parentUid" : "78b73e4a5317dd3e0cc56deb6ac52593",
+      "status" : "passed",
+      "time" : {
+        "start" : 1618398300009,
+        "stop" : 1618398300224,
+        "duration" : 215
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'keyword': '202104080942533570', 'keyword_type': 'receipt'}" ]
+    } ],
+    "uid" : "script.ji_yun_ying_pc.statistical_report.test_receipt_detail"
+  } ],
+  "name" : "packages"
+}

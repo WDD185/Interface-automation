@@ -164,7 +164,7 @@ def order_modifyFinancialFlow_post(params=None, body=None, header=None, return_j
 
 
 @allure.step("极运营/前台业务/订单管理/订单/查询订单详情")
-def order_queryOrderDetail_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def order_queryOrderDetail_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -196,7 +196,7 @@ def order_orderPay_post(params=None, body=None, header=None, return_json=True, *
 
 
 @allure.step("极运营/前台业务/报名/订单/查询单个订单")
-def order_queryById_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def order_queryById_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -212,7 +212,7 @@ def order_queryById_get(params=None, header=None, return_json=True, default_asse
 
 
 @allure.step("极客数学帮(家长APP)/订单/查询订单状态")
-def order_app_queryStatus_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def order_app_queryStatus_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -356,7 +356,7 @@ def order_app_save_post(params=None, body=None, header=None, return_json=True, *
 
 
 @allure.step("订单/查询订单状态")
-def order_queryStatus_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def order_queryStatus_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -372,7 +372,7 @@ def order_queryStatus_get(params=None, header=None, return_json=True, default_as
 
 
 @allure.step("订单/支付/预支付")
-def order_pay_prePay_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def order_pay_prePay_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -388,7 +388,7 @@ def order_pay_prePay_get(params=None, header=None, return_json=True, default_ass
 
 
 @allure.step("小程序/支付/重新支付")
-def order_pay_rePrePay_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def order_pay_rePrePay_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -404,7 +404,7 @@ def order_pay_rePrePay_get(params=None, header=None, return_json=True, default_a
 
 
 @allure.step("极客数学帮(家长APP)/订单管理/APP重新支付")
-def order_pay_appReprePay_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def order_pay_appReprePay_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -420,7 +420,7 @@ def order_pay_appReprePay_get(params=None, header=None, return_json=True, defaul
 
 
 @allure.step("极运营/校区/订单管理/重新支付校验")
-def order_pay_reCheck_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def order_pay_reCheck_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

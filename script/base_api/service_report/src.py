@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("极教研/视频文件查询")
-def src_query_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def src_query_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

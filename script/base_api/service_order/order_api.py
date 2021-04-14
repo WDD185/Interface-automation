@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("小程序/订单/根据订单状态查询订单数量")
-def order_api_inner_order_order_countByStatuses_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def order_api_inner_order_order_countByStatuses_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -20,7 +20,7 @@ def order_api_inner_order_order_countByStatuses_get(params=None, header=None, re
 
 
 @allure.step("极运营/系统设置/优惠券/优惠券查询服务")
-def order_api_inner_order_queryCoupon_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def order_api_inner_order_queryCoupon_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

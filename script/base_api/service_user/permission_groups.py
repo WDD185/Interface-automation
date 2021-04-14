@@ -52,7 +52,7 @@ def permission_groups_post(params=None, body=None, header=None, return_json=True
 
 
 @allure.step("极运营/人事管理/权限设置/查看权限组下的详细权限")
-def permission_groups_groupId_get(groupId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def permission_groups_groupId_get(groupId, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -68,7 +68,7 @@ def permission_groups_groupId_get(groupId, params=None, header=None, return_json
 
 
 @allure.step("极运营/人事管理/权限设置/权限组列表")
-def permission_groups_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def permission_groups_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

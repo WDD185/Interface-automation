@@ -68,7 +68,7 @@ def entranceExam_exam_end_post(params=None, body=None, header=None, return_json=
 
 
 @allure.step("通用/入学诊断/获得密钥")
-def entranceExam_secrect_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def entranceExam_secrect_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

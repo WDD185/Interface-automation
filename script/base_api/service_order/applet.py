@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("小程序/订单/单买订单列表")
-def applet_order_orderListForSingle_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def applet_order_orderListForSingle_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -132,7 +132,7 @@ def applet_order_cancle_seat_post(params=None, body=None, header=None, return_js
 
 
 @allure.step("小程序/我的主页/优惠券数量")
-def applet_coupon_count_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def applet_coupon_count_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -148,7 +148,7 @@ def applet_coupon_count_get(params=None, header=None, return_json=True, default_
 
 
 @allure.step("小程序/我的主页/优惠券列表")
-def applet_coupon_list_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def applet_coupon_list_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -164,7 +164,7 @@ def applet_coupon_list_get(params=None, header=None, return_json=True, default_a
 
 
 @allure.step("小程序/我的主页/优惠券详情")
-def applet_coupon_detail_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def applet_coupon_detail_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -180,7 +180,7 @@ def applet_coupon_detail_get(params=None, header=None, return_json=True, default
 
 
 @allure.step("小程序/我的主页/根据优惠券查询学生可报名班级")
-def applet_coupon_couponForClasses_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def applet_coupon_couponForClasses_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

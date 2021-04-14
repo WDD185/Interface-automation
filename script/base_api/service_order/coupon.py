@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("极运营/系统设置/优惠设置/优惠券/查看单个学生优惠券操作记录")
-def coupon_queryOperationRecordByCouponItemId_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def coupon_queryOperationRecordByCouponItemId_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -52,7 +52,7 @@ def coupon_updateAutoIssueConditionByCouponId_post(params=None, body=None, heade
 
 
 @allure.step("极运营/系统设置/优惠设置/优惠券/查询优惠券所属课程")
-def coupon_queryCoursesByCouponId_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def coupon_queryCoursesByCouponId_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -100,7 +100,7 @@ def coupon_delete_post(params=None, body=None, header=None, return_json=True, **
 
 
 @allure.step("极运营/系统设置/优惠设置/优惠券/查询自动发行优惠券")
-def coupon_queryAutoIssueConditionByCouponId_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def coupon_queryAutoIssueConditionByCouponId_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -132,7 +132,7 @@ def coupon_add_post(params=None, body=None, header=None, return_json=True, **kwa
 
 
 @allure.step("极运营/系统设置/优惠设置/优惠券/查询优惠券所属校区")
-def coupon_querySchoolsByCouponId_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def coupon_querySchoolsByCouponId_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -164,7 +164,7 @@ def coupon_updateStatus_post(params=None, body=None, header=None, return_json=Tr
 
 
 @allure.step("极运营/系统设置/优惠设置/优惠券/查看单个优惠券操作记录")
-def coupon_queryOperationRecordByCouponId_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def coupon_queryOperationRecordByCouponId_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -180,7 +180,7 @@ def coupon_queryOperationRecordByCouponId_get(params=None, header=None, return_j
 
 
 @allure.step("极运营/系统设置/优惠设置/优惠券/查询单个优惠券")
-def coupon_queryById_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def coupon_queryById_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -228,7 +228,7 @@ def coupon_queryUse_post(params=None, body=None, header=None, return_json=True, 
 
 
 @allure.step("极运营/系统设置/优惠设置/优惠券/导出上传的学生名单")
-def coupon_exportUploadData_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def coupon_exportUploadData_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -260,7 +260,7 @@ def coupon_queryMatchCoupon_post(params=None, body=None, header=None, return_jso
 
 
 @allure.step("极运营/系统设置/优惠设置/优惠券/查询优惠券所属班级")
-def coupon_queryClassesByCouponId_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def coupon_queryClassesByCouponId_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

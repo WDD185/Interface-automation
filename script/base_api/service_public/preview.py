@@ -20,7 +20,7 @@ def preview_ppt_add_post(params=None, body=None, header=None, return_json=True, 
 
 
 @allure.step("通用/ppt用户/查询用户")
-def preview_ppt_get_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def preview_ppt_get_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

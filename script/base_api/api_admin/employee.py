@@ -52,7 +52,7 @@ def employee_insertEmployee_post(params=None, body=None, header=None, return_jso
 
 
 @allure.step("极权限/停用员工帐号")
-def employee_disableEmployee_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def employee_disableEmployee_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -68,7 +68,7 @@ def employee_disableEmployee_get(params=None, header=None, return_json=True, def
 
 
 @allure.step("极权限/删除员工")
-def employee_deleteEmployee_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def employee_deleteEmployee_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -164,7 +164,7 @@ def employee_setTeachSubject_post(params=None, body=None, header=None, return_js
 
 
 @allure.step("极权限/获取员工概览信息")
-def employee_getEmployeeDetailOutDto_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def employee_getEmployeeDetailOutDto_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -180,7 +180,7 @@ def employee_getEmployeeDetailOutDto_get(params=None, header=None, return_json=T
 
 
 @allure.step("极权限/获取授课学段下拉框")
-def employee_getTeachDegree_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def employee_getTeachDegree_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -196,7 +196,7 @@ def employee_getTeachDegree_get(params=None, header=None, return_json=True, defa
 
 
 @allure.step("极权限/获取授课科目下拉框")
-def employee_getTeachSubject_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def employee_getTeachSubject_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

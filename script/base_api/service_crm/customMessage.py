@@ -36,7 +36,7 @@ def customMessage_queryAll_post(params=None, body=None, header=None, return_json
 
 
 @allure.step("设置/消息/消息列表/自定义消息/查看单个")
-def customMessage_queryById_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def customMessage_queryById_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

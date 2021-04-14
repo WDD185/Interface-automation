@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("通用/前台业务/学生信息/发放新生优惠券")
-def coupon_distributeAutoCouponByNewStudent_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def coupon_distributeAutoCouponByNewStudent_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

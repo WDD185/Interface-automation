@@ -20,7 +20,7 @@ def productExamination_app_getProductOnlineExamAppList_post(params=None, body=No
 
 
 @allure.step("小程序/考试/根据考试id获取考试信息")
-def productExamination_app_getProductOnlineExamInfoApp_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def productExamination_app_getProductOnlineExamInfoApp_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -36,7 +36,7 @@ def productExamination_app_getProductOnlineExamInfoApp_get(params=None, header=N
 
 
 @allure.step("小程序/考试/根据考试id获取试卷详情")
-def productExamination_app_getProductOnlineExamPaperInfo_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def productExamination_app_getProductOnlineExamPaperInfo_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -84,7 +84,7 @@ def productExamination_app_commitProductOnlineExamQuestion_post(params=None, bod
 
 
 @allure.step("小程序/考试/获取试卷答题情况")
-def productExamination_app_getQuestionResult_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def productExamination_app_getQuestionResult_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -132,7 +132,7 @@ def productExamination_app_share_log_post(params=None, body=None, header=None, r
 
 
 @allure.step("小程序/考试/查询报告详情tab页")
-def productExamination_app_report_getProductOnlineExamReport_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def productExamination_app_report_getProductOnlineExamReport_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -148,7 +148,7 @@ def productExamination_app_report_getProductOnlineExamReport_get(params=None, he
 
 
 @allure.step("小程序/考试/返回榜单列表")
-def productExamination_app_getProductExamHeroPanel_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def productExamination_app_getProductExamHeroPanel_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

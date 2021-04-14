@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("制度管理/根据状态查询列表")
-def regimeManage_listRegimesOnPubStatus_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def regimeManage_listRegimesOnPubStatus_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -20,7 +20,7 @@ def regimeManage_listRegimesOnPubStatus_get(params=None, header=None, return_jso
 
 
 @allure.step("制度管理/更新状态")
-def regimeManage_updateRegimeOnPubStatus_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def regimeManage_updateRegimeOnPubStatus_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -52,7 +52,7 @@ def regimeManage_addRegime_post(params=None, body=None, header=None, return_json
 
 
 @allure.step("制度管理/制度查询")
-def regimeManage_showRegimeContent_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def regimeManage_showRegimeContent_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

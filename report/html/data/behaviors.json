@@ -1,0 +1,69 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "children" : [ {
+    "name" : "测试收据明细报表",
+    "children" : [ {
+      "name" : "测试收据明细报表",
+      "children" : [ {
+        "name" : "测试收据明细列表查询-关键字筛选",
+        "children" : [ {
+          "name" : "test_list_search[keyword0]",
+          "uid" : "b524bd3ac1aa2519",
+          "parentUid" : "668367757dccc7ee27c1fe79db7e81a4",
+          "status" : "passed",
+          "time" : {
+            "start" : 1618398298361,
+            "stop" : 1618398299035,
+            "duration" : 674
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{'keyword': '黄', 'keyword_type': 'student_name'}" ]
+        }, {
+          "name" : "test_list_search[keyword1]",
+          "uid" : "3a485567c76bbbe9",
+          "parentUid" : "668367757dccc7ee27c1fe79db7e81a4",
+          "status" : "passed",
+          "time" : {
+            "start" : 1618398299038,
+            "stop" : 1618398299273,
+            "duration" : 235
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{'keyword': '周移山', 'keyword_type': 'student_name'}" ]
+        }, {
+          "name" : "test_list_search[keyword2]",
+          "uid" : "c5dacbdbb087f248",
+          "parentUid" : "668367757dccc7ee27c1fe79db7e81a4",
+          "status" : "passed",
+          "time" : {
+            "start" : 1618398299276,
+            "stop" : 1618398300006,
+            "duration" : 730
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{'keyword': '19900658922', 'keyword_type': 'phone'}" ]
+        }, {
+          "name" : "test_list_search[keyword3]",
+          "uid" : "8bd1f80ae45a2a7d",
+          "parentUid" : "668367757dccc7ee27c1fe79db7e81a4",
+          "status" : "passed",
+          "time" : {
+            "start" : 1618398300009,
+            "stop" : 1618398300224,
+            "duration" : 215
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{'keyword': '202104080942533570', 'keyword_type': 'receipt'}" ]
+        } ],
+        "uid" : "668367757dccc7ee27c1fe79db7e81a4"
+      } ],
+      "uid" : "29b05fe9dfe278448eaeaab8b454586a"
+    } ],
+    "uid" : "9bdb322e4b13dbe3ab4df05056604fa4"
+  } ],
+  "name" : "behaviors"
+}

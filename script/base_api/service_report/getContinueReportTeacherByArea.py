@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("极运营/统计报表/钉钉查看续班率BY区域大区老师")
-def getContinueReportTeacherByArea_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def getContinueReportTeacherByArea_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

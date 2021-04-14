@@ -20,7 +20,7 @@ def employee_login_post(params=None, body=None, header=None, return_json=True, *
 
 
 @allure.step("JkyAPP/登出")
-def employee_logout_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def employee_logout_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -36,7 +36,7 @@ def employee_logout_get(params=None, header=None, return_json=True, default_asse
 
 
 @allure.step("JkyAPP/员工信息")
-def employee_info_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def employee_info_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -52,7 +52,7 @@ def employee_info_get(params=None, header=None, return_json=True, default_assert
 
 
 @allure.step("JkyAPP/获取短信验证码")
-def employee_external_receiveVerificationCode_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def employee_external_receiveVerificationCode_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -68,7 +68,7 @@ def employee_external_receiveVerificationCode_get(params=None, header=None, retu
 
 
 @allure.step("JkyAPP/校验手机验证码")
-def employee_external_validity_verificationCode_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def employee_external_validity_verificationCode_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -100,7 +100,7 @@ def employee_signInPassword_patch(params=None, body=None, header=None, return_js
 
 
 @allure.step("JkyAPP/查询登录用户的授权校区")
-def employee_schools_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def employee_schools_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -116,7 +116,7 @@ def employee_schools_get(params=None, header=None, return_json=True, default_ass
 
 
 @allure.step("JkyAPP/查询所有校区")
-def employee_schools_all_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def employee_schools_all_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

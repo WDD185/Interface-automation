@@ -84,7 +84,7 @@ def statistics_query_continue_post(params=None, body=None, header=None, return_j
 
 
 @allure.step("极运营/统计报表(新)/导出URL查询")
-def statistics_export_queryUrl_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def statistics_export_queryUrl_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -276,7 +276,7 @@ def statistics_export_continue_student_post(params=None, body=None, header=None,
 
 
 @allure.step("极运营/其他/每日班级动态")
-def statistics_export_day_data_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def statistics_export_day_data_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -292,7 +292,7 @@ def statistics_export_day_data_get(params=None, header=None, return_json=True, d
 
 
 @allure.step("极运营/其他/导出点名数据")
-def statistics_export_day_call_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def statistics_export_day_call_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -356,7 +356,7 @@ def statistics_export_continuePreRefundDetail_post(params=None, body=None, heade
 
 
 @allure.step("极运营/教师三率")
-def statistics_teacherRate_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def statistics_teacherRate_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -372,7 +372,7 @@ def statistics_teacherRate_get(params=None, header=None, return_json=True, defau
 
 
 @allure.step("极运营/教师三率/明细")
-def statistics_teacherRate_detail_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def statistics_teacherRate_detail_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -484,7 +484,7 @@ def statistics_export_continueRateGradeSubject_post(params=None, body=None, head
 
 
 @allure.step("极运营/其他/导出在读学员数据")
-def statistics_export_day_student_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def statistics_export_day_student_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -500,7 +500,7 @@ def statistics_export_day_student_get(params=None, header=None, return_json=True
 
 
 @allure.step("极运营/其他/导出竞品机构")
-def statistics_export_exportAgency_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def statistics_export_exportAgency_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -516,7 +516,7 @@ def statistics_export_exportAgency_get(params=None, header=None, return_json=Tru
 
 
 @allure.step("极运营/其他/导出公立学校")
-def statistics_export_exportSchool_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def statistics_export_exportSchool_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -532,7 +532,7 @@ def statistics_export_exportSchool_get(params=None, header=None, return_json=Tru
 
 
 @allure.step("极运营/其他/导出周边商机")
-def statistics_export_exportAroundBusiness_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def statistics_export_exportAroundBusiness_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -548,7 +548,7 @@ def statistics_export_exportAroundBusiness_get(params=None, header=None, return_
 
 
 @allure.step("极运营/其他/导出周边小区")
-def statistics_export_exprotAroundEstate_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def statistics_export_exprotAroundEstate_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

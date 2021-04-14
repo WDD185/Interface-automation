@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("极运营/通用/用户自定义列查询")
-def customHeader_query_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def customHeader_query_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

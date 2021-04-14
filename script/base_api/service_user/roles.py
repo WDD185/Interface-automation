@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("极运营/人事管理/权限设置/角色列表")
-def roles_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def roles_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -20,7 +20,7 @@ def roles_get(params=None, header=None, return_json=True, default_assert=True, *
 
 
 @allure.step("极运营/人事管理/用户授权/查看此角色下的用户列表")
-def roles_roleId_users_get(roleId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def roles_roleId_users_get(roleId, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -36,7 +36,7 @@ def roles_roleId_users_get(roleId, params=None, header=None, return_json=True, d
 
 
 @allure.step("极运营/人事管理/权限设置/查看角色下的权限组")
-def roles_roleId_get(roleId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def roles_roleId_get(roleId, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

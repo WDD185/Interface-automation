@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("极运营/系统设置/优惠设置/优惠券/在线添加/通过学号查询学生信息")
-def students_querySimpleInfoByNo_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def students_querySimpleInfoByNo_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -36,7 +36,7 @@ def students_update_patch(params=None, body=None, header=None, return_json=True,
 
 
 @allure.step("通用/学生信息/查询学生信息")
-def students_queryById_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def students_queryById_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -52,7 +52,7 @@ def students_queryById_get(params=None, header=None, return_json=True, default_a
 
 
 @allure.step("通用/学生信息/查询学生")
-def students_studentInfo_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def students_studentInfo_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -84,7 +84,7 @@ def students_valideSameStudentInfo_post(params=None, body=None, header=None, ret
 
 
 @allure.step("通用/前台业务/学生录入信息/查询学生录入信息")
-def students_input_get_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def students_input_get_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -164,7 +164,7 @@ def students_update_post(params=None, body=None, header=None, return_json=True, 
 
 
 @allure.step("极客数学帮(家长APP)/用户管理/获取用户登录的手机号码所绑定的所有学生")
-def students_phoneNumber_mobilePhoneNumberBounding_get(phoneNumber, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def students_phoneNumber_mobilePhoneNumberBounding_get(phoneNumber, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -180,7 +180,7 @@ def students_phoneNumber_mobilePhoneNumberBounding_get(phoneNumber, params=None,
 
 
 @allure.step("小程序/基础/查询学生列表")
-def students_queryByUser_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def students_queryByUser_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -196,7 +196,7 @@ def students_queryByUser_get(params=None, header=None, return_json=True, default
 
 
 @allure.step("小程序/基础/查询学生列表-用户id")
-def students_queryByUserId_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def students_queryByUserId_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -244,7 +244,7 @@ def students_updateStudentPic_put(params=None, body=None, header=None, return_js
 
 
 @allure.step("小程序/我的主页/是否可以修改年级")
-def students_grade_isModifiable_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def students_grade_isModifiable_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -276,7 +276,7 @@ def students_grade_modify_post(params=None, body=None, header=None, return_json=
 
 
 @allure.step("极运营/前台业务/检查学生信息是否被完整")
-def students_check_message_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def students_check_message_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

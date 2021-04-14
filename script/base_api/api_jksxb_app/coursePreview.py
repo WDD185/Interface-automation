@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("极客数学帮app/班级详情/查询课程大纲")
-def coursePreview_getCourseOutLine_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def coursePreview_getCourseOutLine_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -20,7 +20,7 @@ def coursePreview_getCourseOutLine_get(params=None, header=None, return_json=Tru
 
 
 @allure.step("极客数学帮app/班级详情/查询预热知识包详情")
-def coursePreview_getPackageData_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def coursePreview_getPackageData_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

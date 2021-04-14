@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("极运营/人事管理/权限设置/获取可配置的权限")
-def permissions_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def permissions_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

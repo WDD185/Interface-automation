@@ -36,7 +36,7 @@ def document_put(params=None, body=None, header=None, return_json=True, **kwargs
 
 
 @allure.step("极运营/班主任/知识库/知识/id查询")
-def document_id_get(id, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def document_id_get(id, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -52,7 +52,7 @@ def document_id_get(id, params=None, header=None, return_json=True, default_asse
 
 
 @allure.step("极运营/班主任/知识库/知识/列表查询")
-def document_list_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def document_list_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

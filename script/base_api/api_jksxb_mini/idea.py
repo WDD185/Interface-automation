@@ -20,7 +20,7 @@ def idea_pay_post(params=None, body=None, header=None, return_json=True, **kwarg
 
 
 @allure.step("线上商城/小程序/预生成shareId")
-def idea_share_preCreateShareIds_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def idea_share_preCreateShareIds_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -52,7 +52,7 @@ def idea_share_saveShare_post(params=None, body=None, header=None, return_json=T
 
 
 @allure.step("线上商城/小程序/获取分享明细并记录浏览日志")
-def idea_share_getShareDetailAndRecordBrowse_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def idea_share_getShareDetailAndRecordBrowse_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -68,7 +68,7 @@ def idea_share_getShareDetailAndRecordBrowse_get(params=None, header=None, retur
 
 
 @allure.step("线上商城/小程序/分享转化排行榜")
-def idea_share_getShareConvertRank_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def idea_share_getShareConvertRank_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -84,7 +84,7 @@ def idea_share_getShareConvertRank_get(params=None, header=None, return_json=Tru
 
 
 @allure.step("线上商城/小程序/分享转化查询")
-def idea_share_getShareConvertList_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def idea_share_getShareConvertList_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

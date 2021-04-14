@@ -36,7 +36,7 @@ def teaching_plan_review_post(params=None, body=None, header=None, return_json=T
 
 
 @allure.step("极师通/教案分享/点赞列表")
-def teaching_plan_like_query_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def teaching_plan_like_query_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -52,7 +52,7 @@ def teaching_plan_like_query_get(params=None, header=None, return_json=True, def
 
 
 @allure.step("极师通/教案分享/教案点赞或取消点赞")
-def teaching_plan_like_update_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def teaching_plan_like_update_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -68,7 +68,7 @@ def teaching_plan_like_update_get(params=None, header=None, return_json=True, de
 
 
 @allure.step("极师通/教案分享/教案阅读")
-def teaching_plan_read_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def teaching_plan_read_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -84,7 +84,7 @@ def teaching_plan_read_get(params=None, header=None, return_json=True, default_a
 
 
 @allure.step("极师通/我的教案/教案撤回")
-def teaching_plan_recall_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def teaching_plan_recall_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -100,7 +100,7 @@ def teaching_plan_recall_get(params=None, header=None, return_json=True, default
 
 
 @allure.step("极师通/我的教案/教案详情查询")
-def teaching_plan_query_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def teaching_plan_query_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -132,7 +132,7 @@ def teaching_plan_submit_post(params=None, body=None, header=None, return_json=T
 
 
 @allure.step("极师通/我的教案/当前教案")
-def teaching_plan_current_query_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def teaching_plan_current_query_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

@@ -116,7 +116,7 @@ def report_consumption_student_detail_log_post(params=None, body=None, header=No
 
 
 @allure.step("极运营/统计报表/业务统计/获取全部方案")
-def report_dynamic_allTarget_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def report_dynamic_allTarget_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -132,7 +132,7 @@ def report_dynamic_allTarget_get(params=None, header=None, return_json=True, def
 
 
 @allure.step("极运营/统计报表/业务统计/获取默认方案")
-def report_dynamic_defTarget_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def report_dynamic_defTarget_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -276,7 +276,7 @@ def report_dynamic_continueRate_post(params=None, body=None, header=None, return
 
 
 @allure.step("极运营/统计报表/筛选条件/更多筛选")
-def report_condition_more_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def report_condition_more_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -324,7 +324,7 @@ def report_dynamic_fullClassRate_post(params=None, body=None, header=None, retur
 
 
 @allure.step("极运营/统计报表/续班率日报")
-def report_class_daylyReportExcelExport_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def report_class_daylyReportExcelExport_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

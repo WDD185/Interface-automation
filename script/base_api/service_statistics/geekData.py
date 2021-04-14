@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("极数据/权限部门查询")
-def geekData_areaRelation_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def geekData_areaRelation_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -20,7 +20,7 @@ def geekData_areaRelation_get(params=None, header=None, return_json=True, defaul
 
 
 @allure.step("极数据/全部目标方案")
-def geekData_allTarget_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def geekData_allTarget_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

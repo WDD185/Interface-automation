@@ -20,7 +20,7 @@ def app_homework_submit_post(params=None, body=None, header=None, return_json=Tr
 
 
 @allure.step("极客数学帮(家长APP)/作业/获取学生提交的作业")
-def app_homework_studentHomework_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_homework_studentHomework_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -36,7 +36,7 @@ def app_homework_studentHomework_get(params=None, header=None, return_json=True,
 
 
 @allure.step("极客数学帮(家长APP)/作业/学生作业排行榜")
-def app_homework_rankingList_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_homework_rankingList_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -52,7 +52,7 @@ def app_homework_rankingList_get(params=None, header=None, return_json=True, def
 
 
 @allure.step("极客数学帮(家长APP)/作业/未读数量")
-def app_homework_unread_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_homework_unread_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -164,7 +164,7 @@ def app_exam_topicDetail_post(params=None, body=None, header=None, return_json=T
 
 
 @allure.step("/家長端App/首页未读小红点")
-def app_exam_unRead_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_exam_unRead_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -196,7 +196,7 @@ def app_exam_share_post(params=None, body=None, header=None, return_json=True, *
 
 
 @allure.step("极客数学帮(家长APP)/用户行课/获取某个学生用户可以报名的所有班级的列表")
-def app_class_studentId_student_allowable_get(studentId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_class_studentId_student_allowable_get(studentId, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -212,7 +212,7 @@ def app_class_studentId_student_allowable_get(studentId, params=None, header=Non
 
 
 @allure.step("极客数学帮(家长APP)/用户行课/查询班级座次")
-def app_classes_classId_seats_get(classId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_classes_classId_seats_get(classId, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -228,7 +228,7 @@ def app_classes_classId_seats_get(classId, params=None, header=None, return_json
 
 
 @allure.step("极客数学帮(家长APP)/用户行课班帖/获取学生班贴列表")
-def app_classfeedback_student_notes_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_classfeedback_student_notes_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -260,7 +260,7 @@ def app_purchaseOrder_purchaseId_studentstudentId_delete(purchaseId, studentId, 
 
 
 @allure.step("极客数学帮(家长APP)/获取手机号码登录验证码")
-def app_external_login_phoneNumber_receiveVerificationCode_get(phoneNumber, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_external_login_phoneNumber_receiveVerificationCode_get(phoneNumber, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -276,7 +276,7 @@ def app_external_login_phoneNumber_receiveVerificationCode_get(phoneNumber, para
 
 
 @allure.step("极客数学帮(家长APP)/用户行课/获取同大区下的所有校区")
-def app_class_schoolAreaId_getSameLevelSchoolArea_get(schoolAreaId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_class_schoolAreaId_getSameLevelSchoolArea_get(schoolAreaId, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -292,7 +292,7 @@ def app_class_schoolAreaId_getSameLevelSchoolArea_get(schoolAreaId, params=None,
 
 
 @allure.step("极客数学帮(家长APP)/用户行课班帖/获取学生已经报的班级")
-def app_classes_reading_student_studentId_get(studentId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_classes_reading_student_studentId_get(studentId, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -404,7 +404,7 @@ def app_pushRelationship_delete(params=None, body=None, header=None, return_json
 
 
 @allure.step("极客数学帮(家长APP)/作业/作业详情")
-def app_homework_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_homework_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -420,7 +420,7 @@ def app_homework_get(params=None, header=None, return_json=True, default_assert=
 
 
 @allure.step("极客数学帮(家长APP)/用户行课/获取某个课程总的调课次数")
-def app_transferred_classId_class_totalNum_get(classId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_transferred_classId_class_totalNum_get(classId, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -452,7 +452,7 @@ def app_classes_teacher_post(params=None, body=None, header=None, return_json=Tr
 
 
 @allure.step("极客数学帮(家长APP)/用户管理/获取手机验证码")
-def app_external_phoneNumber_receiveVerificationCode_get(phoneNumber, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_external_phoneNumber_receiveVerificationCode_get(phoneNumber, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -468,7 +468,7 @@ def app_external_phoneNumber_receiveVerificationCode_get(phoneNumber, params=Non
 
 
 @allure.step("极客数学帮(家长APP)/用户行课/获取某个课程的某一讲能够调入的班级和讲次")
-def app_transferred_classId_class_classScheduleId_section_get(classId, classScheduleId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_transferred_classId_class_classScheduleId_section_get(classId, classScheduleId, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -484,7 +484,7 @@ def app_transferred_classId_class_classScheduleId_section_get(classId, classSche
 
 
 @allure.step("极客数学帮(家长APP)/用户行课/获取某个学生所有班级的出席情况")
-def app_performances_details_studentId_student_classes_get(studentId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_performances_details_studentId_student_classes_get(studentId, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -500,7 +500,7 @@ def app_performances_details_studentId_student_classes_get(studentId, params=Non
 
 
 @allure.step("极客数学帮(家长APP)/用户行课/刷新校区缓存")
-def app_class_refreshSchoolIdCache_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_class_refreshSchoolIdCache_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -516,7 +516,7 @@ def app_class_refreshSchoolIdCache_get(params=None, header=None, return_json=Tru
 
 
 @allure.step("极客数学帮(家长APP)/用户行课/获取某个学生用户可以报名的某一个班级的详细信息")
-def app_class_classId_alternative_studentId_student_get(classId, studentId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_class_classId_alternative_studentId_student_get(classId, studentId, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -532,7 +532,7 @@ def app_class_classId_alternative_studentId_student_get(classId, studentId, para
 
 
 @allure.step("极客数学帮(家长APP)/用户购课单/获取某个学生购课单中的课程")
-def app_purchaseOrder_studentId_student_get(studentId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_purchaseOrder_studentId_student_get(studentId, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -548,7 +548,7 @@ def app_purchaseOrder_studentId_student_get(studentId, params=None, header=None,
 
 
 @allure.step("极客数学帮(家长APP)/用户购课单/获取某个学生购课单中课程总数")
-def app_purchaseOrder_studentId_student_count_get(studentId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_purchaseOrder_studentId_student_count_get(studentId, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -564,7 +564,7 @@ def app_purchaseOrder_studentId_student_count_get(studentId, params=None, header
 
 
 @allure.step("极客数学帮(家长APP)/用户行课/获取某个学生用户可以报名的所有班级的列表的筛选条件")
-def app_class_selection_elective_Courses_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_class_selection_elective_Courses_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -580,7 +580,7 @@ def app_class_selection_elective_Courses_get(params=None, header=None, return_js
 
 
 @allure.step("极客数学帮(家长APP)/用户行课/获取某个学生未完成课程的详细列表")
-def app_classes_studentId_student_unfinished_get(studentId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_classes_studentId_student_unfinished_get(studentId, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -612,7 +612,7 @@ def app_purchaseOrder_studentId_student_put(studentId, params=None, body=None, h
 
 
 @allure.step("极客数学帮(家长APP)/用户行课班帖/获取学生班贴详情")
-def app_classfeedback_student_note_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_classfeedback_student_note_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -628,7 +628,7 @@ def app_classfeedback_student_note_get(params=None, header=None, return_json=Tru
 
 
 @allure.step("极客数学帮(家长APP)/作业/作业列表")
-def app_homeworks_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_homeworks_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -644,7 +644,7 @@ def app_homeworks_get(params=None, header=None, return_json=True, default_assert
 
 
 @allure.step("极客数学帮(家长APP)/用户行课/获取学生用户的班帖列表所包含的属性")
-def app_courseNote_field_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_courseNote_field_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -660,7 +660,7 @@ def app_courseNote_field_get(params=None, header=None, return_json=True, default
 
 
 @allure.step("极客数学帮(家长APP)/用户管理/校验手机验证码")
-def app_external_phoneNumber_validity_verificationCode_get(phoneNumber, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_external_phoneNumber_validity_verificationCode_get(phoneNumber, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -692,7 +692,7 @@ def app_student_studentId_attribute_patch(studentId, params=None, body=None, hea
 
 
 @allure.step("极客数学帮(家长APP)/用户行课班帖/获取学生未读班贴的数量")
-def app_classes_unattended_student_studentId_get(studentId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_classes_unattended_student_studentId_get(studentId, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -708,7 +708,7 @@ def app_classes_unattended_student_studentId_get(studentId, params=None, header=
 
 
 @allure.step("极客数学帮(家长APP)/用户管理/获取学生基本信息")
-def app_student_studentId_basicInfo_get(studentId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_student_studentId_basicInfo_get(studentId, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -724,7 +724,7 @@ def app_student_studentId_basicInfo_get(studentId, params=None, header=None, ret
 
 
 @allure.step("极客数学帮(家长APP)/用户管理/获取学生的续报类型")
-def app_student_studentId_signUpType_get(studentId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_student_studentId_signUpType_get(studentId, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -772,7 +772,7 @@ def app_pushRelationship_post(params=None, body=None, header=None, return_json=T
 
 
 @allure.step("极客数学帮(家长APP)/用户行课/获取某个学生未完成课程的班级行课进度情况")
-def app_classes_progress_studentId_student_get(studentId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_classes_progress_studentId_student_get(studentId, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -788,7 +788,7 @@ def app_classes_progress_studentId_student_get(studentId, params=None, header=No
 
 
 @allure.step("极客数学帮(家长APP)/用户管理/获取校长信箱中反馈的问题")
-def app_feedback_mailbox_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_feedback_mailbox_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -804,7 +804,7 @@ def app_feedback_mailbox_get(params=None, header=None, return_json=True, default
 
 
 @allure.step("极客数学帮(家长APP)/用户管理/获取校长信箱中反馈的问题上传的图片")
-def app_feedback_feedbackId_mailbox_picture_get(feedbackId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_feedback_feedbackId_mailbox_picture_get(feedbackId, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -820,7 +820,7 @@ def app_feedback_feedbackId_mailbox_picture_get(feedbackId, params=None, header=
 
 
 @allure.step("极客数学帮(家长APP)/用户管理/获取用户登录的手机号码所绑定的所有学生")
-def app_students_phoneNumber_mobilePhoneNumberBounding_get(phoneNumber, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_students_phoneNumber_mobilePhoneNumberBounding_get(phoneNumber, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -852,7 +852,7 @@ def app_purchaseOrder_purchaseId_student_studentId_patch(purchaseId, studentId, 
 
 
 @allure.step("极客数学帮(家长APP)/用户管理/获取系统时间")
-def app_public_systemCurrentTime_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_public_systemCurrentTime_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -884,7 +884,7 @@ def app_purchaseOrder_studentId_student_delete(studentId, params=None, body=None
 
 
 @allure.step("极客数学帮(家长APP)/用户管理/获取校长信箱反馈问题的反馈类型")
-def app_feedbackType_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_feedbackType_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -916,7 +916,7 @@ def app_user_type_signInPassword_patch(type, params=None, body=None, header=None
 
 
 @allure.step("极客数学帮(家长APP)/用户行课/刷新班级缓存")
-def app_class_refreshCache_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_class_refreshCache_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -948,7 +948,7 @@ def app_student_studentId_queryIsPayingOrder_post(studentId, params=None, body=N
 
 
 @allure.step("极客数学帮(家长APP)/用户行课班帖/获取学生具体某堂课的班帖详情")
-def app_classfeedback_classId_class_studentId_student_get(classId, studentId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_classfeedback_classId_class_studentId_student_get(classId, studentId, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -964,7 +964,7 @@ def app_classfeedback_classId_class_studentId_student_get(classId, studentId, pa
 
 
 @allure.step("极客数学帮(家长APP)/用户管理/使用手机验证码登录")
-def app_login_verificationCode_receiveVerificationCode_studentPhoneNum_phoneNumber_get(verificationCode, studentPhoneNum, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_login_verificationCode_receiveVerificationCode_studentPhoneNum_phoneNumber_get(verificationCode, studentPhoneNum, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -980,7 +980,7 @@ def app_login_verificationCode_receiveVerificationCode_studentPhoneNum_phoneNumb
 
 
 @allure.step("极客数学帮(家长APP)/用户管理/获取学生电子账户")
-def app_student_studentId_electronicAccount_get(studentId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_student_studentId_electronicAccount_get(studentId, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -1012,7 +1012,7 @@ def app_user_studentId_bindingMobilePhone_patch(studentId, params=None, body=Non
 
 
 @allure.step("极客数学帮(家长APP)/用户行课班帖/获取未读班贴数量")
-def app_classfeedback_student_unread_note_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_classfeedback_student_unread_note_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -1028,7 +1028,7 @@ def app_classfeedback_student_unread_note_get(params=None, header=None, return_j
 
 
 @allure.step("极客数学帮(家长APP)/班帖/班帖列表")
-def app_course_notes_stickerList_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_course_notes_stickerList_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -1044,7 +1044,7 @@ def app_course_notes_stickerList_get(params=None, header=None, return_json=True,
 
 
 @allure.step("极客数学帮(家长APP)/班帖/班级列表")
-def app_course_notes_queryClassList_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_course_notes_queryClassList_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -1092,7 +1092,7 @@ def app_excellentNote_detail_post(params=None, body=None, header=None, return_js
 
 
 @allure.step("家长端App/v1/班级列表")
-def app_queryClassList_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_queryClassList_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -1108,7 +1108,7 @@ def app_queryClassList_get(params=None, header=None, return_json=True, default_a
 
 
 @allure.step("家长端App/班帖未读小红点")
-def app_excellentNote_student_unread_note_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_excellentNote_student_unread_note_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -1124,7 +1124,7 @@ def app_excellentNote_student_unread_note_get(params=None, header=None, return_j
 
 
 @allure.step("极客数学帮(家长APP)/作业/作业列表")
-def app_homework_homeworkList_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_homework_homeworkList_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -1140,7 +1140,7 @@ def app_homework_homeworkList_get(params=None, header=None, return_json=True, de
 
 
 @allure.step("极客数学帮(家长APP)/作业/作业详情")
-def app_homework_homeworkDetails_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_homework_homeworkDetails_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -1156,7 +1156,7 @@ def app_homework_homeworkDetails_get(params=None, header=None, return_json=True,
 
 
 @allure.step("极客数学帮(家长APP)/用户购课单/获取某个学生购课单列表")
-def app_purchaseOrder_getPurchaseOrderList_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_purchaseOrder_getPurchaseOrderList_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -1172,7 +1172,7 @@ def app_purchaseOrder_getPurchaseOrderList_get(params=None, header=None, return_
 
 
 @allure.step("极客数学帮(家长APP)/课程/班级详情")
-def app_course_getStudentClassDetail_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_course_getStudentClassDetail_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -1364,7 +1364,7 @@ def app_geekMaterial_listTutorialMaterials_post(params=None, body=None, header=N
 
 
 @allure.step("极运营/极数据/获取神策设备ID")
-def app_sa_trackSensorsUser_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_sa_trackSensorsUser_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -1412,7 +1412,7 @@ def app_geekMaterial_addPrepareQuestionStudyLog_post(params=None, body=None, hea
 
 
 @allure.step("极客数学帮(家长APP)/学习报告/列表")
-def app_learnReport_learnReportList_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_learnReport_learnReportList_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -1428,7 +1428,7 @@ def app_learnReport_learnReportList_get(params=None, header=None, return_json=Tr
 
 
 @allure.step("极客数学帮(家长APP)/学习报告/往期学习报告列表")
-def app_learnReport_previousLearnReportList_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_learnReport_previousLearnReportList_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -1444,7 +1444,7 @@ def app_learnReport_previousLearnReportList_get(params=None, header=None, return
 
 
 @allure.step("极客数学帮(家长APP)/学习报告/学习力走势折线统计")
-def app_learnReport_learnPowerTrend_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_learnReport_learnPowerTrend_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -1460,7 +1460,7 @@ def app_learnReport_learnPowerTrend_get(params=None, header=None, return_json=Tr
 
 
 @allure.step("极客数学帮(家长APP)/课程/最近上课")
-def app_course_recentClassTime_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_course_recentClassTime_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -1492,7 +1492,7 @@ def app_course_newListStudentClasses_post(params=None, body=None, header=None, r
 
 
 @allure.step("JkyAPP/双师/极构获取token")
-def app_zeGou_getToken_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_zeGou_getToken_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

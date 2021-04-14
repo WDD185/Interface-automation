@@ -20,7 +20,7 @@ def order_saveOrder_post(params=None, body=None, header=None, return_json=True, 
 
 
 @allure.step("极客数学帮(家长APP)/订单/我的订单列表")
-def order_myOrder_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def order_myOrder_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -36,7 +36,7 @@ def order_myOrder_get(params=None, header=None, return_json=True, default_assert
 
 
 @allure.step("极客数学帮(家长APP)/订单/查询订单详情")
-def order_myOrderDetail_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def order_myOrderDetail_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -84,7 +84,7 @@ def order_cancelOrder_post(params=None, body=None, header=None, return_json=True
 
 
 @allure.step("极客数学帮(家长APP)/订单/查询订单状态")
-def order_queryStatus_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def order_queryStatus_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

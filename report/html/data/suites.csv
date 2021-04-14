@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Apr 14 19:04:59 CST 2021","Wed Apr 14 19:05:00 CST 2021","730","script.ji_yun_ying_pc.statistical_report","test_receipt_detail","TestReceiptDetail","","","test_list_search[keyword2]",""
+"passed","Wed Apr 14 19:05:00 CST 2021","Wed Apr 14 19:05:00 CST 2021","215","script.ji_yun_ying_pc.statistical_report","test_receipt_detail","TestReceiptDetail","","","test_list_search[keyword3]",""
+"passed","Wed Apr 14 19:04:58 CST 2021","Wed Apr 14 19:04:59 CST 2021","674","script.ji_yun_ying_pc.statistical_report","test_receipt_detail","TestReceiptDetail","","","test_list_search[keyword0]",""
+"passed","Wed Apr 14 19:04:59 CST 2021","Wed Apr 14 19:04:59 CST 2021","235","script.ji_yun_ying_pc.statistical_report","test_receipt_detail","TestReceiptDetail","","","test_list_search[keyword1]",""

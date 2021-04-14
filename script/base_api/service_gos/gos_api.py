@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("小程序/商品/套餐检查服务")
-def gos_api_package_check_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def gos_api_package_check_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

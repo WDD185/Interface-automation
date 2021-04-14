@@ -68,7 +68,7 @@ def permission_deletePermissions_delete(params=None, body=None, header=None, ret
 
 
 @allure.step("极权限/查询所有平台")
-def permission_queryAllPlatform_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def permission_queryAllPlatform_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -84,7 +84,7 @@ def permission_queryAllPlatform_get(params=None, header=None, return_json=True, 
 
 
 @allure.step("极权限/查询员工授权的所有平台")
-def permission_queryAllPlatformByEmployeeId_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def permission_queryAllPlatformByEmployeeId_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -100,7 +100,7 @@ def permission_queryAllPlatformByEmployeeId_get(params=None, header=None, return
 
 
 @allure.step("极权限/查询员工授权的所有PC平台")
-def permission_queryAllPCPlatformByEmployeeId_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def permission_queryAllPCPlatformByEmployeeId_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -116,7 +116,7 @@ def permission_queryAllPCPlatformByEmployeeId_get(params=None, header=None, retu
 
 
 @allure.step("极权限/查询整颗权限树，从根开始")
-def permission_queryPermissionTree_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def permission_queryPermissionTree_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -132,7 +132,7 @@ def permission_queryPermissionTree_get(params=None, header=None, return_json=Tru
 
 
 @allure.step("极权限/查询某个平台下的权限树")
-def permission_queryPermissionTreeByPlatform_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def permission_queryPermissionTreeByPlatform_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -148,7 +148,7 @@ def permission_queryPermissionTreeByPlatform_get(params=None, header=None, retur
 
 
 @allure.step("极权限/查询员工对应的URL权限")
-def permission_queryPermissionUrlByEmployeeId_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def permission_queryPermissionUrlByEmployeeId_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -164,7 +164,7 @@ def permission_queryPermissionUrlByEmployeeId_get(params=None, header=None, retu
 
 
 @allure.step("极权限/根据员工ID查询员工的权限")
-def permission_queryPermissionsByEmployeeId_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def permission_queryPermissionsByEmployeeId_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -180,7 +180,7 @@ def permission_queryPermissionsByEmployeeId_get(params=None, header=None, return
 
 
 @allure.step("极权限/查询员工对应的权限树")
-def permission_queryPermissionTreeByEmployeeId_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def permission_queryPermissionTreeByEmployeeId_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -212,7 +212,7 @@ def permission_updateRolePermission_post(params=None, body=None, header=None, re
 
 
 @allure.step("极权限/根据角色ID查询角色的权限")
-def permission_queryPermissionsByRoleId_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def permission_queryPermissionsByRoleId_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -228,7 +228,7 @@ def permission_queryPermissionsByRoleId_get(params=None, header=None, return_jso
 
 
 @allure.step("极权限/查询角色授权的所有平台")
-def permission_queryAllPlatformByRoleId_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def permission_queryAllPlatformByRoleId_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -244,7 +244,7 @@ def permission_queryAllPlatformByRoleId_get(params=None, header=None, return_jso
 
 
 @allure.step("极权限/根据角色ID查询角色的权限--已选择的标出")
-def permission_querySelectPermissionTreeByRoleId_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def permission_querySelectPermissionTreeByRoleId_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

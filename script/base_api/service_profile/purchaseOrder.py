@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("极客数学帮(家长APP)/用户购课单/获取某个学生购课单中课程总数")
-def purchaseOrder_studentId_student_count_get(studentId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def purchaseOrder_studentId_student_count_get(studentId, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -68,7 +68,7 @@ def purchaseOrder_studentId_student_delete(studentId, params=None, body=None, he
 
 
 @allure.step("极客数学帮(家长APP)/用户购课单/获取某个学生购课单中的课程")
-def purchaseOrder_studentId_student_get(studentId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def purchaseOrder_studentId_student_get(studentId, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

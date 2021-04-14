@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("线上商城/小程序/获取游客ID")
-def user_visitor_generateId_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def user_visitor_generateId_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

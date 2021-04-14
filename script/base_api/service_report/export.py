@@ -100,7 +100,7 @@ def export_report_charge_completedOrder_post(params=None, body=None, header=None
 
 
 @allure.step("导出/题目word导出")
-def export_question_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def export_question_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -516,7 +516,7 @@ def export_report_consumption_student_detail_post(params=None, body=None, header
 
 
 @allure.step("极运营/导出/查询导出地址")
-def export_queryUrl_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def export_queryUrl_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -932,7 +932,7 @@ def export_performance_detailInfo_post(params=None, body=None, header=None, retu
 
 
 @allure.step("极运营/营销/营销广告/广告管理/弹窗广告管理/发送明细下载")
-def export_banner_popup_sendList_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def export_banner_popup_sendList_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

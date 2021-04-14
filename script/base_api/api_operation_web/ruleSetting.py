@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("系统设置-订单设置-查询设置列表")
-def ruleSetting_queryAll_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def ruleSetting_queryAll_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

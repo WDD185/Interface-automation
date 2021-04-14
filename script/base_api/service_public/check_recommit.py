@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("通用/表单/防止重复提交")
-def check_recommit_getTicket_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def check_recommit_getTicket_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

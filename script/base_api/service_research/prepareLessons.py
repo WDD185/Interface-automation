@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("极师通/备课/备课教材查询")
-def prepareLessons_prepareTextbook_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def prepareLessons_prepareTextbook_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -20,7 +20,7 @@ def prepareLessons_prepareTextbook_get(params=None, header=None, return_json=Tru
 
 
 @allure.step("极师通/备课/备课教材可关联班级")
-def prepareLessons_textbook_classes_available_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def prepareLessons_textbook_classes_available_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -84,7 +84,7 @@ def prepareLessons_related_post(params=None, body=None, header=None, return_json
 
 
 @allure.step("极师通/备课/教师可用教材查询")
-def prepareLessons_textbook_available_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def prepareLessons_textbook_available_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

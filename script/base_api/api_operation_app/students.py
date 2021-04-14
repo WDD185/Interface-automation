@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("JkyAPP/查询学生")
-def students_studentInfo_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def students_studentInfo_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -20,7 +20,7 @@ def students_studentInfo_get(params=None, header=None, return_json=True, default
 
 
 @allure.step("JkyApp/检查学生信息是否被完整")
-def students_check_message_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def students_check_message_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -36,7 +36,7 @@ def students_check_message_get(params=None, header=None, return_json=True, defau
 
 
 @allure.step("JkyApp/根据学生ID查找学生信息")
-def students_queryById_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def students_queryById_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -100,7 +100,7 @@ def students_all_items_post(params=None, body=None, header=None, return_json=Tru
 
 
 @allure.step("JkyAPP/报班明细")
-def students_class_detail_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def students_class_detail_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

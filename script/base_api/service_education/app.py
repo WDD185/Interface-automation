@@ -36,7 +36,7 @@ def app_classes_isSupportChooseSeat_post(params=None, body=None, header=None, re
 
 
 @allure.step("极客数学帮(家长APP)/用户管理/就读学校名查询")
-def app_setting_query_school_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_setting_query_school_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -52,7 +52,7 @@ def app_setting_query_school_get(params=None, header=None, return_json=True, def
 
 
 @allure.step("极运营/APP/查询可报班级/")
-def app_classInfo_query_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_classInfo_query_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

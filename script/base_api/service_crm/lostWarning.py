@@ -52,7 +52,7 @@ def lostWarning_editReason_post(params=None, body=None, header=None, return_json
 
 
 @allure.step("极运营/CRM/流失管理/预流失学员/查询预流失原因")
-def lostWarning_getPreLostReason_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def lostWarning_getPreLostReason_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("极运营/系统设置/校区设置/校区详情服务")
-def user_api_user_department_school_detail_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def user_api_user_department_school_detail_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -36,7 +36,7 @@ def user_api_user_department_school_querySchoolByCondition_post(params=None, bod
 
 
 @allure.step("极运营/系统设置/关于极客/栏目列表服务")
-def user_api_user_company_columns_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def user_api_user_company_columns_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

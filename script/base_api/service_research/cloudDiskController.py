@@ -100,7 +100,7 @@ def cloudDiskController_editFactor_post(params=None, body=None, header=None, ret
 
 
 @allure.step("云盘/删除")
-def cloudDiskController_delete_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def cloudDiskController_delete_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -116,7 +116,7 @@ def cloudDiskController_delete_get(params=None, header=None, return_json=True, d
 
 
 @allure.step("云盘/查询大区")
-def cloudDiskController_queryRegionByCloudDiskId_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def cloudDiskController_queryRegionByCloudDiskId_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -132,7 +132,7 @@ def cloudDiskController_queryRegionByCloudDiskId_get(params=None, header=None, r
 
 
 @allure.step("云盘/查询详情")
-def cloudDiskController_queryCloudDiskDetail_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def cloudDiskController_queryCloudDiskDetail_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -148,7 +148,7 @@ def cloudDiskController_queryCloudDiskDetail_get(params=None, header=None, retur
 
 
 @allure.step("云盘/查询log")
-def cloudDiskController_queryOperation_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def cloudDiskController_queryOperation_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -164,7 +164,7 @@ def cloudDiskController_queryOperation_get(params=None, header=None, return_json
 
 
 @allure.step("云盘/修改名称")
-def cloudDiskController_updateFileName_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def cloudDiskController_updateFileName_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -180,7 +180,7 @@ def cloudDiskController_updateFileName_get(params=None, header=None, return_json
 
 
 @allure.step("云盘/切换是否下载")
-def cloudDiskController_updateDownloadStatus_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def cloudDiskController_updateDownloadStatus_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("极客数学帮(家长APP)/用户行课班帖/获取未读班贴数量")
-def classfeedback_student_unread_note_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def classfeedback_student_unread_note_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -20,7 +20,7 @@ def classfeedback_student_unread_note_get(params=None, header=None, return_json=
 
 
 @allure.step("极客数学帮(家长APP)/用户行课班帖/获取学生班贴列表")
-def classfeedback_student_notes_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def classfeedback_student_notes_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -36,7 +36,7 @@ def classfeedback_student_notes_get(params=None, header=None, return_json=True, 
 
 
 @allure.step("极客数学帮(家长APP)/用户行课班帖/获取学生班贴详情")
-def classfeedback_student_note_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def classfeedback_student_note_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -52,7 +52,7 @@ def classfeedback_student_note_get(params=None, header=None, return_json=True, d
 
 
 @allure.step("极客数学帮(家长APP)/用户行课班帖/获取学生具体某堂课的班帖详情")
-def classfeedback_classId_class_studentId_student_get(classId, studentId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def classfeedback_classId_class_studentId_student_get(classId, studentId, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

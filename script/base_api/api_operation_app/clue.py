@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("JkyAPP/查询已启用的学生来源")
-def clue_dict_studentSource_queryNoAuth_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def clue_dict_studentSource_queryNoAuth_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -148,7 +148,7 @@ def clue_receive_put(params=None, body=None, header=None, return_json=True, **kw
 
 
 @allure.step("JkyAPP/查询线索是否重复")
-def clue_repeat_check_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def clue_repeat_check_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -164,7 +164,7 @@ def clue_repeat_check_get(params=None, header=None, return_json=True, default_as
 
 
 @allure.step("JkyAPP/查询线索-单个")
-def clue_query_id_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def clue_query_id_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -180,7 +180,7 @@ def clue_query_id_get(params=None, header=None, return_json=True, default_assert
 
 
 @allure.step("JkyAPP/查询线索-单个")
-def clue_school_follow_frequency_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def clue_school_follow_frequency_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

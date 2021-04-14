@@ -36,7 +36,7 @@ def periodicalManage_addPeriodical_post(params=None, body=None, header=None, ret
 
 
 @allure.step("管理内刊/管理端/内刊状态分栏")
-def periodicalManage_listPeriodicalsOnPubStatus_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def periodicalManage_listPeriodicalsOnPubStatus_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -52,7 +52,7 @@ def periodicalManage_listPeriodicalsOnPubStatus_get(params=None, header=None, re
 
 
 @allure.step("管理内刊/管理端/回显内刊")
-def periodicalManage_showPeriodicalContent_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def periodicalManage_showPeriodicalContent_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -84,7 +84,7 @@ def periodicalManage_updatePeriodical_post(params=None, body=None, header=None, 
 
 
 @allure.step("管理内刊/管理端/修改内刊状态")
-def periodicalManage_updatePeriodicalOnPubStatus_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def periodicalManage_updatePeriodicalOnPubStatus_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

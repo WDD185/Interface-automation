@@ -36,7 +36,7 @@ def finance_targets_update_post(params=None, body=None, header=None, return_json
 
 
 @allure.step("极运营/系统设置/财务目标设置/财务目标设置删除")
-def finance_targets_del_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def finance_targets_del_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -52,7 +52,7 @@ def finance_targets_del_get(params=None, header=None, return_json=True, default_
 
 
 @allure.step("极运营/系统设置/财务目标设置/财务目标设置查询全部")
-def finance_targets_queryAll_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def finance_targets_queryAll_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -68,7 +68,7 @@ def finance_targets_queryAll_get(params=None, header=None, return_json=True, def
 
 
 @allure.step("极运营/系统设置/财务目标设置/财务目标设置设置默认")
-def finance_targets_setDefault_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def finance_targets_setDefault_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -132,7 +132,7 @@ def finance_targets_update_detail_post(params=None, body=None, header=None, retu
 
 
 @allure.step("极运营/系统设置/财务目标设置/财务目标设置明细删除")
-def finance_targets_del_detail_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def finance_targets_del_detail_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

@@ -20,7 +20,7 @@ def userCheckpoint_saveCheckpoint_post(params=None, body=None, header=None, retu
 
 
 @allure.step("/通用/获取检查点数据")
-def userCheckpoint_getCheckpoint_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def userCheckpoint_getCheckpoint_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

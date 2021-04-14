@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("极运营/前台业务/批量转班/查询转班学生")
-def classChange_student_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def classChange_student_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

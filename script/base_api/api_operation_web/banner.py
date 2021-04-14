@@ -84,7 +84,7 @@ def banner_area_update_post(params=None, body=None, header=None, return_json=Tru
 
 
 @allure.step("极运营/营销/营销广告/广告管理/区域广告管理/广告位删除")
-def banner_area_delete_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def banner_area_delete_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -100,7 +100,7 @@ def banner_area_delete_get(params=None, header=None, return_json=True, default_a
 
 
 @allure.step("极运营/营销/营销广告/广告管理/区域广告管理/广告位状态修改")
-def banner_area_changeStatus_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def banner_area_changeStatus_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -180,7 +180,7 @@ def banner_org_update_post(params=None, body=None, header=None, return_json=True
 
 
 @allure.step("极运营/营销/营销广告/广告管理/公司广告管理/广告位删除")
-def banner_org_delete_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def banner_org_delete_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -196,7 +196,7 @@ def banner_org_delete_get(params=None, header=None, return_json=True, default_as
 
 
 @allure.step("极运营/营销/营销广告/广告管理/公司广告管理/广告位状态修改")
-def banner_org_changeStatus_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def banner_org_changeStatus_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -260,7 +260,7 @@ def banner_popup_update_post(params=None, body=None, header=None, return_json=Tr
 
 
 @allure.step("极运营/营销/营销广告/广告管理/弹窗广告管理/广告位删除")
-def banner_popup_delete_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def banner_popup_delete_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -276,7 +276,7 @@ def banner_popup_delete_get(params=None, header=None, return_json=True, default_
 
 
 @allure.step("极运营/营销/营销广告/广告管理/弹窗广告管理/广告作废")
-def banner_popup_expirePopups_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def banner_popup_expirePopups_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("/教研/课件库/文件启用禁用接口")
-def prepar_lessons_textbook_enable_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def prepar_lessons_textbook_enable_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -20,7 +20,7 @@ def prepar_lessons_textbook_enable_get(params=None, header=None, return_json=Tru
 
 
 @allure.step("/教研/课件库/文件查阅接口")
-def prepar_lessons_textbook_checkRead_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def prepar_lessons_textbook_checkRead_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -52,7 +52,7 @@ def prepar_lessons_textbook_feedback_post(params=None, body=None, header=None, r
 
 
 @allure.step("/教研/课件库/讲次和课件")
-def prepar_lessons_textbook_countResource_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def prepar_lessons_textbook_countResource_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -100,7 +100,7 @@ def prepar_lessons_textbook_unReadDetail_post(params=None, body=None, header=Non
 
 
 @allure.step("/教研/课件库/点击操作人")
-def prepar_lessons_textbook_opeLog_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def prepar_lessons_textbook_opeLog_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -116,7 +116,7 @@ def prepar_lessons_textbook_opeLog_get(params=None, header=None, return_json=Tru
 
 
 @allure.step("/教研/课件库/反馈查询")
-def prepar_lessons_textbook_feedbackSelcet_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def prepar_lessons_textbook_feedbackSelcet_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -212,7 +212,7 @@ def prepar_lessons_textbook_insertQuestionPerformInClass_post(params=None, body=
 
 
 @allure.step("教研/上课/抽问查询")
-def prepar_lessons_textbook_queryQuestionPerformInClass_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def prepar_lessons_textbook_queryQuestionPerformInClass_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -292,7 +292,7 @@ def prepar_lessons_textbook_studentReadDetail_post(params=None, body=None, heade
 
 
 @allure.step("教研/课件库/讲次/讲次文件内容(免登录的)")
-def prepar_lessons_textbook_lectureFiles_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def prepar_lessons_textbook_lectureFiles_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -308,7 +308,7 @@ def prepar_lessons_textbook_lectureFiles_get(params=None, header=None, return_js
 
 
 @allure.step("极师通/备课/获取家长讲义打包下载zip的url")
-def prepar_lessons_lecture_getParentalNotesDownloadUrl_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def prepar_lessons_lecture_getParentalNotesDownloadUrl_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

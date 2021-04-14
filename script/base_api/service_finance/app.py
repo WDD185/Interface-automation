@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("极客数学帮(家长APP)/我的/电子钱包余额")
-def app_financial_epayDeductionByStudentIdForApp_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_financial_epayDeductionByStudentIdForApp_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -20,7 +20,7 @@ def app_financial_epayDeductionByStudentIdForApp_get(params=None, header=None, r
 
 
 @allure.step("极客数学帮(家长APP)/转介绍/用户转介绍金额")
-def app_finance_introduce_user_amount_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_finance_introduce_user_amount_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

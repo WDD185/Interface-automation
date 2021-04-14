@@ -20,7 +20,7 @@ def order_saveOrder_post(params=None, body=None, header=None, return_json=True, 
 
 
 @allure.step("小程序/订单/订单列表")
-def order_myOrder_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def order_myOrder_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -36,7 +36,7 @@ def order_myOrder_get(params=None, header=None, return_json=True, default_assert
 
 
 @allure.step("小程序/订单/查询订单详情")
-def order_myOrderDetail_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def order_myOrderDetail_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

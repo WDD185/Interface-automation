@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("极运营/系统设置/优惠设置/优惠/查询单个优惠")
-def discount_queryById_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def discount_queryById_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -36,7 +36,7 @@ def discount_queryAll_post(params=None, body=None, header=None, return_json=True
 
 
 @allure.step("极运营/系统设置/优惠设置/优惠/查看单个优惠操作记录")
-def discount_queryOperationRecordByDiscountId_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def discount_queryOperationRecordByDiscountId_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

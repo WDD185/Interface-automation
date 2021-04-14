@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("通用/App资源/获取热更新资源two")
-def version_platform_platform_available_get(platform, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def version_platform_platform_available_get(platform, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

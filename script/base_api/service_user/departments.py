@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("极运营/人事管理/员工信息/查询部门员工")
-def departments_departmentId_staffs_get(departmentId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def departments_departmentId_staffs_get(departmentId, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -20,7 +20,7 @@ def departments_departmentId_staffs_get(departmentId, params=None, header=None, 
 
 
 @allure.step("极运营/人事管理/部门设置/查询子部门")
-def departments_departmentId_children_get(departmentId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def departments_departmentId_children_get(departmentId, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -36,7 +36,7 @@ def departments_departmentId_children_get(departmentId, params=None, header=None
 
 
 @allure.step("通用/校区/获取全部大区校区")
-def departments_schools_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def departments_schools_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -52,7 +52,7 @@ def departments_schools_get(params=None, header=None, return_json=True, default_
 
 
 @allure.step("极运营/人事管理/部门设置/部门详情")
-def departments_id_get(id, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def departments_id_get(id, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -100,7 +100,7 @@ def departments_departmentId_patch(departmentId, params=None, body=None, header=
 
 
 @allure.step("通用/校区/查询大区校区")
-def departments_schools_queries_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def departments_schools_queries_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -132,7 +132,7 @@ def departments_departmentId_delete(departmentId, params=None, body=None, header
 
 
 @allure.step("极运营/人事管理/部门设置/查询所有部门")
-def departments_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def departments_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -148,7 +148,7 @@ def departments_get(params=None, header=None, return_json=True, default_assert=T
 
 
 @allure.step("极运营/人事管理/部门设置/查询部门")
-def departments_queries_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def departments_queries_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -164,7 +164,7 @@ def departments_queries_get(params=None, header=None, return_json=True, default_
 
 
 @allure.step("极运营/系统设置/校区管理/大区查询")
-def departments_region_all_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def departments_region_all_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -180,7 +180,7 @@ def departments_region_all_get(params=None, header=None, return_json=True, defau
 
 
 @allure.step("极运营/系统设置/校区管理/列表查询")
-def departments_school_list_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def departments_school_list_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -212,7 +212,7 @@ def departments_school_put(params=None, body=None, header=None, return_json=True
 
 
 @allure.step("极运营/系统设置/校区管理/校区详情")
-def departments_school_id_get(id, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def departments_school_id_get(id, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

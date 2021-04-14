@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("极客数学帮(家长APP)/我的/优惠券张数")
-def coupon_countMyValidCouponItem_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def coupon_countMyValidCouponItem_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -20,7 +20,7 @@ def coupon_countMyValidCouponItem_get(params=None, header=None, return_json=True
 
 
 @allure.step("极客数学帮(家长APP)/我的/优惠券列表")
-def coupon_queryMyCouponItemList_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def coupon_queryMyCouponItemList_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -36,7 +36,7 @@ def coupon_queryMyCouponItemList_get(params=None, header=None, return_json=True,
 
 
 @allure.step("极客数学帮(家长APP)/我的/优惠券详情")
-def coupon_queryCouponItemDetail_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def coupon_queryCouponItemDetail_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -52,7 +52,7 @@ def coupon_queryCouponItemDetail_get(params=None, header=None, return_json=True,
 
 
 @allure.step("极客数学帮(家长APP)/根据优惠券查询学生可报名班级")
-def coupon_queryClassesByCoupon_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def coupon_queryClassesByCoupon_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

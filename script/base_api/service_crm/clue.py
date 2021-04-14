@@ -100,7 +100,7 @@ def clue_uploadClues_post(params=None, body=None, header=None, return_json=True,
 
 
 @allure.step("极运营/招生管理/线索/导出上传的线索")
-def clue_exportUploadData_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def clue_exportUploadData_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -132,7 +132,7 @@ def clue_exportByStatus_post(params=None, body=None, header=None, return_json=Tr
 
 
 @allure.step("极运营/招生管理/线索/查询单个线索")
-def clue_query_id_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def clue_query_id_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -148,7 +148,7 @@ def clue_query_id_get(params=None, header=None, return_json=True, default_assert
 
 
 @allure.step("极运营/招生管理/线索/线索转化验证")
-def clue_transformCheck_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def clue_transformCheck_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -404,7 +404,7 @@ def clue_online_queryAll_post(params=None, body=None, header=None, return_json=T
 
 
 @allure.step("极运营/招生管理/历史数据处理")
-def clue_execute_historical_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def clue_execute_historical_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -596,7 +596,7 @@ def clue_protect_school_follow_frequency_update_put(params=None, body=None, head
 
 
 @allure.step("极运营/系统设置/校区设置/查看跟进频率")
-def clue_protect_school_follow_frequency_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def clue_protect_school_follow_frequency_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

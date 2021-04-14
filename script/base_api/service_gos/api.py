@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("线上商店-通用接口/获取省市区")
-def api_general_listAreas_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def api_general_listAreas_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -20,7 +20,7 @@ def api_general_listAreas_get(params=None, header=None, return_json=True, defaul
 
 
 @allure.step("线上商店-通用接口/获取校区")
-def api_general_listSchoolAreas_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def api_general_listSchoolAreas_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

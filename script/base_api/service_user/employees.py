@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("查看当前年级和校区授权下的老师信息")
-def employees_search_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def employees_search_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -20,7 +20,7 @@ def employees_search_get(params=None, header=None, return_json=True, default_ass
 
 
 @allure.step("极运营/人事管理/员工信息/查看某员工详情")
-def employees_id_get(id, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def employees_id_get(id, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -52,7 +52,7 @@ def employees_employeeId_patch(employeeId, params=None, body=None, header=None, 
 
 
 @allure.step("极运营/人事管理/员工信息/导出员工")
-def employees_exports_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def employees_exports_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -68,7 +68,7 @@ def employees_exports_get(params=None, header=None, return_json=True, default_as
 
 
 @allure.step("通用/基础/根据token获取信息")
-def employees_info_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def employees_info_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -100,7 +100,7 @@ def employees_id_delete(id, params=None, body=None, header=None, return_json=Tru
 
 
 @allure.step("极运营/人事管理/员工信息/查询员工")
-def employees_queries_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def employees_queries_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -116,7 +116,7 @@ def employees_queries_get(params=None, header=None, return_json=True, default_as
 
 
 @allure.step("通用/基础/查询用户能够访问的模块")
-def employees_employeeId_access_modules_get(employeeId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def employees_employeeId_access_modules_get(employeeId, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -148,7 +148,7 @@ def employees_post(params=None, body=None, header=None, return_json=True, **kwar
 
 
 @allure.step("查询员工所在的区域->校区")
-def employees_school_area_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def employees_school_area_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -164,7 +164,7 @@ def employees_school_area_get(params=None, header=None, return_json=True, defaul
 
 
 @allure.step("极运营/人事管理/查询权限员工")
-def employees_role_users_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def employees_role_users_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -180,7 +180,7 @@ def employees_role_users_get(params=None, header=None, return_json=True, default
 
 
 @allure.step("极教研/卷库/题库-储备池/创建人数据源")
-def employees_queries_allEmployee_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def employees_queries_allEmployee_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -260,7 +260,7 @@ def employees_queries1_post(params=None, body=None, header=None, return_json=Tru
 
 
 @allure.step("CRM/根据当前登录人获取班主任信息")
-def employees_getHeadMasterList_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def employees_getHeadMasterList_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -292,7 +292,7 @@ def employees_online_clue_distribute_post(params=None, body=None, header=None, r
 
 
 @allure.step("极运营/招生管理/线上运营/线上线索/查找线上运营专员")
-def employees_online_clue_attache_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def employees_online_clue_attache_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -308,7 +308,7 @@ def employees_online_clue_attache_get(params=None, header=None, return_json=True
 
 
 @allure.step("通用/员工信息/查询所有课程顾问")
-def employees_role_users_course_consultant_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def employees_role_users_course_consultant_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

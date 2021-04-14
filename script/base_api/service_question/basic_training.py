@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("教师基本功大赛/用户考试信息")
-def basic_training_teacher_info_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def basic_training_teacher_info_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -20,7 +20,7 @@ def basic_training_teacher_info_get(params=None, header=None, return_json=True, 
 
 
 @allure.step("教师基本功大赛/倒计时")
-def basic_training_countdown_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def basic_training_countdown_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -36,7 +36,7 @@ def basic_training_countdown_get(params=None, header=None, return_json=True, def
 
 
 @allure.step("教师基本功大赛/获取考试信息")
-def basic_training_exam_info_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def basic_training_exam_info_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -52,7 +52,7 @@ def basic_training_exam_info_get(params=None, header=None, return_json=True, def
 
 
 @allure.step("教师基本功大赛/获取题目列表")
-def basic_training_questions_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def basic_training_questions_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -84,7 +84,7 @@ def basic_training_submit_answer_post(params=None, body=None, header=None, retur
 
 
 @allure.step("教师基本功大赛/结果导出")
-def basic_training_export_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def basic_training_export_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -100,7 +100,7 @@ def basic_training_export_get(params=None, header=None, return_json=True, defaul
 
 
 @allure.step("教师基本功大赛/题目解析")
-def basic_training_question_analysis_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def basic_training_question_analysis_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -116,7 +116,7 @@ def basic_training_question_analysis_get(params=None, header=None, return_json=T
 
 
 @allure.step("教师基本功大赛/答题结果")
-def basic_training_exam_result_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def basic_training_exam_result_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -132,7 +132,7 @@ def basic_training_exam_result_get(params=None, header=None, return_json=True, d
 
 
 @allure.step("教师基本功大赛/考试列表")
-def basic_training_teacher_exams_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def basic_training_teacher_exams_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

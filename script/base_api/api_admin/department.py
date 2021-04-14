@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("部门/获取部门树")
-def department_getDepartmentTree_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def department_getDepartmentTree_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -36,7 +36,7 @@ def department_searchDepartmentTree_post(params=None, body=None, header=None, re
 
 
 @allure.step("部门/维护组织类型")
-def department_updateDepartBusiType_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def department_updateDepartBusiType_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -68,7 +68,7 @@ def department_getSchoolCode_post(params=None, body=None, header=None, return_js
 
 
 @allure.step("部门/获取校区树")
-def department_getSchoolTree_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def department_getSchoolTree_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

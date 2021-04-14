@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("极师通/花名册/可调出班级")
-def transfer_records_suitableclasses_scheduleId_get(scheduleId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def transfer_records_suitableclasses_scheduleId_get(scheduleId, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -20,7 +20,7 @@ def transfer_records_suitableclasses_scheduleId_get(scheduleId, params=None, hea
 
 
 @allure.step("极师通/花名册/查询是否有重复的记录")
-def transfer_records_check_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def transfer_records_check_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -68,7 +68,7 @@ def transfer_records_recordId_delete(recordId, params=None, body=None, header=No
 
 
 @allure.step("极师通/花名册/查询班级调出记录")
-def transfer_records_classes_classId_out_get(classId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def transfer_records_classes_classId_out_get(classId, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -84,7 +84,7 @@ def transfer_records_classes_classId_out_get(classId, params=None, header=None, 
 
 
 @allure.step("极师通/花名册/查询学生调课记录")
-def transfer_records_students_studentId_get(studentId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def transfer_records_students_studentId_get(studentId, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -116,7 +116,7 @@ def transfer_records_logic_recordId_delete(recordId, params=None, body=None, hea
 
 
 @allure.step("极师通/花名册/可调入校区")
-def transfer_records_suitable_schools_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def transfer_records_suitable_schools_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

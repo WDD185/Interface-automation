@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("中行POS支付-查询可用pos")
-def pay_boc_pos_posInfo_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def pay_boc_pos_posInfo_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -20,7 +20,7 @@ def pay_boc_pos_posInfo_get(params=None, header=None, return_json=True, default_
 
 
 @allure.step("通用/主动查询指定支付状态")
-def pay_queryPayStatus_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def pay_queryPayStatus_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -52,7 +52,7 @@ def pay_weChat_app_prepay_post(params=None, body=None, header=None, return_json=
 
 
 @allure.step("微信支付-对账单")
-def pay_weChat_app_conciliation_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def pay_weChat_app_conciliation_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -148,7 +148,7 @@ def pay_check_mistake_queryByBankType_post(params=None, body=None, header=None, 
 
 
 @allure.step("分账逻辑/配置商户号/根据公司ID查询校区")
-def pay_schoolMerchant_getSchoolAreaByCompId_compId_get(compId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def pay_schoolMerchant_getSchoolAreaByCompId_compId_get(compId, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -164,7 +164,7 @@ def pay_schoolMerchant_getSchoolAreaByCompId_compId_get(compId, params=None, hea
 
 
 @allure.step("分账逻辑/配置商户号/查询所有公司")
-def pay_schoolMerchant_queryAllCompany_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def pay_schoolMerchant_queryAllCompany_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

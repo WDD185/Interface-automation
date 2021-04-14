@@ -20,7 +20,7 @@ def notices_noticeId_delete(noticeId, params=None, body=None, header=None, retur
 
 
 @allure.step("通用/消息通知/通知概况")
-def notices_overviews_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def notices_overviews_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -52,7 +52,7 @@ def notices_noticeId_patch(noticeId, params=None, body=None, header=None, return
 
 
 @allure.step("通用/消息通知/作业、发布内容的阅读详情")
-def notices_noticeId_reading_get(noticeId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def notices_noticeId_reading_get(noticeId, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -68,7 +68,7 @@ def notices_noticeId_reading_get(noticeId, params=None, header=None, return_json
 
 
 @allure.step("通用/消息通知/获取拒收规则")
-def notices_reject_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def notices_reject_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

@@ -36,7 +36,7 @@ def documentTag_put(params=None, body=None, header=None, return_json=True, **kwa
 
 
 @allure.step("极运营/班主任/知识库/知识标签/id查询")
-def documentTag_id_get(id, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def documentTag_id_get(id, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -52,7 +52,7 @@ def documentTag_id_get(id, params=None, header=None, return_json=True, default_a
 
 
 @allure.step("极运营/班主任/知识库/知识标签/列表查询")
-def documentTag_list_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def documentTag_list_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -68,7 +68,7 @@ def documentTag_list_get(params=None, header=None, return_json=True, default_ass
 
 
 @allure.step("极运营/班主任/知识库/知识标签/查询所有")
-def documentTag_all_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def documentTag_all_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

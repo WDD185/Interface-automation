@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("小程序/营销中心/cms管理/获取单个数据")
-def carousel_cms_getBannerCms_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def carousel_cms_getBannerCms_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

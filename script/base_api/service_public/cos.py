@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("公共/获取前端上传令牌")
-def cos_getCredential_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def cos_getCredential_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

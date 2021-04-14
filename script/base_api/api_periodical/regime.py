@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("员工手册/列表查询")
-def regime_listRegimes_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def regime_listRegimes_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -20,7 +20,7 @@ def regime_listRegimes_get(params=None, header=None, return_json=True, default_a
 
 
 @allure.step("员工手册/内容查询")
-def regime_listRegimeContents_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def regime_listRegimeContents_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -36,7 +36,7 @@ def regime_listRegimeContents_get(params=None, header=None, return_json=True, de
 
 
 @allure.step("员工手册/书架")
-def regime_listRegimeOnReadNum_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def regime_listRegimeOnReadNum_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

@@ -36,7 +36,7 @@ def diagnosis_queryDiagnosticStudentsPageList_post(params=None, body=None, heade
 
 
 @allure.step("极运营/入学诊断/获取试卷")
-def diagnosis_exam_paper_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def diagnosis_exam_paper_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -52,7 +52,7 @@ def diagnosis_exam_paper_get(params=None, header=None, return_json=True, default
 
 
 @allure.step("极运营/入学诊断/查询诊断报告详情")
-def diagnosis_report_detail_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def diagnosis_report_detail_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

@@ -20,7 +20,7 @@ def finance_return_carryover_post(params=None, body=None, header=None, return_js
 
 
 @allure.step("极运营/财务管理/退费/查询可退费")
-def finance_refund_query_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def finance_refund_query_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -52,7 +52,7 @@ def finance_return_refund_post(params=None, body=None, header=None, return_json=
 
 
 @allure.step("极运营/前台业务/结转/查询可结转")
-def finance_carryover_query_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def finance_carryover_query_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

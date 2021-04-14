@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("极客数学帮(家长APP)/用户行课/获取某个课程总的调课次数")
-def transferred_classId_class_totalNum_get(classId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def transferred_classId_class_totalNum_get(classId, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -20,7 +20,7 @@ def transferred_classId_class_totalNum_get(classId, params=None, header=None, re
 
 
 @allure.step("极客数学帮(家长APP)/用户行课/获取某个课程的某一讲能够调入的班级和讲次")
-def transferred_classId_class_classScheduleId_section_get(classId, classScheduleId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def transferred_classId_class_classScheduleId_section_get(classId, classScheduleId, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

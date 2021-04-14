@@ -20,7 +20,7 @@ def question_jst_questions_post(params=None, body=None, header=None, return_json
 
 
 @allure.step("极师通/题目详情查询")
-def question_jst_question_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def question_jst_question_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -164,7 +164,7 @@ def question_jst_bookmark_move_put(params=None, body=None, header=None, return_j
 
 
 @allure.step("极师通/个人收藏夹目录列表")
-def question_jst_bookmark_list_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def question_jst_bookmark_list_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

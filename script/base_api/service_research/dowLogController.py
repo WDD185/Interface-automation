@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("备课/下载打点")
-def dowLogController_printLog_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def dowLogController_printLog_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

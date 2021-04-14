@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("极师通/作业/学生作业查阅情况详情")
-def homework_readStatusOfStudentDetails_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def homework_readStatusOfStudentDetails_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -20,7 +20,7 @@ def homework_readStatusOfStudentDetails_get(params=None, header=None, return_jso
 
 
 @allure.step("极师通/作业/草稿列表")
-def homework_draft_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def homework_draft_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -52,7 +52,7 @@ def homework_post(params=None, body=None, header=None, return_json=True, **kwarg
 
 
 @allure.step("极师通/作业/详情")
-def homework_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def homework_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -68,7 +68,7 @@ def homework_get(params=None, header=None, return_json=True, default_assert=True
 
 
 @allure.step("极师通/作业/查阅情况")
-def homework_consultSituation_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def homework_consultSituation_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -116,7 +116,7 @@ def homework_remind_post(params=None, body=None, header=None, return_json=True, 
 
 
 @allure.step("极师通/作业/已发布列表")
-def homework_published_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def homework_published_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -164,7 +164,7 @@ def homework_homeworkList_post(params=None, body=None, header=None, return_json=
 
 
 @allure.step("极师通/作业/班级列表")
-def homework_myClasses_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def homework_myClasses_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -180,7 +180,7 @@ def homework_myClasses_get(params=None, header=None, return_json=True, default_a
 
 
 @allure.step("极师通/作业/学生作业查阅情况")
-def homework_readStatusOfStudent_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def homework_readStatusOfStudent_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -196,7 +196,7 @@ def homework_readStatusOfStudent_get(params=None, header=None, return_json=True,
 
 
 @allure.step("极师通/作业/作业详情")
-def homework_homeworkDetails_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def homework_homeworkDetails_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -228,7 +228,7 @@ def homework_delHomework_delete(params=None, body=None, header=None, return_json
 
 
 @allure.step("极师通撤回作业")
-def homework_recall_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def homework_recall_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

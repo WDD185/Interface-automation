@@ -36,7 +36,7 @@ def goods_course_goodsList_post(params=None, body=None, header=None, return_json
 
 
 @allure.step("极运营/营销中心/商品中心/商品详情")
-def goods_course_goodsDetail_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def goods_course_goodsDetail_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

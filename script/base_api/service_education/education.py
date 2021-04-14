@@ -132,7 +132,7 @@ def education_classrooms_query_post(params=None, body=None, header=None, return_
 
 
 @allure.step("通用/排课/查询排课")
-def education_classschedules_query_id_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def education_classschedules_query_id_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -196,7 +196,7 @@ def education_classes_update_post(params=None, body=None, header=None, return_js
 
 
 @allure.step("极运营/教务管理/排课/查看排课冲突详情")
-def education_classschedules_queryConflictDetail_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def education_classschedules_queryConflictDetail_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -260,7 +260,7 @@ def education_classschedules_classSchedule_conflict_post(params=None, body=None,
 
 
 @allure.step("通用/班级/查询排课")
-def education_classschedules_class_query_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def education_classschedules_class_query_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -292,7 +292,7 @@ def education_update_class_sale_post(params=None, body=None, header=None, return
 
 
 @allure.step("通用/班级/查询班级")
-def education_classes_query_id_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def education_classes_query_id_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -516,7 +516,7 @@ def education_classes_optionalUpdate_post(params=None, body=None, header=None, r
 
 
 @allure.step("极运营/教务管理/课程/查询单门课程")
-def education_courses_queryById_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def education_courses_queryById_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -692,7 +692,7 @@ def education_classes_delete_post(params=None, body=None, header=None, return_js
 
 
 @allure.step("通用/教室设置/查询教室")
-def education_classrooms_query_id_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def education_classrooms_query_id_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -884,7 +884,7 @@ def education_classschedules_lessonConsumptionList_export_post(params=None, body
 
 
 @allure.step("极运营/课程/课程绑定教材")
-def education_courses_course_courseBindTextbooks_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def education_courses_course_courseBindTextbooks_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -996,7 +996,7 @@ def education_classschedules_queryBySchool_post(params=None, body=None, header=N
 
 
 @allure.step("极运营/课程/清除课程教材")
-def education_courses_course_clearBindTextbooks_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def education_courses_course_clearBindTextbooks_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -1028,7 +1028,7 @@ def education_classes_batch_updatePhase_post(params=None, body=None, header=None
 
 
 @allure.step("极运营/教务管理/课程/关联班级")
-def education_courses_relatedClasses_courseId_get(courseId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def education_courses_relatedClasses_courseId_get(courseId, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -1044,7 +1044,7 @@ def education_courses_relatedClasses_courseId_get(courseId, params=None, header=
 
 
 @allure.step("极运营/教务/班级/分段信息")
-def education_classes_segmentInfo_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def education_classes_segmentInfo_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -1060,7 +1060,7 @@ def education_classes_segmentInfo_get(params=None, header=None, return_json=True
 
 
 @allure.step("极运营/教务/班级/批量分段信息")
-def education_classes_segmentInfos_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def education_classes_segmentInfos_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

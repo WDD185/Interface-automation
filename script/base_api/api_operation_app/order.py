@@ -20,7 +20,7 @@ def order_query_basic_post(params=None, body=None, header=None, return_json=True
 
 
 @allure.step("极运营APP订单明细查询")
-def order_query_detail_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def order_query_detail_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -148,7 +148,7 @@ def order_getOccupiedSeatOrOccupy_post(params=None, body=None, header=None, retu
 
 
 @allure.step("极运营app作废订单")
-def order_scrapOrder_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def order_scrapOrder_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

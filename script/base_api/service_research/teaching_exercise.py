@@ -20,7 +20,7 @@ def teaching_exercise_review_post(params=None, body=None, header=None, return_js
 
 
 @allure.step("极师通/我的刷题/刷题撤回")
-def teaching_exercise_recall_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def teaching_exercise_recall_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -36,7 +36,7 @@ def teaching_exercise_recall_get(params=None, header=None, return_json=True, def
 
 
 @allure.step("极师通/我的刷题/刷题详情查询")
-def teaching_exercise_query_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def teaching_exercise_query_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -68,7 +68,7 @@ def teaching_exercise_submit_post(params=None, body=None, header=None, return_js
 
 
 @allure.step("极师通/我的刷题/当前刷题")
-def teaching_exercise_current_query_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def teaching_exercise_current_query_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

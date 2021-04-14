@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("小程序预生成分享ID")
-def share_preCreateShareIds_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def share_preCreateShareIds_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -36,7 +36,7 @@ def share_saveShare_post(params=None, body=None, header=None, return_json=True, 
 
 
 @allure.step("小程序获取分享明细")
-def share_getShareDetail_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def share_getShareDetail_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -52,7 +52,7 @@ def share_getShareDetail_get(params=None, header=None, return_json=True, default
 
 
 @allure.step("小程序获取分享明细")
-def share_getShareDetailAndRecordBrowse_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def share_getShareDetailAndRecordBrowse_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

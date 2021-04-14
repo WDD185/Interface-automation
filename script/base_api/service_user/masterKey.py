@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("通用/基础/特别权限")
-def masterKey_getKey_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def masterKey_getKey_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

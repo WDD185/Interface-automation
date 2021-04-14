@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("极运营/前台业务/订单管理/订单作废")
-def orders_cancle_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def orders_cancle_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

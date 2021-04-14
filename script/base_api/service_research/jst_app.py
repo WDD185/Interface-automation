@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("/教研/课件库/app段查询绑定教材")
-def jst_app_research_update_getVersionNameByTeacherIdToHomeWork_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def jst_app_research_update_getVersionNameByTeacherIdToHomeWork_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -20,7 +20,7 @@ def jst_app_research_update_getVersionNameByTeacherIdToHomeWork_get(params=None,
 
 
 @allure.step("极师通App/教研/课件库/讲次查询")
-def jst_app_research_textbook_courseContent_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def jst_app_research_textbook_courseContent_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -36,7 +36,7 @@ def jst_app_research_textbook_courseContent_get(params=None, header=None, return
 
 
 @allure.step("极师通App/教研/课件库/讲次和课件")
-def jst_app_research_textbook_getCoursewareList_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def jst_app_research_textbook_getCoursewareList_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -52,7 +52,7 @@ def jst_app_research_textbook_getCoursewareList_get(params=None, header=None, re
 
 
 @allure.step("极师通/app/我的教材")
-def jst_app_research_update_getVersionNameByTeacherId_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def jst_app_research_update_getVersionNameByTeacherId_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -68,7 +68,7 @@ def jst_app_research_update_getVersionNameByTeacherId_get(params=None, header=No
 
 
 @allure.step("极师通/app/讲次下课件")
-def jst_app_research_textbook_courseware_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def jst_app_research_textbook_courseware_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -84,7 +84,7 @@ def jst_app_research_textbook_courseware_get(params=None, header=None, return_js
 
 
 @allure.step("极师通/app/讲次下总数及阅读数")
-def jst_app_research_lectureFileReadStat_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def jst_app_research_lectureFileReadStat_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -100,7 +100,7 @@ def jst_app_research_lectureFileReadStat_get(params=None, header=None, return_js
 
 
 @allure.step("极师通/app/我的教案列表查询")
-def jst_app_research_textbook_lessonPlans_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def jst_app_research_textbook_lessonPlans_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -132,7 +132,7 @@ def jst_app_research_teaching_plan_submit_post(params=None, body=None, header=No
 
 
 @allure.step("极师通/app/查阅")
-def jst_app_research_textbook_checkRead_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def jst_app_research_textbook_checkRead_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -148,7 +148,7 @@ def jst_app_research_textbook_checkRead_get(params=None, header=None, return_jso
 
 
 @allure.step("极师通/app/根据讲次查询教案")
-def jst_app_research_teaching_plan_current_query_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def jst_app_research_teaching_plan_current_query_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -164,7 +164,7 @@ def jst_app_research_teaching_plan_current_query_get(params=None, header=None, r
 
 
 @allure.step("极师通/app/教案撤回")
-def jst_app_research_teaching_plan_recall_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def jst_app_research_teaching_plan_recall_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

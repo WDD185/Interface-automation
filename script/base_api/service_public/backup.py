@@ -20,7 +20,7 @@ def backup_uploadConfig_post(params=None, body=None, header=None, return_json=Tr
 
 
 @allure.step("运维配置/配置信息查询")
-def backup_queryPreConfig_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def backup_queryPreConfig_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -36,7 +36,7 @@ def backup_queryPreConfig_get(params=None, header=None, return_json=True, defaul
 
 
 @allure.step("运维配置/配置版本回滚")
-def backup_rollback_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def backup_rollback_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -52,7 +52,7 @@ def backup_rollback_get(params=None, header=None, return_json=True, default_asse
 
 
 @allure.step("运维配置/获取停服信息")
-def backup_getServerInfo_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def backup_getServerInfo_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

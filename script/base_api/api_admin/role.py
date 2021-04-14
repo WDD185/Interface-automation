@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("极权限/根据员工ID查询为角色组管理员的所有角色分组")
-def role_queryMasterRoleTreeByEmployeeId_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def role_queryMasterRoleTreeByEmployeeId_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -20,7 +20,7 @@ def role_queryMasterRoleTreeByEmployeeId_get(params=None, header=None, return_js
 
 
 @allure.step("极权限/根据员工ID查询角色树")
-def role_queryRoleTreeByEmployeeId_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def role_queryRoleTreeByEmployeeId_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -100,7 +100,7 @@ def role_deleteRole_delete(params=None, body=None, header=None, return_json=True
 
 
 @allure.step("极权限/查询员工对应的所有角色")
-def role_queryRolesByEmployeeId_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def role_queryRolesByEmployeeId_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

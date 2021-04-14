@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("极客数学帮App/双师/查看校区配置")
-def playVideo_querySchoolConfig_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def playVideo_querySchoolConfig_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("引导微信网页授权")
-def weChat_webPageOAuth_load_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def weChat_webPageOAuth_load_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -20,7 +20,7 @@ def weChat_webPageOAuth_load_get(params=None, header=None, return_json=True, def
 
 
 @allure.step("微信网页授权")
-def weChat_webPageOAuth_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def weChat_webPageOAuth_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

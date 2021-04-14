@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("极教研/卷库/编辑试卷-试卷题单必填属性")
-def exam_paper_filterCondition_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def exam_paper_filterCondition_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -36,7 +36,7 @@ def exam_paper_createPaper_post(params=None, body=None, header=None, return_json
 
 
 @allure.step("极教研/卷库/手动选题复制试卷/题单")
-def exam_paper_copyPaper_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def exam_paper_copyPaper_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -84,7 +84,7 @@ def exam_paper_savePaper_post(params=None, body=None, header=None, return_json=T
 
 
 @allure.step("极教研/卷库/编辑试卷-试卷/题单详情查询")
-def exam_paper_PaperDetail_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def exam_paper_PaperDetail_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -100,7 +100,7 @@ def exam_paper_PaperDetail_get(params=None, header=None, return_json=True, defau
 
 
 @allure.step("极教研/卷库/试卷/题单删除")
-def exam_paper_deletePaper_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def exam_paper_deletePaper_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -132,7 +132,7 @@ def exam_paper_uploadTypeDocuments_post(params=None, body=None, header=None, ret
 
 
 @allure.step("极教研/卷库/试卷/删除排版文档")
-def exam_paper_delTypeDocument_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def exam_paper_delTypeDocument_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -148,7 +148,7 @@ def exam_paper_delTypeDocument_get(params=None, header=None, return_json=True, d
 
 
 @allure.step("极教研/卷库/试卷/题单上传排版文档查阅")
-def exam_paper_getTypeDocument_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def exam_paper_getTypeDocument_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -276,7 +276,7 @@ def exam_executing_task_query_post(params=None, body=None, header=None, return_j
 
 
 @allure.step("教研/考试/任务查询")
-def exam_task_query_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def exam_task_query_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -292,7 +292,7 @@ def exam_task_query_get(params=None, header=None, return_json=True, default_asse
 
 
 @allure.step("教研/考试/pdf报告查询")
-def exam_examSubjectPdfReport_query_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def exam_examSubjectPdfReport_query_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -308,7 +308,7 @@ def exam_examSubjectPdfReport_query_get(params=None, header=None, return_json=Tr
 
 
 @allure.step("家长app/考试成绩报告/多科考试成绩报告查询")
-def exam_app_examTotalReport_query_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def exam_app_examTotalReport_query_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -324,7 +324,7 @@ def exam_app_examTotalReport_query_get(params=None, header=None, return_json=Tru
 
 
 @allure.step("家长app/考试成绩报告/单科科考试成绩报告基础信息查询")
-def exam_app_examSubjectBaseReport_query_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def exam_app_examSubjectBaseReport_query_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -340,7 +340,7 @@ def exam_app_examSubjectBaseReport_query_get(params=None, header=None, return_js
 
 
 @allure.step("家长app/考试成绩报告/单科考试成绩报告tab查询")
-def exam_app_examSubjectReport_detail_query_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def exam_app_examSubjectReport_detail_query_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -356,7 +356,7 @@ def exam_app_examSubjectReport_detail_query_get(params=None, header=None, return
 
 
 @allure.step("家长app/考试成绩报告/单科科考试成绩报告基础信息查询（缺考）")
-def exam_app_examSubjectBaseReport_noAttend_query_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def exam_app_examSubjectBaseReport_noAttend_query_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -372,7 +372,7 @@ def exam_app_examSubjectBaseReport_noAttend_query_get(params=None, header=None, 
 
 
 @allure.step("家长app/考试成绩报告/单科考试成绩报告tab查询（缺考）")
-def exam_app_examSubjectReport_noAttend_detail_query_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def exam_app_examSubjectReport_noAttend_detail_query_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -388,7 +388,7 @@ def exam_app_examSubjectReport_noAttend_detail_query_get(params=None, header=Non
 
 
 @allure.step("极教研/考试/发布报告")
-def exam_publishExamReport_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def exam_publishExamReport_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -420,7 +420,7 @@ def exam_reportList_query_post(params=None, body=None, header=None, return_json=
 
 
 @allure.step("极教研/成绩报告/下载弹窗校区列表")
-def exam_schoolAreaList_query_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def exam_schoolAreaList_query_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -452,7 +452,7 @@ def exam_report_download_post(params=None, body=None, header=None, return_json=T
 
 
 @allure.step("极教研/撤回考试")
-def exam_recall_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def exam_recall_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -500,7 +500,7 @@ def exam_app_report_read_post(params=None, body=None, header=None, return_json=T
 
 
 @allure.step("极教研/考试/成绩报告/考试基础信息查询")
-def exam_examMessage_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def exam_examMessage_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -580,7 +580,7 @@ def exam_dataStructureQuestion_post(params=None, body=None, header=None, return_
 
 
 @allure.step("极教研/考试/成绩报告/知识点评语获取知识点信息")
-def exam_getKnowledge_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def exam_getKnowledge_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -628,7 +628,7 @@ def exam_scoreComment_post(params=None, body=None, header=None, return_json=True
 
 
 @allure.step("极教研/考试/成绩报告/获取分数评语详情")
-def exam_getScoreComment_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def exam_getScoreComment_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -644,7 +644,7 @@ def exam_getScoreComment_get(params=None, header=None, return_json=True, default
 
 
 @allure.step("极教研/考试/成绩报告/科目信息查询")
-def exam_examSubjectDetail_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def exam_examSubjectDetail_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -756,7 +756,7 @@ def exam_examRetract_post(params=None, body=None, header=None, return_json=True,
 
 
 @allure.step("极教研/考试/成绩报告/操作日志详情")
-def exam_operLog_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def exam_operLog_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -788,7 +788,7 @@ def exam_releasePublishTime_post(params=None, body=None, header=None, return_jso
 
 
 @allure.step("极教研/考试/成绩报告/发布时间详情")
-def exam_publishTimeDetail_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def exam_publishTimeDetail_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -804,7 +804,7 @@ def exam_publishTimeDetail_get(params=None, header=None, return_json=True, defau
 
 
 @allure.step("极教研/卷库/试卷列表/引用次数详情")
-def exam_paper_referCountDetail_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def exam_paper_referCountDetail_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -868,7 +868,7 @@ def exam_readFile_post(params=None, body=None, header=None, return_json=True, **
 
 
 @allure.step("极教研/课件库/查询学生考试记录")
-def exam_query_student_id_get(id, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def exam_query_student_id_get(id, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -884,7 +884,7 @@ def exam_query_student_id_get(id, params=None, header=None, return_json=True, de
 
 
 @allure.step("极题库/卷库/老数据处理")
-def exam_paper_transfer_question_source_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def exam_paper_transfer_question_source_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -916,7 +916,7 @@ def exam_paper_deleteExamPaper_delete(params=None, body=None, header=None, retur
 
 
 @allure.step("极题库/卷库/复制试卷")
-def exam_paper_copyExamPaper_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def exam_paper_copyExamPaper_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -964,7 +964,7 @@ def exam_paper_createExamPaper_post(params=None, body=None, header=None, return_
 
 
 @allure.step("极题库/卷库/查询试卷详情")
-def exam_paper_queryExamPaper_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def exam_paper_queryExamPaper_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -996,7 +996,7 @@ def exam_paper_queryExamPaperList_post(params=None, body=None, header=None, retu
 
 
 @allure.step("家长App/查询学生考试答题结果解析")
-def exam_app_examResultAnalysis_query_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def exam_app_examResultAnalysis_query_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -1012,7 +1012,7 @@ def exam_app_examResultAnalysis_query_get(params=None, header=None, return_json=
 
 
 @allure.step("家长App/查询学生考试答题结果解析（缺考）")
-def exam_app_examResultAnalysis_noAttend_query_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def exam_app_examResultAnalysis_noAttend_query_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -1028,7 +1028,7 @@ def exam_app_examResultAnalysis_noAttend_query_get(params=None, header=None, ret
 
 
 @allure.step("教研/考试/下载成绩导入模板")
-def exam_grade_template_download_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def exam_grade_template_download_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -1076,7 +1076,7 @@ def exam_paper_bookmark_create_post(params=None, body=None, header=None, return_
 
 
 @allure.step("极题库/个人收藏夹目录列表")
-def exam_paper_bookmark_list_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def exam_paper_bookmark_list_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -1108,7 +1108,7 @@ def exam_paper_personal_bookmark_post(params=None, body=None, header=None, retur
 
 
 @allure.step("极题库/30日内热门试卷列表")
-def exam_paper_hot_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def exam_paper_hot_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -1124,7 +1124,7 @@ def exam_paper_hot_get(params=None, header=None, return_json=True, default_asser
 
 
 @allure.step("极题库/查询试卷操作日志")
-def exam_paper_operation_logs_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def exam_paper_operation_logs_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -1156,7 +1156,7 @@ def exam_paper_jst_queryExamPaperList_post(params=None, body=None, header=None, 
 
 
 @allure.step("极师通/30日内热门试卷列表")
-def exam_paper_jst_hot_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def exam_paper_jst_hot_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -1172,7 +1172,7 @@ def exam_paper_jst_hot_get(params=None, header=None, return_json=True, default_a
 
 
 @allure.step("极师通/查看试卷详情")
-def exam_paper_jst_queryExamPaper_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def exam_paper_jst_queryExamPaper_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -1188,7 +1188,7 @@ def exam_paper_jst_queryExamPaper_get(params=None, header=None, return_json=True
 
 
 @allure.step("极师通/查看排版文档")
-def exam_paper_jst_getTypeDocument_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def exam_paper_jst_getTypeDocument_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -1252,7 +1252,7 @@ def exam_paper_jst_bookmark_create_post(params=None, body=None, header=None, ret
 
 
 @allure.step("极师通/个人收藏夹目录列表")
-def exam_paper_jst_bookmark_list_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def exam_paper_jst_bookmark_list_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -1284,7 +1284,7 @@ def exam_paper_jst_personal_bookmark_post(params=None, body=None, header=None, r
 
 
 @allure.step("极师通/试卷结构分析")
-def exam_paper_jst_structure_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def exam_paper_jst_structure_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -1332,7 +1332,7 @@ def exam_paper_jst_del_question_post(params=None, body=None, header=None, return
 
 
 @allure.step("极师通/复制试卷")
-def exam_paper_jst_copyExamPaper_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def exam_paper_jst_copyExamPaper_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -1412,7 +1412,7 @@ def exam_paper_jst_bookmark_create_composes_post(params=None, body=None, header=
 
 
 @allure.step("极师通/个人组卷文件夹目录列表")
-def exam_paper_jst_bookmark_list_composes_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def exam_paper_jst_bookmark_list_composes_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -1444,7 +1444,7 @@ def exam_paper_jst_personal_bookmark_composes_post(params=None, body=None, heade
 
 
 @allure.step("极师通/清除当前草稿")
-def exam_paper_jst_clear_question_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def exam_paper_jst_clear_question_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -1460,7 +1460,7 @@ def exam_paper_jst_clear_question_get(params=None, header=None, return_json=True
 
 
 @allure.step("极题库/清除当前草稿")
-def exam_paper_clear_question_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def exam_paper_clear_question_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -1476,7 +1476,7 @@ def exam_paper_clear_question_get(params=None, header=None, return_json=True, de
 
 
 @allure.step("极题库/试卷结构分析")
-def exam_paper_structure_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def exam_paper_structure_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

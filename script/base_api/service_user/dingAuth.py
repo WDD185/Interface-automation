@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("用户/钉钉/h5免密登录")
-def dingAuth_h5_periodicalAuth_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def dingAuth_h5_periodicalAuth_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -20,7 +20,7 @@ def dingAuth_h5_periodicalAuth_get(params=None, header=None, return_json=True, d
 
 
 @allure.step("教师基本功大赛/钉钉登录")
-def dingAuth_h5_basicSkillAuth_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def dingAuth_h5_basicSkillAuth_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

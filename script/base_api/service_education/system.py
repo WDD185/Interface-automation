@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("极运营/系统设置/课程类型设置,教学参数设置/查询")
-def system_setting_query_param_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def system_setting_query_param_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -84,7 +84,7 @@ def system_setting_add_post(params=None, body=None, header=None, return_json=Tru
 
 
 @allure.step("极运营/系统设置/基础参数设置,学生身份/查询")
-def system_setting_query_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def system_setting_query_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -116,7 +116,7 @@ def system_setting_add_param_post(params=None, body=None, header=None, return_js
 
 
 @allure.step("极运营/系统设置/基础参数设置/全参数查询")
-def system_setting_query_all_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def system_setting_query_all_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -228,7 +228,7 @@ def system_setting_queryGeneralSettings_post(params=None, body=None, header=None
 
 
 @allure.step("极运营/系统设置/查询年级")
-def system_queryGrades_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def system_queryGrades_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

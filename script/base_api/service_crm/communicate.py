@@ -36,7 +36,7 @@ def communicate_record_put(params=None, body=None, header=None, return_json=True
 
 
 @allure.step("极运营/班主任机制/沟通记录/根据学生ID查找记录列表")
-def communicate_record_records_studentId_get(studentId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def communicate_record_records_studentId_get(studentId, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -52,7 +52,7 @@ def communicate_record_records_studentId_get(studentId, params=None, header=None
 
 
 @allure.step("极运营/班主任机制/沟通记录/查询所有沟通类型数组")
-def communicate_record_types_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def communicate_record_types_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -68,7 +68,7 @@ def communicate_record_types_get(params=None, header=None, return_json=True, def
 
 
 @allure.step("极运营/班主任机制/沟通记录/根据记录ID和类型查找记录详情")
-def communicate_record_record_recordId_get(recordId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def communicate_record_record_recordId_get(recordId, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -116,7 +116,7 @@ def communicate_record_exportRecordByClass_post(params=None, body=None, header=N
 
 
 @allure.step("按类型获取沟通记录")
-def communicate_record_getStudentRecordByType_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def communicate_record_getStudentRecordByType_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -180,7 +180,7 @@ def communicate_record_insertJst_post(params=None, body=None, header=None, retur
 
 
 @allure.step("极师通/花名册/查询单个学生沟通记录")
-def communicate_record_getByStudentIdAndClassIdJst_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def communicate_record_getByStudentIdAndClassIdJst_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

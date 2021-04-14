@@ -36,7 +36,7 @@ def documentDirectory_put(params=None, body=None, header=None, return_json=True,
 
 
 @allure.step("极运营/班主任/知识库/知识分类/id查询")
-def documentDirectory_id_get(id, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def documentDirectory_id_get(id, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -52,7 +52,7 @@ def documentDirectory_id_get(id, params=None, header=None, return_json=True, def
 
 
 @allure.step("极运营/班主任/知识库/知识分类/列表查询")
-def documentDirectory_list_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def documentDirectory_list_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -68,7 +68,7 @@ def documentDirectory_list_get(params=None, header=None, return_json=True, defau
 
 
 @allure.step("极运营/班主任/知识库/知识分类/查询所有")
-def documentDirectory_all_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def documentDirectory_all_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -100,7 +100,7 @@ def documentDirectory_ids_delete(ids, params=None, body=None, header=None, retur
 
 
 @allure.step("知识/知识列表/列表树查询")
-def documentDirectory_queryChildDirectory_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def documentDirectory_queryChildDirectory_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -116,7 +116,7 @@ def documentDirectory_queryChildDirectory_get(params=None, header=None, return_j
 
 
 @allure.step("知识/知识列表/目录树查询")
-def documentDirectory_queryDirectoryTree_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def documentDirectory_queryDirectoryTree_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

@@ -1,0 +1,133 @@
+{
+  "uid" : "3fcf99624d6abe9",
+  "name" : "test_list_search[keyword1]",
+  "fullName" : "script.ji_yun_ying_pc.statistical_report.test_receipt_detail.TestReceiptDetail#test_list_search",
+  "historyId" : "beb14232d42fbd77b76f402615245ab1",
+  "time" : {
+    "start" : 1618397527712,
+    "stop" : 1618397529254,
+    "duration" : 1542
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "ji_yun_ying_login",
+    "time" : {
+      "start" : 1618397525397,
+      "stop" : 1618397526393,
+      "duration" : 996
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "e07f84ce3913d601",
+      "name" : "响应信息",
+      "source" : "e07f84ce3913d601.json",
+      "type" : "application/json",
+      "size" : 264
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "name" : "get_host",
+    "time" : {
+      "start" : 1618397525397,
+      "stop" : 1618397525397,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "pytestconfig",
+    "time" : {
+      "start" : 1618397525397,
+      "stop" : 1618397525397,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "29a5a01fbf87c310",
+      "name" : "响应信息",
+      "source" : "29a5a01fbf87c310.json",
+      "type" : "application/json",
+      "size" : 3297
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "测试收据明细报表"
+  }, {
+    "name" : "story",
+    "value" : "测试收据明细列表查询-关键字筛选"
+  }, {
+    "name" : "epic",
+    "value" : "测试收据明细报表"
+  }, {
+    "name" : "parentSuite",
+    "value" : "script.ji_yun_ying_pc.statistical_report"
+  }, {
+    "name" : "suite",
+    "value" : "test_receipt_detail"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestReceiptDetail"
+  }, {
+    "name" : "host",
+    "value" : "huangqiangdeMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "45905-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "script.ji_yun_ying_pc.statistical_report.test_receipt_detail"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "keyword",
+    "value" : "{'keyword': '周移山', 'keyword_type': 'student_name'}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3fcf99624d6abe9.json",
+  "parameterValues" : [ "{'keyword': '周移山', 'keyword_type': 'student_name'}" ]
+}

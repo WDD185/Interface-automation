@@ -52,7 +52,7 @@ def video_modVideoCoverImage_post(params=None, body=None, header=None, return_js
 
 
 @allure.step("极教研")
-def video_reduceRelationCount_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def video_reduceRelationCount_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -84,7 +84,7 @@ def video_queryByIdList_post(params=None, body=None, header=None, return_json=Tr
 
 
 @allure.step("极教研")
-def video_queryVideoOperationLog_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def video_queryVideoOperationLog_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -132,7 +132,7 @@ def video_del_delete(params=None, body=None, header=None, return_json=True, **kw
 
 
 @allure.step("极教研")
-def video_modPlayCount_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def video_modPlayCount_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -148,7 +148,7 @@ def video_modPlayCount_get(params=None, header=None, return_json=True, default_a
 
 
 @allure.step("极教研")
-def video_queryVideoRelationLog_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def video_queryVideoRelationLog_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -180,7 +180,7 @@ def video_VideoBindLectureContents_post(params=None, body=None, header=None, ret
 
 
 @allure.step("极教研")
-def video_queryVideoAlreadyBindLectures_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def video_queryVideoAlreadyBindLectures_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("备课评价/打分")
-def courseWareScoreController_courseWareScore_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def courseWareScoreController_courseWareScore_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -20,7 +20,7 @@ def courseWareScoreController_courseWareScore_get(params=None, header=None, retu
 
 
 @allure.step("备课评价/根据课件查询评分")
-def courseWareScoreController_queryScoreByContentId_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def courseWareScoreController_queryScoreByContentId_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -36,7 +36,7 @@ def courseWareScoreController_queryScoreByContentId_get(params=None, header=None
 
 
 @allure.step("备课评价/查询评分log")
-def courseWareScoreController_queryScoreLogByContentId_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def courseWareScoreController_queryScoreLogByContentId_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -52,7 +52,7 @@ def courseWareScoreController_queryScoreLogByContentId_get(params=None, header=N
 
 
 @allure.step("备课评价/根据contentId和type查询评价")
-def courseWareScoreController_queryEvaluateListById_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def courseWareScoreController_queryEvaluateListById_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -68,7 +68,7 @@ def courseWareScoreController_queryEvaluateListById_get(params=None, header=None
 
 
 @allure.step("备课评价/根据contentId和type查询评分")
-def courseWareScoreController_queryScoreById_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def courseWareScoreController_queryScoreById_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

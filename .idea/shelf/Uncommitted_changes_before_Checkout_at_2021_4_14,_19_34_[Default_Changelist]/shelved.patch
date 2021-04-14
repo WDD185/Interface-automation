@@ -1,0 +1,177 @@
+Index: init_base_api.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>from common.common_util import replace_string\nimport psycopg2\nimport os\nimport re\n\n\ndef query_sql(database_config, sql_str):\n    # 创建连接对象\n    with psycopg2.connect(**database_config) as conn:\n        with conn.cursor() as cur:\n            cur.execute(sql_str)\n            results = cur.fetchall()\n        print('查询结束')\n    return results\n\n\ndef get_base_apis():\n    config = {\n        'database': 'edu-admin',\n        \"user\": 'read_user',\n        \"password\": 'c5JJUqmtTeaSaOTN2gs7',\n        \"host\": '132.232.15.12',\n        \"port\": 5432\n    }\n    sql = \"\"\"SELECT name, server_name, url, http_method FROM service_user.permission WHERE type = 'URL'\"\"\"\n    query_result = query_sql(config, sql)\n    base_apis = [{\n        \"name\": x[0],\n        \"server_name\": x[1].replace(\"-\", \"_\"),\n        \"url\": x[1] + x[2],\n        \"path_params\": get_path_params(x[2]),\n        \"http_method\": x[3],\n        \"method_name\": x[2].replace(\"{\", \"\").replace(\"}\", \"\").replace(\"-\", \"_\").replace(\"/\", \"_\")[1:] + \"_\" + x[3].lower(),\n        \"file_name\": x[2].replace(\"-\", \"_\")[1:].split(\"/\")[0] + \".py\"\n    } for x in query_result]\n    return base_apis\n\n\ndef get_path_params(url: str):\n    path_params = re.findall(r\"{(.*?)}\", url)\n    path_params_str = \"\"\n    for path_param in path_params:\n        path_params_str = path_params_str + f\"{path_param}, \"\n    return path_params_str\n\n\ndef create_all(base_apis: list):\n    server_names = list(set([x.get(\"server_name\") for x in base_apis]))\n    current_path = os.getcwd()\n    import_data_out = []\n    for server_name in server_names:\n        folder_path = os.path.join(current_path, \"script/base_api/\" + server_name)\n        folder_apis = [x for x in base_apis if x.get(\"server_name\") == server_name]\n        if not os.path.exists(folder_path):\n            os.mkdir(folder_path)\n        file_names = list(set([x.get(\"file_name\") for x in folder_apis]))\n        init_file_path = os.path.join(folder_path, \"__init__.py\")\n        import_datas = []\n        for file_name in file_names:\n            file_apis = [x for x in folder_apis if x.get(\"file_name\") == file_name]\n            if file_name == \"class.py\":\n                file_name = \"class_.py\"\n            file_path = os.path.join(folder_path, file_name)\n            create_file(file_path, file_apis)\n            import_datas.append(f\"from script.base_api.{server_name}.{file_name.replace('.py', '')} import *\")\n        create_init_file(init_file_path, import_datas)\n        import_data_out.append(f\"from script.base_api.{server_name} import *\")\n    create_init_file(\"script/base_api/__init__.py\", import_data_out)\n\n\ndef create_file(path, base_apis):\n    with open(path, \"w\", encoding=\"utf-8\") as file:\n        file.write(file_template)\n        for base_api in base_apis:\n            http_method = base_api[\"http_method\"]\n            if http_method.upper() == \"GET\":\n                data = replace_string(get_template, base_api)\n            elif http_method.upper() == \"POST\":\n                data = replace_string(post_template, base_api)\n            elif http_method.upper() == \"HEAD\":\n                data = replace_string(head_template, base_api)\n            elif http_method.upper() == \"PUT\":\n                data = replace_string(put_template, base_api)\n            elif http_method.upper() == \"PATCH\":\n                data = replace_string(patch_template, base_api)\n            elif http_method.upper() == \"DELETE\":\n                data = replace_string(delete_template, base_api)\n            else:\n                data = replace_string(post_template, base_api)\n            file.write(data)\n\n\ndef create_init_file(path, import_datas):\n    with open(path, \"w\", encoding=\"utf-8\") as file:\n        for import_data in import_datas:\n            file.write(import_data)\n            file.write(\"\\r\\n\")\n\n\nget_template = \"\"\"\n<<<<<<< HEAD\ndef ${method_name}(${path_params}params=None, header=None, return_json=True, **kwargs):\n=======\n@allure.step(\"${name}\")\ndef ${method_name}(${path_params}params=None, header=None, return_json=True, default_assert=True, **kwargs):\n>>>>>>> master\n    '''\n    :param: url地址后面的参数\n    :body: 请求体\n    :return_json: 是否返回json格式的响应（默认是）\n    :header: 请求的header\n    :host: 请求的环境\n    :return: 默认json格式的响应， return_json=False返回原始响应\n    '''\n    name = \"${name}\"\n    url = f\"/${url}\"\n    res = RunMethod.run_request(\"GET\", url, params=params, header=header, return_json=return_json, name=name, **kwargs)  \n    return res\n\n\"\"\"\n\npost_template = \"\"\"\n<<<<<<< HEAD\n=======\n@allure.step(\"${name}\")\n>>>>>>> master\ndef ${method_name}(${path_params}params=None, body=None, header=None, return_json=True, **kwargs):\n    '''\n    :param: url地址后面的参数\n    :body: 请求体\n    :return_json: 是否返回json格式的响应（默认是）\n    :header: 请求的header\n    :host: 请求的环境\n    :return: 默认json格式的响应， return_json=False返回原始响应\n    '''\n    name = \"${name}\"\n    url = f\"/${url}\"\n    res = RunMethod.run_request(\"POST\", url, params=params, body=body, header=header, return_json=return_json, name=name, **kwargs) \n    return res\n\n\"\"\"\n\nput_template = \"\"\"\n<<<<<<< HEAD\n=======\n@allure.step(\"${name}\")\n>>>>>>> master\ndef ${method_name}(${path_params}params=None, body=None, header=None, return_json=True, **kwargs):\n    '''\n    :param: url地址后面的参数\n    :body: 请求体\n    :return_json: 是否返回json格式的响应（默认是）\n    :header: 请求的header\n    :host: 请求的环境\n    :return: 默认json格式的响应， return_json=False返回原始响应\n    '''\n    name = \"${name}\"    \n    url = f\"/${url}\"\n    res = RunMethod.run_request(\"PUT\", url, params=params, body=body, header=header, return_json=return_json, name=name, **kwargs)  \n    return res\n\n\"\"\"\n\ndelete_template = \"\"\"\n<<<<<<< HEAD\n=======\n@allure.step(\"${name}\")\n>>>>>>> master\ndef ${method_name}(${path_params}params=None, body=None, header=None, return_json=True, **kwargs):\n    '''\n    :param: url地址后面的参数\n    :body: 请求体\n    :return_json: 是否返回json格式的响应（默认是）\n    :header: 请求的header\n    :host: 请求的环境\n    :return: 默认json格式的响应， return_json=False返回原始响应\n    '''\n    name = \"${name}\"    \n    url = f\"/${url}\"\n    res = RunMethod.run_request(\"DELETE\", url, params=params, body=body, header=header, return_json=return_json, name=name, **kwargs)  \n    return res\n\n\"\"\"\n\npatch_template = \"\"\"\n<<<<<<< HEAD\n=======\n@allure.step(\"${name}\")\n>>>>>>> master\ndef ${method_name}(${path_params}params=None, body=None, header=None, return_json=True, **kwargs):\n    '''\n    :param: url地址后面的参数\n    :body: 请求体\n    :return_json: 是否返回json格式的响应（默认是）\n    :header: 请求的header\n    :host: 请求的环境\n    :return: 默认json格式的响应， return_json=False返回原始响应\n    '''\n    name = \"${name}\"\n    url = f\"/${url}\"\n    res = RunMethod.run_request(\"PATCH\", url, params=params, body=body, header=header, return_json=return_json, name=name, **kwargs)  \n    return res\n\n\"\"\"\n\nhead_template = \"\"\"\n<<<<<<< HEAD\n=======\n@allure.step(\"${name}\")\n>>>>>>> master\ndef ${method_name}(${path_params}params=None, header=None, return_json=True, **kwargs):\n    '''\n    :param: url地址后面的参数\n    :body: 请求体\n    :return_json: 是否返回json格式的响应（默认是）\n    :header: 请求的header\n    :host: 请求的环境\n    :return: 默认json格式的响应， return_json=False返回原始响应\n    '''\n    name = \"${name}\"\n    url = f\"/${url}\"\n    res = RunMethod.run_request(\"HEAD\", url, params=params, header=header, return_json=return_json, name=name, **kwargs) \n    return res\n\n\"\"\"\n\nfile_template = \"\"\"\nfrom common.run_method import RunMethod\n<<<<<<< HEAD\n=======\nimport allure\n>>>>>>> master\n\n\"\"\"\n\nif __name__ == '__main__':\n    # base_apis = get_base_apis()\n    # create_all(base_apis)\n    pass\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/init_base_api.py b/init_base_api.py
+--- a/init_base_api.py	
++++ b/init_base_api.py	
+@@ -98,12 +98,8 @@
+ 
+ 
+ get_template = """
+-<<<<<<< HEAD
+-def ${method_name}(${path_params}params=None, header=None, return_json=True, **kwargs):
+-=======
+ @allure.step("${name}")
+-def ${method_name}(${path_params}params=None, header=None, return_json=True, default_assert=True, **kwargs):
+->>>>>>> master
++def ${method_name}(${path_params}params=None, header=None, return_json=True, **kwargs):
+     '''
+     :param: url地址后面的参数
+     :body: 请求体
+@@ -120,10 +116,7 @@
+ """
+ 
+ post_template = """
+-<<<<<<< HEAD
+-=======
+ @allure.step("${name}")
+->>>>>>> master
+ def ${method_name}(${path_params}params=None, body=None, header=None, return_json=True, **kwargs):
+     '''
+     :param: url地址后面的参数
+@@ -141,10 +134,7 @@
+ """
+ 
+ put_template = """
+-<<<<<<< HEAD
+-=======
+ @allure.step("${name}")
+->>>>>>> master
+ def ${method_name}(${path_params}params=None, body=None, header=None, return_json=True, **kwargs):
+     '''
+     :param: url地址后面的参数
+@@ -162,10 +152,7 @@
+ """
+ 
+ delete_template = """
+-<<<<<<< HEAD
+-=======
+ @allure.step("${name}")
+->>>>>>> master
+ def ${method_name}(${path_params}params=None, body=None, header=None, return_json=True, **kwargs):
+     '''
+     :param: url地址后面的参数
+@@ -183,10 +170,7 @@
+ """
+ 
+ patch_template = """
+-<<<<<<< HEAD
+-=======
+ @allure.step("${name}")
+->>>>>>> master
+ def ${method_name}(${path_params}params=None, body=None, header=None, return_json=True, **kwargs):
+     '''
+     :param: url地址后面的参数
+@@ -204,10 +188,7 @@
+ """
+ 
+ head_template = """
+-<<<<<<< HEAD
+-=======
+ @allure.step("${name}")
+->>>>>>> master
+ def ${method_name}(${path_params}params=None, header=None, return_json=True, **kwargs):
+     '''
+     :param: url地址后面的参数
+@@ -226,10 +207,7 @@
+ 
+ file_template = """
+ from common.run_method import RunMethod
+-<<<<<<< HEAD
+-=======
+ import allure
+->>>>>>> master
+ 
+ """
+ 
+Index: init_new_base_api.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>from common.common_util import replace_string\nimport psycopg2\nimport os\nimport re\n\n\ndef query_sql(database_config, sql_str):\n    # 创建连接对象\n    with psycopg2.connect(**database_config) as conn:\n        with conn.cursor() as cur:\n            cur.execute(sql_str)\n            results = cur.fetchall()\n        print('查询结束')\n    return results\n\n\ndef get_base_apis(db_config):\n    sql = \"\"\"SELECT name, server_name, url, http_method FROM service_user.permission WHERE type = 'URL'\"\"\"\n    query_result = query_sql(db_config, sql)\n    base_apis = [{\n        \"name\": x[0],\n        \"server_name\": x[1].replace(\"-\", \"_\"),\n        \"url\": x[1] + x[2],\n        \"path_params\": get_path_params(x[2]),\n        \"http_method\": x[3],\n        \"method_name\": x[2].replace(\"{\", \"\").replace(\"}\", \"\").replace(\"-\", \"_\").replace(\"/\", \"_\")[1:] + \"_\" + x[3].lower(),\n        \"file_name\": x[2].replace(\"-\", \"_\")[1:].split(\"/\")[0] + \".py\"\n    } for x in query_result]\n    return base_apis\n\n\ndef get_path_params(url: str):\n    path_params = re.findall(r\"{(.*?)}\", url)\n    path_params_str = \"\"\n    for path_param in path_params:\n        path_params_str = path_params_str + f\"{path_param}, \"\n    return path_params_str\n\n\ndef create_all(base_apis: list):\n    server_names = list(set([x.get(\"server_name\") for x in base_apis]))\n    current_path = os.getcwd()\n    import_data_out = []\n    for server_name in server_names:\n        if not os.path.exists(\"base_api_temp\"):\n            os.mkdir(\"base_api_temp\")\n        folder_path = os.path.join(current_path, \"base_api_temp/\" + server_name)\n        folder_apis = [x for x in base_apis if x.get(\"server_name\") == server_name]\n        if not os.path.exists(folder_path):\n            os.mkdir(folder_path)\n        file_names = list(set([x.get(\"file_name\") for x in folder_apis]))\n        init_file_path = os.path.join(folder_path, \"__init__.py\")\n        import_datas = []\n        for file_name in file_names:\n            file_apis = [x for x in folder_apis if x.get(\"file_name\") == file_name]\n            if file_name == \"class.py\":\n                file_name = \"class_.py\"\n            file_path = os.path.join(folder_path, file_name)\n            create_file(file_path, file_apis)\n            import_datas.append(f\"from script.base_api.{server_name}.{file_name.replace('.py', '')} import *\")\n        create_init_file(init_file_path, import_datas)\n        import_data_out.append(f\"from script.base_api.{server_name} import *\")\n    create_init_file(\"script/base_api/__init__.py\", import_data_out)\n\n\ndef get_current_method():\n    from script import base_api\n    current_methods = dir(base_api)\n    methods = [\"get\", \"post\", \"patch\", \"head\", \"delete\", \"put\"]\n    current_methods = [x for x in current_methods if x.split(\"_\")[-1] in methods]\n    return current_methods\n\n\ndef create_file(path, base_apis):\n    with open(path, \"w\", encoding=\"utf-8\") as file:\n        file.write(file_template)\n        for base_api in base_apis:\n            http_method = base_api[\"http_method\"]\n            if http_method.upper() == \"GET\":\n                data = replace_string(get_template, base_api)\n            elif http_method.upper() == \"POST\":\n                data = replace_string(post_template, base_api)\n            elif http_method.upper() == \"HEAD\":\n                data = replace_string(head_template, base_api)\n            elif http_method.upper() == \"PUT\":\n                data = replace_string(put_template, base_api)\n            elif http_method.upper() == \"PATCH\":\n                data = replace_string(patch_template, base_api)\n            elif http_method.upper() == \"DELETE\":\n                data = replace_string(delete_template, base_api)\n            else:\n                data = replace_string(post_template, base_api)\n            file.write(data)\n\n\ndef create_init_file(path, import_datas):\n    with open(path, \"w\", encoding=\"utf-8\") as file:\n        for import_data in import_datas:\n            file.write(import_data)\n            file.write(\"\\r\\n\")\n\n\nget_template = \"\"\"\n<<<<<<< HEAD\n=======\n@allure.step(\"${name}\")\n>>>>>>> master\ndef ${method_name}(${path_params}params=None, header=None, return_json=True, **kwargs):\n    '''\n    :param: url地址后面的参数\n    :body: 请求体\n    :return_json: 是否返回json格式的响应（默认是）\n    :header: 请求的header\n    :host: 请求的环境\n    :return: 默认json格式的响应， return_json=False返回原始响应\n    '''\n    name = \"${name}\"\n    url = f\"/${url}\"\n    res = RunMethod.run_request(\"GET\", url, params=params, header=header, return_json=return_json, name=name, **kwargs)  \n    return res\n\n\"\"\"\n\npost_template = \"\"\"\n<<<<<<< HEAD\n=======\n@allure.step(\"${name}\")\n>>>>>>> master\ndef ${method_name}(${path_params}params=None, body=None, header=None, return_json=True, **kwargs):\n    '''\n    :param: url地址后面的参数\n    :body: 请求体\n    :return_json: 是否返回json格式的响应（默认是）\n    :header: 请求的header\n    :host: 请求的环境\n    :return: 默认json格式的响应， return_json=False返回原始响应\n    '''\n    name = \"${name}\"\n    url = f\"/${url}\"\n    res = RunMethod.run_request(\"POST\", url, params=params, body=body, header=header, return_json=return_json, name=name, **kwargs) \n    return res\n\n\"\"\"\n\nput_template = \"\"\"\n<<<<<<< HEAD\n=======\n@allure.step(\"${name}\")\n>>>>>>> master\ndef ${method_name}(${path_params}params=None, body=None, header=None, return_json=True, **kwargs):\n    '''\n    :param: url地址后面的参数\n    :body: 请求体\n    :return_json: 是否返回json格式的响应（默认是）\n    :header: 请求的header\n    :host: 请求的环境\n    :return: 默认json格式的响应， return_json=False返回原始响应\n    '''\n    name = \"${name}\"    \n    url = f\"/${url}\"\n    res = RunMethod.run_request(\"PUT\", url, params=params, body=body, header=header, return_json=return_json, name=name, **kwargs)  \n    return res\n\n\"\"\"\n\ndelete_template = \"\"\"\n<<<<<<< HEAD\n=======\n@allure.step(\"${name}\")\n>>>>>>> master\ndef ${method_name}(${path_params}params=None, body=None, header=None, return_json=True, **kwargs):\n    '''\n    :param: url地址后面的参数\n    :body: 请求体\n    :return_json: 是否返回json格式的响应（默认是）\n    :header: 请求的header\n    :host: 请求的环境\n    :return: 默认json格式的响应， return_json=False返回原始响应\n    '''\n    name = \"${name}\"    \n    url = f\"/${url}\"\n    res = RunMethod.run_request(\"DELETE\", url, params=params, body=body, header=header, return_json=return_json, name=name, **kwargs)  \n    return res\n\n\"\"\"\n\npatch_template = \"\"\"\n<<<<<<< HEAD\n=======\n@allure.step(\"${name}\")\n>>>>>>> master\ndef ${method_name}(${path_params}params=None, body=None, header=None, return_json=True, **kwargs):\n    '''\n    :param: url地址后面的参数\n    :body: 请求体\n    :return_json: 是否返回json格式的响应（默认是）\n    :header: 请求的header\n    :host: 请求的环境\n    :return: 默认json格式的响应， return_json=False返回原始响应\n    '''\n    name = \"${name}\"\n    url = f\"/${url}\"\n    res = RunMethod.run_request(\"PATCH\", url, params=params, body=body, header=header, return_json=return_json, name=name, **kwargs)  \n    return res\n\n\"\"\"\n\nhead_template = \"\"\"\n<<<<<<< HEAD\n=======\n@allure.step(\"${name}\")\n>>>>>>> master\ndef ${method_name}(${path_params}params=None, header=None, return_json=True, **kwargs):\n    '''\n    :param: url地址后面的参数\n    :body: 请求体\n    :return_json: 是否返回json格式的响应（默认是）\n    :header: 请求的header\n    :host: 请求的环境\n    :return: 默认json格式的响应， return_json=False返回原始响应\n    '''\n    name = \"${name}\"\n    url = f\"/${url}\"\n    res = RunMethod.run_request(\"HEAD\", url, params=params, header=header, return_json=return_json, name=name, **kwargs) \n    return res\n\n\"\"\"\n\nfile_template = \"\"\"\nfrom common.run_method import RunMethod\n<<<<<<< HEAD\n=======\nimport allure\n>>>>>>> master\n\n\"\"\"\n\nif __name__ == '__main__':\n    db_config = {\n        'database': 'edu-admin',\n        \"user\": 'read_user',\n        \"password\": 'c5JJUqmtTeaSaOTN2gs7',\n        \"host\": '132.232.15.12',\n        \"port\": 5432\n    }\n    base_apis = get_base_apis(db_config)\n    base_apis = [x for x in base_apis if x.get(\"method_name\") not in get_current_method()]\n    print(base_apis)\n    create_all(base_apis)\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/init_new_base_api.py b/init_new_base_api.py
+--- a/init_new_base_api.py	
++++ b/init_new_base_api.py	
+@@ -101,10 +101,7 @@
+ 
+ 
+ get_template = """
+-<<<<<<< HEAD
+-=======
+ @allure.step("${name}")
+->>>>>>> master
+ def ${method_name}(${path_params}params=None, header=None, return_json=True, **kwargs):
+     '''
+     :param: url地址后面的参数
+@@ -122,10 +119,7 @@
+ """
+ 
+ post_template = """
+-<<<<<<< HEAD
+-=======
+ @allure.step("${name}")
+->>>>>>> master
+ def ${method_name}(${path_params}params=None, body=None, header=None, return_json=True, **kwargs):
+     '''
+     :param: url地址后面的参数
+@@ -143,10 +137,7 @@
+ """
+ 
+ put_template = """
+-<<<<<<< HEAD
+-=======
+ @allure.step("${name}")
+->>>>>>> master
+ def ${method_name}(${path_params}params=None, body=None, header=None, return_json=True, **kwargs):
+     '''
+     :param: url地址后面的参数
+@@ -164,10 +155,7 @@
+ """
+ 
+ delete_template = """
+-<<<<<<< HEAD
+-=======
+ @allure.step("${name}")
+->>>>>>> master
+ def ${method_name}(${path_params}params=None, body=None, header=None, return_json=True, **kwargs):
+     '''
+     :param: url地址后面的参数
+@@ -185,10 +173,7 @@
+ """
+ 
+ patch_template = """
+-<<<<<<< HEAD
+-=======
+ @allure.step("${name}")
+->>>>>>> master
+ def ${method_name}(${path_params}params=None, body=None, header=None, return_json=True, **kwargs):
+     '''
+     :param: url地址后面的参数
+@@ -206,10 +191,7 @@
+ """
+ 
+ head_template = """
+-<<<<<<< HEAD
+-=======
+ @allure.step("${name}")
+->>>>>>> master
+ def ${method_name}(${path_params}params=None, header=None, return_json=True, **kwargs):
+     '''
+     :param: url地址后面的参数
+@@ -228,10 +210,7 @@
+ 
+ file_template = """
+ from common.run_method import RunMethod
+-<<<<<<< HEAD
+-=======
+ import allure
+->>>>>>> master
+ 
+ """
+ 

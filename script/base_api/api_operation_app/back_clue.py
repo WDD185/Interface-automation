@@ -68,7 +68,7 @@ def back_clue_params_query_last_clue_employees_post(params=None, body=None, head
 
 
 @allure.step("JkyAPP/查询返报线索")
-def back_clue_query_by_id_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def back_clue_query_by_id_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -84,7 +84,7 @@ def back_clue_query_by_id_get(params=None, header=None, return_json=True, defaul
 
 
 @allure.step("JkyAPP/查询默认校区")
-def back_clue_queryDefaultAreaByEmployeeId_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def back_clue_queryDefaultAreaByEmployeeId_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

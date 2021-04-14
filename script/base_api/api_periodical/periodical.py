@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("管理内刊/查阅端/干部内刊列表")
-def periodical_listPeriodicals_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def periodical_listPeriodicals_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -20,7 +20,7 @@ def periodical_listPeriodicals_get(params=None, header=None, return_json=True, d
 
 
 @allure.step("管理内刊/查阅端/干部内刊内容")
-def periodical_listPeriodicalContents_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def periodical_listPeriodicalContents_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -36,7 +36,7 @@ def periodical_listPeriodicalContents_get(params=None, header=None, return_json=
 
 
 @allure.step("管理内刊/查阅端/干部内刊内容免鉴权查看")
-def periodical_listPeriodicalContentsNoAuth_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def periodical_listPeriodicalContentsNoAuth_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -52,7 +52,7 @@ def periodical_listPeriodicalContentsNoAuth_get(params=None, header=None, return
 
 
 @allure.step("管理内刊/查阅端/干部内刊书架")
-def periodical_listPeriodicalsOnReadNum_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def periodical_listPeriodicalsOnReadNum_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

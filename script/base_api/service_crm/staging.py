@@ -68,7 +68,7 @@ def staging_geek_data_schools_person_time_count_post(params=None, body=None, hea
 
 
 @allure.step("极运营/CRM/班主任/单个区域-招生人次区域")
-def staging_geek_get_areas_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def staging_geek_get_areas_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

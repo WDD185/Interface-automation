@@ -52,7 +52,7 @@ def agency_brand_update_post(params=None, body=None, header=None, return_json=Tr
 
 
 @allure.step("极运营/情报中心/连锁品牌启停")
-def agency_brand_switch_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def agency_brand_switch_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -68,7 +68,7 @@ def agency_brand_switch_get(params=None, header=None, return_json=True, default_
 
 
 @allure.step("极运营/情报中心/连锁品牌字典")
-def agency_brand_dictList_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def agency_brand_dictList_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -148,7 +148,7 @@ def agency_update_post(params=None, body=None, header=None, return_json=True, **
 
 
 @allure.step("极运营/情报中心/教培机构详情")
-def agency_detail_id_get(id, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def agency_detail_id_get(id, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -244,7 +244,7 @@ def agency_school_update_post(params=None, body=None, header=None, return_json=T
 
 
 @allure.step("极运营/情报中心/教培机构校区详情")
-def agency_school_detail_id_get(id, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def agency_school_detail_id_get(id, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

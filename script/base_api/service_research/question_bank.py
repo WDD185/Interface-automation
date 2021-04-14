@@ -20,7 +20,7 @@ def question_bank_doc_import_post(params=None, body=None, header=None, return_js
 
 
 @allure.step("教研/题库/查询题目操作日志")
-def question_bank_question_operation_logs_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def question_bank_question_operation_logs_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -52,7 +52,7 @@ def question_bank_query_condition_post(params=None, body=None, header=None, retu
 
 
 @allure.step("教研/题库/获取行政区")
-def question_bank_administrative_region_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def question_bank_administrative_region_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -68,7 +68,7 @@ def question_bank_administrative_region_get(params=None, header=None, return_jso
 
 
 @allure.step("教研/题库/知识树查询")
-def question_bank_knowledge_tree_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def question_bank_knowledge_tree_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -84,7 +84,7 @@ def question_bank_knowledge_tree_get(params=None, header=None, return_json=True,
 
 
 @allure.step("教研/题库/知识树/知识点查询")
-def question_bank_knowledge_tree_points_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def question_bank_knowledge_tree_points_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -148,7 +148,7 @@ def question_bank_questions_post(params=None, body=None, header=None, return_jso
 
 
 @allure.step("教研/题库/题目详情查询")
-def question_bank_question_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def question_bank_question_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

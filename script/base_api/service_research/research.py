@@ -20,7 +20,7 @@ def research_home_textbook_updateCourseware_post(params=None, body=None, header=
 
 
 @allure.step("/教研/课件库/绑定教材查询接口")
-def research_home_update_getVersionNameByTeacherId_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def research_home_update_getVersionNameByTeacherId_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -84,7 +84,7 @@ def research_home_update_getAllVersion_post(params=None, body=None, header=None,
 
 
 @allure.step("/教研/课件库/教师绑定教材查询三期")
-def research_home_update_getVersionNameByTeacherIdToHomeWork_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def research_home_update_getVersionNameByTeacherIdToHomeWork_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -116,7 +116,7 @@ def research_home_textbook_sortLecture_post(params=None, body=None, header=None,
 
 
 @allure.step("/教研/课件库/讲次index导入")
-def research_home_insertIndex_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def research_home_insertIndex_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -324,7 +324,7 @@ def research_home_textbook_textbookVersionDownload_post(params=None, body=None, 
 
 
 @allure.step("教研/课件库/讲次查询")
-def research_home_textbook_courseContent_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def research_home_textbook_courseContent_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -340,7 +340,7 @@ def research_home_textbook_courseContent_get(params=None, header=None, return_js
 
 
 @allure.step("教研/课件库/讲次新增")
-def research_home_textbook_courseContentAdd_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def research_home_textbook_courseContentAdd_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -388,7 +388,7 @@ def research_home_textbook_sortCourseWare_post(params=None, body=None, header=No
 
 
 @allure.step("教研/课件库/讲次和课件")
-def research_home_textbook_getCoursewareList_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def research_home_textbook_getCoursewareList_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -404,7 +404,7 @@ def research_home_textbook_getCoursewareList_get(params=None, header=None, retur
 
 
 @allure.step("教研/课件库/讲次/课件查询")
-def research_home_textbook_courseware_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def research_home_textbook_courseware_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -500,7 +500,7 @@ def research_home_textbook_courseContent_post(params=None, body=None, header=Non
 
 
 @allure.step("教研/课件库/教材版本查询")
-def research_home_textbookVersion_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def research_home_textbookVersion_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -516,7 +516,7 @@ def research_home_textbookVersion_get(params=None, header=None, return_json=True
 
 
 @allure.step("教研/设置/课堂表现状态改变")
-def research_setting_classPerformance_status_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def research_setting_classPerformance_status_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -564,7 +564,7 @@ def research_setting_textbookVersion_textbookVersionId_grades_put(textbookVersio
 
 
 @allure.step("教研/设置/教材版本设置/目录查询")
-def research_setting_textbookVersion_params_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def research_setting_textbookVersion_params_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -676,7 +676,7 @@ def research_setting_saveOrUpdatePerformance_post(params=None, body=None, header
 
 
 @allure.step("教研/课件库/教材版本/教材查询")
-def research_home_textbook_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def research_home_textbook_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -708,7 +708,7 @@ def research_home_textbook_post(params=None, body=None, header=None, return_json
 
 
 @allure.step("极师通/奖励/课堂表现查询")
-def research_setting_queryClassPerformanceByGrade_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def research_setting_queryClassPerformanceByGrade_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -724,7 +724,7 @@ def research_setting_queryClassPerformanceByGrade_get(params=None, header=None, 
 
 
 @allure.step("教研/设置/课堂表现获取年极和科目列表")
-def research_setting_queryGradesAndSubject_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def research_setting_queryGradesAndSubject_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -740,7 +740,7 @@ def research_setting_queryGradesAndSubject_get(params=None, header=None, return_
 
 
 @allure.step("教研/课件库/目录查询")
-def research_home_catalog_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def research_home_catalog_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -756,7 +756,7 @@ def research_home_catalog_get(params=None, header=None, return_json=True, defaul
 
 
 @allure.step("教研/设置/教材版本设置/教材版本查询")
-def research_setting_textbookVersion_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def research_setting_textbookVersion_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -788,7 +788,7 @@ def research_setting_textbookVersion_delete(params=None, body=None, header=None,
 
 
 @allure.step("教研/设置/课堂表现查询")
-def research_setting_queryClassPerformance_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def research_setting_queryClassPerformance_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -852,7 +852,7 @@ def research_home_query_couresToTextbooks_post(params=None, body=None, header=No
 
 
 @allure.step("极运营/课程/课程下区域校绑定详情")
-def research_home_course_getCourseAreaMessage_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def research_home_course_getCourseAreaMessage_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -868,7 +868,7 @@ def research_home_course_getCourseAreaMessage_get(params=None, header=None, retu
 
 
 @allure.step("极运营/课程/清除课程绑定教材")
-def research_home_course_clearBindTextbooks_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def research_home_course_clearBindTextbooks_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -884,7 +884,7 @@ def research_home_course_clearBindTextbooks_get(params=None, header=None, return
 
 
 @allure.step("极师通/备课/讲次各类文件的总数及已读数")
-def research_home_lectureFileReadStat_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def research_home_lectureFileReadStat_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -964,7 +964,7 @@ def research_home_textbook_bigFile_uploadVideoBindLecture_post(params=None, body
 
 
 @allure.step("极教研/H5课件/删除")
-def research_h5courseware_delH5Courseware_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def research_h5courseware_delH5Courseware_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -1028,7 +1028,7 @@ def research_h5courseware_listH5Courseware_post(params=None, body=None, header=N
 
 
 @allure.step("极教研/H5课件/查询回显")
-def research_h5courseware_getH5Courseware_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def research_h5courseware_getH5Courseware_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -1044,7 +1044,7 @@ def research_h5courseware_getH5Courseware_get(params=None, header=None, return_j
 
 
 @allure.step("极教研/H5素材/删除")
-def research_h5courseware_delH5Material_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def research_h5courseware_delH5Material_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

@@ -36,7 +36,7 @@ def bill_deal_refund_mistakes_post(params=None, body=None, header=None, return_j
 
 
 @allure.step("退款异常导出接口")
-def bill_bill_error_export_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def bill_bill_error_export_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

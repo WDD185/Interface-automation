@@ -20,7 +20,7 @@ def order_saveOrder_post(params=None, body=None, header=None, return_json=True, 
 
 
 @allure.step("极运营/客户管理/报名/订单/查询单个订单")
-def order_queryById_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def order_queryById_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -36,7 +36,7 @@ def order_queryById_get(params=None, header=None, return_json=True, default_asse
 
 
 @allure.step("极运营/前台业务/订单管理/订单/二维码查询订单")
-def order_queryQrOrder_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def order_queryQrOrder_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -68,7 +68,7 @@ def order_query_post(params=None, body=None, header=None, return_json=True, **kw
 
 
 @allure.step("极运营/前台业务/订单管理/订单/查询订单详情")
-def order_queryOrderDetail_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def order_queryOrderDetail_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -132,7 +132,7 @@ def order_modifyRemark_post(params=None, body=None, header=None, return_json=Tru
 
 
 @allure.step("极运营/前台业务/订单管理/订单作废")
-def order_scrapOrder_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def order_scrapOrder_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -164,7 +164,7 @@ def order_export_post(params=None, body=None, header=None, return_json=True, **k
 
 
 @allure.step("极运营/客户管理/订单管理/订单/查询订单状态")
-def order_queryStatus_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def order_queryStatus_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

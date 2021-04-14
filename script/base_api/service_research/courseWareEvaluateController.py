@@ -20,7 +20,7 @@ def courseWareEvaluateController_addEvaluate_post(params=None, body=None, header
 
 
 @allure.step("备课评价/根据课件查询评价")
-def courseWareEvaluateController_queryEvaluateList_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def courseWareEvaluateController_queryEvaluateList_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -52,7 +52,7 @@ def courseWareEvaluateController_queryEvaluateByParam_post(params=None, body=Non
 
 
 @allure.step("备课评价/查询评价详情")
-def courseWareEvaluateController_queryEvaluateById_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def courseWareEvaluateController_queryEvaluateById_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -68,7 +68,7 @@ def courseWareEvaluateController_queryEvaluateById_get(params=None, header=None,
 
 
 @allure.step("备课评价/删除评价")
-def courseWareEvaluateController_deleteEvaluate_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def courseWareEvaluateController_deleteEvaluate_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -84,7 +84,7 @@ def courseWareEvaluateController_deleteEvaluate_get(params=None, header=None, re
 
 
 @allure.step("备课评价/查询评价列表")
-def courseWareEvaluateController_queryEvaluateListById_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def courseWareEvaluateController_queryEvaluateListById_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

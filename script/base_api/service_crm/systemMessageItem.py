@@ -52,7 +52,7 @@ def systemMessageItem_markRead_post(params=None, body=None, header=None, return_
 
 
 @allure.step("设置/消息/我的消息/系统消息/用户接收")
-def systemMessageItem_get_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def systemMessageItem_get_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

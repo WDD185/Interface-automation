@@ -148,7 +148,7 @@ def questionMaterial_addOrModTeacherMaterialDepartment_post(params=None, body=No
 
 
 @allure.step("极题库/查询老师区域归属")
-def questionMaterial_getTeacherMaterialDepartment_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def questionMaterial_getTeacherMaterialDepartment_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -164,7 +164,7 @@ def questionMaterial_getTeacherMaterialDepartment_get(params=None, header=None, 
 
 
 @allure.step("极题库/上传人历史地址")
-def questionMaterial_getHistoryAddress_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def questionMaterial_getHistoryAddress_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

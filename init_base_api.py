@@ -99,7 +99,7 @@ def create_init_file(path, import_datas):
 
 get_template = """
 @allure.step("${name}")
-def ${method_name}(${path_params}params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def ${method_name}(${path_params}params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -212,6 +212,6 @@ import allure
 """
 
 if __name__ == '__main__':
-    # base_apis = get_base_apis()
-    # create_all(base_apis)
+    base_apis = get_base_apis()
+    create_all(base_apis)
     pass

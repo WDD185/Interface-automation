@@ -20,7 +20,7 @@ def teaching_plans_share_query_post(params=None, body=None, header=None, return_
 
 
 @allure.step("极教研/教案详情/讲次教案列表")
-def teaching_plans_lecture_query_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def teaching_plans_lecture_query_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -52,7 +52,7 @@ def teaching_plans_query_post(params=None, body=None, header=None, return_json=T
 
 
 @allure.step("极师通/我的教案/教案提交历史")
-def teaching_plans_history_query_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def teaching_plans_history_query_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("极客数学帮(家长APP)/用户行课/获取某个学生所有班级的出席情况")
-def performances_details_studentId_student_classes_get(studentId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def performances_details_studentId_student_classes_get(studentId, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

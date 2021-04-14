@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("极题库/章节树/章节树查询")
-def chapter_tree_query_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def chapter_tree_query_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -20,7 +20,7 @@ def chapter_tree_query_get(params=None, header=None, return_json=True, default_a
 
 
 @allure.step("极题库/章节树/教材版本和学期查询")
-def chapter_tree_version_semester_query_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def chapter_tree_version_semester_query_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

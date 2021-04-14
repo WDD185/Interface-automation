@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("小程序/转介绍/用户转介绍金额")
-def applet_finance_introduce_user_amount_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def applet_finance_introduce_user_amount_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

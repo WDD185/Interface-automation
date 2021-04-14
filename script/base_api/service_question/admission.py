@@ -36,7 +36,7 @@ def admission_list_post(params=None, body=None, header=None, return_json=True, *
 
 
 @allure.step("在线诊断/校区、区域查询接口")
-def admission_department_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def admission_department_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -132,7 +132,7 @@ def admission_update_post(params=None, body=None, header=None, return_json=True,
 
 
 @allure.step("在线诊断/诊断详情接口")
-def admission_info_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def admission_info_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -148,7 +148,7 @@ def admission_info_get(params=None, header=None, return_json=True, default_asser
 
 
 @allure.step("在线诊断/诊断操作日志列表接口")
-def admission_logs_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def admission_logs_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

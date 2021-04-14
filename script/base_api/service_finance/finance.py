@@ -228,7 +228,7 @@ def finance_accounts_query_post(params=None, body=None, header=None, return_json
 
 
 @allure.step("极运营/财务管理/账户设置/编辑/查询账户")
-def finance_accounts_queryById_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def finance_accounts_queryById_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -340,7 +340,7 @@ def finance_payin_add_post(params=None, body=None, header=None, return_json=True
 
 
 @allure.step("极运营/前台业务/缴款/缴款信息查询")
-def finance_payin_query_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def finance_payin_query_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -372,7 +372,7 @@ def finance_school_accounts_count_post(params=None, body=None, header=None, retu
 
 
 @allure.step("极运营/前台业务/缴款/撤销缴款")
-def finance_payin_delete_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def finance_payin_delete_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -436,7 +436,7 @@ def finance_payin_record_post(params=None, body=None, header=None, return_json=T
 
 
 @allure.step("极运营/财务管理/退费/查询退费原因修改记录")
-def finance_refundReasonLog_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def finance_refundReasonLog_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -468,7 +468,7 @@ def finance_edit_refundReason_post(params=None, body=None, header=None, return_j
 
 
 @allure.step("分账逻辑/公司设置/根据公司id查询校区")
-def finance_geekCompAccount_getSchoolAreaByCompId_compId_get(compId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def finance_geekCompAccount_getSchoolAreaByCompId_compId_get(compId, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -484,7 +484,7 @@ def finance_geekCompAccount_getSchoolAreaByCompId_compId_get(compId, params=None
 
 
 @allure.step("分账逻辑/公司设置/查询所有公司及所在区域")
-def finance_geekCompAccount_queryAllCompany_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def finance_geekCompAccount_queryAllCompany_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -500,7 +500,7 @@ def finance_geekCompAccount_queryAllCompany_get(params=None, header=None, return
 
 
 @allure.step("分账逻辑/公司设置/根据ID查询公司")
-def finance_geekCompAccount_queryGeekCompById_id_get(id, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def finance_geekCompAccount_queryGeekCompById_id_get(id, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -596,7 +596,7 @@ def finance_introduce_rule_add_post(params=None, body=None, header=None, return_
 
 
 @allure.step("转介绍金额设置开关")
-def finance_introduce_rule_switch_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def finance_introduce_rule_switch_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -804,7 +804,7 @@ def finance_introduce_record_deal_receive_list_collection_post(params=None, body
 
 
 @allure.step("转介绍历史记录处理接口")
-def finance_introduce_record_deal_history_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def finance_introduce_record_deal_history_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

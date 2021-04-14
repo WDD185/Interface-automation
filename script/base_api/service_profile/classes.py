@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("极师通/班级推送/查看班级推送情况")
-def classes_classId_purchases_anotherClassId_get(classId, anotherClassId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def classes_classId_purchases_anotherClassId_get(classId, anotherClassId, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -36,7 +36,7 @@ def classes_teacher_post(params=None, body=None, header=None, return_json=True, 
 
 
 @allure.step("极客数学帮(家长APP)/用户行课班帖/获取学生未读班贴的数量")
-def classes_unattended_student_studentId_get(studentId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def classes_unattended_student_studentId_get(studentId, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -52,7 +52,7 @@ def classes_unattended_student_studentId_get(studentId, params=None, header=None
 
 
 @allure.step("极师通/花名册/获取调出课次")
-def classes_classId_schedules_get(classId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def classes_classId_schedules_get(classId, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -68,7 +68,7 @@ def classes_classId_schedules_get(classId, params=None, header=None, return_json
 
 
 @allure.step("通用/班级/查询班级座次")
-def classes_classId_seats_get(classId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def classes_classId_seats_get(classId, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -100,7 +100,7 @@ def classes_classId_seats_patch(classId, params=None, body=None, header=None, re
 
 
 @allure.step("极客数学帮(家长APP)/用户行课/获取某个学生未完成课程的详细列表")
-def classes_studentId_student_unfinished_get(studentId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def classes_studentId_student_unfinished_get(studentId, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -116,7 +116,7 @@ def classes_studentId_student_unfinished_get(studentId, params=None, header=None
 
 
 @allure.step("极客数学帮(家长APP)/用户行课/获取某个学生未完成课程的班级行课进度情况")
-def classes_progress_studentId_student_get(studentId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def classes_progress_studentId_student_get(studentId, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -132,7 +132,7 @@ def classes_progress_studentId_student_get(studentId, params=None, header=None, 
 
 
 @allure.step("极师通/班级推送/查询班级")
-def classes_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def classes_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -148,7 +148,7 @@ def classes_get(params=None, header=None, return_json=True, default_assert=True,
 
 
 @allure.step("极师通/班级推送/查询可推送班级")
-def classes_canPush_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def classes_canPush_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -164,7 +164,7 @@ def classes_canPush_get(params=None, header=None, return_json=True, default_asse
 
 
 @allure.step("极客数学帮(家长APP)/用户行课班帖/获取学生已经报的班级")
-def classes_reading_student_studentId_get(studentId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def classes_reading_student_studentId_get(studentId, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

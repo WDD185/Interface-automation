@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("员工手册/查看钉钉用户信息")
-def ding_user_getUserInfo_v2_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def ding_user_getUserInfo_v2_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

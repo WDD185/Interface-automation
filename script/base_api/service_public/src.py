@@ -20,7 +20,7 @@ def src_updateSrcInfo_post(params=None, body=None, header=None, return_json=True
 
 
 @allure.step("通用/资源/获取资源信息")
-def src_getSrcInfo_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def src_getSrcInfo_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

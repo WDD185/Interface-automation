@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("教研/在线作业/极师通APP获取班级列表")
-def online_homework_getOnlineHomeworkClasses_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def online_homework_getOnlineHomeworkClasses_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -20,7 +20,7 @@ def online_homework_getOnlineHomeworkClasses_get(params=None, header=None, retur
 
 
 @allure.step("教研/在线作业/极师通APP通过班级id获取课次信息")
-def online_homework_getClassScheduleByClassId_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def online_homework_getClassScheduleByClassId_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -36,7 +36,7 @@ def online_homework_getClassScheduleByClassId_get(params=None, header=None, retu
 
 
 @allure.step("教研/在线作业/极师通APP根据班级id，课次id获取学生名单")
-def online_homework_getStudentInfoByClassIdAndClassScheduleId_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def online_homework_getStudentInfoByClassIdAndClassScheduleId_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -84,7 +84,7 @@ def online_homework_confirmOnlineHomeworkImageInfo_post(params=None, body=None, 
 
 
 @allure.step("题库/在线作业/获取老师对应班级待批阅作业的学生列表")
-def online_homework_getUnCorrectHomeworkStudentInfo_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def online_homework_getUnCorrectHomeworkStudentInfo_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -148,7 +148,7 @@ def online_homework_modHomeworkStudentRecord_post(params=None, body=None, header
 
 
 @allure.step("题库/在线作业/获取班级课次对应的作业页数")
-def online_homework_getHomeworkStudentUploadPageNumber_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def online_homework_getHomeworkStudentUploadPageNumber_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

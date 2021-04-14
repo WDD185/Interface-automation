@@ -36,7 +36,7 @@ def app_upload_homework_file_post(params=None, body=None, header=None, return_js
 
 
 @allure.step("通用/资源/App根据视频主键查询视频真实地址")
-def app_src_getSrcInfo_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_src_getSrcInfo_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -68,7 +68,7 @@ def app_file_avatar_post(params=None, body=None, header=None, return_json=True, 
 
 
 @allure.step("极客数学帮(家长APP)/消息通知/通过类别获取消息")
-def app_notice_studentId_student_noticeTypeId_noticeType_get(studentId, noticeTypeId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_notice_studentId_student_noticeTypeId_noticeType_get(studentId, noticeTypeId, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -84,7 +84,7 @@ def app_notice_studentId_student_noticeTypeId_noticeType_get(studentId, noticeTy
 
 
 @allure.step("极客数学帮(家长APP)/消息通知/查询接收者某类消息")
-def app_notice_belongId_belong_studentId_student_get(belongId, studentId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_notice_belongId_belong_studentId_student_get(belongId, studentId, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -116,7 +116,7 @@ def app_file_base64_post(params=None, body=None, header=None, return_json=True, 
 
 
 @allure.step("极客数学帮(家长APP)/消息通知/查询接收者消息类别")
-def app_notice_belong_studentId_student_get(studentId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_notice_belong_studentId_student_get(studentId, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -180,7 +180,7 @@ def app_getTimestamp_post(params=None, body=None, header=None, return_json=True,
 
 
 @allure.step("极师通/app/系统消息")
-def app_notice_change_status_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_notice_change_status_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -196,7 +196,7 @@ def app_notice_change_status_get(params=None, header=None, return_json=True, def
 
 
 @allure.step("极师通/app/未读条数")
-def app_notice_unReadNum_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_notice_unReadNum_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

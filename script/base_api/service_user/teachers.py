@@ -36,7 +36,7 @@ def teachers_teacherId_post(teacherId, params=None, body=None, header=None, retu
 
 
 @allure.step("极运营/人事管理/教师授权/查询老师")
-def teachers_queries_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def teachers_queries_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

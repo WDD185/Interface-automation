@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("极教研/刷题详情/讲次刷题列表")
-def teaching_exercises_lecture_query_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def teaching_exercises_lecture_query_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -36,7 +36,7 @@ def teaching_exercises_query_post(params=None, body=None, header=None, return_js
 
 
 @allure.step("极师通/我的刷题/刷题提交历史")
-def teaching_exercises_history_query_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def teaching_exercises_history_query_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

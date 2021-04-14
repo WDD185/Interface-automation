@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("极运营/情报中心/常量")
-def enum_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def enum_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

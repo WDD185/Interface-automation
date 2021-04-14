@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("极教研web/课程预习/查询课程预习")
-def coursePreview_getCoursePreview_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def coursePreview_getCoursePreview_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -36,7 +36,7 @@ def coursePreview_saveCoursePreview_post(params=None, body=None, header=None, re
 
 
 @allure.step("极教研web/课程预习/获取课件的资料列表")
-def coursePreview_getCoursePreviewData_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def coursePreview_getCoursePreviewData_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

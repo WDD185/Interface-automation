@@ -20,7 +20,7 @@ def student_class_getAllClass_post(params=None, body=None, header=None, return_j
 
 
 @allure.step("极客数学帮(家长APP)/用户管理/获取学生基本信息")
-def student_studentId_basicInfo_get(studentId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def student_studentId_basicInfo_get(studentId, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -52,7 +52,7 @@ def student_studentId_attribute_put(studentId, params=None, body=None, header=No
 
 
 @allure.step("极运营/前台业务/学生信息/查询学生明细")
-def student_class_detail_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def student_class_detail_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -84,7 +84,7 @@ def student_studentId_transferringClass_post(studentId, params=None, body=None, 
 
 
 @allure.step("极客数学帮(家长APP)/用户管理/获取学生电子账户")
-def student_studentId_electronicAccount_get(studentId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def student_studentId_electronicAccount_get(studentId, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -100,7 +100,7 @@ def student_studentId_electronicAccount_get(studentId, params=None, header=None,
 
 
 @allure.step("极客数学帮(家长APP)/用户管理/获取学生的续报类型")
-def student_studentId_signUpType_get(studentId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def student_studentId_signUpType_get(studentId, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -148,7 +148,7 @@ def student_reading_items_post(params=None, body=None, header=None, return_json=
 
 
 @allure.step("极客数学帮(家长APP)/用户行课/判断学生将要报名的课程和已经报名的课程是否有排课冲突")
-def student_studentId_class_classId_Conflict_get(studentId, classId, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def student_studentId_class_classId_Conflict_get(studentId, classId, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -196,7 +196,7 @@ def student_all_items_post(params=None, body=None, header=None, return_json=True
 
 
 @allure.step("极运营/班主任机制/学员管理/学生内页/查询学生考试记录--成长轨迹")
-def student_administration_exam_student_id_get(id, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def student_administration_exam_student_id_get(id, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -212,7 +212,7 @@ def student_administration_exam_student_id_get(id, params=None, header=None, ret
 
 
 @allure.step("极运营/班主任机制/学员管理/学生内页/根据学生ID查询学生页标签信息")
-def student_administration_labels_student_id_get(id, params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def student_administration_labels_student_id_get(id, params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

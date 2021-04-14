@@ -68,7 +68,7 @@ def app_order_saveOrder_post(params=None, body=None, header=None, return_json=Tr
 
 
 @allure.step("极客数学帮(家长APP)/我的/订单")
-def app_order_queryOrderGeneralForApp_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_order_queryOrderGeneralForApp_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -84,7 +84,7 @@ def app_order_queryOrderGeneralForApp_get(params=None, header=None, return_json=
 
 
 @allure.step("极客数学帮(家长APP)/我的/订单/查询订单详情")
-def app_order_queryOrderDetailForApp_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_order_queryOrderDetailForApp_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -100,7 +100,7 @@ def app_order_queryOrderDetailForApp_get(params=None, header=None, return_json=T
 
 
 @allure.step("极客数学帮(家长APP)/我的/优惠券/根据优惠券查询学生可报名班级")
-def app_coupon_couponForAppClasses_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_coupon_couponForAppClasses_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -132,7 +132,7 @@ def app_order_preValidOrderCondition_post(params=None, body=None, header=None, r
 
 
 @allure.step("极客数学帮(家长APP)/订单/查询订单状态")
-def app_order_queryStatus_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_order_queryStatus_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -180,7 +180,7 @@ def app_order_studentHasOrder_post(params=None, body=None, header=None, return_j
 
 
 @allure.step("极客数学帮(家长APP)/订单1/查询订单状态1")
-def app_order_queryTest_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_order_queryTest_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -276,7 +276,7 @@ def app_order_query_post(params=None, body=None, header=None, return_json=True, 
 
 
 @allure.step("极客数学帮(家长APP)/订单管理/二维码查询订单")
-def app_order_qr_query_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_order_qr_query_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -292,7 +292,7 @@ def app_order_qr_query_get(params=None, header=None, return_json=True, default_a
 
 
 @allure.step("极客数学帮(家长APP)/我的/优惠券张数")
-def app_coupon_countValidCouponItemByStudentIdForApp_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_coupon_countValidCouponItemByStudentIdForApp_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -308,7 +308,7 @@ def app_coupon_countValidCouponItemByStudentIdForApp_get(params=None, header=Non
 
 
 @allure.step("极客数学帮(家长APP)/我的/优惠券/优惠券列表")
-def app_coupon_selectCouponItemsByStudentIdForApp_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_coupon_selectCouponItemsByStudentIdForApp_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -324,7 +324,7 @@ def app_coupon_selectCouponItemsByStudentIdForApp_get(params=None, header=None, 
 
 
 @allure.step("极客数学帮(家长APP)/我的/优惠券/优惠券详情")
-def app_coupon_selectCouponItemByIdForApp_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def app_coupon_selectCouponItemByIdForApp_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体

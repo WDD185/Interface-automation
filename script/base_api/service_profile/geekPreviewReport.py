@@ -4,7 +4,7 @@ import allure
 
 
 @allure.step("极师通/预习学情/课前预习班级列表")
-def geekPreviewReport_queryAttendClasses_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def geekPreviewReport_queryAttendClasses_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -20,7 +20,7 @@ def geekPreviewReport_queryAttendClasses_get(params=None, header=None, return_js
 
 
 @allure.step("极师通/预习学情/预习内容")
-def geekPreviewReport_queryPreviewContent_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def geekPreviewReport_queryPreviewContent_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -52,7 +52,7 @@ def geekPreviewReport_queryPreviewSituation_post(params=None, body=None, header=
 
 
 @allure.step("极师通/预习学情/预习详情")
-def geekPreviewReport_queryPreviewDetail_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def geekPreviewReport_queryPreviewDetail_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -68,7 +68,7 @@ def geekPreviewReport_queryPreviewDetail_get(params=None, header=None, return_js
 
 
 @allure.step("极师通/预习学情/历史预习详情")
-def geekPreviewReport_queryHistoryPreviewDetails_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def geekPreviewReport_queryHistoryPreviewDetails_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -84,7 +84,7 @@ def geekPreviewReport_queryHistoryPreviewDetails_get(params=None, header=None, r
 
 
 @allure.step("极师通/学情管理/课前预习/导出预习excel")
-def geekPreviewReport_exportPreviewSituation_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def geekPreviewReport_exportPreviewSituation_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
@@ -100,7 +100,7 @@ def geekPreviewReport_exportPreviewSituation_get(params=None, header=None, retur
 
 
 @allure.step("极师通/学情管理/课前预习/预习讲次查询")
-def geekPreviewReport_queryLectureCompleteRate_get(params=None, header=None, return_json=True, default_assert=True, **kwargs):
+def geekPreviewReport_queryLectureCompleteRate_get(params=None, header=None, return_json=True, **kwargs):
     '''
     :param: url地址后面的参数
     :body: 请求体
