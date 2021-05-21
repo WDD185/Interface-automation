@@ -30,4 +30,4 @@ def get_method(url, method):
 
 
 if __name__ == '__main__':
-    get_method("/service-profile/app/transferred/22322/class/totalNum", "GET")
+    get_method("/api-operation-app/employee/login", "POST")

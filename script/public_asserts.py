@@ -1,14 +1,14 @@
 import pytest
 
 
-def public_assert(res_json: dict):
+def public_assert(res_json: object) -> object:
     code = res_json.get("code", -100)
     msg = res_json.get("msg", "获取失败")
     pytest.assume(code == 0)
     pytest.assume(msg == "成功")
 
 
-def assert_res_field_contain_value(data_list: list, value: str):
+def assert_res_field_contain_value(data_list: object, value: object) -> object:
     if data_list:
         err_values = [x for x in data_list if value not in x]
         if err_values:

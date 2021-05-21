@@ -9,7 +9,7 @@ accounts = {
         },
         # 极运营app默认账号
         "jyy_app_account": {
-            "account": "15360956010",
+            "account": "15244919753",
             "password": "88888888"
         },
         # 家长默认账号
