@@ -6,46 +6,29 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
     </expand>
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:wangge" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54f4d37d-1724-4813-a1e2-24e200088c5f" name="Default Changelist" comment="修复return_json的bug">
-      <changelist_data name="wangge" email="" />
-      <change afterPath="$PROJECT_DIR$/script/ji_yun_ying_app/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/ji_yun_ying_app/conftest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/ji_yun_ying_app/data_config/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/ji_yun_ying_app/data_config/data_myclue.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/ji_yun_ying_app/workbench/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/ji_yun_ying_app/workbench/conftest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/ji_yun_ying_app/workbench/test_myclue.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jk_interface_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jk_interface_test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_4_12,_11_11_[Default_Changelist]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_4_12__11_11__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_4_12__11_11__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_4_12__11_11__Default_Changelist_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_4_12__11_13__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_4_12__11_13__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_4_14__16_27__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_4_14__16_27__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_4_14__18_13__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_4_14__18_13__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_4_14__18_41__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_4_14__19_04__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_4_14__19_04__Default_Changelist_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_4_14__19_07__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_4_14__19_34__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_4_14__19_34__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_4_13,_20_21_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_4_13__20_21__Default_Changelist_.xml" beforeDir="false" />
+    <list default="true" id="54f4d37d-1724-4813-a1e2-24e200088c5f" name="Default Changelist" comment="极运营APP-我的线索第一期用例">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/defalut_account.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/defalut_account.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/public_asserts.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/public_asserts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/url_to_method.py" beforeDir="false" afterPath="$PROJECT_DIR$/url_to_method.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/ji_yun_ying_app/data_config/data_myclue.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/ji_yun_ying_app/data_config/data_myclue.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,12 +43,19 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="wxh" />
+        <option value="wangge" />
+      </list>
+    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="1nPqpGaEWLImTlIS6FQ5yJzJajR" />
   <component name="ProjectViewState">
@@ -99,6 +89,9 @@
       <module name="jk_interface_test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/script/ji_yun_ying_app/data_config" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -225,7 +218,11 @@
       <workItem from="1620295598774" duration="11878000" />
       <workItem from="1620385351462" duration="7941000" />
       <workItem from="1620640298185" duration="63237000" />
-      <workItem from="1621404464356" duration="45255000" />
+      <workItem from="1621404464356" duration="59820000" />
+      <workItem from="1622793224288" duration="10044000" />
+      <workItem from="1623725382698" duration="1198000" />
+      <workItem from="1623736639507" duration="3049000" />
+      <workItem from="1624354789389" duration="508000" />
     </task>
     <task id="LOCAL-00001" summary="增加依赖文件">
       <created>1611309477574</created>
@@ -248,7 +245,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618368222321</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="极运营APP-我的线索第一期用例">
+      <created>1621569706179</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1621569706179</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,6 +261,31 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:G:/jk_interface_test/script" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State>
@@ -265,7 +294,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="wangge" />
+                        <option value="origin/master" />
                       </list>
                     </value>
                   </entry>
@@ -276,23 +305,37 @@
         </entry>
       </map>
     </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="增加依赖文件" />
     <MESSAGE value="增加allure安装包" />
     <MESSAGE value="修复return_json的bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="修复return_json的bug" />
+    <MESSAGE value="极运营APP-我的线索第一期用例" />
+    <option name="LAST_COMMIT_MESSAGE" value="极运营APP-我的线索第一期用例" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="524" y="203" key="#Notifications" timestamp="1621575362712">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="524" y="203" key="#Notifications/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1621575362712" />
+    <state x="174" y="0" width="804" height="680" key="CommitChangelistDialog2" timestamp="1624354897468">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="174" y="0" width="804" height="680" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1624354897468" />
     <state x="93" y="93" width="1095" height="495" key="DiffContextDialog" timestamp="1618559523178">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="93" y="93" width="1095" height="495" key="DiffContextDialog/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1618559523178" />
-    <state x="420" y="95" key="FileChooserDialogImpl" timestamp="1620737704387">
+    <state x="420" y="95" key="FileChooserDialogImpl" timestamp="1623736802067">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="420" y="95" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1620737704387" />
+    <state x="420" y="95" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1623736802067" />
     <state width="1237" height="523" key="GridCell.Tab.0.bottom" timestamp="1621563037612">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -337,14 +380,18 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="647" height="347" key="XDebugger.FullValuePopup/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1621418395300" />
-    <state x="438" y="254" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1621568692706">
+    <state x="438" y="254" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1624354823448">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="438" y="254" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1621568692706" />
+    <state x="438" y="254" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1624354823448" />
     <state x="434" y="199" key="scopes" timestamp="1618477218150">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="434" y="199" key="scopes/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1618477218150" />
+    <state x="363" y="252" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1623739875968">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="363" y="252" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1623739875968" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/jk_interface_test$pytest_in_test_myclue_py.coverage" NAME="pytest in test_myclue.py Coverage Results" MODIFIED="1618558317344" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/script/ji_yun_ying_app(wangge)/workbench" />
