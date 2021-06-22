@@ -27,8 +27,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54f4d37d-1724-4813-a1e2-24e200088c5f" name="Default Changelist" comment="极运营APP-我的线索第一期用例">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/ji_yun_ying_app/data_config/data_myclue.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/ji_yun_ying_app/data_config/data_myclue.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,7 +222,7 @@
       <workItem from="1622793224288" duration="10044000" />
       <workItem from="1623725382698" duration="1198000" />
       <workItem from="1623736639507" duration="3049000" />
-      <workItem from="1624354789389" duration="508000" />
+      <workItem from="1624354789389" duration="1860000" />
     </task>
     <task id="LOCAL-00001" summary="增加依赖文件">
       <created>1611309477574</created>
@@ -252,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621569706179</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="极运营APP-我的线索第一期用例">
+      <created>1624355328334</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1624355328334</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,14 +327,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="极运营APP-我的线索第一期用例" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="524" y="203" key="#Notifications" timestamp="1621575362712">
+    <state x="524" y="203" key="#Notifications" timestamp="1624355540396">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="524" y="203" key="#Notifications/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1621575362712" />
-    <state x="174" y="0" width="804" height="680" key="CommitChangelistDialog2" timestamp="1624354897468">
+    <state x="524" y="203" key="#Notifications/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1624355540396" />
+    <state x="174" y="0" width="804" height="680" key="CommitChangelistDialog2" timestamp="1624355553725">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="174" y="0" width="804" height="680" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1624354897468" />
+    <state x="174" y="0" width="804" height="680" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1624355553725" />
     <state x="93" y="93" width="1095" height="495" key="DiffContextDialog" timestamp="1618559523178">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -376,14 +383,18 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1620651633570" />
+    <state x="233" y="60" key="Vcs.Push.Dialog.v2" timestamp="1624355336435">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="60" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1624355336435" />
     <state width="647" height="347" key="XDebugger.FullValuePopup" timestamp="1621418395300">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="647" height="347" key="XDebugger.FullValuePopup/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1621418395300" />
-    <state x="438" y="254" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1624354823448">
+    <state x="438" y="254" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1624355556623">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="438" y="254" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1624354823448" />
+    <state x="438" y="254" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1624355556623" />
     <state x="434" y="199" key="scopes" timestamp="1618477218150">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

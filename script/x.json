@@ -1,0 +1,33 @@
+{
+  "studentName": "王莹",
+  "collectPerson": "王星皓3",
+  "otherRemark": "",
+  "intentionLevel": "S",
+  "sourceId": "111",
+  "studentSex": "",
+  "contactInfo": "15532652145",
+  "contactType": "PHONE",
+  "secondContactInfo": "",
+  "secondContactType": "PHONE",
+  "citys": [
+    "510000",
+    "510100"
+  ],
+  "schoolProvinceId": "510000",
+  "schoolProvinceName": "四川省",
+  "schoolCityId": "510100",
+  "schoolCityName": "成都市",
+  "schoolId": "",
+  "schoolName": "",
+  "classRank": "",
+  "gradeRank": "",
+  "recentScore": "",
+  "parentsHope": "",
+  "studyHabit": "",
+  "sourceIdFirstName": "线上营销",
+  "sourceIdSecondName": "网站",
+  "testPaperUrls": "",
+  "belong": "PERSON",
+  "createSchoolAreaId": 3015,
+  "city": "510100"
+}

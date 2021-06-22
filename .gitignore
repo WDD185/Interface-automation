@@ -1,0 +1,8 @@
+# Created by pytest automatically.
+*.pyc
+report/
+temp
+*.har
+*.xml
+test/
+*/__pycache__/
